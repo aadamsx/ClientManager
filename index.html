@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html ng-app="clientModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Management Portal - Prototype 1.0</title>
+        <meta name="formspoint" content="width=devide-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/dashboard.css" />
+<!--        <link rel="stylesheet" href="assets/css/signin.css" />
+        <link rel="stylesheet" href="assets/css/cover.css" />-->
+
+    </head>
+
+    <body>
+        <!-- the ng-view is where all the templates will be displayed
+        inside our application as we load different templates in our site -->
+
+        <!-- view is what the users sees when a template is combined with a model,
+        the templates are just the html -->
+        <nav-bar ng-hide="hideTopNavBar"></nav-bar>
+        <ng-view>
+<!--            <landing></landing>
+            <signin></signin>
+            <companies></companies>-->
+            <dashboard-layout></dashboard-layout>
+        </ng-view>
+
+
+        <!-- third party libraries -->
+        <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+        <!--<script type="text/javascript" src="vendor/jquery/jquery-1.9.1.intellisense.js"></script>-->
+        <!--<script type="text/javascript" src="vendor/toaster/toaster.js"></script>-->
+        <script type="text/javascript" src="assets/js/angular.js"></script>
+        <script type="text/javascript" src="assets/js/angular-resource.js"></script>
+        <script type="text/javascript" src="assets/js/angular-route.js"></script>
+        <script type="text/javascript" src="assets/js/angular-animate.js"></script>
+        <script type="text/javascript" src="assets/js/ui-bootstrap-0.10.0.js"></script>
+        <script type="text/javascript" src="assets/js/ui-bootstrap-tpls-0.10.0.js"></script>
+        <!--<script type="text/javascript" src="vendor/ng-table/ng-table.js"></script>
+        <script type="text/javascript" src="vendor/ng-table/ng-table.src.js"></script>-->
+        <!--<script type="text/javascript" src="vendor/less/less-1.5.1.js"></script>-->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+        <!-- init -->
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="routes/index.js"></script>
+
+        <script type="text/javascript" src="app/common/landing/landing-controller.js"></script>
+        <script type="text/javascript" src="app/common/landing/landing-directive.js"></script>
+
+
+        <!-- company -->
+        <!--<script type="text/javascript" src="app/company/companyDirective.js"></script>-->
+        <script type="text/javascript" src="app/company/companies-controller.js"></script>
+        <script type="text/javascript" src="app/company/companies-directive.js"></script>
+        <script type="text/javascript" src="app/company/companies-factory.js"></script>
+
+        <!-- common -->
+        <!-- navigation -->
+        <script type="text/javascript" src="app/common/navigation/nav-bar-controller.js"></script>
+        <script type="text/javascript" src="app/common/navigation/nav-bar-directive.js"></script>
+        <script type="text/javascript" src="app/common/layouts/dashboard-controller.js"></script>
+        <script type="text/javascript" src="app/common/layouts/dashboard-directive.js"></script>
+        <script type="text/javascript" src="app/common/layouts/dashboard-factory.js"></script>
+
+        <!-- login -->
+        <script type="text/javascript" src="app/common/login/loginCtrl.js"></script>
+        <script type="text/javascript" src="app/common/login/loginDir.js"></script>
+
+        <!-- services -->
+        <!--<script type="text/javascript" src="app/common/services/notifierServ.js"></script>-->
+        <!--<script type="text/javascript" src="app/common/services/toastrServ.js"></script>-->
+        <!--<script type="text/javascript" src="services.js"></script>-->
+    </body>
+
+</html>
+
+
