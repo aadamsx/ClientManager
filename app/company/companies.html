@@ -2,26 +2,11 @@
 <nav-bar></nav-bar>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Overview</a></li>
-                <li><a href="#">Details</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Orders</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-                <li><a href="">Reports</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-                <li><a href="#">Billing</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">Messages</a></li>
-            </ul>
-        </div>
+        <navbar-side></navbar-side>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <header class="hubs-header">
-                <h2 class="span3">companies</h2>
+                <h2 class="span3">accounts</h2>
                 <div class="pull-right">
  <!--                   <a href="" class="btn btn-default" id="new_company">
                         &lt;!&ndash; <i class="icon-right"></i>&ndash;&gt;
@@ -41,14 +26,8 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="company in companies | orderBy: sortorder">
-                        <td>
-                            <h4>
-                                <a href='#/companies/{{company.companyId}}'>{{ company.name }}</a>
-                            </h4>
-                        </td>
-                        <td>
-                            <h4>{{ company.description }}</h4>
-                        </td>
+                        <td><a href='#/companies/{{company.companyId}}'>{{ company.name }}</a></td>
+                        <td>{{ company.description }}</td>
     <!--                        <td>
                             <delete-button action="removeCompany(company)"></delete-button>
                         </td>-->
