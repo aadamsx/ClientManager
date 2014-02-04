@@ -1,0 +1,52 @@
+
+#navsidebar {
+    margin-left: -20px;
+    margin-right: -21px;
+    margin-bottom: 20px;
+}
+#navsidebar .nav {
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+#navsidebar .li {
+    line-height: 20px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#navsidebar .nav .active > a {
+    background: none;
+    color: #348eda;
+}
+#navsidebar .nav li a, #sidebar .nav li label {
+/*    color: #575e6a;*/
+    padding: 5px 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+/*#navsidebar .nav li a i, #navsidebar .nav li label i {*/
+#navsidebar .nav li a .glyphicon, #navsidebar .nav li label .glyphicon {
+    margin-right: 5px;
+    /*opacity: 0.3;*/
+    font-style: normal;
+    font-size: 17px;
+    width: 17px;
+    font-size: 17px;
+    display: inline-block;
+}
+#navsidebar .nav .active>a glyphicon {
+    opacity: 1;
+}
+#navsidebar .glyphicon {
+    margin-right: 5px;
+    text-align: center;
+    top: 2px;
+    height: 10px;
+    width: 17px;
+    display: inline-block;
+}
+#navsidebar .badge {
+    margin-left: 4px;
+}
