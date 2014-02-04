@@ -7,10 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="stylesheet" href="assets/css/bootstrap.css" />
-        <link rel="stylesheet" href="assets/css/dashboard.css" />
-<!--        <link rel="stylesheet" href="assets/css/signin.css" />
-        <link rel="stylesheet" href="assets/css/cover.css" />-->
-
+        <!--<link rel="stylesheet" href="assets/css/jordan.css" />-->
     </head>
 
     <body>
@@ -19,7 +16,7 @@
 
         <!-- view is what the users sees when a template is combined with a model,
         the templates are just the html -->
-        <nav-bar ng-hide="hideTopNavBar"></nav-bar>
+<!--        <nav-bar ng-hide="hideTopNavBar"></nav-bar>-->
         <ng-view>
 <!--            <landing></landing>
             <signin></signin>
@@ -47,8 +44,8 @@
         <script type="text/javascript" src="app/app.js"></script>
         <script type="text/javascript" src="routes/index.js"></script>
 
-        <script type="text/javascript" src="app/common/landing/landing-controller.js"></script>
-        <script type="text/javascript" src="app/common/landing/landing-directive.js"></script>
+        <script type="text/javascript" src="app/common/landing/cover-controller.js"></script>
+        <script type="text/javascript" src="app/common/landing/cover-directive.js"></script>
 
 
         <!-- company -->
@@ -56,6 +53,8 @@
         <script type="text/javascript" src="app/company/companies-controller.js"></script>
         <script type="text/javascript" src="app/company/companies-directive.js"></script>
         <script type="text/javascript" src="app/company/companies-factory.js"></script>
+        <script type="text/javascript" src="app/company/company-detail-controller.js"></script>
+        <script type="text/javascript" src="app/company/company-new-controller.js"></script>
 
         <!-- common -->
         <!-- navigation -->
@@ -65,9 +64,13 @@
         <script type="text/javascript" src="app/common/layouts/dashboard-directive.js"></script>
         <script type="text/javascript" src="app/common/layouts/dashboard-factory.js"></script>
 
-        <!-- login -->
-        <script type="text/javascript" src="app/common/login/loginCtrl.js"></script>
-        <script type="text/javascript" src="app/common/login/loginDir.js"></script>
+        <!-- sign in -->
+<!--        <script type="text/javascript" src="app/common/login/loginCtrl.js"></script>
+        <script type="text/javascript" src="app/common/login/loginDir.js"></script>-->
+        <script type="text/javascript" src="app/common/signin/signin-controller.js"></script>
+
+
+        <script type="text/javascript" src="app/common/about/about-controller.js"></script>
 
         <!-- services -->
         <!--<script type="text/javascript" src="app/common/services/notifierServ.js"></script>-->

@@ -1,6 +1,6 @@
 /**
  * Created by Aaron on 2/1/14.
  */
-app.controller('landingController', function ($scope) {
+app.controller('coverController', function ($scope) {
     $scope.hideTopNavBar = true;
 });

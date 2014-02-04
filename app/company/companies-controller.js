@@ -1,6 +1,8 @@
 /**
  * Created by Aaron on 1/31/14.
  */
+'use strict';
+
 // company controller: http
 /*app.controller("companiesController", function($scope, companiesFactory) {
  // controller's constructor:
@@ -12,6 +14,7 @@
  });
  });*/
 
+/*
 // company controller: resource
 app.controller("companiesController", function($scope, companiesFactory) {
     // controller's constructor:
@@ -24,4 +27,15 @@ app.controller("companiesController", function($scope, companiesFactory) {
         var newCompany = new companiesFactory.database({name : companyName, description: companyDesc});
         newCompany.$save();
     }
+
+    $scope.updateCompany(id) = function
+});*/
+
+// company controller: resource
+app.controller("companiesController",
+    function($scope, companiesFactory) {
+    // controller's constructor:
+        $scope.sortorder = 'name';
+        $scope.companies = companiesFactory.getCompanies();
+/*        $scope.company = companiesFactory.getCompany($routeParams.companyId);*/
 });

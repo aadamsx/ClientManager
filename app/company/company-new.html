@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="assets/css/dashboard.css" />
+<nav-bar></nav-bar>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="">Reports</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="#">Billing</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Messages</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">company detail</h1>
+<!--            <h2 class="sub-header">section title</h2>-->
+            <h1 ng-hide="editingCompany">New Company</h1>
+            <h1 ng-show="editingCompany">Edit Company</h1>
+            <hr/>
+            <form name="editCompanyForm">
+                <fieldset>
+                    <label for="companyName">company name:</label>
+                    <input id="companyName" type="text" required placeholder="Name of company" ng-model="company.name" />
+                    <label for="companyName">company description:</label>
+                    <input id="companyDescription" type="text" required placeholder="description of company" ng-model="company.description" />
+                </fieldset>
+            </form>
+            <button type="submit" class="btn btn-primary" ng-click="saveCompany(company, editCompanyForm)">Save</button>
+            <button type="button" class="btn btn-default" ng-click="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+</div>
