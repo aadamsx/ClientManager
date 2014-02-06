@@ -1,0 +1,51 @@
+#page {
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    border-radius: 1px;
+ /*   border: 1px solid rgba(0,0,0,0.1);*/
+    border-top: 0;
+}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1220px;
+}
+.container {
+/*    padding-right: 15px;
+    padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+#page>.row {
+    overflow: hidden;
+/*    background: url(/assets/bg-sidebar.png) repeat-y;*/
+    background-position: 0 0;
+    margin-left: 0px;
+}
+#page>.row #navsidebar {
+    margin-left: 0;
+}
+#page .span9 {
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+/*#page .span10 {
+    margin-left: 40px;
+    padding-bottom: 40px;
+}*/
+.span3 {
+    width: 270px;
+}
+/*.span2 {
+    width: 270px;
+}*/
+.span9 {
+    width: 870px;
+}
+/*.span10 {
+    width: 870px;
+}*/
+/*
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+}*/

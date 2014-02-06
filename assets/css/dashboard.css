@@ -73,9 +73,9 @@ body {
 .main {
     padding: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* AA: modified the padding */
     .main {
-        padding-left: 40px;
+        padding-left: 250px;
         padding-right: 40px;
     }
 }

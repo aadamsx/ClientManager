@@ -1,0 +1,26 @@
+#navtopbar .navbar-inverse {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+#navtopbar .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+#navtopbar .navbar-fixed-top, #navtopbar .navbar-fixed-bottom {
+    border-radius: 0;
+}
+#navtopbar .navbar-fixed-top, #navtopbar .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+#navtopbar .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}

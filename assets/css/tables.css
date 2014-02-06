@@ -1,0 +1,80 @@
+.table thead, table thead {
+    background: #fdfdfe;
+    border-top: 1px solid #e5ecf4;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.table td, .table th, table td, table th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.table th {
+    font-weight: bold;
+}
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+}
+.table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#company_list > thead > tr > th,
+#company_list > tbody > tr > th,
+#company_list > tfoot > tr > th,
+#company_list > thead > tr > td,
+#company_list > tbody > tr > td,
+#company_list > tfoot > tr > td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+table#company_list tr a:visited {
+    color: #484c57;
+    text-decoration: none;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table {
+/*    border-collapse: separate;*/
+    border-spacing: 2px;
+    border-color: gray;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table#company_list td {
+    cursor: pointer;
+}
+table td, .table td, .table th, table th {
+    border-top: 1px solid #e5ecf4;
+}
+.table td, .table th, table td, table th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+table td, .table td, .table th, table th {
+    border-top: 1px solid #e5ecf4;
+}

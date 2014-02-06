@@ -1,0 +1,81 @@
+.main > header {
+    min-height: 42px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8dcea;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.main h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+/*    padding-top: 10px;*/
+    font-size: 28px;
+    font-weight: 500;
+    color: #484c57;
+    line-height: 1;
+}
+.main h4 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0.5em 0;
+    color: #a1a1b3;
+}
+.performance-indicators {
+    padding-top: 0px;
+    margin-top: 35px;
+}
+.main .performance-indicators,
+.main .performance-indicators .panel,
+.main .performance-indicators .panel h5
+{
+    padding: 0;
+    box-shadow: none;
+    line-height: 0;
+/*    margin: 0;*/
+    color: #428bca;
+    border-radius: 0;
+}
+.performance-indicators .glyphicon {
+    top: -6px;
+}
+.nav-tabs > li {
+    margin-right: 15px;
+}
+.tabbable .nav-tabs > li > a:hover {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: auto;
+}
+.tabbable .nav-tabs {
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+    border-bottom: none;
+    padding-top:0;
+    margin-top:0;
+    padding-bottom: 20px;
+/*    margin-bottom: 10px;*/
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0 -4px #ddd inset;
+    margin: 0px;
+    cursor: auto;
+}
+.nav-tabs > li > a {
+/*    padding: 20px 0px;
+    border-radius: 0;
+    border: 0;
+    font-weight: 500;*/
+}
+
+/*
+body.app .navbar-inner, body.app h1, body.app h2, body.app h3, body.app h4, body.app h5 {
+    font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}*/
+
+a { text-decoration: none;  cursor: pointer; }
+li { cursor: pointer; }
