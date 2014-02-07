@@ -36,7 +36,7 @@
     padding-bottom: 15px;
 }
 table#company_list tr a:visited {
-    color: #484c57;
+  /*  color: #484c57;*/
     text-decoration: none;
 }
 tbody {

@@ -63,7 +63,7 @@
     border-radius: 0px;
     box-shadow: 0 -4px #ddd inset;
     margin: 0px;
-    cursor: auto;
+    cursor: pointer;
 }
 .nav-tabs > li > a {
 /*    padding: 20px 0px;
@@ -76,6 +76,23 @@
 body.app .navbar-inner, body.app h1, body.app h2, body.app h3, body.app h4, body.app h5 {
     font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }*/
-
-a { text-decoration: none;  cursor: pointer; }
+table tbody tr td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+a,
+a:hover {
+     text-decoration: none;
+     cursor: pointer;
+     /*    border-color: transparent;
+         background-color: transparent;*/
+ }
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabbable .nav-tabs > li > a:hover {
+    cursor: pointer;
+}
 li { cursor: pointer; }
