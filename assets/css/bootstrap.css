@@ -237,9 +237,9 @@ th {
   select {
     background: #fff !important;
   }
-  .navbar {
+/*  .navbar {
     display: none;
-  }
+  }*/
   .table td,
   .table th {
     background-color: #fff !important;
@@ -3673,18 +3673,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     line-height: 1;*/
 }
 
-.navbar { /* AA: modified padding */
+/*.navbar { 
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   padding-left: 20px;
   padding-right: 20px;
-}
+}*/
 @media (min-width: 768px) {
-  .navbar {
+/*.navbar {
     border-radius: 4px;
-  }
+}*/
 }
 @media (min-width: 768px) {
   .navbar-header {

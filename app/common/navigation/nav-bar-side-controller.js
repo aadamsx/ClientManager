@@ -1,3 +1,3 @@
-﻿app.controller('navbarSideController', function ($scope) {
+app.controller('navbarSideController', function ($scope) {
 
 });

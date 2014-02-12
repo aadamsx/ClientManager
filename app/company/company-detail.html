@@ -3,85 +3,80 @@
 <link rel="stylesheet" href="assets/css/page-container.css" />
 <link rel="stylesheet" href="assets/css/main.css" />
 
-<nav-bar></nav-bar>
+<div class="row">
+    <navbar-side></navbar-side>
 
-<div class="container-fluid" id="page">
-    <div class="row">
-
-        <navbar-side></navbar-side>
-
-        <div class="span10 main">
-            <header>
-                <div class="pull-right">
-                    <a href="#/companies" class="btn btn-default">
-                        <span class="glyphicon glyphicon-arrow-left"></span> back to all accounts
-                    </a>
-                </div>
-                <h1>Account details</h1>
-            </header>
-
-            <div class="row-details">
-                <header>
-                    <span class="label label-success"> account in good standing </span>
-                    <span class="label label-info"> no new messages </span>
-                    <span class="label label-warning"> no products added </span>
-                    <span class="date">last billed: January 31, 2014, at 02:25PM CST</span>
-                </header>
-                <section class="details">
-                    <div class="amount balance">
-                        <h4>Amount
-                            Received
-                        </h4>
-                        <span class="balance-btc"><strong>1.00</strong> BTC</span>
-                    </div>
-                    <div class="transfer">
-                        <div>
-                            <h4>From</h4>
-                    <span>
-                        <img alt="Avatar" class="avatar" height="24" src="https://secure.gravatar.com/avatar/183043a0caf280700ca91953e341403b.png?d=https://coinbase.com/assets/avatar.png&amp;r=R&amp;s=24" width="24"> Coinbase (transfers@coinbase.com<script type="text/javascript">
-                        /* <![CDATA[ */
-                        (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
-                        /* ]]> */
-                    </script>)
-                    </span>
-                        </div>
-                        <div>
-                            <h4>To</h4>
-                    <span>
-    <!--                    <img alt="Avatar" class="avatar" height="24" src="https://secure.gravatar.com/avatar/566f8793e29d1c51c7175232c1d2b5b8.png?d=https://coinbase.com/assets/avatar.png&amp;r=R&amp;s=24" width="24"> You-->
-
-                    </span>
-
-                        </div>
-                    </div>
-                </section>
-
-                <div class="nav-pills">
-                <section class="notes">
-                    <h4>Billings </h4>
-                    <p>Company table with the last few billings displayed</p>
-
-                    <p>something else here</p>
-                    <br>
-                    <p>
-                        <a href="#/billing" class="btn btn-default">view billing details
-                            <span class="glyphicon glyphicon-share-alt"></span></a>
-                    </p>
-                </section>
-                <section class="notes">
-                    <h4>Messages</h4>
-                    <p>Company table with the last few messages displayed</p>
-
-                    <p>something else here</p>
-                    <br>
-                    <p>
-                        <a href="#/billing" class="btn btn-default">view message details
-                        <span class="glyphicon glyphicon-share-alt"></span></a>
-                    </p>
-                </section>
-                </div>
-
+    <div class="span10 main">
+        <header>
+            <div class="pull-right">
+                <a href="#/companies" class="btn btn-default">
+                    <span class="glyphicon glyphicon-arrow-left"></span> back to all accounts
+                </a>
             </div>
+            <h1>Account details</h1>
+        </header>
+
+        <div class="row-details">
+            <header>
+                <span class="label label-success"> account in good standing </span>
+                <span class="label label-info"> no new messages </span>
+                <span class="label label-warning"> no products added </span>
+                <span class="date">last billed: January 31, 2014, at 02:25PM CST</span>
+            </header>
+            <section class="details">
+                <div class="amount balance">
+                    <h4>Amount
+                        Received
+                    </h4>
+                    <span class="balance-btc"><strong>1.00</strong> BTC</span>
+                </div>
+                <div class="transfer">
+                    <div>
+                        <h4>From</h4>
+                <span>
+                    <img alt="Avatar" class="avatar" height="24" src="https://secure.gravatar.com/avatar/183043a0caf280700ca91953e341403b.png?d=https://coinbase.com/assets/avatar.png&amp;r=R&amp;s=24" width="24"> Coinbase (transfers@coinbase.com<script type="text/javascript">
+                    /* <![CDATA[ */
+                    (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+                    /* ]]> */
+                </script>)
+                </span>
+                    </div>
+                    <div>
+                        <h4>To</h4>
+                <span>
+<!--                    <img alt="Avatar" class="avatar" height="24" src="https://secure.gravatar.com/avatar/566f8793e29d1c51c7175232c1d2b5b8.png?d=https://coinbase.com/assets/avatar.png&amp;r=R&amp;s=24" width="24"> You-->
+
+                </span>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="nav-pills">
+            <section class="notes">
+                <h4>Billings </h4>
+                <p>Company table with the last few billings displayed</p>
+
+                <p>something else here</p>
+                <br>
+                <p>
+                    <a href="#/billing" class="btn btn-default">view billing details
+                        <span class="glyphicon glyphicon-share-alt"></span></a>
+                </p>
+            </section>
+            <section class="notes">
+                <h4>Messages</h4>
+                <p>Company table with the last few messages displayed</p>
+
+                <p>something else here</p>
+                <br>
+                <p>
+                    <a href="#/billing" class="btn btn-default">view message details
+                    <span class="glyphicon glyphicon-share-alt"></span></a>
+                </p>
+            </section>
+            </div>
+
         </div>
     </div>
 </div>

@@ -13,11 +13,11 @@
     width: 270px;
 }
 
-#navsidebar {
+/*#navsidebar {
     margin-right: -1px;
     min-height: 500px;
     padding-top: 10px;
-}
+}*/
 
 #navsidebar .nav {
     padding-top: 0px;
@@ -42,26 +42,26 @@
     text-shadow: none;
 }
 /*#navsidebar .nav li a i, #navsidebar .nav li label i {*/
-#navsidebar .nav li a .glyphicon, #navsidebar .nav li label .glyphicon {
+/*#navsidebar .nav li a .glyphicon, #navsidebar .nav li label .glyphicon {
     margin-right: 8px;
-    /*opacity: 0.3;*/
+    opacity: 0.3;
     font-style: normal;
     font-size: 17px;
     width: 17px;
     font-size: 17px;
     display: inline-block;
-}
-#navsidebar .nav .active>a glyphicon {
+}*/
+/*#navsidebar .nav .active>a glyphicon {
     opacity: 1;
-}
-#navsidebar .glyphicon {
+}*/
+/*#navsidebar .glyphicon {
     margin-right: 10px;
     text-align: center;
     top: 4px;
     height: 10px;
     width: 17px;
     display: inline-block;
-}
+}*/
 #navsidebar .badge {
     margin-left: 10px;
 }

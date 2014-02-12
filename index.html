@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" ng-app="clientModule">
     <head>
         <meta charset="utf-8">
@@ -7,15 +7,63 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+        <!--<link rel="stylesheet" href="assets/css/topbar.css" />-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
 
-    <body>
-        <ng-view>
-            <dashboard></dashboard>
-        </ng-view>
+    <body class="app">
+        <div class="page-container">
+            
+            <!-- HEADER AND NAVBAR -->
+            <div class="navbar navbar-fixed-top"> <!--REMOVED THIS: navbar-static-top--> 
+                <div class="navbar-inner">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" >
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#/dashboard">formspoint</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="">about</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle">resources <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">recurring payments</a></li>
+                                        <li><a href="">charts</a></li>
+                                        <li><a href="">stats</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
 
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active button"><a href="#/signin">sign in</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle">options <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">sign in as other</a></li>
+                                        <li><a href="">users admin</a></li>
+                                        <li><a href="">settings</a></li>
+                                        <li><a href="">sign out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+            <div id="page" class="container">
+                <ng-view></ng-view>
+            </div>
+        </div>
 
         <!-- third party libraries -->
         <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
