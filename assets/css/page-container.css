@@ -12,21 +12,21 @@
     margin-right: auto;
     margin-left: auto;
 }*/
-#page>.row {
+/*#page>.row {
     overflow: hidden;
-/*    background: url(/assets/bg-sidebar.png) repeat-y;*/
+    background: url(/assets/bg-sidebar.png) repeat-y;
     background-position: 0 0;
     margin-left: 0px;
-}
+}*/
 #page > .row #navsidebar {
    /* margin-left: 0;*/
 /*    margin-top: 50px;
     padding-top: 10px;*/
 }
-#page .span9 {
+/*#page .span9 {
     margin-left: 40px;
     padding-bottom: 40px;
-}
+}*/
 /*#page .span10 {
     margin-left: 40px;
     padding-bottom: 40px;
@@ -37,9 +37,9 @@
 /*.span2 {
     width: 270px;
 }*/
-.span9 {
+/*.span9 {
     width: 870px;
-}
+}*/
 /*.span10 {
     width: 870px;
 }*/
