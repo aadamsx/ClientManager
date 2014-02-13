@@ -27,9 +27,9 @@ body.app .navbar-inner, body.app h1, body.app h2, body.app h3, body.app h4, body
     -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 }*/
-.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+/*.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
     border-width: 0 0 1px;
-}
+}*/
 /*.navbar-static-top .navbar-inner {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

@@ -3,17 +3,16 @@
  */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
+/*body {
     padding-top: 50px;
-    /* overwrite other css files: */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333;
     background-color: #fff;
     margin: 0;
-  /*  display: block;*/
-}
+  display: block;
+}*/
 
 
 /*
@@ -70,15 +69,15 @@ body {
  * Main content
  */
 
-.main {
-    /*padding: 20px;*/
-}
-@media (min-width: 768px) { /* AA: modified the padding */
+/*.main {
+    padding: 20px;
+}*/
+/*@media (min-width: 768px) {  AA: modified the padding 
     .main {
         padding-left: 250px;
         padding-right: 40px;
     }
-}
+}*/
 .main .page-header {
     margin-top: 0;
 }

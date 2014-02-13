@@ -1,8 +1,28 @@
+html {
+    min-height: 100%;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+body.app {
+    color: #474a54;
+}
+
 .navbar-static-top {
-    color: #fff;
     position: static;
     margin-bottom: 0;
-    /*position: fixed;*/
 }
 
 .index-hero {
@@ -93,7 +113,7 @@ p {
 
 body.app {
     padding: 0;
-    background:  top left repeat-x /*#eceef3*/;
+    background: url(/assets/img/bg-header.png) top left repeat-x #eceef3;
     color: #474a54;
 }
 
@@ -115,6 +135,26 @@ body.test {
     min-height: 40px; 
     padding-left: 20px; 
     padding-right: 20px; 
+}
+
+body.app .navbar-inner, 
+body.app h1, 
+body.app h2, 
+body.app h3, 
+body.app h4, 
+body.app h5 {
+    font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar .navbar-inner {
+    color: #fff;
+    box-shadow: none;
+    border: 0;
+    height: 42px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    filter: none;
+    background: url(/assets/img/bg-header.png) top left repeat-x #348eda;
 }
 
 .navbar-inner a {
@@ -303,6 +343,7 @@ ul, ol {
 /*    border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;*/
 }
+
 
 #companies {
     margin-top: 20px;
@@ -660,9 +701,133 @@ li { cursor: pointer; }
     }
 }
 
-@media (min-width: 1200px) {
-    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container 
+@media (max-width: 767px) {
+    .navbar-inner .container {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .container, 
+    .navbar-static-top .container, 
+    .navbar-fixed-top .container, 
+    .navbar-fixed-bottom .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    .container, 
+    .navbar-static-top .container, 
+    .navbar-fixed-top .container, 
+    .navbar-fixed-bottom .container {
+        width: 744px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container, 
+    .navbar-static-top .container, 
+    .navbar-fixed-top .container, 
+    .navbar-fixed-bottom .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 1228px) {
+    .container, 
+    .navbar-static-top .container, 
+    .navbar-fixed-top .container, 
+    .navbar-fixed-bottom .container {
+        width: 1190px;
+    }
+}
+
+@media (min-width: 1228px) {
+    .container, 
+    .navbar-static-top .container, 
+    .navbar-fixed-top .container, 
+    .navbar-fixed-bottom .container {
         width: 1220px;
+    }
+}
+
+.span3 {
+    width: 220px;
+}
+@media (min-width: 1200px) {
+    .span3 {
+        width: 270px;
+    }
+}
+@media (min-width: 1200px) {
+    [class*="span"] {
+        float: left;
+        min-height: 1px;
+        margin-left: 30px;
+    }
+}
+
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    #main {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.span9 {
+    width: 700px;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    .span9 {
+        width: 538px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    [class*="span"] {
+        float: left;
+        min-height: 1px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    [class*="span"] {
+        float: left;
+        min-height: 1px;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .span9 {
+        width: 870px;
+    }
+}
+
+@media (min-width: 1228px) {
+    #page .span9 {
+        margin-left: 40px;
+        padding-bottom: 40px;
     }
 }
 
