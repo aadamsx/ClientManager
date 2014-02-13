@@ -330,21 +330,6 @@ ul, ol {
 }
 
 
-.main {
-    /*padding-left: 60px;*/
-/*    padding-right: 60px;*/
-/*    padding-top: 80px;*/
-  /*  padding-bottom: 60px;*/
-    
-    margin-left: 25px;
-    margin-right: 60px;
-    margin-top: 85px;
-    margin-bottom: 85px;
-/*    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;*/
-}
-
-
 #companies {
     margin-top: 20px;
     color: #484c57;
