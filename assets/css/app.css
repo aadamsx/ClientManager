@@ -1,3 +1,4 @@
+/* HTML */
 html {
     min-height: 100%;
 }
@@ -9,6 +10,8 @@ html {
 html {
     display: block;
 }
+
+/* BODY */
 body {
     margin: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -19,6 +22,7 @@ body {
 body.app {
     color: #474a54;
 }
+
 
 .navbar-static-top {
     position: static;
@@ -250,9 +254,7 @@ body.app h5 {
 .nav-list {
     margin-bottom:0;
 }
-ul, ol {
-    margin: 0 0 10px 25px;
-}
+
 #sidebar .nav li a, 
 #sidebar .nav li label {
     color: #575e6a;
@@ -330,10 +332,10 @@ ul, ol {
 }
 
 
-#companies {
+/*#companies {
     margin-top: 20px;
     color: #484c57;
-}
+}*/
 
 .main h1 {
     margin-top: 10px;
@@ -499,37 +501,13 @@ table td, .table td, .table th, table th {
     border-bottom: 0;
 }
 
-.tabbable .nav-tabs {
-    border-radius: 0;
-    border-bottom: 1px solid #eee;
-    /*border-bottom: none;*/
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 0px;
-/*    margin-bottom: 10px;*/
-}
-.nav-tabs > li {
-    margin-right: 15px;
-}
+
+
 .performance-indicators .glyphicon {
     top: -6px;
 }
-.nav-tabs > li {
-    margin-right: 15px;
-}
-.tabbable .nav-tabs > li > a:hover {
-    border-color: transparent;
-    background-color: transparent;
-    cursor: auto;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-    border: 0px;
-    border-radius: 0px;
-    box-shadow: 0 -4px #ddd inset;
-    cursor: pointer;
-}
+
+
 table tbody tr td a {
     display: block;
     width: 100%;
@@ -546,14 +524,10 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-.tabbable .nav-tabs > li > a:hover {
-    cursor: pointer;
-}
+
 li { cursor: pointer; }
 
-.nav-tabs > li {
-    margin-bottom: -2px;
-}
+
 .main .nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -815,10 +789,49 @@ li { cursor: pointer; }
         padding-bottom: 40px;
     }
 }
+.tabbable .nav-tabs > li > a:hover {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: auto;
+}
 
-#page .span9 {
-    margin-left: 40px;
-    padding-bottom: 40px;
-   /* float: left;*/
-    /*min-height: 1px;*/
+/* .NAV */
+.nav {
+    margin-left: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+
+/* .NAV-TABS */
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav-tabs {
+    margin-top: 10px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0 -4px #ddd inset;
+    cursor: pointer;
+}
+.tabbable .nav-tabs > li > a:hover {
+    cursor: pointer;
+}
+
+.nav-tabs > li {
+    margin-bottom: -2px;
+}
+.nav-tabs > li {
+    margin-right: 15px;
+}
+
+/* UL, OL */
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
 }

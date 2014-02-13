@@ -566,11 +566,11 @@ a.bg-danger:hover {
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
 }
-ul,
+/*ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
-}
+}*/
 ul ul,
 ol ul,
 ul ol,
@@ -3459,11 +3459,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
-.nav {
+/*.nav {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
+}*/
 .nav > li {
   position: relative;
   display: block;
@@ -3504,9 +3504,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
-.nav-tabs {
+/*.nav-tabs {
   border-bottom: 1px solid #ddd;
-}
+}*/
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
