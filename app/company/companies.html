@@ -8,7 +8,7 @@
 <navbar-side></navbar-side>
 
 <div class="span9">
-    <div id="companies">
+
         <tabset>
             <tab>
                 <tab-heading>
@@ -16,55 +16,42 @@
                     Accounts
                 </tab-heading>
                 
-                <a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-plus"></span> new account
-                </a>
-                <h3>Accounts<br><small>List of all currently active accounts.</small></h3>
-                <div class="span3">
-                    <div class="right-inner-addon ">
-                        <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" class="form-control" placeholder="Search" />
+                <h3 class="header">Accounts<br><small>List of all currently active accounts.</small></h3>
+                
+                <div class="sub-header">
+                    <a href="#/companies" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus"></span> new account
+                    </a>
+                    <div class="span3 search-box" >
+                        <div class="right-inner-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input type="search"
+                                   class="form-control" 
+                                   placeholder="Search" />
+                        </div>
                     </div>
                 </div>
-             <!--   <header>
-                  <h1>Account list <br><small>List of all currently active accounts.</small></h1>
-                </header>-->
 
-<!--                <div id="sub-heading">
-                    <div class="pull-right">
-                        <a href="#/companies" class="btn btn-default">
-                            <span class="glyphicon glyphicon-plus"></span> new account
-                        </a>
-                    </div>
-
-                    <div class="span3">
-                        <div class="right-inner-addon ">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <input type="text" class="form-control" placeholder="Search" />
-                        </div>-->
-                        <!-- ANGULARJS DIRECTIVE TYPEAHEAD: USE THIS AT SOME POINT -->
-                        <!--<input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control ng-valid ng-dirty">-->
-<!--                    </div>
-                </div>-->
-
-                <table id="table-list" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
+                <div id="companies">
+                    <table id="table-list" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="company in companies | orderBy: sortorder">
+                            <td>
+                                <a href='#/companies/{{ company.companyId }}'>{{ company.name }}</a>
+                            </td>
+                            <td>
+                                <a href='#/companies/{{ company.companyId }}'>{{ company.description }}</a>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                    <tr ng-repeat="company in companies | orderBy: sortorder">
-                        <td>
-                            <a href='#/companies/{{ company.companyId }}'>{{ company.name }}</a>
-                        </td>
-                        <td>
-                            <a href='#/companies/{{ company.companyId }}'>{{ company.description }}</a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
 
                 <ul class="pagination">
                     <li class="disabled"><a href="#">&laquo;</a></li>
@@ -329,6 +316,5 @@
                 </ul>
             </tab>
         </tabset>
-    </div>
 </div>
 

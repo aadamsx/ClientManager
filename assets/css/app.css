@@ -24,6 +24,45 @@ body.app {
 }
 
 
+/* H1, H2, H3, H4, H5, H6 */
+/* == > */
+body.app h1, body.app h2, body.app h3 {
+    font-weight: 500;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+h1, h2, h3 {
+    line-height: 40px;
+}
+h3 {
+    font-size: 24.5px;
+}
+/* <== */
+
+
+/* CONTROL-GROUP */
+/* == > */
+.control-group {
+    margin-bottom: 10px;
+}
+/* <== */
+
 .navbar-static-top {
     position: static;
     margin-bottom: 0;
@@ -275,6 +314,8 @@ body.app h5 {
     margin-bottom: 20px;
 }
 
+
+/* .RIGHT-INNER-ADDON */
 .right-inner-addon {
     position: relative;
 }
@@ -284,7 +325,6 @@ body.app h5 {
 }
 
 .right-inner-addon i {
-    
     position: absolute;
     right: 0px;
     margin-top: -2px;
@@ -972,4 +1012,32 @@ a {
 /* PULL-RIGHT */
 .pull-right {
     float: right; !important
+}
+.search-box {
+    margin-left: 0;
+}
+
+#companies {
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    color: #484c57;
+}
+
+.margin3 {
+    margin-bottom: 30px; !important;
+}
+
+.pad3 {
+    padding 30px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.sub-header {
+    margin-bottom: 30px;
+    /*border-bottom: 1px solid #eee;*/
 }
