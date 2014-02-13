@@ -45,9 +45,9 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
+/*a {
   background: transparent;
-}
+}*/
 a:active,
 a:hover {
   outline: 0;
@@ -290,10 +290,10 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-a {
+/*a {
   color: #428bca;
   text-decoration: none;
-}
+}*/
 a:hover,
 a:focus {
   color: #2a6496;
@@ -1990,7 +1990,7 @@ select[multiple].input-lg {
   top: 0;
   right: 15px;
 }
-.btn {
+/*.btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -2009,7 +2009,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-}
+}*/
 .btn:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -2037,11 +2037,11 @@ fieldset[disabled] .btn {
           box-shadow: none;
   opacity: .65;
 }
-.btn-default {
+/*.btn-default {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
-}
+}*/
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
@@ -3464,15 +3464,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   list-style: none;
 }*/
-.nav > li {
+/*.nav > li {
   position: relative;
   display: block;
-}
-.nav > li > a {
+}*/
+/*.nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
-}
+}*/
 .nav > li > a:hover,
 .nav > li > a:focus { /* AA: modified the highlight color */
   text-decoration: none;
@@ -3507,20 +3507,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /*.nav-tabs {
   border-bottom: 1px solid #ddd;
 }*/
-.nav-tabs > li {
+/*.nav-tabs > li {
   float: left;
   margin-bottom: -1px;
-}
-.nav-tabs > li > a {
+}*/
+/*.nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.428571429;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
-}
+}*/
 .nav-tabs > li > a:hover {
   border-color: #eee #eee #ddd;
 }
-.nav-tabs > li.active > a,
+/*.nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555;
@@ -3528,7 +3528,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
-}
+}*/
 .nav-tabs.nav-justified {
   width: 100%;
   border-bottom: 0;
@@ -5699,9 +5699,9 @@ button.close {
   margin-right: auto;
   margin-left: auto;
 }
-.pull-right {
+/*.pull-right {
   float: right !important;
-}
+}*/
 .pull-left {
   float: left !important;
 }

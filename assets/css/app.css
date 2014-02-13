@@ -161,27 +161,7 @@ body.app h5 {
     background: url(/assets/img/bg-header.png) top left repeat-x #348eda;
 }
 
-.navbar-inner a {
-    color: #fff;
-}
-.navbar .navbar-inner .nav>li>a {
-    color: #fff;
-    font-weight: 600;
-    text-shadow: none;
-    padding: 10px 15px;
-    font-size: 15px;
-    margin: 0 5px;
-}
 
-.navbar-inner .active a:hover, 
-.navbar-inner .active a:focus {
-    background-color: #08c;
-}
-
-.navbar-inner li a:hover, 
-.navbar-inner li a:focus {
-    background-color: #08c;
-}
 
 .navbar-inner .dropdown:focus, 
 .navbar-inner .dropdown:hover {
@@ -575,49 +555,13 @@ li { cursor: pointer; }
     overflow: visible;
 }
 
-.navbar .navbar-inner .btn {
-    background: transparent;
-    border: 2px solid #fff;
-}
 
-.navbar .btn-navbar {
-    display: none;
-    float: right;
-    padding: 7px 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-}
-.navbar .btn, .navbar .btn-group {
-    margin-top: 5px;
-}
 
-.navbar .navbar-inner .brand {
-    padding: 6px 0 0 20px;
-    width: 150px;
-    height: 42px;
-}
-.navbar .brand {
-    /*color: #333;*/
-    font-weight: bold;
-    padding-top: 8px;
-}
-.navbar .brand {
-    float: left;
-    display: block;
-    /*padding: 10px 20px 10px;*/
-    margin-left: -20px;
-    font-size: 20px;
-    /*font-weight: 200;
-    color: #777;*/
-    text-shadow: 0 1px 0 #fff;
-}
-.navbar .navbar-inner #navbar-logo {
-    width: 100px;
-    height: auto;
-    vertical-align: middle;
-}
+
+
+
+
+
 
 .navbar .nav {
     position: relative;
@@ -789,11 +733,7 @@ li { cursor: pointer; }
         padding-bottom: 40px;
     }
 }
-.tabbable .nav-tabs > li > a:hover {
-    border-color: transparent;
-    background-color: transparent;
-    cursor: auto;
-}
+
 
 /* .NAV */
 .nav {
@@ -811,6 +751,40 @@ li { cursor: pointer; }
     margin-top: 10px;
 }
 
+
+/* UL, OL */
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+
+
+/* LI */
+li {
+    line-height: 20px;
+}
+.nav-tabs > li {
+    margin-bottom: -2px;
+}
+.nav-tabs > li {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.nav-tabs > li,
+.nav-pills > li {
+    float: left;
+}
+@media (min-width: 768px) {
+    .nav-tabs li:first-child {
+        margin-left: 0;
+    }
+}
+
+
+/* A */
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
@@ -822,16 +796,180 @@ li { cursor: pointer; }
 .tabbable .nav-tabs > li > a:hover {
     cursor: pointer;
 }
-
-.nav-tabs > li {
-    margin-bottom: -2px;
+.tabbable .nav-tabs > li > a:hover {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: auto;
 }
-.nav-tabs > li {
-    margin-right: 15px;
+a {
+    color: #08c;
+    text-decoration: none;
+}
+.navbar-inner a {
+    color: #fff;
+}
+.navbar .navbar-inner .nav > li > a {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 5px;
 }
 
-/* UL, OL */
-ul, ol {
-    padding: 0;
-    margin: 0 0 10px 25px;
+.navbar-inner .active a:hover, 
+.navbar-inner .active a:focus {
+    background-color: #08c;
+}
+
+.navbar-inner li a:hover, 
+.navbar-inner li a:focus {
+    background-color: #08c;
+}
+.navbar .nav > li > a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+}
+.nav > li >a {
+    display: block;
+}
+.nav-tabs > li > a, 
+.nav-pills > li > a {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+    line-height: 20px;
+}
+.nav-tabs > li > a {
+    padding: 20px 0px;
+    border-radius: 0;
+    border: 0;
+    font-weight: 500;
+}
+
+/* ******* */
+
+/* .BTN, .BTN-GROUP, .BTN-NAVBAR */
+.navbar .navbar-inner .btn {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.navbar .btn, 
+.navbar .btn-group {
+    margin-top: 5px;
+}
+
+.navbar .btn-navbar {
+    display: none;
+    float: right;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+/* ******* */
+
+/* ICON-BAR */
+.navbar .btn-navbar .icon-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+[class^="icon-"], [class*=" icon-"] {
+    background-image: none !important;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: baseline;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("/assets/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+/* ******* */
+
+/* TO REMOVE */
+/*.navbar .navbar-inner #navbar-logo {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}*/
+
+/* ******* */
+
+/* .BRAND */
+.navbar .navbar-inner .brand {
+    padding: 6px 0 0 20px;
+    width: 150px;
+    height: 42px;
+}
+.navbar .brand {
+/*    color: #333;*/
+    font-weight: bold;
+    padding-top: 8px;
+}
+.navbar .brand {
+    float: left;
+    display: block;
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    /*color: #777;*/
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+/* PULL-RIGHT */
+.pull-right {
+    float: right; !important
 }
