@@ -1011,7 +1011,7 @@ a {
 
 /* PULL-RIGHT */
 .pull-right {
-    float: right; !important
+    float: right !important;
 }
 .search-box {
     margin-left: 0;
@@ -1026,7 +1026,7 @@ a {
 }
 
 .margin3 {
-    margin-bottom: 30px; !important;
+    margin-bottom: 30px !important;
 }
 
 .pad3 {
