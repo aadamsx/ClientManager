@@ -1164,17 +1164,7 @@ a {
     color: #444;
     background: none;
 }
-.navbar .nav>li>.dropdown-menu:before {
-    content: '';
-    display: inline-block;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-bottom-color: rgba(0,0,0,0.2);
-    position: absolute;
-    top: -7px;
-    left: 9px;
-}
+
 .navbar .nav>li>.dropdown-menu:after {
     content: '';
     display: inline-block;
@@ -1250,3 +1240,15 @@ a:focus {
 
 
 
+
+.navbar .nav>li>.dropdown-menu:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-bottom-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: -7px;
+    left: 9px;
+}
