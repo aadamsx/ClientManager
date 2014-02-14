@@ -839,7 +839,8 @@ li {
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li > a:hover {
     border: 0px;
     border-radius: 0px;
     box-shadow: 0 -4px #ddd inset;
@@ -851,7 +852,7 @@ li {
 .tabbable .nav-tabs > li > a:hover {
     border-color: transparent;
     background-color: transparent;
-    cursor: auto;
+    cursor: pointer;
 }
 a {
     color: #08c;
@@ -1165,16 +1166,7 @@ a {
     background: none;
 }
 
-.navbar .nav>li>.dropdown-menu:after {
-    content: '';
-    display: inline-block;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #fff;
-    position: absolute;
-    top: -6px;
-    left: 10px;
-}
+
 .dropdown-hover > .dropdown-menu a {
     font-weight: 500;
     color: #444;
@@ -1238,8 +1230,16 @@ a:focus {
     color: #348eda;
 }
 
-
-
+.navbar .nav>li>.dropdown-menu:after {
+    content: '';
+    display: inline-block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    position: absolute;
+    top: -6px;
+    left: 10px;
+}
 
 .navbar .nav>li>.dropdown-menu:before {
     content: '';
