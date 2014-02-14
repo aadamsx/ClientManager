@@ -5652,7 +5652,8 @@ button.close {
     bottom: 20px;
   }
 }
-.clearfix:before,
+/* aa: REMOVED THIS at 2:42PM 2/14/14
+/*.clearfix:before,
 .clearfix:after,
 .container:before,
 .container:after,
@@ -5682,8 +5683,8 @@ button.close {
 .modal-footer:after {
   display: table;
   content: " ";
-}
-.clearfix:after,
+}*/
+/*.clearfix:after,
 .container:after,
 .container-fluid:after,
 .row:after,
@@ -5698,7 +5699,7 @@ button.close {
 .panel-body:after,
 .modal-footer:after {
   clear: both;
-}
+}*/
 .center-block {
   display: block;
   margin-right: auto;
