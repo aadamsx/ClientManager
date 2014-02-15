@@ -1038,7 +1038,7 @@ a {
 }
 
 #companies {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     margin-right: 0px;
     margin-bottom: 40px;
     margin-left: 0px;
@@ -1217,14 +1217,6 @@ a:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0);
 }
 
-
-
-
-
-
-
-
-
 .dropdown-hover > .dropdown-menu a.active, 
 .dropdown-hover > .dropdown-menu a:hover {
     background: none;
@@ -1328,4 +1320,28 @@ a:focus {
 h3.header { 
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999;
+    border-radius: 10px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    color: #555;
 }

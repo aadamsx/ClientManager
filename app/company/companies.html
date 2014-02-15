@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="css/dashboard.css" />
-<link rel="stylesheet" href="css/details.css" />
-<link rel="stylesheet" href="css/companies.css" />
+<!--<link rel="stylesheet" href="css/dashboard.css" />-->
+<!--<link rel="stylesheet" href="css/details.css" />
+<link rel="stylesheet" href="css/companies.css" />-->
 
 <navbar-side></navbar-side>
 
@@ -64,10 +64,8 @@
                 <!--<span class="glyphicon glyphicon-envelope"></span> -->
                 Alerts
             </tab-heading>
-
-            <header>
-              <h1>Alterts and Notifications <br><small>Account alerts and notifications</small></h1>
-            </header>
+            
+            <h3 class="header">Alterts and Notifications<br><small>Account alerts and notifications</small></h3>
 
             <table class="table table-bordered" style="width: auto;">
                 <thead>
@@ -215,94 +213,95 @@
                 History
             </tab-heading>
 
-            <header>
-                <h1>Account activity history <br><small>Chronological account activity</small></h1>
-            </header>
-
-            <div id="sub-heading">
-                <div class="pull-right">
-                    <a href="#/companies" class="btn btn-default">
-                        <span class="glyphicon glyphicon-cloud-download"></span> Download History
-                    </a>
-                </div>
-
-                <div class="span3">
-                    <div class="right-inner-addon ">
+            <h3 class="header">Account alerts and notifications<br><small>Chronological account activity</small></h3>
+            
+            
+            <div class="sub-header">
+                <a href="#/companies" class="btn btn-default pull-right">
+                    <span class="glyphicon glyphicon-cloud-download"></span> Download History
+                </a>
+                
+                <div class="span3 search-box pull-left" >
+                    <div class="right-inner-addon">
                         <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" class="form-control" placeholder="Search" />
+                        <input type="search"
+                               class="form-control" 
+                               placeholder="Search" />
                     </div>
                 </div>
             </div>
 
-            <table id="table-list" class="table table-hover">
-              <thead>
-                <tr>
-                  <th colspan="4">Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                  <tr id="">
-                    <td style="padding-right: 0;">Field</td>
-                    <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                      <span class="glyphicon glyphicon-arrow-right"></span>
-                    </td>
-                    <td>
-                        1.50 MBPS
-                    </td>
-                    <td class="muted">7.20 USD</td>
-                    <td class="muted">705.44 USD</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>Feb  7, 2014</td>
-                  </tr>
-                  <tr id="">
-                    <td style="padding-right: 0;">Field</td>
-                    <td style="padding-left: 0; text-align: right;">757.07 USD</td>
-                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                      <span class="glyphicon glyphicon-arrow-right"></span>
-                    </td>
-                    <td>
-                        3.20 MBPS
-                    </td>
-                    <td class="muted">7.64 USD</td>
-                    <td class="muted">749.43 USD</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>Feb  6, 2014</td>
-                  </tr>
-                  <tr id="">
-                    <td style="padding-right: 0;">Processed</td>
-                    <td style="padding-left: 0; text-align: right;">753.32 USD</td>
-                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                      <span class="glyphicon glyphicon-arrow-right"></span>
-                    </td>
-                    <td>
-                        5.00 MBPS
-                    </td>
-                    <td class="muted">7.61 USD</td>
-                    <td class="muted">745.71 USD</td>
-                    <td><span class="label label-success">Completed</span></td>
-                    <td>Jan 27, 2014</td>
-                  </tr>
-                  <tr id="">
-                    <td style="padding-right: 0;">Processed</td>
-                    <td style="padding-left: 0; text-align: right;">848.55 USD</td>
-                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                      <span class="glyphicon glyphicon-arrow-right"></span>
-                    </td>
-                    <td>
-                        3.30 MBPS
-                    </td>
-                    <td class="muted">8.55 USD</td>
-                    <td class="muted">840.00 USD</td>
-                    <td><span class="label label-success">Completed</span></td>
-                    <td>Jan 15, 2014</td>
-                  </tr>
-              </tbody>
-            </table>
+            <div id="companies">
+                <table id="table-list" class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th colspan="4">Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr id="">
+                        <td style="padding-right: 0;">Field</td>
+                        <td style="padding-left: 0; text-align: right;">712.64 USD</td>
+                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+                          <span class="glyphicon glyphicon-arrow-right"></span>
+                        </td>
+                        <td>
+                            1.50 MBPS
+                        </td>
+                        <td class="muted">7.20 USD</td>
+                        <td class="muted">705.44 USD</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td>Feb  7, 2014</td>
+                      </tr>
+                      <tr id="">
+                        <td style="padding-right: 0;">Field</td>
+                        <td style="padding-left: 0; text-align: right;">757.07 USD</td>
+                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+                          <span class="glyphicon glyphicon-arrow-right"></span>
+                        </td>
+                        <td>
+                            3.20 MBPS
+                        </td>
+                        <td class="muted">7.64 USD</td>
+                        <td class="muted">749.43 USD</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td>Feb  6, 2014</td>
+                      </tr>
+                      <tr id="">
+                        <td style="padding-right: 0;">Processed</td>
+                        <td style="padding-left: 0; text-align: right;">753.32 USD</td>
+                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+                          <span class="glyphicon glyphicon-arrow-right"></span>
+                        </td>
+                        <td>
+                            5.00 MBPS
+                        </td>
+                        <td class="muted">7.61 USD</td>
+                        <td class="muted">745.71 USD</td>
+                        <td><span class="label label-success">Completed</span></td>
+                        <td>Jan 27, 2014</td>
+                      </tr>
+                      <tr id="">
+                        <td style="padding-right: 0;">Processed</td>
+                        <td style="padding-left: 0; text-align: right;">848.55 USD</td>
+                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+                          <span class="glyphicon glyphicon-arrow-right"></span>
+                        </td>
+                        <td>
+                            3.30 MBPS
+                        </td>
+                        <td class="muted">8.55 USD</td>
+                        <td class="muted">840.00 USD</td>
+                        <td><span class="label label-success">Completed</span></td>
+                        <td>Jan 15, 2014</td>
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
 
             <ul class="pagination">
                 <li class="disabled"><a href="#">&laquo;</a></li>
