@@ -304,13 +304,17 @@ body.app h5 {
 }
 #sidebar .nav li a i, 
 #sidebar .nav li label i {
-    margin-right: 6px;
+    margin-right: 13px;
     opacity: 0.3;
     font-style: normal;
     width: 17px;
     font-size: 17px;
     display: inline-block;
     /*vertical-align: baseline;*/
+}
+#sidebar .nav .active>a {
+    background: none;
+    color: #348eda;
 }
 
 #navsidebar .nav {
@@ -876,10 +880,7 @@ a {
     margin: 0 5px;
 }
 
-.navbar-inner .active a:hover, 
-.navbar-inner .active a:focus {
-    background-color: #08c;
-}
+
 
 /*.navbar-inner li a:hover, 
 .navbar-inner li a:focus {
@@ -1309,4 +1310,22 @@ a:focus {
 .panel-body:after,
 .modal-footer:after {
   clear: both;
+}
+
+/* NEED TO WORK ON THIS MORE */
+/*.navbar-inner a:hover, .navbar-inner a:focus {
+    background-color: #0e91d3;
+}
+.navbar-inner li:hover, .navbar-inner li:focus {
+    background-color: #0e91d3;
+}
+.navbar-inner .active a:hover, 
+.navbar-inner .active a:focus {
+    background-color: #0e91d3;
+}*/
+
+/* underline for the header */
+h3.header { 
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
 }
