@@ -3,10 +3,7 @@
 <div class="span9">
     <tabset>
         <tab>
-            <tab-heading>
-                Accounts
-            </tab-heading>
-
+            <tab-heading>Accounts</tab-heading>
 
             <h3 class="header">Accounts
                 <br> 
@@ -18,15 +15,12 @@
 
 
             <div class="sub-header">
-            <!--<a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-plus"></span> new account
-                </a> -->
                 <div class="span3 search-box pull-left" >
                     <div class="right-inner-addon">
                         <i class="glyphicon glyphicon-search"></i>
                         <input type="search"
-                               class="form-control" 
-                               placeholder="Search" />
+                        class="form-control" 
+                        placeholder="Search" />
                     </div>
                 </div>
             </div>
@@ -35,21 +29,19 @@
                 <table id="table-list" class="table table-hover">
                     <thead>
                         <tr class="headers">
-<!--                             <th>Name</th>
-                            <th>Description</th> -->
                             <td>Name</td>
                             <td>Description</td>
                         </tr>   
                     </thead>
                     <tbody>
-                    <tr ng-repeat="company in companies | orderBy: sortorder">
-                        <td>
-                            <a href='#/companies/{{ company.companyId }}'>{{ company.name }}</a>
-                        </td>
-                        <td>
-                            <a href='#/companies/{{ company.companyId }}'>{{ company.description }}</a>
-                        </td>
-                    </tr>
+                        <tr ng-repeat="company in companies | orderBy: sortorder">
+                            <td>
+                                <a href='#/companies/{{ company.companyId }}'>{{ company.name }}</a>
+                            </td>
+                            <td>
+                                <a href='#/companies/{{ company.companyId }}'>{{ company.description }}</a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -64,11 +56,8 @@
         </tab>
 
         <tab>
-            <tab-heading>
-                <!--<span class="glyphicon glyphicon-envelope"></span> -->
-                Activity
-            </tab-heading>
-            
+            <tab-heading>Activity</tab-heading>
+
             <h3 class="header">Activity and Notifications<br><small>Account activity and notifications</small></h3>
 
             <table class="table table-bordered" style="width: auto;">
@@ -82,239 +71,243 @@
                 </thead>
                 <tbody>
                     <tr>
-                    <td style="text-align: center;">0</td>
-                    <td>
-                    <span class="pull-right">0</span>
+                        <td style="text-align: center;">0</td>
+                        <td>
+                            <span class="pull-right">0</span>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    0
-                    </span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
-                    <td>
-                    <span class="pull-right">0</span>
+                        </td>
+                        <td>
+                            <span class="pull-right">
+                                0
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
+                        </td>
+                        <td>
+                            <span class="pull-right">0</span>
 
-                    </td>
+                        </td>
                     </tr>
                     <tr>
-                    <td style="text-align: center;">1</td>
-                    <td>
-                    <span class="pull-right">300</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    100
-                    </span>
+                        <td style="text-align: center;">1</td>
+                        <td>
+                            <span class="pull-right">300</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
+                        </td>
+                        <td>
+                            <span class="pull-right">
+                                100
+                            </span>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">300</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
+                        </td>
+                        <td>
+                            <span class="pull-right">300</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
+                        </td>
                     </tr>
                     <tr>
-                    <td style="text-align: center;">2</td>
-                    <td>
-                    <span class="pull-right">500</span>
+                        <td style="text-align: center;">2</td>
+                        <td>
+                            <span class="pull-right">500</span>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    1,000
-                    </span>
+                        </td>
+                        <td>
+                            <span class="pull-right">
+                                1,000
+                            </span>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">500</span>
+                        </td>
+                        <td>
+                            <span class="pull-right">500</span>
 
-                    </td>
+                        </td>
                     </tr>
                 </tbody>
             </table>
 
             <div id="alerts">
-                <br><h4>Level 1</h4>
+                <br>
+                <h4>Level 1</h4>
                 <ul>
+                    <li>
+                      <div class="pull-right">
+                          <span class="label label-success">Complete</span>
+                      </div>
+                      <h4>Verify Something</h4>
+                      <p>Click a link in the confirmation email</p>
+                  </li>
+                  <li>
+                      <div class="pull-right">
+                          <span class="label label-success">Complete</span>
+                      </div>
+                      <h4>Verified a Phone</h4>
+                      <p>Enable two-factor authentication and increase your account security</p>
+                  </li>
+                  <li>
+                      <div class="pull-right">
+                          <span class="label label-success">Complete</span>
+                      </div>
+                      <h4>Added something</h4>
+                      <p>Link and verify at least one of something</p>
+                  </li>
+              </ul>
+
+              <br>
+              <h4>Level 2</h4>
+              <ul>
                 <li>
                   <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Verify Something</h4>
-                  <p>Click a link in the confirmation email</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Verified a Phone</h4>
-                  <p>Enable two-factor authentication and increase your account security</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Added something</h4>
-                  <p>Link and verify at least one of something</p>
-                </li>
-                </ul>
 
-                <br><h4>Level 2</h4>
-                <ul>
-                <li>
-                  <div class="pull-right">
-
-                        <span class="label label-warning">Pending</span>
-                  </div>
-                  <h4>Complete A Order</h4>
-                  <p>Buy some something</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <a href="/verifications/identity" class="btn btn-default">Verify Now</a>
-                  </div>
-                  <h4>Verify the identity</h4>
-                  <p>Complete verification</p>
-                </li>
-
-                </ul>
-
-                <br><h4>Enable Auto Buy</h4>
-                <ul>
-
-                <li>
-                  <div class="pull-right">
-                      <a href="/payment_methods" class="btn btn-default">Verify Now</a>
-                  </div>
-                  <h4>Add A Credit Card</h4>
-                  <p>Link a backup payment method - Visa only for now</p>
-                </li>
-                </ul>
-            </div>
-            <!-- REMOVED FOR NOW: 
-            <div class="performance-indicators">
-                <accordion-group is-open="isopen">
-                    <accordion-heading>
-                        <h5>
-                            Account performance indicators
-                            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
-                        </h5>
-                    </accordion-heading>
-                    <h6>
-                        <span class="label label-success">all accounts in good standing</span>
-                        <span class="label label-info">new messages for 2 account (s)</span>
-                        <span class="label label-warning">products added to 2 account (s)</span>
-                        <span class="label label-danger">exception log entry added for 1 account (s)</span>
-                    </h6>
-                </accordion-group>
-            </div>-->
-        </tab>
-
-        <tab>
-            <tab-heading>
-                History
-            </tab-heading>
-
-            <h3 class="header">Account alerts and notifications<br><small>Chronological account activity</small></h3>
-            
-            
-            <div class="sub-header">
-                <a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-cloud-download"></span> Download History
-                </a>
-                
-                <div class="span3 search-box pull-left" >
-                    <div class="right-inner-addon">
-                        <i class="glyphicon glyphicon-search"></i>
-                        <input type="search"
-                               class="form-control" 
-                               placeholder="Search" />
-                    </div>
+                    <span class="label label-warning">Pending</span>
                 </div>
-            </div>
+                <h4>Complete A Order</h4>
+                <p>Buy some something</p>
+            </li>
+            <li>
+              <div class="pull-right">
+                  <a href="/verifications/identity" class="btn btn-default">Verify Now</a>
+              </div>
+              <h4>Verify the identity</h4>
+              <p>Complete verification</p>
+          </li>
 
-            <div id="companies">
-                <table id="table-list" class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th colspan="4">Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                      <tr id="">
-                        <td style="padding-right: 0;">Field</td>
-                        <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            1.50 MBPS
-                        </td>
-                        <td class="muted">7.20 USD</td>
-                        <td class="muted">705.44 USD</td>
-                        <td><span class="label label-warning">Pending</span></td>
-                        <td>Feb  7, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Field</td>
-                        <td style="padding-left: 0; text-align: right;">757.07 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            3.20 MBPS
-                        </td>
-                        <td class="muted">7.64 USD</td>
-                        <td class="muted">749.43 USD</td>
-                        <td><span class="label label-warning">Pending</span></td>
-                        <td>Feb  6, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Processed</td>
-                        <td style="padding-left: 0; text-align: right;">753.32 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            5.00 MBPS
-                        </td>
-                        <td class="muted">7.61 USD</td>
-                        <td class="muted">745.71 USD</td>
-                        <td><span class="label label-success">Completed</span></td>
-                        <td>Jan 27, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Processed</td>
-                        <td style="padding-left: 0; text-align: right;">848.55 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            3.30 MBPS
-                        </td>
-                        <td class="muted">8.55 USD</td>
-                        <td class="muted">840.00 USD</td>
-                        <td><span class="label label-success">Completed</span></td>
-                        <td>Jan 15, 2014</td>
-                      </tr>
-                  </tbody>
-                </table>
-            </div>
+      </ul>
 
-            <ul class="pagination">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">»</a></li>
-            </ul>
-        </tab>
-    </tabset>
+      <br>
+      <h4>Enable Auto Buy</h4>
+      <ul>
+
+        <li>
+          <div class="pull-right">
+              <a href="/payment_methods" class="btn btn-default">Verify Now</a>
+          </div>
+          <h4>Add A Credit Card</h4>
+          <p>Link a backup payment method - Visa only for now</p>
+      </li>
+  </ul>
 </div>
 
+</tab>
+
+<tab>
+    <tab-heading>History</tab-heading>
+
+    <h3 class="header">Account alerts and notifications<br><small>Chronological account activity</small></h3>
+
+
+    <div class="sub-header">
+        <a href="#/companies" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-cloud-download"></span> Download History
+        </a>
+
+        <div class="span3 search-box pull-left" >
+            <div class="right-inner-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="search"
+                class="form-control" 
+                placeholder="Search" />
+            </div>
+        </div>
+    </div>
+
+    <div id="companies">
+        <table id="table-list" class="table table-hover">
+          <thead>
+          <tr class="headers">
+                <td colspan="4">Header</td>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+            </tr>
+        </thead>
+        <tbody>
+          <tr id="">
+            <td style="padding-right: 0;">Field</td>
+            <td style="padding-left: 0; text-align: right;">712.64 USD</td>
+            <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+              <span class="glyphicon glyphicon-arrow-right"></span>
+          </td>
+          <td>
+            1.50 MBPS
+        </td>
+        <td class="muted">7.20 USD</td>
+        <td class="muted">705.44 USD</td>
+        <td><span class="label label-warning">Pending</span></td>
+        <td>Feb  7, 2014</td>
+    </tr>
+    <tr id="">
+        <td style="padding-right: 0;">Field</td>
+        <td style="padding-left: 0; text-align: right;">757.07 USD</td>
+        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+          <span class="glyphicon glyphicon-arrow-right"></span>
+      </td>
+      <td>
+        3.20 MBPS
+    </td>
+    <td class="muted">7.64 USD</td>
+    <td class="muted">749.43 USD</td>
+    <td><span class="label label-warning">Pending</span></td>
+    <td>Feb  6, 2014</td>
+</tr>
+<tr id="">
+    <td style="padding-right: 0;">Processed</td>
+    <td style="padding-left: 0; text-align: right;">753.32 USD</td>
+    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+      <span class="glyphicon glyphicon-arrow-right"></span>
+  </td>
+  <td>
+    5.00 MBPS
+</td>
+<td class="muted">7.61 USD</td>
+<td class="muted">745.71 USD</td>
+<td><span class="label label-success">Completed</span></td>
+<td>Jan 27, 2014</td>
+</tr>
+<tr id="">
+    <td style="padding-right: 0;">Processed</td>
+    <td style="padding-left: 0; text-align: right;">848.55 USD</td>
+    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
+      <span class="glyphicon glyphicon-arrow-right"></span>
+  </td>
+  <td>
+    3.30 MBPS
+</td>
+<td class="muted">8.55 USD</td>
+<td class="muted">840.00 USD</td>
+<td><span class="label label-success">Completed</span></td>
+<td>Jan 15, 2014</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ul class="pagination">
+    <li class="disabled"><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    <li><a href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">»</a></li>
+</ul>
+</tab>
+</tabset>
+</div>
+
+
+
+<!-- REMOVED FOR NOW: 
+<div class="performance-indicators">
+<accordion-group is-open="isopen">
+<accordion-heading>
+<h5>
+Account performance indicators
+<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+</h5>
+</accordion-heading>
+<h6>
+<span class="label label-success">all accounts in good standing</span>
+<span class="label label-info">new messages for 2 account (s)</span>
+<span class="label label-warning">products added to 2 account (s)</span>
+<span class="label label-danger">exception log entry added for 1 account (s)</span>
+</h6>
+</accordion-group>
+</div>-->

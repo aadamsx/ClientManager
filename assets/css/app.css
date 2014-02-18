@@ -1463,6 +1463,51 @@ table#table-list td.tracking-code-header, table#table-list th.tracking-code-head
     font-size: 11px;
     text-transform: uppercase;
 }
+
+.account-details .details .btn-xs span {
+    position: relative;
+    top: .9px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-xs {
+    padding: 0px 6px 1px 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-xs:hover,
+.btn-xs:focus,
+.btn-xs:active,
+.btn-xs.active,
+.open .dropdown-toggle.btn-xs {
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
 /*#table-list thead tr td {
     cursor: auto;
 }*/

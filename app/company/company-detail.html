@@ -4,360 +4,235 @@
     <tabset>
         <tab>
             <tab-heading>
-                Accounts
-            </tab-heading>
+            Details
+        </tab-heading>
 
-            <h3 class="header no-bottom">Account details
-                <br>
-                <small>Details for client.</small>
-               <a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
-                </a>
-            </h3>
-
-            <div class="account-details">
-                <header>
-                    <span class="label label-warning">PENDING</span>
-                      Account will be charged $1,315.51 <strong>Thursday Feb, 20 2014</strong>
-                      <br>
-                </header>
-
-                <section class="details">
-                    <div class="account-description-left" style="text-align: left; float: left; width: 50%; padding:30px; box-sizing: border-box;">
-                        <div class="details-company-name" style="color: #474a54; font-size: 14px; line-height: 30px;">
-                            <strong>Company Name</strong>
-                        </div>
-                        <span>2202 East Meadow Way</span>
-                        <br>
-                        <span>Houston TX, 77536</span>
-                        <hr>
-
-                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
-                        <strong>Account: 1234011</strong>
-                        </div>
-                        <span class="date">Created: Thursday Feb, 13 2012 at 07:50AM CST</span>
-                        <br>
-                        <span>Last modified: Thursday Feb, 21 2014 at 08:50AM CST</span>
-                        <hr>
-
-                        <span>Other info here</span>
-                    </div>
-
-                    <div class="account-description-right" style="width: 50%; text-aligh: right; float: right; padding: 30px; box-sizing: border-box;">
-                        <div id="account_billing_totals" style="margin-bottom: 10px;">
-                            <div style="color: #474a54; font-size: 14px; line-height: 30px;">
-                                <strong>Next billing details:</strong>
-                            </div>
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                <td class="align-right">Subtotal</td>
-                                <td class="align-right" id="billing_subtotal">$1,302.34</td>
-                                </tr>
-                                <tr>
-                                <td class="align-right">Azure fee</td>
-                                <td class="align-right">$13.02</td>
-                                </tr>
-                                <tr>
-                                <td class="align-right">Bank fee</td>
-                                <td class="align-right">$0.15</td>
-                                </tr>
-                                <tr>
-                                <td class="align-right"><h5>Total</h5></td>
-                                <td class="align-right"><h5>$1,315.51</h5></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
-            </div>
+        <h3 class="header no-bottom">Details
             <br>
-            <h3 class="header no-bottom">Recent Messages
-                <a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-share-alt"></span> To Message History
-                </a>
-            </h3>
+            <small>Account details summary</small>
+            <a href="#/companies" class="btn btn-default pull-right">
+                <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+            </a>
+        </h3>
 
-            <table id="table-list" class="table table-hover">
-                <thead>
-                  <tr class="headers">
-                    <td>Message</td>
-                    <td>Date</td>
-                    <td>Status</td>
-                    <td>Content</td>
-                    <td class="tracking-code-header">Tracking Code</td>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr class="received">
-                        <td>
-                            <a href="/#">
-                                <span class="glyphicon glyphicon-arrow-right"></span>
-                                Received message from Client
-                                <span class="glyphicon glyphicon-comment"></span>
+        <div class="account-details">
+            <header>
+                <span class="label label-warning">PENDING</span>
+                Account will be charged <strong>$1,315.51 Thursday Feb, 20 2014</strong>
+                <br>
+            </header>
+
+            <section class="details">
+                <div class="account-description-left" style="text-align: left; float: left; width: 50%; padding:30px; box-sizing: border-box;">
+                    
+                    <div > <!-- style="float: left; clear: none;" -->
+                        <div>
+                            <div class="details-company-name" style="color: #474a54; font-size: 18px; line-height: 30px;">
+                                <strong>Company Name Inc.</strong>
+                            </div>
+                            <span>2202 East Meadow Way</span>
+                            <br>
+                            <span>Houston TX, 77536</span>
+                        </div>
+
+                        <div style="margin-top: 15px;">
+                            <a href="#/companies" class="btn btn-xs">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Edit Above
                             </a>
-                        </td>
-                        <td class="date">Feb 20, 2014</td>
-                        <td>
-                            <span class="label label-warning">Unread</span>
-                        </td>
-                        <td>I need help with a problem...</td>
-                        <td class="tracking-code">F2C3681C</td>
-                    </tr>
-                    <tr class="sent">
-                        <td>
-                            <a href="/#">
-                                <span class="glyphicon glyphicon-arrow-left"></span>
-                                Sent message to Client
-                                <span class="glyphicon glyphicon-comment"></span>
-                            </a>
-                        </td>
-                        <td class="date">Feb 20, 2014</td>
-                        <td>
-                          <span class="label label-success">Read</span>
-                        </td>
-                        <td>Thanks for the help...</td>
-                        <td class="tracking-code">52E3981F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </tab>
+                        </div>
+                    </div>
+                    <hr>
 
-        <tab>
-            <tab-heading>
-                <!--<span class="glyphicon glyphicon-envelope"></span> -->
-                Activity
-            </tab-heading>
-            
-            <h3 class="header">Activity and Notifications<br><small>Account activity and notifications</small></h3>
 
-            <table class="table table-bordered" style="width: auto;">
-                <thead>
-                    <tr>
-                        <th>Level</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td style="text-align: center;">0</td>
-                    <td>
-                    <span class="pull-right">0</span>
+                    <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                        <strong>Account number 1234011</strong>
+                    </div>
+                    <span class="date">Created: Thursday Feb, 13 2012 at 07:50AM CST</span>
+                    <br>
+                    <span>Last modified: Thursday Feb, 21 2014 at 08:50AM CST</span>
+                    <hr>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    0
-                    </span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
-                    <td>
-                    <span class="pull-right">0</span>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px;line-height: 30px;">
+                            <strong>2 Products</strong>
+                        </div>
+                        <span>Student Visa's package</span>
+                        <br>
+                        <span>Fiancé's package</span>
+                    </div>
 
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="text-align: center;">1</td>
-                    <td>
-                    <span class="pull-right">300</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    100
-                    </span>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">300</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon icon-ok"></i> &nbsp;
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="text-align: center;">2</td>
-                    <td>
-                    <span class="pull-right">500</span>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>2 Messages unread</strong>
+                        </div>
+                        <span>Received: Thursday Feb, 13 2012 at 07:50AM CST</span>
+                        <br>
+                        <span>Sent: Thursday Feb, 13 2012 at 010:10AM CST</span>
+                    </div>
 
-                    </td>
-                    <td>
-                    <span class="pull-right">
-                    1,000
-                    </span>
-
-                    </td>
-                    <td>
-                    <span class="pull-right">500</span>
-
-                    </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div id="alerts">
-                <br><h4>Level 1</h4>
-                <ul>
-                <li>
-                  <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Verify Something</h4>
-                  <p>Click a link in the confirmation email</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Verified a Phone</h4>
-                  <p>Enable two-factor authentication and increase your account security</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <span class="label label-success">Complete</span>
-                  </div>
-                  <h4>Added something</h4>
-                  <p>Link and verify at least one of something</p>
-                </li>
-                </ul>
-
-                <br><h4>Level 2</h4>
-                <ul>
-                <li>
-                  <div class="pull-right">
-
-                        <span class="label label-warning">Pending</span>
-                  </div>
-                  <h4>Complete A Order</h4>
-                  <p>Buy some something</p>
-                </li>
-                <li>
-                  <div class="pull-right">
-                      <a href="/verifications/identity" class="btn btn-default">Verify Now</a>
-                  </div>
-                  <h4>Verify the identity</h4>
-                  <p>Complete verification</p>
-                </li>
-
-                </ul>
-
-                <br><h4>Enable Auto Buy</h4>
-                <ul>
-
-                <li>
-                  <div class="pull-right">
-                      <a href="/payment_methods" class="btn btn-default">Verify Now</a>
-                  </div>
-                  <h4>Add A Credit Card</h4>
-                  <p>Link a backup payment method - Visa only for now</p>
-                </li>
-                </ul>
-            </div>
-        </tab>
-
-        <tab>
-            <tab-heading>
-                History
-            </tab-heading>
-
-            <h3 class="header">Account alerts and notifications<br><small>Chronological account activity</small></h3>
-            
-            
-            <div class="sub-header">
-                <a href="#/companies" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-cloud-download"></span> Download History
-                </a>
-                
-                <div class="span3 search-box pull-left" >
-                    <div class="right-inner-addon">
-                        <i class="glyphicon glyphicon-search"></i>
-                        <input type="search"
-                               class="form-control" 
-                               placeholder="Search" />
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>2 Clients assigned</strong>
+                        </div>
+                        <span>Robert B. Studio</span>
+                        <br>
+                        <span>Jason A. Sublime</span>
                     </div>
                 </div>
-            </div>
 
-            <div id="companies">
-                <table id="table-list" class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th colspan="4">Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                      <th>Header</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                      <tr id="">
-                        <td style="padding-right: 0;">Field</td>
-                        <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            1.50 MBPS
-                        </td>
-                        <td class="muted">7.20 USD</td>
-                        <td class="muted">705.44 USD</td>
-                        <td><span class="label label-warning">Pending</span></td>
-                        <td>Feb  7, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Field</td>
-                        <td style="padding-left: 0; text-align: right;">757.07 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            3.20 MBPS
-                        </td>
-                        <td class="muted">7.64 USD</td>
-                        <td class="muted">749.43 USD</td>
-                        <td><span class="label label-warning">Pending</span></td>
-                        <td>Feb  6, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Processed</td>
-                        <td style="padding-left: 0; text-align: right;">753.32 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            5.00 MBPS
-                        </td>
-                        <td class="muted">7.61 USD</td>
-                        <td class="muted">745.71 USD</td>
-                        <td><span class="label label-success">Completed</span></td>
-                        <td>Jan 27, 2014</td>
-                      </tr>
-                      <tr id="">
-                        <td style="padding-right: 0;">Processed</td>
-                        <td style="padding-left: 0; text-align: right;">848.55 USD</td>
-                        <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;">
-                          <span class="glyphicon glyphicon-arrow-right"></span>
-                        </td>
-                        <td>
-                            3.30 MBPS
-                        </td>
-                        <td class="muted">8.55 USD</td>
-                        <td class="muted">840.00 USD</td>
-                        <td><span class="label label-success">Completed</span></td>
-                        <td>Jan 15, 2014</td>
-                      </tr>
-                  </tbody>
-                </table>
-            </div>
+                <div class="account-description-right" style="width: 50%; text-aligh: right; float: right; padding: 30px; box-sizing: border-box;">
+                    <div id="account_billing_totals" style="margin-bottom: 10px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>Next billing details</strong>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="align-right">Subtotal</td>
+                                    <td class="align-right" id="billing_subtotal">$1,302.34</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-right">Azure fee</td>
+                                    <td class="align-right">$13.02</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-right">Bank fee</td>
+                                    <td class="align-right">$0.15</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-right"><h5>Total</h5></td>
+                                    <td class="align-right"><h5>$1,315.51</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>Monthly Totals</strong>
+                        </div>
+                        <span>$1,055.22</span>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>YTD Totals</strong>
+                        </div>
+                        <span>$3,555.92</span>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>Quarterly Totals</strong>
+                        </div>
+                        <span>$4,638.02</span>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: #474a54; font-size: 14px; line-height: 30px;">
+                            <strong>All-Time Totals</strong>
+                        </div>
+                        <span>$10,555.92</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
 
-            <ul class="pagination">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">»</a></li>
-            </ul>
-        </tab>
-    </tabset>
+        <!-- RECENT MESSAGES: TO DECIDE IF THIS SHOULD BE HERE OR NOT -->
+        <h3 class="header no-bottom">Recent Messages
+            <a href="#/companies" class="btn btn-default pull-right">
+                <span class="glyphicon glyphicon-share-alt"></span> To Message History
+            </a>
+        </h3>
+
+        <table id="table-list" class="table table-hover">
+            <thead>
+              <tr class="headers">
+                <td>Message</td>
+                <td>Date</td>
+                <td>Status</td>
+                <td>Content</td>
+                <td class="tracking-code-header">Tracking Code</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="received">
+                <td>
+                    <a href="/#">
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                        Received message from Client
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                </td>
+                <td class="date">Feb 20, 2014</td>
+                <td>
+                    <span class="label label-warning">Unread</span>
+                </td>
+                <td>I need help with a problem...</td>
+                <td class="tracking-code">F2C3681C</td>
+            </tr>
+            <tr class="sent">
+                <td>
+                    <a href="/#">
+                        <span class="glyphicon glyphicon-arrow-left"></span>
+                        Sent message to Client
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                </td>
+                <td class="date">Feb 20, 2014</td>
+                <td>
+                  <span class="label label-success">Read</span>
+              </td>
+              <td>Thanks for the help...</td>
+              <td class="tracking-code">52E3981F</td>
+          </tr>
+      </tbody>
+  </table>
+
+</tab>
+
+<tab>
+    <tab-heading>Messages</tab-heading>
+    <h3 class="header no-bottom">Messages
+        <br>
+        <small>Account message history</small>
+        <a href="#/companies" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+        </a>
+    </h3>
+</tab>
+
+<tab>
+    <tab-heading>Products</tab-heading>
+    <h3 class="header no-bottom">Products
+        <br>
+        <small>Account assigned products</small>
+        <a href="#/companies" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+        </a>
+    </h3>
+</tab>
+
+<tab>
+    <tab-heading>Orders</tab-heading>
+    <h3 class="header no-bottom">Orders
+        <br>
+        <small>Account order and billing history</small>
+        <a href="#/companies" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+        </a>
+    </h3>
+</tab>
+
+<tab>
+    <tab-heading>Clients</tab-heading>
+    <h3 class="header no-bottom">Clients
+        <br>
+        <small>Account associated people</small>
+        <a href="#/companies" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+        </a>
+    </h3>
+</tab>
+</tabset>
 </div>
