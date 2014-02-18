@@ -1,24 +1,26 @@
-<!--<link rel="stylesheet" href="css/dashboard.css" />-->
-<!--<link rel="stylesheet" href="css/details.css" />
-<link rel="stylesheet" href="css/companies.css" />-->
-
 <navbar-side></navbar-side>
 
 <div class="span9">
     <tabset>
         <tab>
             <tab-heading>
-                <!--<span class="glyphicon glyphicon-cog"></span> -->
                 Accounts
             </tab-heading>
 
 
-            <h3 class="header">Accounts<br><small>List of all currently active accounts.</small></h3>
+            <h3 class="header">Accounts
+                <br> 
+                <small>List of all currently active accounts.</small>
+                <a href="#/companies" class="btn btn-default pull-right">
+                    <span class="glyphicon glyphicon-plus"></span> Create new Account
+                </a>
+            </h3>
+
 
             <div class="sub-header">
-                <a href="#/companies" class="btn btn-default pull-right">
+            <!--<a href="#/companies" class="btn btn-default pull-right">
                     <span class="glyphicon glyphicon-plus"></span> new account
-                </a>
+                </a> -->
                 <div class="span3 search-box pull-left" >
                     <div class="right-inner-addon">
                         <i class="glyphicon glyphicon-search"></i>
@@ -32,10 +34,12 @@
             <div id="companies">
                 <table id="table-list" class="table table-hover">
                     <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                        </tr>
+                        <tr class="headers">
+<!--                             <th>Name</th>
+                            <th>Description</th> -->
+                            <td>Name</td>
+                            <td>Description</td>
+                        </tr>   
                     </thead>
                     <tbody>
                     <tr ng-repeat="company in companies | orderBy: sortorder">
@@ -62,10 +66,10 @@
         <tab>
             <tab-heading>
                 <!--<span class="glyphicon glyphicon-envelope"></span> -->
-                Alerts
+                Activity
             </tab-heading>
             
-            <h3 class="header">Alterts and Notifications<br><small>Account alerts and notifications</small></h3>
+            <h3 class="header">Activity and Notifications<br><small>Account activity and notifications</small></h3>
 
             <table class="table table-bordered" style="width: auto;">
                 <thead>

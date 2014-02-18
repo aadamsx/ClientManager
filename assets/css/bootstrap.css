@@ -183,10 +183,10 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
-td,
+/*td,
 th {
   padding: 0;
-}
+}*/
 @media print {
   * {
     color: #000 !important;
@@ -1415,11 +1415,11 @@ table {
 th {
   text-align: left;
 }
-.table {
+/*.table {
   width: 100%;
   margin-bottom: 20px;
-}
-.table > thead > tr > th,
+}*/
+/*.table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
@@ -1429,7 +1429,7 @@ th {
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #ddd;
-}
+}*/
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
@@ -1439,9 +1439,9 @@ th {
 .table > thead:first-child > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > td,
-.table > thead:first-child > tr:first-child > td {
+/*.table > thead:first-child > tr:first-child > td {
   border-top: 0;
-}
+}*/
 .table > tbody + tbody {
   border-top: 2px solid #ddd;
 }
@@ -2380,7 +2380,7 @@ input[type="button"].btn-block {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-.glyphicon { /*AA: modified top from 1 to 2*/
+/*.glyphicon { /*AA: modified top from 1 to 2*/
   position: relative;
   top: 2px;
   display: inline-block;
@@ -2391,7 +2391,7 @@ input[type="button"].btn-block {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}*/
 .glyphicon-asterisk:before {
   content: "\2a";
 }
@@ -2680,9 +2680,9 @@ input[type="button"].btn-block {
 .glyphicon-arrow-left:before {
   content: "\e091";
 }
-.glyphicon-arrow-right:before {
+/*.glyphicon-arrow-right:before {
   content: "\e092";
-}
+}*/
 .glyphicon-arrow-up:before {
   content: "\e093";
 }

@@ -1321,6 +1321,10 @@ h3.header {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
+h3.header.no-bottom {
+    padding: 0px;
+    border: none;
+}
 
 .badge {
     display: inline-block;
@@ -1345,3 +1349,133 @@ h3.header {
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
     color: #555;
 }
+
+.account-details {
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 #eee;
+    margin: 20px 0;
+}
+.account-details header {
+    padding: 20px 30px;
+    color: #777;
+    font-size: 13px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+.account-details .details {
+    overflow: hidden;
+}
+span.details-company-name  {
+    font-size: 24px;
+}
+.table .received .glyphicon-arrow-right {
+    color: #4EB17B;
+}
+.table .sent .glyphicon-arrow-left {
+    color: #5371c5;
+}
+.glyphicon-comment:before {
+    content: "\e111";
+}
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+.glyphicon, [class^="glyphicon-"]:before, [class*=" glyphicon-"]:before {
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+#table-list .glyphicon {
+    width: 22px;
+    text-align: left;
+    font-style: normal;
+}
+.glyphicon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#table-list .glyphicon-comment {
+    margin-left: 5px;
+    opacity: 0.25;
+}
+#table-list .date {
+    color: #9196aa;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.label {
+    text-shadow: none;
+    border-radius: 2px;
+    padding: 0.3em 0.8em;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.pull-left {
+    float: left !important;
+}
+.label-warning {
+    background-color: #f0ad4e;
+}
+#table-list .label {
+    background: none;
+}
+#table-list .label.label-warning {
+    color: #f89406;
+}
+#table-list .label.label-success {
+    color: #9196aa;
+}
+table#table-list td.tracking-code, table#table-list th.tracking-code {
+    text-align: right;
+    color: #9196aa;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+table#table-list td.tracking-code-header, table#table-list th.tracking-code-header {
+    text-align: right;
+    font-weight: bold;
+}
+#table-list thead tr.headers td {
+    font-weight: bold;
+    cursor: auto;
+}
+.account-details .details span {
+    color: #9196aa;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+/*#table-list thead tr td {
+    cursor: auto;
+}*/
+/*[class^="glyphicon-"]:before, [class*=" glyphicon-"]:before, .glyphicon:before {
+    font-family: "entypo";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+}*/

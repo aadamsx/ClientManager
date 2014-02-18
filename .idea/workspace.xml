@@ -26,7 +26,8 @@
       <file leaf-file-name="company-detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/company/company-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="21" selection-start="2086" selection-end="2086" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1445">
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1445">
+              <caret line="5" column="0" selection-start="231" selection-end="231" />
               <folding />
             </state>
           </provider>
@@ -35,8 +36,26 @@
       <file leaf-file-name="companies.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/company/companies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="29" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-0.7462277" vertical-offset="1190" max-vertical-offset="5882">
-              <folding />
+            <state vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="5474">
+              <caret line="4" column="8" selection-start="174" selection-end="174" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +125,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
-    <option name="y" value="70" />
+    <option name="x" value="35" />
+    <option name="y" value="-1019" />
     <option name="width" value="1641" />
     <option name="height" value="950" />
   </component>
@@ -159,6 +178,34 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ClientManager">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ClientManager">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,34 +272,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ClientManager">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ClientManager">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,14 +301,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -300,6 +311,18 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
@@ -307,14 +330,13 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" singleton="true" node="" config="" has-config="false" proxy-port="3546">
+    <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" singleton="true" node="" config="" has-config="false" system-proxy="false" proxy-port="3546">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" singleton="true" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -331,9 +353,6 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <list size="0" />
@@ -362,8 +381,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="70" width="1641" height="950" extended-state="0" />
-    <editor active="false" />
+    <frame x="35" y="-1019" width="1641" height="950" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,11 +396,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34802786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -398,9 +417,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2628205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -420,254 +439,416 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/company/company-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1445">
+          <caret line="43" column="21" selection-start="2086" selection-end="2086" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/company/companies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="29" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="2057">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="5882">
+          <caret line="38" column="29" selection-start="1523" selection-end="1523" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/company/companies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="2057">
+          <caret line="44" column="29" selection-start="1817" selection-end="1817" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="0" column="13" selection-start="13" selection-end="13" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/partials/pageContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/partials/pageContiner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="815" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="815">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="59" selection-end="59" vertical-scroll-proportion="0.040669855" vertical-offset="0" max-vertical-offset="836" />
+        <state vertical-scroll-proportion="0.040669855" vertical-offset="0" max-vertical-offset="836">
+          <caret line="2" column="3" selection-start="59" selection-end="59" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="0" column="0" selection-start="0" selection-end="182" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/signin/signin-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1423445" vertical-offset="0" max-vertical-offset="836" />
+        <state vertical-scroll-proportion="0.1423445" vertical-offset="0" max-vertical-offset="836">
+          <caret line="9" column="3" selection-start="216" selection-end="216" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/landing/cover-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="0" column="0" selection-start="0" selection-end="222" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/partials/pageContiner.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/cover.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="637" selection-end="772" vertical-scroll-proportion="0.44270834" vertical-offset="340" max-vertical-offset="3230" />
+        <state vertical-scroll-proportion="0.44270834" vertical-offset="340" max-vertical-offset="3230">
+          <caret line="40" column="0" selection-start="637" selection-end="772" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/signin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="95" selection-end="95" vertical-scroll-proportion="0.110677086" vertical-offset="0" max-vertical-offset="1139" />
+        <state vertical-scroll-proportion="0.110677086" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="5" column="5" selection-start="95" selection-end="95" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/about/about-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="4" column="0" selection-start="93" selection-end="93" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/about/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="153" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="153">
+          <caret line="1" column="2" selection-start="28" selection-end="28" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/contact/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="432" selection-end="432" vertical-scroll-proportion="0.18328841" vertical-offset="0" max-vertical-offset="742" />
+        <state vertical-scroll-proportion="0.18328841" vertical-offset="0" max-vertical-offset="742">
+          <caret line="8" column="37" selection-start="432" selection-end="432" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/landing/cover-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="60" selection-end="60" vertical-scroll-proportion="0.022135416" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.022135416" vertical-offset="0" max-vertical-offset="768">
+          <caret line="3" column="21" selection-start="60" selection-end="60" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/landing/cover.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="116" selection-end="116" vertical-scroll-proportion="0.068733156" vertical-offset="0" max-vertical-offset="742" />
+        <state vertical-scroll-proportion="0.068733156" vertical-offset="0" max-vertical-offset="742">
+          <caret line="3" column="34" selection-start="116" selection-end="116" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/signin/signin-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="55" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="3" column="24" selection-start="55" selection-end="71" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/companies-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="383" selection-end="383" vertical-scroll-proportion="0.22135417" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.22135417" vertical-offset="0" max-vertical-offset="768">
+          <caret line="10" column="3" selection-start="383" selection-end="383" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/companies-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="4" column="0" selection-start="54" selection-end="54" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/companies-factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="3" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="40" column="3" selection-start="1205" selection-end="1205" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/EditProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-11.769231" vertical-offset="102" max-vertical-offset="1088" />
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="102" max-vertical-offset="1088">
+          <caret line="24" column="55" selection-start="1095" selection-end="1095" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/NewEvent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="63" selection-start="550" selection-end="550" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="680" />
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="680">
+          <caret line="10" column="63" selection-start="550" selection-end="550" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/company-detail-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="0" selection-start="362" selection-end="362" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/EventDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="757" selection-end="757" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1275" />
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="20" column="26" selection-start="757" selection-end="757" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar-side-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="63" selection-end="63" vertical-scroll-proportion="0.044270832" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.044270832" vertical-offset="0" max-vertical-offset="768">
+          <caret line="2" column="3" selection-start="63" selection-end="63" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar-side-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.1328125" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.1328125" vertical-offset="0" max-vertical-offset="768">
+          <caret line="6" column="3" selection-start="195" selection-end="195" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layouts/dashboard-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="433" selection-end="433" vertical-scroll-proportion="0.24348958" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.24348958" vertical-offset="0" max-vertical-offset="768">
+          <caret line="13" column="3" selection-start="433" selection-end="433" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layouts/dashboard-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.022135416" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.022135416" vertical-offset="0" max-vertical-offset="768">
+          <caret line="3" column="27" selection-start="67" selection-end="67" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layouts/dashboard-factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="10" selection-start="1700" selection-end="1706" vertical-scroll-proportion="1.320323" vertical-offset="600" max-vertical-offset="1700" />
+        <state vertical-scroll-proportion="1.320323" vertical-offset="600" max-vertical-offset="1700">
+          <caret line="93" column="10" selection-start="1700" selection-end="1706" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/topbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="7" column="26" selection-start="175" selection-end="175" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="130" selection-end="140" vertical-scroll-proportion="0.06640625" vertical-offset="0" max-vertical-offset="1105" />
+        <state vertical-scroll-proportion="0.06640625" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="5" column="25" selection-start="130" selection-end="140" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="17" column="22" selection-start="288" selection-end="288" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="14" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.8229167" vertical-offset="1170" max-vertical-offset="2465" />
+        <state vertical-scroll-proportion="0.8229167" vertical-offset="1170" max-vertical-offset="2465">
+          <caret line="106" column="14" selection-start="3670" selection-end="3670" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="58" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.4010767" vertical-offset="977" max-vertical-offset="1853" />
+        <state vertical-scroll-proportion="0.4010767" vertical-offset="977" max-vertical-offset="1853">
+          <caret line="75" column="58" selection-start="1420" selection-end="1420" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/page-container.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="2" selection-start="665" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="969" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="969">
+          <caret line="29" column="2" selection-start="665" selection-end="735" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/companies.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="0" column="10" selection-start="10" selection-end="10" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.4851752" vertical-offset="65" max-vertical-offset="833" />
+        <state vertical-scroll-proportion="0.4851752" vertical-offset="65" max-vertical-offset="833">
+          <caret line="25" column="21" selection-start="1260" selection-end="1260" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navigation/nav-bar-side.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="73" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.6334232" vertical-offset="142" max-vertical-offset="884" />
+        <state vertical-scroll-proportion="0.6334232" vertical-offset="142" max-vertical-offset="884">
+          <caret line="36" column="73" selection-start="1233" selection-end="1233" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/signin/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="668" selection-end="668" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340" />
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="6" selection-start="668" selection-end="668" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../testing/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.20619947" vertical-offset="0" max-vertical-offset="742" />
+        <state vertical-scroll-proportion="0.20619947" vertical-offset="0" max-vertical-offset="742">
+          <caret line="9" column="0" selection-start="202" selection-end="202" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="721" selection-end="793" vertical-scroll-proportion="0.45822102" vertical-offset="0" max-vertical-offset="1394" />
+        <state vertical-scroll-proportion="0.45822102" vertical-offset="0" max-vertical-offset="1394">
+          <caret line="20" column="8" selection-start="721" selection-end="793" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../testing/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/layouts/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="58" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2890" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2890">
+          <caret line="1" column="4" selection-start="58" selection-end="117" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5876" column="41" selection-start="124437" selection-end="124437" vertical-scroll-proportion="-24.44" vertical-offset="99281" max-vertical-offset="100011" />
+        <state vertical-scroll-proportion="-24.44" vertical-offset="99281" max-vertical-offset="100011">
+          <caret line="5876" column="41" selection-start="124437" selection-end="124437" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="1" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="1751" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="1751">
+          <caret line="82" column="1" selection-start="1741" selection-end="1741" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/tables.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="7" selection-start="850" selection-end="850" vertical-scroll-proportion="0.29166666" vertical-offset="473" max-vertical-offset="1445" />
+        <state vertical-scroll-proportion="0.29166666" vertical-offset="473" max-vertical-offset="1445">
+          <caret line="41" column="7" selection-start="850" selection-end="850" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/company-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="21" selection-start="2086" selection-end="2086" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1445">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="5" column="0" selection-start="231" selection-end="231" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/company/companies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="29" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-0.7462277" vertical-offset="1190" max-vertical-offset="5882">
-          <folding />
+        <state vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="5474">
+          <caret line="4" column="8" selection-start="174" selection-end="174" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#tab#1;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#tab#2;n#tabset#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
