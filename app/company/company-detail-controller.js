@@ -1,6 +1,6 @@
 'use strict';
 // company controller: resource
-app.controller("companyNewController",
+app.controller("companyDetailController",
     function($scope, companiesFactory, $routeParams) {
         // controller's constructor:
         $scope.sortorder = 'name';

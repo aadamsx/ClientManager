@@ -15,13 +15,17 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl : '/app/common/signin/signin.html',
             controller: 'signinController'
         })
-        .when("/contact", {
+/*        .when("/contact", {
             templateUrl : '/app/common/contact/contact.html',
             controller: 'contactController'
         })
         .when("/companies/newCompany", {
             templateUrl : '/app/company/company-new.html',
             controller: 'companyNewController'
+        })*/
+        .when("/companies/create", {
+            templateUrl : '/app/company/company-create.html',
+            controller : 'companyCreateController' 
         })
         .when("/companies/:companyId", {
             templateUrl : '/app/company/company-detail.html',
@@ -31,6 +35,7 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl : '/app/company/companies.html',
             controller: 'companiesController'
         })
+
         .otherwise({ redirectTo: '/'});
 
         /*$locationProvider.html5Mode(true);*/
