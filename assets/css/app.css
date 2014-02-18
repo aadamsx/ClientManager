@@ -1318,7 +1318,7 @@ a:focus {
 
 /* underline for the header */
 h3.header { 
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eee;
 }
 h3.header.no-bottom {
