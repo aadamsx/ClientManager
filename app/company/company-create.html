@@ -1,11 +1,51 @@
 <navbar-side></navbar-side>
 
 <div class="span9"> 
-	<h3 class="header">Company Profile
-    <br>
-<!--     <small>List of active accounts</small> -->
-<!--     <a href="#/companies/create" class="btn btn-default pull-right">
-    	<span class="glyphicon glyphicon-plus"></span> Create Account
-    </a> -->
-  </h3>
+	<tabset>
+		<tab>
+			<tab-heading>Profile</tab-heading>
+			<h3 class="header">Company Profile
+				<br>
+				<small>Create company profile</small>
+				<a href="#/companies" class="btn btn-default pull-right">
+					<span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+				</a>
+			</h3>
+
+			<form>
+				<div class="control-group">
+					<label class="control-label" for="company-name">Company name</label>
+					<div class="controls">
+						<input type="text" class="form-control" id="company-name" placeholder="Immigration Law Inc.">
+					</div>
+				</div>				
+
+			</form>
+		</tab>
+
+
+		<tab>
+			<tab-heading>Products</tab-heading>
+			<h3 class="header">Assign Products
+				<br>
+				<small>Select Products to allot to this Account</small>
+				<a href="#/companies" class="btn btn-default pull-right">
+					<span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+				</a>
+			</h3>
+		</tab>
+
+
+		<tab>
+			<tab-heading>Clients</tab-heading>
+			<h3 class="header">Assign Clients
+				<br>
+				<small>Select Clients to allot to this Account</small>
+				<a href="#/companies" class="btn btn-default pull-right">
+					<span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts
+				</a>
+			</h3>
+		</tab>
+
+	</tabset>
 </div>
