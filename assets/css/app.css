@@ -1528,52 +1528,8 @@ table#table-list td.tracking-code-header, table#table-list th.tracking-code-head
     margin-left: 180px;
 }
 
-textarea, 
-input[type="text"], 
-input[type="password"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="date"], 
-input[type="month"], 
-input[type="time"], 
-input[type="week"], 
-input[type="number"], 
-input[type="email"], 
-input[type="url"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="color"], 
-.uneditable-input {
-    box-shadow: 0 1px 0px #eee inset;
-    border-radius: 2px;
-    padding: 9px 9px;
-    border-color: #ddd;
-}
-.form-search input, 
-.form-search textarea, 
-.form-search select, 
-.form-search .help-inline, 
-.form-search .uneditable-input, 
-.form-search .input-prepend, 
-.form-search .input-append, 
-.form-inline input, 
-.form-inline textarea, 
-.form-inline select, 
-.form-inline .help-inline, 
-.form-inline .uneditable-input, 
-.form-inline .input-prepend, 
-.form-inline .input-append, 
-.form-horizontal input, 
-.form-horizontal textarea, 
-.form-horizontal select, 
-.form-horizontal .help-inline, 
-.form-horizontal .uneditable-input, 
-.form-horizontal .input-prepend, 
-.form-horizontal .input-append {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-}
+
+
 textarea, 
 input[type="text"], 
 input[type="password"], 
@@ -1628,7 +1584,74 @@ input[type="color"], .uneditable-input {
     border-radius: 4px;
     vertical-align: middle;
 }
+@media (max-width: 979px) and (min-width: 768px)
+    input, textarea, .uneditable-input {
+    margin-left: 0;
+}
 @media (min-width: 1200px)
     input, textarea, .uneditable-input {
     margin-left: 0;
+}
+label, 
+input, 
+button, 
+select, 
+textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+
+.form-search input, 
+.form-search textarea, 
+.form-search select, 
+.form-search .help-inline, 
+.form-search .uneditable-input, 
+.form-search .input-prepend, 
+.form-search .input-append, 
+.form-inline input, 
+.form-inline textarea, 
+.form-inline select, 
+.form-inline .help-inline, 
+.form-inline .uneditable-input, 
+.form-inline .input-prepend, 
+.form-inline .input-append, 
+.form-horizontal input, 
+.form-horizontal textarea, 
+.form-horizontal select, 
+.form-horizontal .help-inline, 
+.form-horizontal .uneditable-input, 
+.form-horizontal .input-prepend, 
+.form-horizontal .input-append {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    box-shadow: 0 1px 0px #eee inset;
+    border-radius: 4px;
+    padding: 9px 9px;
+    border-color: #ddd;
+}
+
+input, textarea, .uneditable-input {
+    width: 206px;
 }

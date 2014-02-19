@@ -1654,11 +1654,11 @@ legend {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
-label {
+/*label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
-}
+}*/
 input[type="search"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1966,7 +1966,7 @@ select[multiple].input-lg {
     top: 0;
   }
 }
-.form-horizontal .control-label,
+/*.form-horizontal .control-label,
 .form-horizontal .radio,
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
@@ -1974,7 +1974,7 @@ select[multiple].input-lg {
   padding-top: 7px;
   margin-top: 0;
   margin-bottom: 0;
-}
+}*/
 .form-horizontal .radio,
 .form-horizontal .checkbox {
   min-height: 27px;
@@ -1986,11 +1986,11 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .form-horizontal .control-label {
     text-align: right;
   }
-}
+}*/
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
   right: 15px;
