@@ -1508,19 +1508,127 @@ table#table-list td.tracking-code-header, table#table-list th.tracking-code-head
     background-color: #ebebeb;
     border-color: #adadad;
 }
-/*#table-list thead tr td {
-    cursor: auto;
-}*/
-/*[class^="glyphicon-"]:before, [class*=" glyphicon-"]:before, .glyphicon:before {
-    font-family: "entypo";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
+
+.form-horizontal .control-group {
+    margin-bottom: 20px;
+}
+.form-horizontal .control-group:before, 
+.form-horizontal .control-group:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.form-horizontal .control-label {
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+}
+.form-horizontal .controls {
+    margin-left: 180px;
+}
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    box-shadow: 0 1px 0px #eee inset;
+    border-radius: 2px;
+    padding: 9px 9px;
+    border-color: #ddd;
+}
+.form-search input, 
+.form-search textarea, 
+.form-search select, 
+.form-search .help-inline, 
+.form-search .uneditable-input, 
+.form-search .input-prepend, 
+.form-search .input-append, 
+.form-inline input, 
+.form-inline textarea, 
+.form-inline select, 
+.form-inline .help-inline, 
+.form-inline .uneditable-input, 
+.form-inline .input-prepend, 
+.form-inline .input-append, 
+.form-horizontal input, 
+.form-horizontal textarea, 
+.form-horizontal select, 
+.form-horizontal .help-inline, 
+.form-horizontal .uneditable-input, 
+.form-horizontal .input-prepend, 
+.form-horizontal .input-append {
     display: inline-block;
-    text-decoration: inherit;
-    margin-right: .2em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1em;
-}*/
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s,box-shadow linear 0.2s;
+    transition: border linear 0.2s,box-shadow linear 0.2s;
+}
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], .uneditable-input {
+    display: inline-block;
+    height: 20px;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+@media (min-width: 1200px)
+    input, textarea, .uneditable-input {
+    margin-left: 0;
+}
