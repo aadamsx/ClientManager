@@ -1520,7 +1520,7 @@ table#table-list td.tracking-code-header, table#table-list th.tracking-code-head
 }
 .form-horizontal .control-label {
     float: left;
-    width: 110px; /* was 160 */
+    width: 105px; /* was 160 */
     padding-top: 5px;
     text-align: right;
 }
@@ -1706,7 +1706,7 @@ input[type="search"]
     height: 40px;
 }
 .input-group .logo-select-input {
-    width: 227px;
+    width: 236px;
 }
 
 @media (min-width: 768px)
@@ -1888,4 +1888,38 @@ content: '\f309';
 .input-group .auto-scroll50 {
     overflow:auto; 
     max-height: 50px;
+}
+
+textarea.form-control {
+    height: auto;
+}
+textarea {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.text-area-confied {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 50px;
+}
+textarea.text-area-width3 {
+    width: 269px;
 }
