@@ -27,6 +27,7 @@
 	background-color: #fff;
 	border-color: #ccc;
 }
+
 .btn:hover, 
 .btn:focus {
 /*	outline: 5px auto -webkit-focus-ring-color;
@@ -37,40 +38,12 @@
 	border-color: #adadad;
 }
 
-/*
-.btn-default {
-	color: #333;
-	background-color: #fff;
-	border-color: #ccc;
-}
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open .dropdown-toggle.btn-default {
-	color: #333;
-	background-color: #ebebeb;
-	border-color: #adadad;
-}*/
-
-
 .btn-small {
 	padding: 0px 6px 1px 6px;
 	font-size: 12px;
 	line-height: 1.5;
 	border-radius: 3px;
 }
-/*.btn-small:hover,
-.btn-small:focus,
-.btn-small:active,
-.btn-small.active,
-.open .dropdown-toggle.btn-small-color {
-	color: #333;
-	background-color: #ebebeb;
-	border-color: #adadad;
-}*/
-
-
 
 
 .btn-logo {
@@ -79,3 +52,8 @@
 
 .is-btn-active {}
 .is-btn-disabled {}
+
+ #login:target {
+  color:#FFF;
+  font-family:customfont-bold;
+}
