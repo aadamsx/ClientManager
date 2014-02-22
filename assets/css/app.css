@@ -1529,8 +1529,22 @@ table#table-list td.tracking-code-header, table#table-list th.tracking-code-head
 }
 
 
-
+select,
 textarea, 
+select[type="text"], 
+select[type="password"], 
+select[type="datetime"], 
+select[type="datetime-local"], 
+select[type="date"], 
+select[type="month"], 
+select[type="time"], 
+select[type="week"], 
+select[type="number"], 
+select[type="email"], 
+select[type="url"], 
+select[type="search"], 
+select[type="tel"], 
+select[type="color"], 
 input[type="text"], 
 input[type="password"], 
 input[type="datetime"], 
@@ -1558,6 +1572,20 @@ input[type="color"],
 }
 select, 
 textarea, 
+select[type="text"], 
+select[type="password"], 
+select[type="datetime"], 
+select[type="datetime-local"], 
+select[type="date"], 
+select[type="month"], 
+select[type="time"], 
+select[type="week"], 
+select[type="number"], 
+select[type="email"], 
+select[type="url"], 
+select[type="search"], 
+select[type="tel"], 
+select[type="color"],
 input[type="text"], 
 input[type="password"], 
 input[type="datetime"], 
@@ -1629,8 +1657,22 @@ textarea {
     vertical-align: middle;
 }
 
-
+select,
 textarea, 
+select[type="text"], 
+select[type="password"], 
+select[type="datetime"], 
+select[type="datetime-local"], 
+select[type="date"], 
+select[type="month"], 
+select[type="time"], 
+select[type="week"], 
+select[type="number"], 
+select[type="email"], 
+select[type="url"], 
+select[type="search"], 
+select[type="tel"], 
+select[type="color"],
 input[type="text"], 
 input[type="password"], 
 input[type="datetime"], 
@@ -1651,6 +1693,26 @@ input[type="color"],
     padding: 9px 9px;
     border-color: #ddd;
 }
+/*select[type="text"], 
+select[type="password"], 
+select[type="datetime"], 
+select[type="datetime-local"], 
+select[type="date"], 
+select[type="month"], 
+select[type="time"], 
+select[type="week"], 
+select[type="number"], 
+select[type="email"], 
+select[type="url"], 
+select[type="search"], 
+select[type="tel"], 
+select[type="color"] {
+    box-shadow: 0 1px 0px #eee inset;
+    border-radius: 4px;
+    padding: 9px 9px;
+    border-color: #ddd;
+} */
+
 
 input, textarea, .uneditable-input {
     width: 265px;
@@ -1922,4 +1984,12 @@ textarea {
 }
 textarea.text-area-width3 {
     width: 269px;
+}
+select.form-control {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    height: 40px;
+    width: 295px;
 }
