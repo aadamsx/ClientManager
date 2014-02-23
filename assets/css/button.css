@@ -1,3 +1,4 @@
+/* BASE RULES */s
 .btn {
 	display: inline-block;
 	
@@ -26,6 +27,10 @@
 	color: #333;
 	background-color: #fff;
 	border-color: #ccc;
+
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .btn:hover, 
