@@ -1,4 +1,4 @@
-/* BASE RULES */s
+/* BASE RULES */
 .btn {
 	display: inline-block;
 	
@@ -43,6 +43,7 @@
 	border-color: #adadad;
 }
 
+/* SUBMODULES */
 .btn-small {
 	padding: 0px 6px 1px 6px;
 	font-size: 12px;
@@ -55,8 +56,8 @@
 	height: 40px;
 }
 
-.is-btn-active {}
-.is-btn-disabled {}
+.btn.is-active {}
+.btn.is-disabled {}
 
  #login:target {
   color:#FFF;

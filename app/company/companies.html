@@ -1,6 +1,15 @@
-<navbar-side></navbar-side>
+<side-bar></side-bar>
 
-<div class="span9">
+<style type="text/css">
+  #content {
+    margin-left: 280px;
+    padding-bottom: 40px;
+    width: 870px;
+    float: left;
+/*    position: relative;*/
+  }
+</style>
+<div id="content" class="span9">
   <tabset>
     <tab>
       <tab-heading>Accounts</tab-heading>
@@ -17,21 +26,10 @@
         <div class="span3 search-box pull-left" >
           <div class="right-inner-addon">
             <i class="glyphicon glyphicon-search"></i>
-            <input class="ipt ipt-search" placeholder="Search" />
+            <input type="search"  class="ipt ipt-search" placeholder="Search" />
           </div>
         </div>
       </div>
-      <div class="sub-header">
-        <div class="span3 search-box pull-left" >
-          <div class="right-inner-addon">
-            <i class="glyphicon glyphicon-search"></i>
-            <input type="search" class="form-control" placeholder="Search" />
-          </div>
-        </div>
-      </div>
-
-
-
 
       <div id="companies">
         <table id="table-list" class="table table-hover">

@@ -55,9 +55,13 @@
                     </div>
                 </div>
             </div>
+
+            <style type="text/css">
+
+            </style>
         
             <!-- MAIN CONTENT AND INJECTED VIEWS -->
-            <div id="page" class="container">
+            <div id="page" class="container l-clearfix">
                 <div class="row">
                     <ng-view></ng-view>
                 </div>
@@ -143,10 +147,12 @@
         
         <!-- common -->
         <!-- navigation -->
-        <script type="text/javascript" src="app/common/navigation/nav-bar-controller.js"></script>
-        <script type="text/javascript" src="app/common/navigation/nav-bar-directive.js"></script>
-        <script type="text/javascript" src="app/common/navigation/nav-bar-side-controller.js"></script>
-        <script type="text/javascript" src="app/common/navigation/nav-bar-side-directive.js"></script>
+        <script type="text/javascript" src="app/common/navigation/topbar/nav-bar-controller.js"></script>
+        <script type="text/javascript" src="app/common/navigation/topbar/nav-bar-directive.js"></script>
+
+        <script type="text/javascript" src="app/common/navigation/sidebar/side-bar-controller.js"></script>
+        <script type="text/javascript" src="app/common/navigation/sidebar/side-bar-directive.js"></script>
+        
         <script type="text/javascript" src="app/common/layouts/dashboard-controller.js"></script>
         <script type="text/javascript" src="app/common/layouts/dashboard-directive.js"></script>
         <script type="text/javascript" src="app/common/layouts/dashboard-factory.js"></script>
