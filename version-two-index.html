@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Management Portal - Prototype 1.0</title>
+        <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--         <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+        <link rel="stylesheet" href="assets/css/master.css" /> -->
+        <style type="text/css">
+            a {
+                text-decoration: none;
+            }
+            body {
+                background: url(/assets/img/bg-header.png) top left repeat-x #edeff0; 
+                color: #474a54;
+                padding: 0;
+                margin: 0;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            
+            .table {
+                display: table;
+                width: 1220px;
+                border-collapse: separate; 
+                border-spacing: 15px; 
+                margin: 0 auto;
+                table-layout: fixed;
+            }
+            .row { 
+                display:table-row; 
+            }
+            .cell {
+                display: table-cell;
+                border-top: 1px solid #e2e5e8;
+                background: #fff;
+                border-radius: 2px 2px 2px 2px;
+                box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+            }
+            .row-group {
+                display: table-row-group; 
+            }
+            .column-group {
+                display: table-column-group;
+            }
+            .column {
+                display: table-column;
+            }
+            .table-foot-group {
+                display: table-footer-group
+            }
+            .caption {
+                display: table-caption; 
+                caption-side: top; 
+                text-align: center; 
+            }
+            .heading-group {
+                display: table-header-group;
+            }
+            .footing-group {
+                display: table-footer-group;
+            }
+            
+            /* Use margin and padding instead of extra cells and spacer GIFs. */ 
+            /* Use link and @import styles. The first for old browsers, the second for modern browsers. */
+            table { 
+                width: 1220px;
+                border-collapse: separate; 
+                border-spacing: 15px; 
+                margin: 0 auto;
+                table-layout: fixed;
+                margin: 0 auto;
+            }
+            td { 
+                padding: 11px 20px 20px 11px; 
+                background: #fff;
+                border-top: 1px solid #e2e5e8;
+                border-radius: 2px 2px 2px 2px;
+                box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+            }
+            
+        </style>
+    </head>
+
+    <body class="" style=""> 
+        <!-- NAV TOPBAR -->
+        <table id="" class="" style="border:1px solid red; margin: 0 auto;">
+            <tr>
+                <td id="" class="" style="width: 25%;">formspoint</td>
+                <td id="" class="" style="">
+                    <ul id="" class="" style="">
+                        <li class=""><a href="home">Home</a></li>
+                        <li class=""><a href="about">About</a></li>
+                        <li class=""><a href="news">Latest News</a></li>
+                        <li class=""><a href="meals">Kitten Meals</a></li>
+                        <li class=""><a href="pelts">kitten Pelts</a></li>
+                        <li class=""><a href="dioramas">kitten Dioramas</a></li>
+                        <li class=""><a href="search">Search</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!-- PAGE AREA -->
+        <table id="" class="" style="border:1px solid red;">
+            <tr id="" class="" valign="top" style="">
+                <!-- SIDEBAR NAV -->
+                <td id="" class="" rowspan="2" style="width: 25%; background">test</td>
+                
+                <!-- CONTENT TABS NAV -->
+                <td id="" class="" style="">test</td>
+            </tr>
+            <tr id="" class="" valign="top" style="">
+                <!-- MAIN CONTENT AREA -->
+                <td id="" class="" style="">test</td>
+            </tr>
+            <tr id="" class="" valign="top" style="">
+                <!-- SIEBAR INFO AREA -->
+                <td id="" class="" style="">test</td>
+                
+                <!-- CONTENT SUB AREA -->
+                <td id="" class="" style="">test</td>
+            </tr>
+        </table>
+        
+        <div class="table" style="border:1px solid red;">
+            <div class="row">
+                <a href="#" id="" class="cell" style="width: 25%;">formspoint</a>
+                <!-- TOPBAR -->
+                <div class="cell" style="">
+                    <ul class="">
+                        <li class="cell" style="width: 150px;"><a href="home">Home</a></li>
+                        <li class="cell"><a href="about">About</a></li>
+                        <li class="cell"><a href="news">Latest News</a></li>
+                        <li class="cell"><a href="meals">Kitten Meals</a></li>
+                        <li class="cell"><a href="pelts">kitten Pelts</a></li>
+                        <li class="cell"><a href="dioramas">kitten Dioramas</a></li>
+                        <li class="cell"><a href="search">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PAGE -->
+        <div class="table" style="border:1px solid red;">
+            <div class="row-group">
+                <div class="row" style="border:1px solid red;">
+                    <!-- SIDEBAR -->
+                    <div id="" class="cell" style="width: 25%; border:1px solid red; vertical-align: top">
+                        <h5>GENERAL</h5>
+                        <ul class="nav nav-list sidebar-list">
+                            <li>
+                                <a href="#/dashboard">
+                                    <i class="glyphicon glyphicon-dashboard"></i>Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/companies">
+                                    <i class="glyphicon glyphicon-th"></i>Accounts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-barcode"></i>Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i>Clients
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-credit-card"></i>Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-inbox"></i>Messages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-signal"></i>Charts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTENT AND INJECTED VIEWS -->
+                    <div id="" class="cell" style="border:1px solid red; background: transparent;">
+                        <div id="" class="table" style="width: 100%;">
+                            <div class="row-group">
+                                <div class="row" style="">
+                                    <div id="" class="cell" style="border:1px solid red;">Heading</div>
+                                </div>
+                                <div class="row" style="">
+                                    <div id="" class="cell" style="border:1px solid red;">Tab Navigation Here</div>
+                                </div>
+                                <div class="row" style="">
+                                    <div id="" class="cell" style="border:1px solid red;">Button Navigation Here</div>
+                                </div>
+                                <div class="row" style="">
+                                    <div id="" class="cell" style="border:1px solid red;">Search Option Here</div>
+                                </div>
+                                <div class="row">
+                                    <div id="" class="cell" style="border:1px solid red;">Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;Content; Content;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row">
+                    <div class="cell" style="background: transparent;"></div>
+                    
+   
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="table">
+            <div class="row">
+                <div id="" class="cell" >
+                    <h5>FOOTER</h5>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+

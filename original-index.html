@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Management Portal - Prototype 1.0</title>
+        <meta name="formspoint">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+        <link rel="stylesheet" href="assets/css/master.css" />
+        
+    </head>
+
+    <body class="app">
+        <div class="page-container">
+            
+            <!-- HEADER AND NAVBAR -->
+            <div class="navbar navbar-static-top"> <!--REMOVED THIS: navbar-fixed-top--> 
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        
+                        <a href="#/dashboard" id="navbar-logo" class="brand">formspoint</a>
+                        
+                        <div class="nav-collapse pull-right">
+                            <ul class="nav">
+                                <li><a href="">About</a></li>
+                                <li class="dropdown dropdown-hover">
+                                    <a href="#" class="dropdown-toggle">Resources <b class="caret"></b></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="">recurring payments</a></li>
+                                        <li><a href="">charts</a></li>
+                                        <li><a href="">stats</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav">
+                                <li class="active button"><a href="#/signin">Sign In</a></li>
+                                <li class="dropdown dropdown-hover">
+                                    <a href="" class="dropdown-toggle">Options <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">sign in as other</a></li>
+                                        <li><a href="">users admin</a></li>
+                                        <li><a href="">settings</a></li>
+                                        <li><a href="">sign out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style type="text/css">
+
+            </style>
+        
+            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+            <div id="page" class="container l-clearfix">
+                <div class="row">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+
+            <div class="container">
+                <footer>
+                  <hr>
+                  <div class="row-fluid">
+                    <div class="span3">
+                      <h4>Product</h4>
+                      <nav>
+                        <a href="/buy-bitcoin">How Tos</a>
+                        <a href="/merchants">Merchant Services</a>
+                        <a href="/docs/api/overview">Developer Platform</a>
+                        <a href="/security">Security</a>
+                      </nav>
+                    </div>
+                    <div class="span3">
+                      <h4>About</h4>
+                      <nav>
+                        <a href="/about">About</a>
+                        <a href="/careers">Careers</a>
+                        <a href="/press">Press</a>
+                        <a href="/legal/privacy">Legal</a>
+                      </nav>
+                    </div>
+                    <div class="span3">
+                      <h4>Resources</h4>
+                      <nav>
+                        <a href="/docs/api/overview">API</a>
+                        <a href="/docs/merchant_tools/getting_started">Documentation</a>
+                        <a href="http://status.coinbase.com">Status</a>
+                        <a href="/help">Support</a>
+                        
+                        
+                      </nav>
+                    </div>
+                    <div class="span3">
+                      <h4>Follow us on</h4>
+                      <nav>
+                        <a href="http://blog.formspoint.com"><span class="icon-comment"></span>Our Blog</a>
+                        <a href="https://twitter.com/formspoint"><span class="icon-twitter"></span>Twitter</a>
+                        <a href="https://www.facebook.com/formspoint"><span class="icon-facebook"></span>Facebook</a>
+                        <span>© 2014 formspoint</span>
+                      </nav>
+                    </div>
+                  </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- third party libraries -->
+        <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+        <!--<script type="text/javascript" src="vendor/jquery/jquery-1.9.1.intellisense.js"></script>-->
+        <!--<script type="text/javascript" src="vendor/toaster/toaster.js"></script>-->
+        <script type="text/javascript" src="assets/js/angular.js"></script>
+        <script type="text/javascript" src="assets/js/angular-resource.js"></script>
+        <script type="text/javascript" src="assets/js/angular-route.js"></script>
+        <script type="text/javascript" src="assets/js/angular-animate.js"></script>
+        <script type="text/javascript" src="assets/js/ui-bootstrap-0.10.0.js"></script>
+        <script type="text/javascript" src="assets/js/ui-bootstrap-tpls-0.10.0.js"></script>
+        <!--<script type="text/javascript" src="vendor/ng-table/ng-table.js"></script>
+        <script type="text/javascript" src="vendor/ng-table/ng-table.src.js"></script>-->
+        <!--<script type="text/javascript" src="vendor/less/less-1.5.1.js"></script>-->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+        <!-- init -->
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="routes/index.js"></script>
+
+        <script type="text/javascript" src="app/common/landing/cover-controller.js"></script>
+        <script type="text/javascript" src="app/common/landing/cover-directive.js"></script>
+
+        <!-- company -->
+        <!--<script type="text/javascript" src="app/company/companyDirective.js"></script>-->
+        <script type="text/javascript" src="app/company/companies-controller.js"></script>
+        <script type="text/javascript" src="app/company/companies-directive.js"></script>
+        <script type="text/javascript" src="app/company/companies-factory.js"></script>
+        <script type="text/javascript" src="app/company/company-detail-controller.js"></script>
+        <script type="text/javascript" src="app/company/company-create-controller.js"></script>
+<!--    <script type="text/javascript" src="app/company/company-create-directive.js"></script> -->
+        
+        <!-- common -->
+        <!-- navigation -->
+        <script type="text/javascript" src="app/common/navigation/topbar/nav-bar-controller.js"></script>
+        <script type="text/javascript" src="app/common/navigation/topbar/nav-bar-directive.js"></script>
+
+        <script type="text/javascript" src="app/common/navigation/sidebar/side-bar-controller.js"></script>
+        <script type="text/javascript" src="app/common/navigation/sidebar/side-bar-directive.js"></script>
+        
+        <script type="text/javascript" src="app/common/layouts/dashboard-controller.js"></script>
+        <script type="text/javascript" src="app/common/layouts/dashboard-directive.js"></script>
+        <script type="text/javascript" src="app/common/layouts/dashboard-factory.js"></script>
+
+        <!-- sign in -->
+<!--        <script type="text/javascript" src="app/common/login/loginCtrl.js"></script>
+        <script type="text/javascript" src="app/common/login/loginDir.js"></script>-->
+        <script type="text/javascript" src="app/common/signin/signin-controller.js"></script>
+
+
+        <script type="text/javascript" src="app/common/about/about-controller.js"></script>
+
+        <!-- services -->
+        <!--<script type="text/javascript" src="app/common/services/notifierServ.js"></script>-->
+        <!--<script type="text/javascript" src="app/common/services/toastrServ.js"></script>-->
+        <!--<script type="text/javascript" src="services.js"></script>-->
+    </body>
+
+</html>
+
+
