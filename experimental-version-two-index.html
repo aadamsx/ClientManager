@@ -5,7 +5,8 @@
         <title>Management Portal - Prototype 1.0</title>
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <!--the objects on the screen shift up when I add this, find out how its affecting the screen-->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" /> 
         <style>
             
             /*margin: 0px 0px 10px 10px;
@@ -14,13 +15,15 @@
                 margin-bottom: 10px;
                 margin-left: 10px;*/
             
-            footer {height: 300px; background-color: #8FDB9E;}
+            footer {height: 600px; background-color: #8FDB9E;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px; }
             section {position: relative; margin: 0px 0px 10px 10px; width: 920px; left: 270px; height: 250px; background-color: #f8f8ff;}
             aside {position: absolute; width: 270px; margin-right: 10px; height: 400px; background-color: #f8f8ff;}
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3;}
              
+            .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; 
+                -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
             /*.nav a { background: #eceef3;  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1); }*/
             /* possible get rid of margins just below */
             .nav a {text-decoration: none; color: #575e6a; border-radius: 2px; margin-top: 10px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
@@ -32,8 +35,8 @@
 	        .nav:hover ul:hover a:hover {opacity: 1;}
             .nav ul {list-style-type: none; padding: 0;}
                         
-            /* Code for the underlines of navigation */
-            .nav a:hover::after, 
+            /* Code for the underlines of navigation removed for now */
+/*            .nav a:hover::after, 
             .nav a:focus::after {height: 4px; opacity: 1; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px);}
             .nav a::after {position: absolute; top: 100%; left: 0; width: 100%; height: 1px; background: #ddd; content: ''; opacity: 0;
                 -webkit-transition: height 0.2s, opacity 0.2s, -webkit-transform 0.2s;
@@ -41,7 +44,7 @@
                 transition: height 0.2s, opacity 0.2s, transform 0.2s;
                 -webkit-transform: translateY(-10px);
                 -moz-transform: translateY(-10px);
-                transform: translateY(-10px);}
+                transform: translateY(-10px);}*/
             
             /* this code can stand alone */
             .nav a {position: relative; outline: none; font-weight: 700; font-size: 0.9em; letter-spacing: .5px;} /* text-transform: uppercase; */
@@ -55,9 +58,16 @@
             #topbar li {display: inline;}
             #topbar ul {margin: 0px; text-align: right;} 
             
-            #pillbar li { display: inline; }
-            #pillbar { padding: 0; }
-            #pillbar ul { margin: 0 0 0 10px;}
+            #sidebar a {margin-left: 40px;}
+            #sidebar ul {}
+            /*#sidebar { padding: 10px 15px 10px 30px; width: 200px; } */ 
+            #sidebar li {}
+            #sidebar i { margin-right: 8px; width: 18px; opacity: 0.5; }
+            /*#sidebar h5 { padding-top: 10px; padding-left: 15px; color: #9196aa; } */
+            
+            #pillbar li {display: inline;}
+            #pillbar {padding: 0; height: 60px;}
+            #pillbar ul {margin: 0 0 0 10px;}
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
         </style>
@@ -79,7 +89,18 @@
                     </ul>
                 </div>
             </header>
-            <aside id="sidebar" class="nav natural" style=""></aside>
+            <aside id="sidebar" class="nav natural" style="">
+<!--                <h5>GENERAL</h5>-->
+                <ul id="sidebar-list" class="nav-list sidebar-list" style="">
+                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
+                    <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>Clients</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-credit-card"></i>Orders</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-inbox"></i>Messages</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-signal"></i>Charts</a></li>
+                </ul>
+            </aside>
             <section id="pillbar" class="nav" style="">
                 <ul id="pillbar-list" class="nav-list pillbar-list" style="">
                     <li style=""><a href="#" style="">Accounts</a></li>
