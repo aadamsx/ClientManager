@@ -14,10 +14,10 @@
                 margin-bottom: 10px;
                 margin-left: 10px;*/
             
-            footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px;}
+            footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px; }
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:1px 1px 3px -2px #9196aa}
-            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 310px; background-color: rgba(252,252,253, .95); box-shadow:1px 1px 3px -2px #9196aa}
+            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(154,210,104, .2) /*rgba(178, 236, 254, .5)*/ /*rgba(252,252,253, .95)*/; box-shadow:2px 1px 3px -2px #9196aa; border: 2px solid #fcfcfd;}
+            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 310px; background-color: rgba(77,212,253, .5); box-shadow:2px 1px 3px -2px #9196aa; border: 2px solid #fcfcfd;}
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
  
@@ -60,6 +60,7 @@
             #sidebar li {margin-top: 15px;}
             #sidebar .sidebar-inner {padding: 0px 0px 10px 50px;}
             
+            #pillbar {box-shadow:2px 1px 3px -2px #9196aa; border: 2px solid #fcfcfd;background-color: rgba(178, 236, 254, .5); }
             #pillbar a {font-weight: 500; }
             #pillbar li {display: inline;}
             #pillbar ul {margin: 0;}
@@ -73,8 +74,7 @@
             .element-left {width: 50%;}
             .element-right {width: 49%;}
             
-            .btn {display: inline-block; position:relative; background:transparent; border:1px solid #9196aa; padding: 12px 12px 12px 12px; font-size:0.9em;  
-                box-shadow:1px 1px 0px 0px #9196aa; font-weight:700; letter-spacing: .5px; /*text-transform:uppercase;*/ border-radius: 2px; }
+            .btn {position:relative; background:transparent; border:1px solid #9196aa; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; font-weight:700; letter-spacing: .5px; border-radius: 2px;}
             .btn a {text-decoration: none;  color: #575e6a;}
             .btn i, .btn span {opacity: 0.5;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
@@ -137,12 +137,14 @@
             </aside>
             
             <section id="pillbar" class="nav" style="">
+                <div class="border-outline">
                 <div id="" class="pillpar-inner" style="">
                     <ul id="pillbar-list" class="nav-list pillbar-list" style="">
                         <li style=""><a href="#" style="">Accounts</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Activities</a></li>
                     </ul>
+                </div>
                 </div>
             </section>
             
