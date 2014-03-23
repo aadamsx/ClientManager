@@ -16,8 +16,8 @@
             
             footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px; }
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 920px; left: 270px; background-color: #fcfcfd;}
-            aside {position: absolute; margin-right: 10px; width: 270px; border-radius: 2px; height: 350px; background-color: #fcfcfd;}
+            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: #fcfcfd;box-shadow:1px 1px 0px 0px #9196aa; opacity: .98;}
+            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 350px; background-color: #fcfcfd;box-shadow:1px 1px 0px 0px #9196aa; opacity: .98;}
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
  
@@ -71,9 +71,9 @@
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
             
-            .btn {display: inline-block; color: #575e6a; position:relative; margin-top:10%; background:transparent; border:1px solid #575e6a; padding: 12px 12px 12px 12px; font-size:0.9em; color:#575e6a; 
-                box-shadow:1px 1px 0px 0px #575e6a; font-weight:700; letter-spacing: .5px; /*text-transform:uppercase;*/ border-radius: 2px;}
-            .btn a { text-decoration: none; color: #575e6a;}
+            .btn {display: inline-block; color: #575e6a; position:relative; margin-top:10%; background:transparent; border:1px solid #9196aa; padding: 12px 12px 12px 12px; font-size:0.9em; color:#9196aa; 
+                box-shadow:1px 1px 0px 0px #9196aa; font-weight:700; letter-spacing: .5px; /*text-transform:uppercase;*/ border-radius: 2px; }
+            .btn a { text-decoration: none; color: #9196aa;}
             .btn i, .btn span {opacity: 0.5;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
             
@@ -201,7 +201,7 @@
         <script>
             $stick = $('aside');
             $foot = $('footer');
-            margin = 19;
+            margin = 20;
             offtop = $stick.offset().top - margin;
             offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
 
