@@ -15,9 +15,9 @@
                 margin-left: 10px;*/
             
             footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px;}
-            header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px; }
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: #fcfcfd;box-shadow:1px 1px 0px 0px #9196aa; opacity: .98;}
-            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 350px; background-color: #fcfcfd;box-shadow:1px 1px 0px 0px #9196aa; opacity: .98;}
+            header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
+            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:1px 1px 3px -2px #9196aa}
+            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 310px; background-color: rgba(252,252,253, .95); box-shadow:1px 1px 3px -2px #9196aa}
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
  
@@ -27,7 +27,7 @@
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
             .nav a:hover {opacity: 1.0;}
-            .nav:hover ul:hover a {opacity: 0.7;}
+            .nav:hover ul:hover a {opacity: 0.4;}
 	        .nav:hover ul:hover a:hover {opacity: 1;}
             .nav ul {list-style-type: none; padding: 0;}
                         
@@ -42,8 +42,8 @@
                 -moz-transform: translateY(-10px);
                 transform: translateY(-10px);}*/
             
-            /* this code can stand alone */
-            .nav a {position: relative; outline: none; font-weight: 700; font-size: 0.9em; letter-spacing: .5px;} /* text-transform: uppercase; */
+
+            .nav a {position: relative; outline: none; font-weight: 700; font-size: 0.9em; letter-spacing: .5px;} 
                         
             #nav-logo {padding-top: 2px; position: absolute;}
             #nav-logo a {font-size: 24px; font-weight: 600; }
@@ -61,19 +61,19 @@
             #sidebar li {margin-top: 15px;}
             #sidebar .sidebar-inner {padding: 0px 0px 10px 50px;}
             
-            #pillbar a {font-weight: 500;}
+            #pillbar a {font-weight: 500; color:#9196aa}
             #pillbar li {display: inline;}
             #pillbar ul {margin: 0;}
             #pillbar .pillpar-inner {padding: 20px 25px 20px 25px}
             
             #main .main-inner {padding: 25px;}
-            #main h3 {font-size: 24.5px; line-height: 40px; font-weight: 500;}
+            #main h3 {font-size: 24.5px; line-height: 40px; font-weight: 500; color: #575e6a;}
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
             
-            .btn {display: inline-block; color: #575e6a; position:relative; margin-top:10%; background:transparent; border:1px solid #9196aa; padding: 12px 12px 12px 12px; font-size:0.9em; color:#9196aa; 
+            .btn {display: inline-block; position:relative; margin-top:10%; background:transparent; border:1px solid #9196aa; padding: 12px 12px 12px 12px; font-size:0.9em;  
                 box-shadow:1px 1px 0px 0px #9196aa; font-weight:700; letter-spacing: .5px; /*text-transform:uppercase;*/ border-radius: 2px; }
-            .btn a { text-decoration: none; color: #9196aa;}
+            .btn a {text-decoration: none;  color: #575e6a;}
             .btn i, .btn span {opacity: 0.5;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
             
@@ -201,7 +201,7 @@
         <script>
             $stick = $('aside');
             $foot = $('footer');
-            margin = 20;
+            margin = 17;
             offtop = $stick.offset().top - margin;
             offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
 
