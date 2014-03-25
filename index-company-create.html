@@ -47,10 +47,11 @@
             #container {position: relative; width: 1200px; margin: 0 auto;}
                     
             .main .main-inner {padding: 35px 35px 35px 35px;}
+            .main .main-inner hr {margin-bottom: 30px; margin-top: 0;}
             .main .main-header {padding-bottom: 35px; }
             .main .main-header h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
-            .main .element-left {width: 50%;}
-            .main .element-right {width: 49%;}
+            .main .element-left {width: 50%; display: inline-block; text-align: left;}
+            .main .element-right {width: 49%; display: inline-block; text-align: right;}
             .main .main-body {}
             .main .main-footer .pagination {margin-top: 10px; margin-bottom: 10px;}
             .main .main-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
@@ -58,7 +59,7 @@
             
             .pagination {display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 2px;}
             .pagination>li {display: inline;}
-            .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none;color: #428bca; border: 1px solid #ddd; margin-left: -1px;}
+            .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
             .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
             .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 2px;border-top-left-radius: 2px;}
             .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
@@ -67,6 +68,13 @@
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5; color: #575e6a; }
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
+            
+            .go-bottom { position: relative; overflow: hidden; }
+            .go-bottom input { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid gray; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
+            .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
+            .go-bottom input:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
+            .go-bottom input:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
+            /*.go-bottom input:focus { border-color: #f06d06; padding: 4px 6px 20px 6px;}  */
             
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
             table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
@@ -140,27 +148,56 @@
             <section id="" class="main" style="">
                 <div id="" class="main-inner" style="">
                     <div id="" class="main-header" style="">
-                        <div class="element-left" style="display: inline-block; text-align: left;"><h3 style="">Accounts</h3></div>
-                        <div class="element-right" style="display: inline-block; text-align: right;">
-                            <button class="btn btn-default" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button>
+                        <div class="element-left" style=""><h3 style="">Company Profile</h3></div>
+                        <div class="element-right" style="">
+                            <button class="btn btn-default" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
                         </div>
+                        
                     </div>
+                    <hr style="">
                     <div id="" class="main-body">
                         <form accept-charset="UTF-8" id="" class="" method="post">
-                            
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Company name</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_company_name" class="" style="" type=""><label for="">Acme Widgets Inc.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Website</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_website" class="" style="" type=""><label for="">http://example.com</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Phone</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_phone" class="" style="" type=""><label for="">+1 123 123 1234</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Address</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_address1" class="" style="" type=""><label for="">123 Main St.</label>
+                                    </div>
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_address2" class="" style="" type=""><label for="">City, State Zip</label>
+                                    </div>
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <input id="client_address3" class="" style="" type=""><label for="">Country</label>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
-                    <div id="" class="main-footer" style="">
-                        <ul class="pagination">
-                          <li class="disabled"><a href="#">«</a></li>
-                          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#">»</a></li>
-                       </ul>
-                    </div>
+                    <div id="" class="main-footer" style=""></div>
                 </div>
             </section>
             <section id="" class="" style=""></section>
