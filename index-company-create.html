@@ -6,14 +6,7 @@
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
-        <style>
-            
-            /*margin: 0px 0px 10px 10px;
-                margin-top: 0px;
-                margin-right: 0px;
-                margin-bottom: 10px;
-                margin-left: 10px;*/
-            
+        <style>    
             footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px; }
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
@@ -65,15 +58,20 @@
             .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
             
             .btn {margin: 0; position:relative; background:transparent; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
+            .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
+            .btn-nav {background-color: rgba(224,227,235, .6);} .btn-nav:hover{background-color: rgba(224,227,235, .2);}
+            .btn-save {background-color: rgba(214,235,234, .6);} .btn-save:hover{background-color: rgba(214,235,234, .2);}
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5; color: #575e6a; }
-            .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
             
+            
+            form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95)}
+            form textarea {display: block;resize: vertical;}
             .go-bottom { position: relative; overflow: hidden; }
-            .go-bottom input { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid gray; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
+            .go-bottom input, .go-bottom textarea { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid #ddd/*grey*/; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
             .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
-            .go-bottom input:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
-            .go-bottom input:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
+            .go-bottom input:focus + label, .go-bottom textarea:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
+            .go-bottom input:focus, .go-bottom textarea:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
             /*.go-bottom input:focus { border-color: #f06d06; padding: 4px 6px 20px 6px;}  */
             
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
@@ -150,49 +148,62 @@
                     <div id="" class="main-header" style="">
                         <div class="element-left" style=""><h3 style="">Company Profile</h3></div>
                         <div class="element-right" style="">
-                            <button class="btn btn-default" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
+                            <button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
                         </div>
-                        
                     </div>
-                    <hr style="">
+                    <hr style="height:1px; border-width:0; background-color:gray;">
                     <div id="" class="main-body">
                         <form accept-charset="UTF-8" id="" class="" method="post">
                             <div id="" class="control-group" style="margin-bottom: 20px;">
-                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Company name</label>
-                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company name</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_company_name" class="" style="" type=""><label for="">Acme Widgets Inc.</label>
+                                        <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Acme Widgets Inc.</label>
                                     </div>
                                 </div>
                             </div>
                             <div id="" class="control-group" style="margin-bottom: 20px;">
-                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Website</label>
-                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Website</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_website" class="" style="" type=""><label for="">http://example.com</label>
+                                        <input id="client_website" class="" style="" type="text" required><label for="client_website">http://example.com</label>
                                     </div>
                                 </div>
                             </div>
                             <div id="" class="control-group" style="margin-bottom: 20px;">
-                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Phone</label>
-                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Phone</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_phone" class="" style="" type=""><label for="">+1 123 123 1234</label>
+                                        <input id="client_phone" class="" style="" type="text" required><label for="client_phone">+1 123 123 1234</label>
                                     </div>
                                 </div>
                             </div>
                             <div id="" class="control-group" style="margin-bottom: 20px;">
-                                <label id="" class="control-label" for="" style="text-align: right; width: 160px; vertical-align: middle; float: left; padding-top: 15px;">Address</label>
-                                <div id="" class="controls" style="display: box-inline; margin-left: 180px; width: 75%;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Address</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_address1" class="" style="" type=""><label for="">123 Main St.</label>
+                                        <input id="client_address1" class="" style="" type="text" required><label for="client_address1">123 Main St.</label>
                                     </div>
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_address2" class="" style="" type=""><label for="">City, State Zip</label>
+                                        <input id="client_address2" class="" style="" type="text" required><label for="client_address2">City, State Zip</label>
                                     </div>
                                     <div id="" class="go-bottom" style="width: 45%">
-                                        <input id="client_address3" class="" style="" type=""><label for="">Country</label>
+                                        <input id="client_address3" class="" style="" type="text" required><label for="client_address3">Country</label>
                                     </div>
+                                </div>
+                            </div>
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company description</label>
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                    <div id="" class="go-bottom" style="width: 45%">
+                                        <textarea id="client_description" name="phone" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea><label for="client_description">Acme Widgets Inc. info</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="" class="control-group" style="margin-bottom: 20px;">
+                                <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                    <button class="btn btn-save" style=""><a class="" href="#/companies" class=""><span class="glyphicon glyphicon-save"></span> Save Changes</a></button>
                                 </div>
                             </div>
                         </form>

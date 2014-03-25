@@ -7,14 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>
-            
-            /*margin: 0px 0px 10px 10px;
-                margin-top: 0px;
-                margin-right: 0px;
-                margin-bottom: 10px;
-                margin-left: 10px;*/
-            
-            footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px; }
+              footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px; }
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
             aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
@@ -47,6 +40,7 @@
             #container {position: relative; width: 1200px; margin: 0 auto;}
                     
             .main .main-inner {padding: 35px 35px 35px 35px;}
+            .main .main-inner hr {margin-bottom: 30px; margin-top: 0;}
             .main .main-header {padding-bottom: 35px; }
             .main .main-header h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
             .main .element-left {width: 50%; display: inline-block; text-align: left;}
@@ -67,6 +61,15 @@
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5; color: #575e6a; }
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
+            
+            form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95)}
+            form textarea {display: block;resize: vertical;}
+            .go-bottom { position: relative; overflow: hidden; }
+            .go-bottom input, .go-bottom textarea { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid #ddd/*grey*/; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
+            .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
+            .go-bottom input:focus + label, .go-bottom textarea:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
+            .go-bottom input:focus, .go-bottom textarea:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
+            /*.go-bottom input:focus { border-color: #f06d06; padding: 4px 6px 20px 6px;}  */
             
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
             table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
@@ -89,7 +92,6 @@
             #sidebar i { margin-right: 8px; width: 18px; opacity: 0.5;}
             #sidebar h5 {font-size: 13px; color: #9196aa; font-weight: 500; text-transform: uppercase; margin-bottom: 0;} 
             #sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
-            
         </style>
 
     </head>
