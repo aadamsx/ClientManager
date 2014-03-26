@@ -16,41 +16,38 @@
             body.app {margin-bottom: 0; margin-top: 0;}
  
             .pagination {display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 2px;}
-            .pagination>li {display: inline;}
             .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
             .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
             .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 2px;border-top-left-radius: 2px;}
             .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
             
-            .nav a {font-weight: 700; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
-            .nav a:hover {opacity: 1.0;}
-            .nav ul {list-style-type: none; padding: 0;}
-            .nav ul:hover a {opacity: 0.6;}
-	        .nav ul a:hover, .nav ul li:hover a {opacity: 1;}
+            
+            ul {list-style-type: none; padding: 0;}
+            ul:hover a {opacity: 0.6;}
+	        ul a:hover, ul li:hover a {opacity: 1;}
                                 
             #topbar a {color: #fcfcfd; background: transparent; box-shadow: none;}
             #topbar li:last-child a {margin: 0;}
-            #topbar li {display: inline;}
             #topbar ul {margin: 0; text-align: right;} 
-            #topbar #nav-menu {position:relative; padding-top: 12px;}
-            #topbar #nav-logo {padding-top: 7px; position: absolute;}
-            #topbar #nav-logo a {font-size: 24px; font-weight: 600;}
+            #nav-menu {position:relative; padding-top: 12px;}
+            #nav-logo {padding-top: 7px; position: absolute;}
+            #nav-logo a {font-size: 24px; font-weight: 600;}
             
             #bottombar {/*background: rgba(78,205,196, 1); */color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
             
-            #pillbar a {font-weight: 500;}
-            #pillbar li {display: inline;}
             #pillbar ul {margin: 0;}
-            #pillbar .pillpar-inner {padding: 20px 25px 20px 25px}
+            .pillpar-inner {padding: 20px 25px 20px 25px}
             #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px;border-radius: 0;}
+            .li-inline li {display: inline;}
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
                 
             .card {}
-            .card-padding {padding: 35px 35px 35px 35px;}
+            .card-padding {padding: 30px 35px 35px 35px;}
             .card-header {padding-bottom: 35px;}
             .card-subheader {padding-bottom: 35px; padding-top: 60px;}
             .card-search {padding-bottom: 45px; padding-top: 0px;}
@@ -59,19 +56,19 @@
             .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
             .h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
             .h4 {font-size: 22px; font-weight: 500; color: #575e6a; margin: 0;}
-            .hr {margin-bottom: 30px; margin-top: 0;}
+            .h5 {font-size: 13px; font-weight: 500; color: #9196aa; text-transform: uppercase; margin-bottom: 0;}
+            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0; background-color:gray;}
             .element-left {width: 50%; display: inline-block; text-align: left;}
             .element-right {width: 49%; display: inline-block; text-align: right;}
             
             .btn {margin: 0; position:relative; background:transparent; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
             .btn-nav {background-color: rgba(224,227,235, .6);} 
-            .btn-nav:hover{background-color: rgba(224,227,235, .2);}
+            .btn-nav:hover {background-color: rgba(224,227,235, .2);}
             .btn-save {background-color: rgba(214,235,234, .6);} 
-            .btn-save:hover{background-color: rgba(214,235,234, .2);}
+            .btn-save:hover {background-color: rgba(214,235,234, .2);}
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5; color: #575e6a; }
-            
             
             form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95)}
             form textarea {display: block;resize: vertical;}
@@ -96,13 +93,11 @@
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
             
-            #sidebar .sidebar-header {padding: 0 25px 0 25px;}
-            #sidebar .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
-            #sidebar a {font-weight: 500;}
-            #sidebar li:hover {background: rgba(0,0,0,0.02); color: #444; border-radius: 2px;}
-            #sidebar i { margin-right: 8px; width: 18px; opacity: 0.5;}
-            #sidebar h5 {font-size: 13px; color: #9196aa; font-weight: 500; text-transform: uppercase; margin-bottom: 0;} 
-            #sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
+            .sidebar-header {padding: 0 25px 0 25px;}
+            .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
+            .sidebar li:hover {background: rgba(0,0,0,0.02); color: #444; border-radius: 2px;}
+            .sidebar i { margin-right: 8px; width: 18px; opacity: 0.5;}
+            .sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
         </style>
 
     </head>
@@ -112,7 +107,7 @@
             <header id="topbar" class="nav" style="">
                 <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
-                    <ul id="topbar-list" class="nav-list topbar-list" style="">
+                    <ul id="topbar-list" class="nav-list topbar-list li-inline" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
                         <li class=""><a href="#">latest News</a></li>
@@ -125,7 +120,7 @@
             
             <aside id="sidebar" class="nav sidebar natural" style="">
                 <div id="sidebar-header" class="sidebar-header" style="">
-                    <h5 style="">General</h5>
+                    <h5 class="h5">General</h5>
                 </div>
                 <ul id="sidebar-list" class="list sidebar-list" style="">
                     <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
@@ -141,7 +136,7 @@
             <section id="pillbar" class="nav" style="">
                 <div class="border-outline">
                     <div id="" class="pillpar-inner" style="">
-                        <ul id="pillbar-list" class="nav-list pillbar-list" style="">
+                        <ul id="pillbar-list" class="nav-list pillbar-list li-inline" style="">
                             <li style=""><a href="#" style="">Accounts</a></li>
                             <li><a href="#">History</a></li>
                             <li><a href="#">Activities</a></li>
@@ -151,15 +146,15 @@
             </section>
             
             <section id="" class="card" style="">
+                <div id="" class="card-header" style="background: rgba(47,188,203, .75); padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;">
+                    <div class="element-left"><h3 class="h3" style="color: white;">Accounts</h3></div>
+                    <div class="element-right" style=""><button class="btn btn-nav" style=""><a class="" style="color: white;" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button></div>
+                </div>
+                
+                <!--<div class="margin: 0 auto; text-align: center"><a href="#" class="btn-round " style="margin: 0 auto; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow: none; border: none; background: white; position: relative; border-radius: 50%; width: 38px; height: 38px; top: -8.5px;"><span class=" glyphicon glyphicon-refresh"></span></a></div>-->
+                
                 <div id="" class="card-padding" style="">
-                    <div id="" class="card-header">
-                        <div class="element-left"><h3 class="h3">Accounts</h3></div>
-                        <div class="element-right">
-                            <button class="btn btn-nav"><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button>
-                        </div>
-                    </div>
-                    
-                    <hr class="hr" style="height:1px; border-width:0; background-color:gray;">
+                    <!--<hr class="hr" style=">-->
                     
                     <div id="" class="card-search">
                         <form accept-charset="UTF-8" id="" class="" method="post">
@@ -246,7 +241,7 @@
                         </table>
                     </div>
                     <div id="" class="card-footer ul-margin-bottom-zero" style="">
-                        <ul class="pagination pagination-card-footer">
+                        <ul class="pagination pagination-card-footer li-inline">
                           <li class="disabled"><a href="#">«</a></li>
                           <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                           <li><a href="#">2</a></li>
