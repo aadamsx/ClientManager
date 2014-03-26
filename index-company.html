@@ -15,6 +15,13 @@
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
             body.app {margin-bottom: 0; margin-top: 0;}
  
+            .pagination {display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 2px;}
+            .pagination>li {display: inline;}
+            .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
+            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
+            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 2px;border-top-left-radius: 2px;}
+            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
+            
             .nav a {font-weight: 700; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
             .nav:active ul:active a {opacity: 0.5;}
@@ -32,7 +39,7 @@
             #topbar #nav-logo {padding-top: 7px; position: absolute;}
             #topbar #nav-logo a {font-size: 24px; font-weight: 600;}
             
-            #bottombar {color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
+            #bottombar {/*background: rgba(78,205,196, 1); */color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
             
             #pillbar a {font-weight: 500;}
             #pillbar li {display: inline;}
@@ -41,27 +48,20 @@
             #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px;border-radius: 0;}
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
-                    
-            .main .main-inner {padding: 35px 35px 35px 35px;} 
-            .main .main-inner hr {margin-bottom: 30px; margin-top: 0;}
-            .main .main-header {padding-bottom: 35px; }
-            .main .main-header h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
-            .main .main-subheader {padding-bottom: 35px; padding-top: 60px;}
-            .main .main-subheader h4 {font-size: 22px; font-weight: 500; color: #575e6a; margin: 0}
-            .main .main-subheader-search {padding-bottom: 45px; padding-top: 0px;}
-            .main .element-left {width: 50%; display: inline-block; text-align: left;}
-            .main .element-right {width: 49%; display: inline-block; text-align: right;}
-            .main .main-body {}
-            .main .main-footer .pagination {margin-top: 10px; margin-bottom: 10px;}
-            .main .main-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
-            .main .main-footer ul:last-child {margin-bottom: 0;}
-            
-            .pagination {display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 2px;}
-            .pagination>li {display: inline;}
-            .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
-            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
-            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 2px;border-top-left-radius: 2px;}
-            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
+                
+            .card {}
+            .card-padding {padding: 35px 35px 35px 35px;}
+            .card-header {padding-bottom: 35px;}
+            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
+            .card-search {padding-bottom: 45px; padding-top: 0px;}
+            .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
+            .ul-margin-bottom-zero ul:last-child {margin-bottom: 0;}
+            .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
+            .h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
+            .h4 {font-size: 22px; font-weight: 500; color: #575e6a; margin: 0;}
+            .hr {margin-bottom: 30px; margin-top: 0;}
+            .element-left {width: 50%; display: inline-block; text-align: left;}
+            .element-right {width: 49%; display: inline-block; text-align: right;}
             
             .btn {margin: 0; position:relative; background:transparent; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
@@ -150,19 +150,18 @@
                 </div>
             </section>
             
-            <section id="" class="main" style="">
-                <div id="" class="main-inner" style="">
-                    
-                    <div id="" class="main-header" style="">
-                        <div class="element-left" style=""><h3 style="">Accounts</h3></div>
-                        <div class="element-right" style="">
-                            <button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button>
+            <section id="" class="card" style="">
+                <div id="" class="card-padding" style="">
+                    <div id="" class="card-header">
+                        <div class="element-left"><h3 class="h3">Accounts</h3></div>
+                        <div class="element-right">
+                            <button class="btn btn-nav"><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button>
                         </div>
                     </div>
                     
-                    <hr style="height:1px; border-width:0; background-color:gray;">
+                    <hr class="hr" style="height:1px; border-width:0; background-color:gray;">
                     
-                    <div id="" class="main-subheader-search" style="">
+                    <div id="" class="card-search">
                         <form accept-charset="UTF-8" id="" class="" method="post">
                             <div id="" class="go-bottom" style="width: 35%">
                                 <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Search</label>
@@ -170,7 +169,7 @@
                         </form>
                     </div>
                     
-                    <div id="" class="main-body">
+                    <div id="" class="">
                         <table id="account_list" class="table table-hover">
                             <thead>
                                 <tr>
@@ -246,8 +245,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <div id="" class="main-footer" style="">
-                        <ul class="pagination">
+                    <div id="" class="card-footer ul-margin-bottom-zero" style="">
+                        <ul class="pagination pagination-card-footer">
                           <li class="disabled"><a href="#">«</a></li>
                           <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                           <li><a href="#">2</a></li>
