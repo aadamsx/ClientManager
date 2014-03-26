@@ -6,11 +6,11 @@
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
-        <style>
+        <style>    
             footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
-            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
+            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px;}
+            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
             body.app {margin-bottom: 0; margin-top: 0;}
@@ -30,7 +30,7 @@
             ul:hover a {opacity: 0.6;}
 	        ul a:hover, ul li:hover a {opacity: 1;}
                                 
-            #topbar a {color: #fcfcfd; background: transparent; box-shadow: none;}
+            #topbar a {color: #fcfcfd; box-shadow: none;}
             #topbar li:last-child a {margin: 0;}
             #topbar ul {margin: 0; text-align: right;} 
             #nav-menu {position:relative; padding-top: 12px;}
@@ -80,10 +80,14 @@
             .background-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
             .background-color-lightblue {background-color: rgba(47,188,203, .5);}
             .background-color-silvergrey {background-color: #e0e3eb; }
+            .card-background-color, .card-background-color input:valid, .card-background-color textarea:valid {background-color: rgba(252,252,253, .95);}
+            .card-boxshadow {box-shadow:2px 2px 3px -2px #9196aa;}
+            .sidbar-background-color {background-color: rgba(252,252,253, .95);}
+            .pillbar-background-color {background-color: rgba(252,252,253, .95);}
+            .topbar-background-color {background: transparent; }
                         
-            form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95)}
-            form textarea {display: block;resize: vertical;}
-            .go-bottom { position: relative; overflow: hidden; }
+            form textarea {display: block; resize: vertical;}
+            .go-bottom {position: relative; overflow: hidden; }
             .go-bottom input, .go-bottom textarea { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid #ddd/*grey*/; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
             .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
             .go-bottom input:focus + label, .go-bottom textarea:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
@@ -115,7 +119,7 @@
 
     <body class="app" style="">
         <div id="container" class="container" style="">
-            <header id="topbar" class="nav" style="">
+            <header id="topbar" class="nav topbar-background-color" style="">
                 <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
                     <ul id="topbar-list" class="nav-list topbar-list li-inline" style="">
@@ -129,12 +133,12 @@
                 </div>
             </header>
             
-            <aside id="sidebar" class="nav sidebar natural" style="">
+            <aside id="sidebar" class="nav sidebar natural sidbar-background-color card-boxshadow" style="">
                 <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
-                <ul id="sidebar-list" class="list sidebar-list" style="">
-                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
+                <ul id="sidebar-list" class="list sidebar-list " style="">
+                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard "></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-user"></i>Clients</a></li>
@@ -144,142 +148,109 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav" style="">
+            <section id="pillbar" class="nav pillbar-background-color card-boxshadow" style="">
                 <div class="border-outline">
-                    <div id="" class="pillpar-inner" style="">
-                        <ul id="pillbar-list" class="nav-list pillbar-list li-inline" style="">
-                            <li style=""><a href="#" style="">Accounts</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Activities</a></li>
-                        </ul>
-                    </div>
+                <div id="" class="pillpar-inner" style="">
+                    <ul id="pillbar-list" class="nav-list pillbar-list li-inline" style="">
+                        <li style=""><a href="#" style="">Accounts</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Activities</a></li>
+                    </ul>
+                </div>
                 </div>
             </section>
             
-            <section id="" class="card" style="">
-                <div id="" class="card-header text-color-white background-color-lightblue" style="">
-                    <div class="element-left"><h3 class="h3" style="">Accounts</h3></div>
-                    <div class="element-right" style=""><button class="btn btn-nav" style="">
-                        <a class="" style="color: white; " href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a></button>
+            <section id="" class="card card-background-color card-boxshadow" style="">
+               <div id="" class="card-header text-color-white background-color-lightblue">
+                    <div class="element-left"><h3 class="h3">Company Profile</h3></div>
+                    <div class="element-right ">
+                        <button class="btn btn-nav"><a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
                     </div>
                 </div>
                 
-                <!--<div class="margin: 0 auto; text-align: center"><a href="#" class="btn-round " style="margin: 0 auto; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow: none; border: none; background: white; position: relative; border-radius: 50%; width: 38px; height: 38px; top: -8.5px;"><span class=" glyphicon glyphicon-refresh"></span></a></div>-->
-                
-                <div id="" class="card-padding" style="">
-                    <!--<hr class="hr" style=">-->
-                    
-                    <div id="" class="card-search">
-                        <form accept-charset="UTF-8" id="" class="" method="post">
-                            <div id="" class="go-bottom" style="width: 35%">
-                                <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Search</label>
+                <div id="" class="card-padding main-inner" style="">
+                    <form accept-charset="UTF-8" id="" class="card-background-color" method="post">
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company name</label>
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Acme Widgets Inc.</label>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    
-                    <div id="" class="">
-                        <table id="account_list" class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th colspan="4">Buy/Sell</th>
-                                    <th>Fees</th>
-                                    <th>Price Per Coin</th>
-                                    <th>Status</th>
-                                    <th>Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="transfer_530bbeda3325f25b9100044c">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">1,084.49 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>2.00 BTC</td>
-                                    <td class="muted">10.89 USD</td>
-                                    <td class="muted">536.80 USD
-                                    </td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb 24, 2014</td>
-                                </tr>
-                                <tr id="transfer_52fccdbe34cc38f6850000aa">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">1,315.51 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>2.00 BTC</td>
-                                    <td class="muted">13.17 USD</td>
-                                    <td class="muted">651.17 USD</td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb 13, 2014</td>
-                                </tr>
-                                <tr id="transfer_52f4cfbed90bab42fd00001d">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>1.00 BTC</td>
-                                    <td class="muted">7.20 USD</td>
-                                    <td class="muted">705.44 USD</td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb  7, 2014</td>
-                                </tr>
-                                <tr id="transfer_52fccdbe34cc38f6850000aa">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">1,315.51 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>2.00 BTC</td>
-                                    <td class="muted">13.17 USD</td>
-                                    <td class="muted">651.17 USD</td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb 13, 2014</td>
-                                </tr>
-                                <tr id="transfer_52f4cfbed90bab42fd00001d">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>1.00 BTC</td>
-                                    <td class="muted">7.20 USD</td>
-                                    <td class="muted">705.44 USD</td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb  7, 2014</td>
-                                </tr>
-                                <tr id="transfer_52f4cfbed90bab42fd00001d">
-                                    <td style="padding-right: 0;">Buy</td>
-                                    <td style="padding-left: 0; text-align: right;">712.64 USD</td>
-                                    <td style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
-                                    <td>1.00 BTC</td>
-                                    <td class="muted">7.20 USD</td>
-                                    <td class="muted">705.44 USD</td>
-                                    <td><span class="label label-success">Completed</span></td>
-                                    <td>Feb  7, 2014</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="" class="card-footer ul-margin-bottom-zero" style="">
-                        <ul class="pagination pagination-card-footer li-inline">
-                          <li class="disabled"><a href="#">«</a></li>
-                          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#">»</a></li>
-                       </ul>
-                    </div>
+                        </div>
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Website</label>
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_website" class="" style="" type="text" required><label for="client_website">http://example.com</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Phone</label>
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_phone" class="" style="" type="text" required><label for="client_phone">+1 123 123 1234</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Address</label>
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_address1" class="" style="" type="text" required><label for="client_address1">123 Main St.</label>
+                                </div>
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_address2" class="" style="" type="text" required><label for="client_address2">City, State Zip</label>
+                                </div>
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <input id="client_address3" class="" style="" type="text" required><label for="client_address3">Country</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company description</label>
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <div id="" class="go-bottom" style="width: 45%">
+                                    <textarea id="client_description" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea><label for="client_description">Acme Widgets Inc. info</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
+                                <button class="btn btn-save" style=""><a class="" href="#/companies" class=""><span class="glyphicon glyphicon-save"></span> Save Changes</a></button>
+                            </div>
+                        </div>                        
+                    </form>
                 </div>
             </section>
-            <section id="" class="" style=""></section>
+            <section id="" class="card card-background-color card-boxshadow" style="">
+                <div id="" class="card-header text-color-white background-color-lightgreen" style="">
+                    <div class="element-left" style=""><h3 class="h3">Product Profile</h3></div>
+                    <div class="element-right" style="">
+                        <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
+                    </div>
+                </div>
+                <div id="" class="card-padding" style="">
+
+                </div>
+            </section>
+            
             <footer id="bottombar" class="bottombar background-color-silvergrey" style="">
                 <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.
-                    <!--<a href="#" class="go-top" style="text-align: center; margin-right: 1%;float: right;background: rgba(255,255,255, .5);width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
+                    <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
-                    </a>-->
+                    </a>
                 </div>
             </footer>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script>
         <script>
             $stick = $('aside');
             $foot = $('footer');
-            margin = 17;
+            margin = 18;
             offtop = $stick.offset().top - margin;
             offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
 
@@ -298,6 +269,26 @@
                 $stick.removeClass('bottom').addClass('fixed').css('top', margin);
               }
             });
+        </script>
+        <script>
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		
         </script>
     </body>
 
