@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>    
-            footer {height: 800px; background-color: #e0e3eb; border-radius: 2px; margin-top: 10px; }
+            footer {height: 40px; background-color: #e0e3eb; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
             aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
+            body.app {margin-bottom: 0; margin-top: 0;}
  
             .nav a {font-weight: 700; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
@@ -27,8 +28,8 @@
             #topbar li:last-child a {margin: 0;}
             #topbar li {display: inline;}
             #topbar ul {margin: 0; text-align: right;} 
-            #topbar #nav-menu {position:relative; padding-top: 7px;}
-            #topbar #nav-logo {padding-top: 2px; position: absolute;}
+            #topbar #nav-menu {position:relative; padding-top: 12px;}
+            #topbar #nav-logo {padding-top: 7px; position: absolute;}
             #topbar #nav-logo a {font-size: 24px; font-weight: 600;}
             
             #pillbar a {font-weight: 500;}
@@ -39,10 +40,13 @@
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
                     
-            .main .main-inner {padding: 35px 35px 35px 35px;}
+            .main .main-inner {padding: 35px 35px 35px 35px;} 
             .main .main-inner hr {margin-bottom: 30px; margin-top: 0;}
             .main .main-header {padding-bottom: 35px; }
             .main .main-header h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
+            .main .main-subheader {padding-bottom: 35px; padding-top: 60px;}
+            .main .main-subheader h4 {font-size: 22px; font-weight: 500; color: #575e6a; margin: 0}
+            .main .main-subheader-search {padding-bottom: 45px; padding-top: 0px;}
             .main .element-left {width: 50%; display: inline-block; text-align: left;}
             .main .element-right {width: 49%; display: inline-block; text-align: right;}
             .main .main-body {}
@@ -59,8 +63,10 @@
             
             .btn {margin: 0; position:relative; background:transparent; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-nav {background-color: rgba(224,227,235, .6);} .btn-nav:hover{background-color: rgba(224,227,235, .2);}
-            .btn-save {background-color: rgba(214,235,234, .6);} .btn-save:hover{background-color: rgba(214,235,234, .2);}
+            .btn-nav {background-color: rgba(224,227,235, .6);} 
+            .btn-nav:hover{background-color: rgba(224,227,235, .2);}
+            .btn-save {background-color: rgba(214,235,234, .6);} 
+            .btn-save:hover{background-color: rgba(214,235,234, .2);}
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5; color: #575e6a; }
             
@@ -100,7 +106,7 @@
 
     </head>
 
-    <body style="">
+    <body class="app" style="">
         <div id="container" class="container" style="">
             <header id="topbar" class="nav" style="">
                 <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
@@ -145,13 +151,16 @@
             
             <section id="" class="main" style="">
                 <div id="" class="main-inner" style="">
+                    
                     <div id="" class="main-header" style="">
                         <div class="element-left" style=""><h3 style="">Company Profile</h3></div>
                         <div class="element-right" style="">
                             <button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
                         </div>
                     </div>
+                    
                     <hr style="height:1px; border-width:0; background-color:gray;">
+                    
                     <div id="" class="main-body">
                         <form accept-charset="UTF-8" id="" class="" method="post">
                             <div id="" class="control-group" style="margin-bottom: 20px;">
@@ -206,19 +215,38 @@
                                     <button class="btn btn-save" style=""><a class="" href="#/companies" class=""><span class="glyphicon glyphicon-save"></span> Save Changes</a></button>
                                 </div>
                             </div>
+                            
+                            
+                            
+                            <div id="" class="main-subheader" style="">
+                                <div class="element-left" style=""><h4 style="">Product Profile</h4></div>
+                                <!--<div class="element-right" style="">
+                                    <button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
+                                </div>-->
+                            </div>
+                            
+                            <hr style="height:1px; border-width:0; background-color:gray;">
+                            
                         </form>
                     </div>
                     <div id="" class="main-footer" style=""></div>
                 </div>
             </section>
             <section id="" class="" style=""></section>
-            <footer></footer>
+            <footer class="bottombar" style="<!--background: rgba(78,205,196, 1);--> color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;">
+                <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.
+                    <a href="index-company-create.html#" class="go-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5);width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
+                        <i class="glyphicon glyphicon-chevron-up" style="vertical-align: bottom;color: #fff"></i>
+                    </a>
+                </div>
+            </footer>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script>
         <script>
             $stick = $('aside');
             $foot = $('footer');
-            margin = 17;
+            margin = 18;
             offtop = $stick.offset().top - margin;
             offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
 
