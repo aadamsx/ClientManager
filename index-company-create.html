@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>    
-            footer {height: 40px; background-color: #e0e3eb; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
+            footer {height: 150px; background-color: #e0e3eb; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
             aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
@@ -31,6 +31,8 @@
             #topbar #nav-menu {position:relative; padding-top: 12px;}
             #topbar #nav-logo {padding-top: 7px; position: absolute;}
             #topbar #nav-logo a {font-size: 24px; font-weight: 600;}
+            
+            #bottombar {/*background: rgba(78,205,196, 1); */color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
             
             #pillbar a {font-weight: 500;}
             #pillbar li {display: inline;}
@@ -233,10 +235,10 @@
                 </div>
             </section>
             <section id="" class="" style=""></section>
-            <footer class="bottombar" style="<!--background: rgba(78,205,196, 1);--> color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;">
+            <footer id="bottombar" class="bottombar" style="">
                 <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.
-                    <a href="index-company-create.html#" class="go-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5);width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
-                        <i class="glyphicon glyphicon-chevron-up" style="vertical-align: bottom;color: #fff"></i>
+                    <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
+                        <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
                     </a>
                 </div>
             </footer>
@@ -265,6 +267,26 @@
                 $stick.removeClass('bottom').addClass('fixed').css('top', margin);
               }
             });
+        </script>
+        <script>
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		
         </script>
     </body>
 
