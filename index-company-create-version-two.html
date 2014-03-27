@@ -30,7 +30,7 @@
             ul:hover a {opacity: 0.6;}
 	        ul a:hover, ul li:hover a {opacity: 1;}
                                 
-            #topbar a {color: #fcfcfd; box-shadow: none;}
+            #topbar a {box-shadow: none;}
             #topbar li:last-child a {margin: 0;}
             #topbar ul {margin: 0; text-align: right;} 
             #nav-menu {position:relative; padding-top: 12px;}
@@ -38,11 +38,11 @@
             #nav-logo a {font-size: 24px; font-weight: 600;}
             
             
-            #bottombar {/*background: rgba(78,205,196, 1); */color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
+            #bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
             
             #pillbar ul {margin: 0;}
             .pillpar-inner {padding: 20px 25px 20px 25px}
-            #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px;border-radius: 0;}
+            #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px; border-radius: 0;}
             .li-inline li {display: inline;}
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
@@ -59,21 +59,24 @@
             .h3 {font-size: 24.5px; font-weight: 500; margin: 0;}
             .h4 {font-size: 22px; font-weight: 500; margin: 0;}
             .h5 {font-size: 13px; font-weight: 500; margin-bottom: 0; text-transform: uppercase; }
-            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0; background-color:gray;}
+            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
             .element-left {width: 50%; display: inline-block; text-align: left;}
             .element-right {width: 49%; display: inline-block; text-align: right;}
             
-            .btn {margin: 0; position:relative; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
+            .btn {margin: 0; position:relative; padding: 12px 12px 12px 12px; font-size:0.9em; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-nav {background-color: rgba(224,227,235, .4);} 
-            .btn-nav:hover {background-color: rgba(224,227,235, .2);}
-            .btn-save {background-color: rgba(214,235,234, .6);} 
-            .btn-save:hover {background-color: rgba(214,235,234, .2);}
+            .btn-border-default {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
+            .btn-box-shadow-default {box-shadow:1px 1px 0px 0px #9196aa;}
+            .btn-nav {background-color: rgba(145,150,170, .7);} 
+            .btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
+            .btn-save {background-color: rgba(85,172,238, .9);} 
+            .btn-save:hover {background-color: rgba(85,172,238, .5);/*rgba(214,235,234, .2);*/}
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5;}
             
             .text-color-darkgrey h3, .text-color-darkgrey h5, .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
-            .text-color-white h3, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .text-color-white h3, .text-color-white div, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .text-color-brightwhite h3, .text-color-brightwhite div, .text-color-brightwhite a {color: white;}
             .text-color-medgrey h3, .text-color-medgrey h5, .text-color-medgrey a {color: #9196aa;}
             .text-color-lightgrey h3, .text-color-lightgrey h5, .text-color-lightgrey a {color: #ddd;}
             .text-color-darkblue h3, .text-color-darkblue a {color: #fcfcfd;}
@@ -119,7 +122,7 @@
 
     <body class="app" style="">
         <div id="container" class="container" style="">
-            <header id="topbar" class="nav topbar-background-color" style="">
+            <header id="topbar" class="nav topbar-background-color text-color-white" style="">
                 <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
                     <ul id="topbar-list" class="nav-list topbar-list li-inline" style="">
@@ -161,10 +164,12 @@
             </section>
             
             <section id="" class="card card-background-color card-boxshadow" style="">
-               <div id="" class="card-header text-color-white background-color-lightblue">
-                    <div class="element-left"><h3 class="h3">Company Profile</h3></div>
+               <div id="" class="card-header text-color-brightwhite background-color-lightblue">
+                    <div class="element-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right ">
-                        <button class="btn btn-nav"><a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
+                        <button class="btn btn-nav btn-border-default btn-box-shadow-default">
+                            <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
+                        </button>
                     </div>
                 </div>
                 
@@ -217,9 +222,11 @@
                             </div>
                         </div>
 
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
+                        <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
                             <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <button class="btn btn-save" style=""><a class="" href="#/companies" class=""><span class="glyphicon glyphicon-save"></span> Save Changes</a></button>
+                                <button class="btn btn-save btn-border-default btn-box-shadow-default" style="">
+                                    <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
+                                </button>
                             </div>
                         </div>                        
                     </form>
@@ -237,8 +244,8 @@
                 </div>
             </section>
             
-            <footer id="bottombar" class="bottombar background-color-silvergrey" style="">
-                <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.
+            <footer id="bottombar" class="bottombar text-color-white background-color-silvergrey" style="">
+                <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
                     </a>
