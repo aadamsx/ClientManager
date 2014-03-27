@@ -52,7 +52,6 @@
             .card-padding {padding: 30px 35px 35px 35px;}
             .card-header {padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;}
             .card-subheader {padding-bottom: 35px; padding-top: 60px;}
-            .card-search {padding-bottom: 45px; padding-top: 0px;}
             .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
             
             .ul-margin-bottom-zero ul:last-child {margin-bottom: 0;}
@@ -116,6 +115,8 @@
             .controls textarea:focus + label {top: 100%; margin-top: -16px; margin-bottom: 3.5px; background-color: rgba(145,150,170, .7); color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
             .controls input:focus, 
             .controls textarea:focus {border-color: rgba(145,150,170, .7); padding: 4px 6px 20px 6px;}
+            .control-group-search {padding-bottom: 25px; padding-top: 0px;}
+            .controls-search {margin-left: 0;}
               
             /* elements */
             .input, .textarea {padding: 12px 12px 12px 12px; width: 100%; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box;} 
@@ -195,21 +196,18 @@
                 <div id="" class="card-header text-color-brightwhite background-color-lightblue" style="">
                     <div class="element-left"><h3 class="h3" style="">Accounts</h3></div>
                     <div class="element-right" style="">
-                        <button class="btn btn-nav btn-border-default btn-box-shadow-default" style="">
+                        <button class="btn btn-nav border-grey btn-box-shadow-default" style="">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a>
                         </button>
                     </div>
                 </div>
-                
-                <!--<div class="margin: 0 auto; text-align: center"><a href="#" class="btn-round " style="margin: 0 auto; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow: none; border: none; background: white; position: relative; border-radius: 50%; width: 38px; height: 38px; top: -8.5px;"><span class=" glyphicon glyphicon-refresh"></span></a></div>-->
-                
-                <div id="" class="card-padding" style="">
-                    <!--<hr class="hr" style=">-->
-                    
-                    <div id="" class="card-search">
+                              
+                <div id="" class="card-padding" style="">                  
+                    <div id="" class="control-group control-group-search">
                         <form accept-charset="UTF-8" id="" class="" method="post">
-                            <div id="" class="go-bottom" style="width: 35%">
-                                <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Search</label>
+                            <div id="" class="controls controls-search l-position-relative l-overflow-hidden" style="width: 35%">
+                                <input id="client_search" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_company_name">Search</label>
                             </div>
                         </form>
                     </div>
