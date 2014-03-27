@@ -9,7 +9,7 @@
         <style>    
             footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px;}
+            section {position: relative; margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
             aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
@@ -47,6 +47,7 @@
             
             #container {position: relative; width: 1200px; margin: 0 auto;}
                 
+            /* cards */
             .card {}
             .card-padding {padding: 30px 35px 35px 35px;}
             .card-header {padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;}
@@ -56,16 +57,12 @@
             
             .ul-margin-bottom-zero ul:last-child {margin-bottom: 0;}
             .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
-            .h3 {font-size: 24.5px; font-weight: 500; margin: 0;}
-            .h4 {font-size: 22px; font-weight: 500; margin: 0;}
-            .h5 {font-size: 13px; font-weight: 500; margin-bottom: 0; text-transform: uppercase; }
-            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
             .element-left {width: 50%; display: inline-block; text-align: left;}
             .element-right {width: 49%; display: inline-block; text-align: right;}
             
+            /* buttons */
             .btn {margin: 0; position:relative; padding: 12px 12px 12px 12px; font-size:0.9em; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-border-default {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
             .btn-box-shadow-default {box-shadow:1px 1px 0px 0px #9196aa;}
             .btn-nav {background-color: rgba(145,150,170, .7);} 
             .btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
@@ -74,29 +71,61 @@
             .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
             .btn i, .btn span {opacity: 0.5;}
             
+            /* coloring text */
             .text-color-darkgrey h3, .text-color-darkgrey h5, .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
             .text-color-white h3, .text-color-white div, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
             .text-color-brightwhite h3, .text-color-brightwhite div, .text-color-brightwhite a {color: white;}
-            .text-color-medgrey h3, .text-color-medgrey h5, .text-color-medgrey a {color: #9196aa;}
+            .text-color-medgrey h3, .text-color-medgrey h5, .text-color-medgrey a, .text-color-medgrey  {color: #9196aa;}
             .text-color-lightgrey h3, .text-color-lightgrey h5, .text-color-lightgrey a {color: #ddd;}
             .text-color-darkblue h3, .text-color-darkblue a {color: #fcfcfd;}
+            
+            /* coloring background */
             .background-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
             .background-color-lightblue {background-color: rgba(47,188,203, .5);}
             .background-color-silvergrey {background-color: #e0e3eb; }
             .card-background-color, .card-background-color input:valid, .card-background-color textarea:valid {background-color: rgba(252,252,253, .95);}
-            .card-boxshadow {box-shadow:2px 2px 3px -2px #9196aa;}
             .sidbar-background-color {background-color: rgba(252,252,253, .95);}
             .pillbar-background-color {background-color: rgba(252,252,253, .95);}
             .topbar-background-color {background: transparent; }
-                        
-            form textarea {display: block; resize: vertical;}
-            .go-bottom {position: relative; overflow: hidden; }
-            .go-bottom input, .go-bottom textarea { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid #ddd/*grey*/; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
-            .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
-            .go-bottom input:focus + label, .go-bottom textarea:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
-            .go-bottom input:focus, .go-bottom textarea:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
-            /*.go-bottom input:focus { border-color: #f06d06; padding: 4px 6px 20px 6px;}  */
+            .background-transparent {background: transparent;}
+            .background-none {background: none;}
             
+            /* boxshadows */
+            .card-boxshadow {box-shadow:2px 2px 3px -2px #9196aa;}
+            
+            /* borders */
+            .border-grey {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
+            .border-lightgrey {border:1px solid #ddd;/*#9196aa*/;}
+            .border-darkgrey {border:1px solid rgba(145,150,170, .5);}
+            .border-radius-2 {border-radius: 2px;}
+            .border-radius-0 {border-radius: 2px;}
+            
+            /* layouts */
+            .l-position-relative {position: relative;}
+            .l-position-absolute {position: absolute;}
+            .l-position-fixed {position: fixed;}
+            .l-display-block {display: block;}
+            .l-display-inline-block {display: inline-block;}
+            .l-overflow-hidden {overflow: hidden;}
+            
+            /* control group */
+            .control-group {margin-bottom: 20px;}
+            .control-label {text-align: right; width: 170px; float: left; padding-top: 15px;}
+            .controls {margin-left: 190px; width: 35%;}
+            .controls input:focus + label, 
+            .controls textarea:focus + label {top: 100%; margin-top: -16px; margin-bottom: 3.5px; background-color: rgba(145,150,170, .7); color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
+            .controls input:focus, 
+            .controls textarea:focus {border-color: rgba(145,150,170, .7); padding: 4px 6px 20px 6px;}
+              
+            /* elements */
+            .input, .textarea {padding: 12px 12px 12px 12px; width: 100%; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box;} 
+            .label {top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; padding: 7px 6px;}
+            .h3 {font-size: 24.5px; font-weight: 500; margin: 0;}
+            .h4 {font-size: 22px; font-weight: 500; margin: 0;}
+            .h5 {font-size: 13px; font-weight: 500; margin-bottom: 0; text-transform: uppercase; }
+            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
+    
+            /* tables */
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
             table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
             .table th, .table td {padding: 8px; line-height: 20px; text-align: left; vertical-align: top; border-top: 1px solid #ddd;}
@@ -113,8 +142,8 @@
             
             .sidebar-header {padding: 0 25px 0 25px;}
             .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
-            .sidebar li:hover {background: rgba(0,0,0,0.02); color: #444; border-radius: 2px;}
-            .sidebar i { margin-right: 8px; width: 18px; opacity: 0.5;}
+            .sidebar li:hover {border-radius: 2px;}
+            .sidebar i {margin-right: 8px; width: 18px; opacity: 0.5;}
             .sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
         </style>
 
@@ -167,64 +196,61 @@
                <div id="" class="card-header text-color-brightwhite background-color-lightblue">
                     <div class="element-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right ">
-                        <button class="btn btn-nav btn-border-default btn-box-shadow-default">
+                        <button class="btn btn-nav border-grey btn-box-shadow-default">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
                         </button>
                     </div>
                 </div>
                 
                 <div id="" class="card-padding main-inner" style="">
-                    <form accept-charset="UTF-8" id="" class="card-background-color" method="post">
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company name</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Acme Widgets Inc.</label>
-                                </div>
+                    <form accept-charset="UTF-8" id="" class="l-display-block card-background-color" method="post">
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Company name</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_company_name " class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_company_name">Acme Widgets Inc.</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Website</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_website" class="" style="" type="text" required><label for="client_website">http://example.com</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Website</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_website" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_website">http://example.com</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Phone</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_phone" class="" style="" type="text" required><label for="client_phone">+1 123 123 1234</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Phone</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_phone" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_phone">+1 123 123 1234</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Address</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address1" class="" style="" type="text" required><label for="client_address1">123 Main St.</label>
-                                </div>
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address2" class="" style="" type="text" required><label for="client_address2">City, State Zip</label>
-                                </div>
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address3" class="" style="" type="text" required><label for="client_address3">Country</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Address</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address1" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_address1">123 Main St.</label>
+                            </div>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address2" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_address2">City, State Zip</label>
+                            </div>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address3" class="input border-lightgrey l-position-relative background-none border-radius-2" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_address3">Country</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company description</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <textarea id="client_description" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea><label for="client_description">Acme Widgets Inc. info</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Company description</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative background-none border-radius-2" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                <label class="label l-position-absolute border-radius-2 text-color-medgrey" for="client_description">Acme Widgets Inc. info</label>
                             </div>
                         </div>
 
                         <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <button class="btn btn-save btn-border-default btn-box-shadow-default" style="">
+                            <div id="" class="controls" style="">
+                                <button class="btn btn-save border-darkgrey btn-box-shadow-default" style="">
                                     <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
                                 </button>
                             </div>
