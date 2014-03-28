@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>    
-             footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
+            footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
             aside {margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
@@ -49,17 +49,6 @@
             .element-left {width: 50%;}
             .element-right {width: 49%;}
             
-            /* buttons */
-            .btn {padding: 12px; letter-spacing: .5px;}
-            .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            
-            .btn-nav {background-color: rgba(145,150,170, .7);} 
-            .btn-nav:hover {background-color: rgba(145,150,170, .6)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
-            .btn-save {background-color: rgba(85,172,238, .9);} 
-            .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
-            .btn a {color: #575e6a/*#428bca*/;}
-            .btn i, .btn span {opacity: 0.5;}
-            
             /* coloring text */
             .text-color-darkgrey .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
             .text-color-white, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
@@ -68,24 +57,27 @@
             .text-color-lightgrey, .text-color-lightgrey a {color: #ddd;}
             .text-color-darkblue, .text-color-darkblue a {color: #fcfcfd;}
             
-            /* coloring background */
-            .background-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
-            .background-color-lightblue {background-color: rgba(47,188,203, .5);}
-            .background-color-silvergrey {background-color: #e0e3eb; }
-            .background-color-card, 
-            .background-color-card input:valid, 
-            .background-color-card textarea:valid {background-color: rgba(252,252,253, .95);}
-            .background-color-sidebar {background-color: rgba(252,252,253, .95);}
-            .background-color-pillbar {background-color: rgba(252,252,253, .95);}
-            .background-transparent {background: transparent;}
-            .background-none {background: none;}
+            /* background-coloring */
+            .bg-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
+            .bg-color-lightblue {background-color: rgba(47,188,203, .5);}
+            .bg-color-silvergrey {background-color: #e0e3eb; }
+            .bg-color-sidebar {background-color: rgba(252,252,253, .95);}
+            .bg-color-pillbar {background-color: rgba(252,252,253, .95);}
+            .bg-transparent {background: transparent;}
+            .bg-none {background: none;}
+            .bg-color-btn-nav {background-color: rgba(145,150,170, .7);} 
+            .bg-color-btn-save {background-color: rgba(85,172,238, .9);} 
+            /* background-coloring-state */
+            .bg-color-card, 
+            .bg-color-card input:valid, 
+            .bg-color-card textarea:valid {background-color: rgba(252,252,253, .95);}
             
             /* boxshadows */
-            .boxshadow-default {box-shadow: 2px 2px 3px -2px #9196aa;}
-            .boxshadow-none {box-shadow: none;}
-            .boxshadow-underline {box-shadow: 0 -4px #ddd inset;}
-            .boxshadow-btn-nav {box-shadow:1px 1px 0px 0px rgba(252,252,253, .9);}
-            .boxshadow-btn-action {box-shadow: 1px 1px 0px 0px #9196aa;}
+            .bs-default {box-shadow: 2px 2px 3px -2px #9196aa;}
+            .bs-none {box-shadow: none;}
+            .bs-underline {box-shadow: 0 -4px #ddd inset;}
+            .bs-btn-nav {box-shadow:1px 1px 0px 0px rgba(252,252,253, .9);}
+            .bs-btn-action {box-shadow: 1px 1px 0px 0px #9196aa;}
             
             /* borders */
             .border-grey {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
@@ -110,16 +102,17 @@
             .l-text-right {text-align: right;}
             .l-text-left {text-align: left;}
             
-            /* control group */
+            /* control-group */
             .control-group {margin-bottom: 20px;}
             .control-label {text-align: right; width: 170px; float: left; padding-top: 15px;}
             .controls {margin-left: 190px; width: 35%;}
-            .controls input:focus + label, 
-            .controls textarea:focus + label {top: 100%; margin-top: -16px; background-color: rgba(145,150,170, .9); color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
-            .controls input:focus, 
-            .controls textarea:focus {border-color: rgba(145,150,170, .7); padding: 4px 6px 20px 6px;}
             .control-group-search {padding-bottom: 25px; padding-top: 0px;}
             .controls-search {margin-left: 0;}
+            /* control-group-state */
+            .controls input:focus, 
+            .controls textarea:focus {border-color: rgba(145,150,170, .7); padding: 4px 6px 20px 6px;}
+            .controls input:focus + label, 
+            .controls textarea:focus + label {top: 100%; margin-top: -16px; background-color: rgba(145,150,170, .9); color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
               
             /* elements */
             .input, .textarea {padding: 12px 12px 12px 12px; width: 100%; top: 0; left: 0; z-index: 1; outline: 0;} 
@@ -128,12 +121,35 @@
             .h4 {font-size: 22px; font-weight: 500; margin: 0;}
             .h5 {font-size: 13px; font-weight: 500; margin-bottom: 0; text-transform: uppercase; }
             .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
-            
+            a {text-decoration: none;}
+            /* elements-state */
             ul {list-style-type: none; padding: 0;}
             ul:hover a {opacity: 0.6;}
 	        ul a:hover, ul li:hover a {opacity: 1;}
-            a {text-decoration: none;}
+            
     
+            /*#########*/
+            /* modules */
+            /*#########*/
+            
+            /* sidebar */
+            .sidebar-header {padding: 0 25px 0 25px;}
+            .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
+            .sidebar i {margin-right: 8px; width: 18px; opacity: 0.5;}
+            .sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
+            /* sidebar-state */
+            .sidebar li:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
+            .sidebar li:hover a {color: rgba(52,114,218, .9);}
+            .sidebar li:hover i {opacity: 1;}
+            
+            /* buttons */
+            .btn {padding: 12px; letter-spacing: .5px;}
+            .btn i, .btn span {opacity: 0.5;}
+            /* buttons-state */
+            .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
+            .btn-nav:hover {background-color: rgba(145,150,170, .6)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
+            .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
+            
             /* tables */
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
             table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
@@ -148,19 +164,13 @@
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
-            
-            .sidebar-header {padding: 0 25px 0 25px;}
-            .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
-            .sidebar li:hover {border-radius: 2px;}
-            .sidebar i {margin-right: 8px; width: 18px; opacity: 0.5;}
-            .sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
         </style>
 
     </head>
 
     <body class="app" style="">
         <div id="container" class="container l-margin-0-auto">
-            <header id="topbar" class="nav background-transparent text-color-white" style="">
+            <header id="topbar" class="nav bg-transparent text-color-white" style="">
                 <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
                     <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0 l-text-right" style="">
@@ -174,7 +184,7 @@
                 </div>
             </header>
             
-            <aside id="sidebar" class="nav sidebar natural background-color-sidebar boxshadow-default l-position-absolute" style="">
+            <aside id="sidebar" class="nav sidebar natural bg-color-sidebar bs-default l-position-absolute" style="">
                 <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
@@ -189,7 +199,7 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav background-color-pillbar boxshadow-default l-position-relative" style="">
+            <section id="pillbar" class="nav bg-color-pillbar bs-default l-position-relative" style="">
                 <div class="border-outline">
                 <div id="" class="pillpar-inner" style="">
                     <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline l-margin-0" style="">
@@ -201,11 +211,11 @@
                 </div>
             </section>
             
-            <section id="" class="card background-color-card boxshadow-default l-position-relative" style="">
-               <div id="" class="card-header text-color-brightwhite background-color-lightblue">
+            <section id="" class="card bg-color-card bs-default l-position-relative" style="">
+               <div id="" class="card-header text-color-brightwhite bg-color-lightblue">
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
-                        <button class="btn btn-nav border-grey boxshadow-btn-nav l-position-relative border-radius-2">
+                        <button class="btn bg-color-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
                         </button>
                     </div>
@@ -216,50 +226,50 @@
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Company name</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_company_name " class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_company_name " class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Website</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_website" class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_website" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_website">http://example.com</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Phone</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_phone" class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_phone" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_phone">+1 123 123 1234</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Address</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address1" class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_address1" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address1">123 Main St.</label>
                             </div>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address2" class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_address2" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address2">City, State Zip</label>
                             </div>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address3" class="input border-lightgrey l-position-relative background-none border-radius-2 border-box" style="" type="text" required>
+                                <input id="client_address3" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address3">Country</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Company description</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative background-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
                                 <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
                             </div>
                         </div>
 
                         <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
                             <div id="" class="controls" style="">
-                                <button class="btn btn-save border-darkgrey boxshadow-btn-action l-position-relative border-radius-2" style="">
+                                <button class="btn bg-color-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
                                     <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
                                 </button>
                             </div>
@@ -267,8 +277,8 @@
                     </form>
                 </div>
             </section>
-            <section id="" class="card background-color-card boxshadow-default l-position-relative" style="">
-                <div id="" class="card-header text-color-brightwhite background-color-lightgreen" style="">
+            <section id="" class="card bg-color-card bs-default l-position-relative" style="">
+                <div id="" class="card-header text-color-brightwhite bg-color-lightgreen" style="">
                     <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right" style="">
                         <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
@@ -279,7 +289,7 @@
                 </div>
             </section>
             
-            <footer id="bottombar" class="bottombar text-color-white background-color-silvergrey" style="">
+            <footer id="bottombar" class="bottombar text-color-white bg-color-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
