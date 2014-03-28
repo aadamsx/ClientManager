@@ -26,11 +26,10 @@
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
                             
-            #topbar a {box-shadow: none;}
             #topbar li:last-child a {margin: 0;}
-            #topbar ul {margin: 0; text-align: right;} 
-            #nav-menu {position:relative; padding-top: 12px;}
-            #nav-logo {padding-top: 7px; position: absolute;}
+            #topbar ul {text-align: right;} 
+            #nav-menu {padding-top: 12px;}
+            #nav-logo {padding-top: 7px;}
             #nav-logo a {font-size: 24px; font-weight: 600;}
             
             #bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
@@ -47,7 +46,6 @@
             .card-header {padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;}
             .card-subheader {padding-bottom: 35px; padding-top: 60px;}
             .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
-            
             
             .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
             .element-left {width: 50%; text-align: left;}
@@ -84,6 +82,7 @@
             
             /* boxshadows */
             .boxshadow-default {box-shadow: 2px 2px 3px -2px #9196aa;}
+            .boxshadow-none {box-shadow: none;}
             
             /* borders */
             .border-grey {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
@@ -103,6 +102,8 @@
             .l-display-inline li {display: inline;}
             .l-margin-0 {margin: 0;}
             .l-margin-0-auto {margin: 0 auto;}
+            .l-float-left {float: left;}
+            .l-float-right {float: right;}
             
             /* control group */
             .control-group {margin-bottom: 20px;}
@@ -154,9 +155,9 @@
     <body class="app" style="">
         <div id="container" class="container" style="">
             <header id="topbar" class="nav background-transparent text-color-white" style="">
-                <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
+                <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
-                    <ul id="topbar-list" class="nav-list topbar-list l-display-inline" style="">
+                    <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
                         <li class=""><a href="#">latest News</a></li>
