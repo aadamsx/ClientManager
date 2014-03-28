@@ -14,28 +14,7 @@
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
             body.app {margin-bottom: 0; margin-top: 0;}
- 
-            .pagination {padding-left: 0; margin: 20px 0;}
-            .pagination>li>a, .pagination>li>span {float: left; padding: 6px 12px; line-height: 1.42857143; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
-            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
-            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
-            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
-            
-            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; color: #575e6a; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
-            .nav:active a {opacity: 1.0;}
-            .nav:active ul:active a {opacity: 0.5;}
-            .nav:active ul:active a:active {opacity: 0.9;}
-                            
-            #topbar li:last-child a {margin: 0;}
-            #nav-menu {padding-top: 12px;}
-            #nav-logo {padding-top: 7px;}
-            #nav-logo a {font-size: 24px; font-weight: 600;}
-            
-            #bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
-            
-            .pillpar-inner {padding: 20px 25px 20px 25px}
-            #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px; border-radius: 0;}
-                        
+                     
             #container {width: 1200px;}
                 
             /* cards */
@@ -51,12 +30,12 @@
             .element-right {width: 49%;}
             
             /* coloring text */
-            .text-color-darkgrey .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
-            .text-color-white, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
-            .text-color-brightwhite, .text-color-brightwhite a {color: #fff;}
-            .text-color-medgrey, .text-color-medgrey a {color: #9196aa;}
-            .text-color-lightgrey, .text-color-lightgrey a {color: #ddd;}
-            .text-color-darkblue, .text-color-darkblue a {color: #fcfcfd;}
+            .tc-darkgrey, .tc-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
+            .tc-white, .tc-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .tc-brightwhite, .tc-brightwhite a {color: #fff;}
+            .tc-medgrey, .tc-medgrey a {color: #9196aa;}
+            .tc-lightgrey, .tc-lightgrey a {color: #ddd;}
+            .tc-darkblue, .tc-darkblue a {color: #fcfcfd;}
             
             /* background-coloring */
             .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
@@ -164,12 +143,35 @@
             .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
+            
+            .pagination {padding-left: 0; margin: 20px 0;}
+            .pagination>li>a, .pagination>li>span {float: left; padding: 6px 12px; line-height: 1.42857143; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
+            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
+            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
+            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
+            
+            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav:active a {opacity: 1.0;}
+            .nav:active ul:active a {opacity: 0.5;}
+            .nav:active ul:active a:active {opacity: 0.9;}
+                   
+            /* topbar*/
+            #nav-menu {padding-top: 12px;}
+            #nav-logo {padding-top: 7px;}
+            #nav-logo a {font-size: 24px; font-weight: 600;}
+            /* topbar-state */
+            #topbar li:last-child a {margin: 0;}
+
+            #bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
+            
+            .pillpar-inner {padding: 20px 25px 20px 25px}
+            #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px; border-radius: 0;}
         </style>
     </head>
 
     <body class="app" style="">
         <div id="container" class="container l-margin-0-auto">
-            <header id="topbar" class="nav bg-transparent text-color-white" style="">
+            <header id="topbar" class="nav bg-transparent tc-white" style="">
                 <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
                     <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0 l-text-right" style="">
@@ -184,10 +186,10 @@
             </header>
             
             <aside id="sidebar" class="nav sidebar natural bg-sidebar bs-default l-position-absolute" style="">
-                <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
+                <div id="sidebar-header" class="sidebar-header tc-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
-                <ul id="sidebar-list" class="list sidebar-list" style="">
+                <ul id="sidebar-list" class="list sidebar-list tc-darkgrey" style="">
                     <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
@@ -211,7 +213,7 @@
             </section>
             
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-                <div id="" class="card-header text-color-brightwhite bg-lightblue" style="">
+                <div id="" class="card-header tc-brightwhite bg-lightblue" style="">
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Accounts</h3></div>
                     <div class="element-right l-display-inline-block l-text-right" style="">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2" style="">
@@ -220,12 +222,12 @@
                     </div>
                 </div>
                               
-                <div id="" class="card-padding" style="">                  
+                <div id="" class="card-padding tc-darkgrey" style="">                  
                     <div id="" class="control-group control-group-search">
                         <form accept-charset="UTF-8" id="" class="" method="post">
                             <div id="" class="controls controls-search l-position-relative l-overflow-hidden" style="width: 35%">
                                 <input id="client_search" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_company_name">Search</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Search</label>
                             </div>
                         </form>
                     </div>
@@ -319,7 +321,7 @@
                     </div>
                 </div>
             </section>
-            <footer id="bottombar" class="bottombar text-color-white bg-silvergrey" style="">
+            <footer id="bottombar" class="bottombar tc-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.</div>
             </footer>
         </div>

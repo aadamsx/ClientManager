@@ -30,12 +30,12 @@
             .element-right {width: 49%;}
             
             /* coloring text */
-            .text-color-darkgrey .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
-            .text-color-white, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
-            .text-color-brightwhite, .text-color-brightwhite a {color: #fff;}
-            .text-color-medgrey, .text-color-medgrey a {color: #9196aa;}
-            .text-color-lightgrey, .text-color-lightgrey a {color: #ddd;}
-            .text-color-darkblue, .text-color-darkblue a {color: #fcfcfd;}
+            .tc-darkgrey, .tc-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
+            .tc-white, .tc-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .tc-brightwhite, .tc-brightwhite a {color: #fff;}
+            .tc-medgrey, .tc-medgrey a {color: #9196aa;}
+            .tc-lightgrey, .tc-lightgrey a {color: #ddd;}
+            .tc-darkblue, .tc-darkblue a {color: #fcfcfd;}
             
             /* background-coloring */
             .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
@@ -172,7 +172,7 @@
 
     <body class="app" style="">
         <div id="container" class="container l-margin-0-auto">
-            <header id="topbar" class="nav bg-transparent text-color-white" style="">
+            <header id="topbar" class="nav bg-transparent tc-white" style="">
                 <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
                     <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0 l-text-right" style="">
@@ -187,10 +187,10 @@
             </header>
             
             <aside id="sidebar" class="nav sidebar natural bg-sidebar bs-default l-position-absolute" style="">
-                <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
+                <div id="sidebar-header" class="sidebar-header tc-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
-                <ul id="sidebar-list" class="list sidebar-list " style="">
+                <ul id="sidebar-list" class="list sidebar-list tc-darkgrey" style="">
                     <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard "></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
@@ -201,7 +201,7 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav bg-pillbar bs-default l-position-relative" style="">
+            <section id="pillbar" class="nav bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
                 <div class="border-outline">
                 <div id="" class="pillpar-inner" style="">
                     <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline l-margin-0" style="">
@@ -214,7 +214,7 @@
             </section>
             
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-               <div id="" class="card-header text-color-brightwhite bg-lightblue">
+               <div id="" class="card-header tc-brightwhite bg-lightblue">
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
@@ -223,53 +223,53 @@
                     </div>
                 </div>
                 
-                <div id="" class="card-padding main-inner" style="">
+                <div id="" class="card-padding main-inner tc-darkgrey" style="">
                     <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Company name</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_company_name " class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Website</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_website" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_website">http://example.com</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Phone</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_phone" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_phone">+1 123 123 1234</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Address</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_address1" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address1">123 Main St.</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
                             </div>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_address2" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address2">City, State Zip</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
                             </div>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <input id="client_address3" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_address3">Country</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
                             </div>
                         </div>
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Company description</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
                                 <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
-                                <label class="label l-position-absolute border-radius-2 text-color-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
                             </div>
                         </div>
 
-                        <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
+                        <div id="" class="control-group tc-brightwhite" style="margin-bottom: 20px;">
                             <div id="" class="controls" style="">
                                 <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
                                     <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
@@ -280,7 +280,7 @@
                 </div>
             </section>
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-                <div id="" class="card-header text-color-brightwhite bg-lightgreen" style="">
+                <div id="" class="card-header tc-brightwhite bg-lightgreen" style="">
                     <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right" style="">
                         <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
@@ -291,7 +291,7 @@
                 </div>
             </section>
             
-            <footer id="bottombar" class="bottombar text-color-white bg-silvergrey" style="">
+            <footer id="bottombar" class="bottombar tc-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
