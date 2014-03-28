@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>    
-            footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
+             footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
             section {margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
             aside {margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
@@ -16,12 +16,12 @@
             body.app {margin-bottom: 0; margin-top: 0;}
  
             .pagination {padding-left: 0; margin: 20px 0;}
-            .pagination>li>a, .pagination>li>span {float: left; padding: 6px 12px; line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
+            .pagination>li>a, .pagination>li>span {float: left; padding: 6px 12px; line-height: 1.42857143; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
             .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
             .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
             .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
             
-            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
@@ -34,11 +34,10 @@
             
             #bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
             
-            #pillbar ul {margin: 0;}
             .pillpar-inner {padding: 20px 25px 20px 25px}
             #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px; border-radius: 0;}
                         
-            #container {position: relative; width: 1200px; margin: 0 auto;}
+            #container {width: 1200px;}
                 
             /* cards */
             .card {}
@@ -54,21 +53,21 @@
             /* buttons */
             .btn {margin: 0; position:relative; padding: 12px 12px 12px 12px; font-size:0.9em; letter-spacing: .5px; border-radius: 2px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-box-shadow-default {box-shadow:1px 1px 0px 0px #9196aa;}
+            
             .btn-nav {background-color: rgba(145,150,170, .7);} 
             .btn-nav:hover {background-color: rgba(145,150,170, .6)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
             .btn-save {background-color: rgba(85,172,238, .9);} 
             .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
-            .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
+            .btn a {color: #575e6a/*#428bca*/;}
             .btn i, .btn span {opacity: 0.5;}
             
             /* coloring text */
-            .text-color-darkgrey h3, .text-color-darkgrey h5, .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
-            .text-color-white h3, .text-color-white div, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
-            .text-color-brightwhite h3, .text-color-brightwhite div, .text-color-brightwhite a {color: white;}
-            .text-color-medgrey h3, .text-color-medgrey h5, .text-color-medgrey a, .text-color-medgrey  {color: #9196aa;}
-            .text-color-lightgrey h3, .text-color-lightgrey h5, .text-color-lightgrey a {color: #ddd;}
-            .text-color-darkblue h3, .text-color-darkblue a {color: #fcfcfd;}
+            .text-color-darkgrey .text-color-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
+            .text-color-white, .text-color-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .text-color-brightwhite, .text-color-brightwhite a {color: #fff;}
+            .text-color-medgrey, .text-color-medgrey a {color: #9196aa;}
+            .text-color-lightgrey, .text-color-lightgrey a {color: #ddd;}
+            .text-color-darkblue, .text-color-darkblue a {color: #fcfcfd;}
             
             /* coloring background */
             .background-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
@@ -83,6 +82,8 @@
             /* boxshadows */
             .boxshadow-default {box-shadow: 2px 2px 3px -2px #9196aa;}
             .boxshadow-none {box-shadow: none;}
+            .boxshadow-underline {box-shadow: 0 -4px #ddd inset;}
+            .btn-box-shadow-default {box-shadow:1px 1px 0px 0px #9196aa;}
             
             /* borders */
             .border-grey {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
@@ -127,6 +128,7 @@
             ul {list-style-type: none; padding: 0;}
             ul:hover a {opacity: 0.6;}
 	        ul a:hover, ul li:hover a {opacity: 1;}
+            a {text-decoration: none;}
     
             /* tables */
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
@@ -153,7 +155,7 @@
     </head>
 
     <body class="app" style="">
-        <div id="container" class="container" style="">
+        <div id="container" class="container l-margin-0-auto">
             <header id="topbar" class="nav background-transparent text-color-white" style="">
                 <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
@@ -186,7 +188,7 @@
             <section id="pillbar" class="nav pillbar-background-color boxshadow-default l-position-relative" style="">
                 <div class="border-outline">
                 <div id="" class="pillpar-inner" style="">
-                    <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline" style="">
+                    <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline l-margin-0" style="">
                         <li style=""><a href="#" style="">Accounts</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Activities</a></li>
@@ -262,7 +264,7 @@
                 </div>
             </section>
             <section id="" class="card card-background-color boxshadow-default l-position-relative" style="">
-                <div id="" class="card-header text-color-white background-color-lightgreen" style="">
+                <div id="" class="card-header text-color-brightwhite background-color-lightgreen" style="">
                     <div class="element-left" style=""><h3 class="h3">Product Profile</h3></div>
                     <div class="element-right" style="">
                         <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
