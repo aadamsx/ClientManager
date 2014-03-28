@@ -21,13 +21,12 @@
             .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
             .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
             
-            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; color: #575e6a; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
                             
             #topbar li:last-child a {margin: 0;}
-            #topbar ul {text-align: right;} 
             #nav-menu {padding-top: 12px;}
             #nav-logo {padding-top: 7px;}
             #nav-logo a {font-size: 24px; font-weight: 600;}
@@ -47,11 +46,11 @@
             .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
             
             .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
-            .element-left {width: 50%; text-align: left;}
-            .element-right {width: 49%; text-align: right;}
+            .element-left {width: 50%;}
+            .element-right {width: 49%;}
             
             /* buttons */
-            .btn {margin: 0; position:relative; padding: 12px 12px 12px 12px; font-size:0.9em; letter-spacing: .5px; border-radius: 2px;}
+            .btn {padding: 12px; font-size:0.9em; letter-spacing: .5px;}
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
             
             .btn-nav {background-color: rgba(145,150,170, .7);} 
@@ -73,9 +72,11 @@
             .background-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
             .background-color-lightblue {background-color: rgba(47,188,203, .5);}
             .background-color-silvergrey {background-color: #e0e3eb; }
-            .card-background-color, .card-background-color input:valid, .card-background-color textarea:valid {background-color: rgba(252,252,253, .95);}
-            .sidbar-background-color {background-color: rgba(252,252,253, .95);}
-            .pillbar-background-color {background-color: rgba(252,252,253, .95);}
+            .background-color-card, 
+            .background-color-card input:valid, 
+            .background-color-card textarea:valid {background-color: rgba(252,252,253, .95);}
+            .background-color-sidebar {background-color: rgba(252,252,253, .95);}
+            .background-color-pillbar {background-color: rgba(252,252,253, .95);}
             .background-transparent {background: transparent;}
             .background-none {background: none;}
             
@@ -90,7 +91,7 @@
             .border-lightgrey {border:1px solid #ddd;/*#9196aa*/;}
             .border-darkgrey {border:1px solid rgba(145,150,170, .5);}
             .border-radius-2 {border-radius: 2px;}
-            .border-radius-0 {border-radius: 2px;}
+            .border-radius-0 {border-radius: 0;}
             .border-box {box-sizing: border-box;}
             
             /* layouts */
@@ -105,6 +106,8 @@
             .l-margin-0-auto {margin: 0 auto;}
             .l-float-left {float: left;}
             .l-float-right {float: right;}
+            .l-text-right {text-align: right;}
+            .l-text-left {text-align: left;}
             
             /* control group */
             .control-group {margin-bottom: 20px;}
@@ -158,7 +161,7 @@
             <header id="topbar" class="nav background-transparent text-color-white" style="">
                 <div id="nav-logo" class="l-position-absolute"><a href="#" style="">formspoint</a></div>
                 <div id="nav-menu" class="">
-                    <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0" style="">
+                    <ul id="topbar-list" class="nav-list topbar-list l-display-inline l-margin-0 l-text-right" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
                         <li class=""><a href="#">latest News</a></li>
@@ -169,7 +172,7 @@
                 </div>
             </header>
             
-            <aside id="sidebar" class="nav sidebar natural sidbar-background-color boxshadow-default l-position-absolute" style="">
+            <aside id="sidebar" class="nav sidebar natural background-color-sidebar boxshadow-default l-position-absolute" style="">
                 <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
@@ -184,7 +187,7 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav pillbar-background-color boxshadow-default l-position-relative" style="">
+            <section id="pillbar" class="nav background-color-pillbar boxshadow-default l-position-relative" style="">
                 <div class="border-outline">
                     <div id="" class="pillpar-inner" style="">
                         <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline l-margin-0" style="">
@@ -196,11 +199,11 @@
                 </div>
             </section>
             
-            <section id="" class="card card-background-color boxshadow-default l-position-relative" style="">
+            <section id="" class="card background-color-card boxshadow-default l-position-relative" style="">
                 <div id="" class="card-header text-color-brightwhite background-color-lightblue" style="">
-                    <div class="element-left l-display-inline-block"><h3 class="h3" style="">Accounts</h3></div>
-                    <div class="element-right l-display-inline-block" style="">
-                        <button class="btn btn-nav border-grey btn-box-shadow-default" style="">
+                    <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Accounts</h3></div>
+                    <div class="element-right l-display-inline-block l-text-right" style="">
+                        <button class="btn btn-nav border-grey btn-box-shadow-default l-position-relative border-radius-2" style="">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-plus"></span> Create Account</a>
                         </button>
                     </div>
