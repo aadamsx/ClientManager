@@ -147,7 +147,7 @@
             .btn i, .btn span {opacity: 0.5;}
             /* buttons-state */
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-nav:hover {background-color: rgba(145,150,170, .6)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
+            .btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
             .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
             
             /* tables */
@@ -164,6 +164,7 @@
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
+            /* tables-state */
         </style>
 
     </head>
@@ -215,7 +216,7 @@
                <div id="" class="card-header text-color-brightwhite bg-color-lightblue">
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
-                        <button class="btn bg-color-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
+                        <button class="btn btn-nav bg-color-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
                         </button>
                     </div>
@@ -269,7 +270,7 @@
 
                         <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
                             <div id="" class="controls" style="">
-                                <button class="btn bg-color-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
+                                <button class="btn btn-save bg-color-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
                                     <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
                                 </button>
                             </div>
