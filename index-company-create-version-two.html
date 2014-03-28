@@ -44,6 +44,8 @@
             .card-header {padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;}
             .card-subheader {padding-bottom: 35px; padding-top: 60px;}
             .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
+            /* cards-state */
+            .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
             
             .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
             .element-left {width: 50%;}
@@ -58,19 +60,17 @@
             .text-color-darkblue, .text-color-darkblue a {color: #fcfcfd;}
             
             /* background-coloring */
-            .bg-color-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
-            .bg-color-lightblue {background-color: rgba(47,188,203, .5);}
-            .bg-color-silvergrey {background-color: #e0e3eb; }
-            .bg-color-sidebar {background-color: rgba(252,252,253, .95);}
-            .bg-color-pillbar {background-color: rgba(252,252,253, .95);}
+            .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
+            .bg-lightblue {background-color: rgba(47,188,203, .5);}
+            .bg-silvergrey {background-color: #e0e3eb; }
+            .bg-card {background-color: rgba(252,252,253, .95);}
+            .bg-sidebar {background-color: rgba(252,252,253, .95);}
+            .bg-pillbar {background-color: rgba(252,252,253, .95);}
             .bg-transparent {background: transparent;}
             .bg-none {background: none;}
-            .bg-color-btn-nav {background-color: rgba(145,150,170, .7);} 
-            .bg-color-btn-save {background-color: rgba(85,172,238, .9);} 
-            /* background-coloring-state */
-            .bg-color-card, 
-            .bg-color-card input:valid, 
-            .bg-color-card textarea:valid {background-color: rgba(252,252,253, .95);}
+            .bg-btn-nav {background-color: rgba(145,150,170, .7);} 
+            .bg-btn-save {background-color: rgba(85,172,238, .9);} 
+
             
             /* boxshadows */
             .bs-default {box-shadow: 2px 2px 3px -2px #9196aa;}
@@ -157,14 +157,14 @@
             .table th {font-weight: bold;}
             .table td, .table th, table td, table th {padding-top: 15px; padding-bottom: 15px;}
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
-            .table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {border-top: 0;}
             .table thead th {vertical-align: bottom;}
             table#account_list td {cursor: pointer;}
-            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
+            /* tables-state */
+            .table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {border-top: 0;}
+            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
-            /* tables-state */
         </style>
 
     </head>
@@ -185,7 +185,7 @@
                 </div>
             </header>
             
-            <aside id="sidebar" class="nav sidebar natural bg-color-sidebar bs-default l-position-absolute" style="">
+            <aside id="sidebar" class="nav sidebar natural bg-sidebar bs-default l-position-absolute" style="">
                 <div id="sidebar-header" class="sidebar-header text-color-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
@@ -200,7 +200,7 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav bg-color-pillbar bs-default l-position-relative" style="">
+            <section id="pillbar" class="nav bg-pillbar bs-default l-position-relative" style="">
                 <div class="border-outline">
                 <div id="" class="pillpar-inner" style="">
                     <ul id="pillbar-list" class="nav-list pillbar-list l-display-inline l-margin-0" style="">
@@ -212,18 +212,18 @@
                 </div>
             </section>
             
-            <section id="" class="card bg-color-card bs-default l-position-relative" style="">
-               <div id="" class="card-header text-color-brightwhite bg-color-lightblue">
+            <section id="" class="card bg-card bs-default l-position-relative" style="">
+               <div id="" class="card-header text-color-brightwhite bg-lightblue">
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
-                        <button class="btn btn-nav bg-color-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
+                        <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2">
                             <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
                         </button>
                     </div>
                 </div>
                 
                 <div id="" class="card-padding main-inner" style="">
-                    <form accept-charset="UTF-8" id="" class="l-display-block card-background-color" method="post">
+                    <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
                         <div id="" class="control-group" style="">
                             <label id="" class="control-label" for="" style="">Company name</label>
                             <div id="" class="controls l-position-relative l-overflow-hidden" style="">
@@ -270,7 +270,7 @@
 
                         <div id="" class="control-group text-color-brightwhite" style="margin-bottom: 20px;">
                             <div id="" class="controls" style="">
-                                <button class="btn btn-save bg-color-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
+                                <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2" style="">
                                     <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
                                 </button>
                             </div>
@@ -278,8 +278,8 @@
                     </form>
                 </div>
             </section>
-            <section id="" class="card bg-color-card bs-default l-position-relative" style="">
-                <div id="" class="card-header text-color-brightwhite bg-color-lightgreen" style="">
+            <section id="" class="card bg-card bs-default l-position-relative" style="">
+                <div id="" class="card-header text-color-brightwhite bg-lightgreen" style="">
                     <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right" style="">
                         <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
@@ -290,7 +290,7 @@
                 </div>
             </section>
             
-            <footer id="bottombar" class="bottombar text-color-white bg-color-silvergrey" style="">
+            <footer id="bottombar" class="bottombar text-color-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
