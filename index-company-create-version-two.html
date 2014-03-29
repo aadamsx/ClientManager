@@ -15,17 +15,8 @@
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
             body.app {margin-bottom: 0; margin-top: 0;}
                      
-            .container {width: 1200px;}  
+            .container {width: 1200px;}      
             
-            /* cards */
-            .card-padding {padding: 30px 35px 35px 35px;}
-            .card-header {padding: 35px; border-top-right-radius: 2px; border-top-left-radius: 2px;}
-            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
-            .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
-            /* cards-state */
-            .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
-            
-            .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
             .element-left {width: 50%;}
             .element-right {width: 49%;}
             
@@ -58,11 +49,12 @@
             .bs-btn-action {box-shadow: 1px 1px 0px 0px #9196aa;}
             
             /* borders */
-            .border-grey {border:1px solid rgba(252,252,253, .9);/*#9196aa*/;}
-            .border-lightgrey {border:1px solid #ddd;/*#9196aa*/;}
-            .border-darkgrey {border:1px solid rgba(145,150,170, .5);}
+            .border-grey {border: 1px solid rgba(252,252,253, .9);/*#9196aa*/;}
+            .border-lightgrey {border: 1px solid #ddd;/*#9196aa*/;}
+            .border-darkgrey {border: 1px solid rgba(145,150,170, .5);}
             .border-radius-2 {border-radius: 2px;}
             .border-radius-0 {border-radius: 0;}
+            .border-radius-top-2 {border-top-right-radius: 2px; border-top-left-radius: 2px;}
             .border-box {box-sizing: border-box;}
             
             /* control-group */
@@ -120,11 +112,6 @@
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
             
-            .pagination {padding-left: 0; margin: 20px 0;}
-            .pagination>li>a, .pagination>li>span {float: left; padding: 6px 12px; line-height: 1.42857143; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
-            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
-            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
-            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
             
             .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
@@ -170,18 +157,39 @@
             .l-margin-right20 a {margin-right: 20px;}
             .l-margin-lastchild-0 li:last-child a {margin: 0;}
             .l-float-left {float: left;}
+            .l-float-left-a a {float: left;}
             .l-float-right {float: right;}
             .l-text-right {text-align: right;}
             .l-text-left {text-align: left;}
+            
+            /* pagination */
+            .pagination {padding-left: 0; margin: 20px 0;}
+            /* REVIEW THE FACT THAT YOU CAN"T REMOVE BORDER AND PLACE IT ELSEWHERE */
+            .pagination>a, 
+            .pagination>li>span {border: 1px solid rgba(252,252,253, .9); padding: 6px 12px; line-height: 1.42857143; margin-left: -1px;}
+            /* pagination-state */
+            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: rgba(52,114,218, .9)/*#2a6496*/; background-color: rgba(82,168,236,0.3)/*#eee*/;}
+            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
+            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
+
+            
+            /* cards */
+            .card-padding {padding: 30px 35px 35px 35px;}
+            .card-header {padding: 35px; }
+            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
+            .card-footer {padding: 35px 0 35px 0px;}
+            /* cards-state */
+            /* PLEASE REVIEW THIS LINE BELOW */
+            .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
         </style>
 
     </head>
 
     <body class="app" style="">
-        <div id="" class="container l-margin-0-auto ">
+        <div id="" class="container l-margin-0-auto">
             <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
-                <div id="nav-logo" class="nav-logo l-position-absolute"><a href="#" style="">formspoint</a></div>
-                <div id="nav-menu" class="nav-menu">
+                <div id="" class="nav-logo l-position-absolute"><a href="#" style="">formspoint</a></div>
+                <div id="" class="nav-menu">
                     <ul id="" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
@@ -198,7 +206,7 @@
                     <h5 class="h5">General</h5>
                 </div>
                 <ul id="" class="nav-sidebar-list tc-darkgrey" style="">
-                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard "></i>Dashboard</a></li>
+                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-user"></i>Clients</a></li>
