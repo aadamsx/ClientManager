@@ -183,32 +183,37 @@
             .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
             
             
-            
-            
-            
-            input[type=radio], input[type=checkbox] {
+            /*input[type=radio], input[type=checkbox] {
                 display:none;
             }
+            
             input[type=radio] + label, input[type=checkbox] + label {
                 display: list-item;
-                list-style-type: none;
-                /*cursor: pointer;*/
+                list-style-type: none;  
             }
 
             input[type=radio]:checked + label, input[type=checkbox]:checked + label {
-                /*border: 1px solid rgba(82,168,236,0.3);
-                border-radius: 2px;*/
                 background-color: rgba(82,168,236,0.1); 
             }
             
-            /* sidebar-state */
-            .nav-sidebar label:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
-            .nav-sidebar label:hover a {color: rgba(52,114,218, .9);}
-            .nav-sidebar label:hover i {opacity: 1;}
-            /*.nav-sidebar label {padding: 5px 20px 5px 20px; margin-left: 5px;}*/
-            .nav-sidebar label {padding: 0; margin-left: 5px;}
-            /*.nav-sidebar-label {padding: 0 20px 0 20px; line-height: 20px; margin-bottom: 14px; margin-top: 14px;}*/
-            .nav-sidebar-label a {padding: 15px 50px 15px 50px; line-height: 20px; margin-bottom: 20px; margin-top: 20px;}
+            input[type=radio] + a, input[type=checkbox] + a {
+                display: list-item;
+                list-style-type: none;  
+            }
+
+            input[type=radio]:checked + a, input[type=checkbox]:checked + a {
+                background-color: rgba(82,168,236,0.1); 
+            }
+            
+            .nav-sidebar-menu label:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} 
+            .nav-sidebar-menu label:hover a {color: rgba(52,114,218, .9);}
+            .nav-sidebar-menu label:hover i {opacity: 1;}
+            .nav-sidebar-menu a:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} 
+            .nav-sidebar-menu a:hover a {color: rgba(52,114,218, .9);}
+            .nav-sidebar-menu a:hover i {opacity: 1;}
+            
+            .nav-sidebar-menu {padding: 0 20px 0 20px; line-height: 20px; margin-top: 14px; margin-bottom: 14px;}
+            .menu-control-group label {padding: 5px 20px 5px 20px; margin-bottom: 8px;}*/
         </style>
     </head>
 
@@ -232,22 +237,7 @@
                 <div id="" class="nav-sidebar-header tc-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
-                
-                <div class="nav-sidebar-label tc-darkgrey">
-                    <div class="">
-                        <input type="radio" id="radio1" name="radios" value="all" checked>
-                        <label for="radio1"><a href="#/companies"><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></label>
-                    </div>
-                    <div class="">
-                        <input type="radio" id="radio2" name="radios" value="false">
-                        <label for="radio2"><a href="#"><i class="glyphicon glyphicon-th"></i>Accounts</a></label>
-                    </div>
-                    <div class="">
-                        <input type="radio" id="radio3" name="radios" value="true">
-                        <label for="radio3"><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></label>
-                    </div>
-                </div>
-                
+                            
                 <ul id="" class="nav-sidebar-list tc-darkgrey" style="">
                     <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
