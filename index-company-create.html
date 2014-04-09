@@ -5,7 +5,8 @@
         <title>Management Portal - Prototype 1.0</title>
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="glyphicons.css" /> 
+        <!--<link rel="stylesheet" href="glyphicons.css" /> -->
+        <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
         <style>    
             footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
@@ -63,7 +64,7 @@
             .border-radius-2 {border-radius: 2px;}
             .border-radius-0 {border-radius: 0;}
             .border-radius-top-2 {border-top-right-radius: 2px; border-top-left-radius: 2px;}
-            .border-box {box-sizing: border-box;}
+            .border-box {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
             
             
             /* control-group */
@@ -91,7 +92,7 @@
             .h6 {font-size: 10px; font-weight: 500; text-transform: capitalize;}
             .h7 {font-size: 8px; font-weight: 500; margin-bottom: 0; text-transform: uppercase;}
             .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
-            a {text-decoration: none;}
+            a {font-size: 14px; text-decoration: none;}
             /* elements-state */
             ul {list-style-type: none; padding: 0;}
             ul:hover a {opacity: 0.6;}
@@ -128,7 +129,7 @@
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
             
             
-            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav a {font-weight: 500; font-size: 14px; letter-spacing: .5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
             .nav:active a {opacity: 1.0;}
             .nav:active ul:active a {opacity: 0.5;}
             .nav:active ul:active a:active {opacity: 0.9;}
@@ -172,10 +173,23 @@
             .l-margin-0-auto {margin: 0 auto;}
             .l-margin-right20 a {margin-right: 20px;}
             .l-margin-lastchild-0 li:last-child a {margin: 0;}
-            .l-margin-bottom-0 {margin-bottom: 0;}
+            .l-margin-top-15 {margin-top: 15px;}
             .l-margin-top-10 {margin-top: 10px;}
-            .l-margin-bottom-10 {margin-bottom: 10px;}
+            .l-margin-top-5 {margin-top: 5px;}
             .l-margin-top-0 {margin-top: 0;}
+            .l-margin-bottom-0 {margin-bottom: 0;}
+            .l-margin-bottom-5 {margin-bottom: 5px;}
+            .l-margin-bottom-10 {margin-bottom: 10px;}
+            .l-margin-bottom-15 {margin-bottom: 15px;}
+            .l-padding-0 {padding: 0;}
+            .l-padding-top-15 {padding-top: 15px;}
+            .l-padding-top-10 {padding-top: 10px;}
+            .l-padding-top-5 {padding-top: 5px;}
+            .l-padding-top-0 {padding-top: 0;}
+            .l-padding-bottom-0 {padding-bottom: 0;}
+            .l-padding-bottom-5 {padding-bottom: 5px;}
+            .l-padding-bottom-10 {padding-bottom: 10px;}
+            .l-padding-bottom-15 {padding-bottom: 15px;}
             .l-float-left {float: left;}
             .l-float-left-a a {float: left;}
             .l-float-right {float: right;}
@@ -209,16 +223,24 @@
             .product {}
             .product-category {padding: 5px 0 5px 35px;}
             .product-control-group {padding: 0 0 0 15px;}
-            .product-controls {margin-left: 50px;}
-            .product-control-group  label {height: 60px; display: block; text-transform: capitalize; font-size: 10px; 
-                letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease; position: relative; padding: 5px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
-            .product-control-group label:before {content: ""; width: 19px; height: 19px; border: 1px solid #416282; display: block; position: absolute; border-radius: 100%; 
-                left: 20px; top: 30%; transition: border 0.7s ease; z-index: 9999;}
-            .product-control-group h2 span {display: block; font-size: 12px; text-transform: capitalize; font-weight: normal; color: #bdc3c7;}
+            .product-controls {margin-left: 65px;}
+            /*.product-control-group label:before {content: ""; width: 19px; height: 19px; border: 1px solid #416282; position: absolute; border-radius: 50%; left: 20px; top: 30%; 
+                transition: border 0.7s ease; z-index: 9999;}*/
+            /*#label-1:checked ~ label[for=label-1]:before {font-family: FontAwesome; content: "\f058"; font-size: 22px; padding-bottom: 10px;}*/
             
-            /* product-state */
-            .product-control-group input:checked ~ label {/*border-bottom: 1px solid #34495E;*/}
             
+            .product-control-group label {font-size: 24px; letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease; }
+            /*** custom checkboxes ***/
+            
+            .product-control-group input[type=checkbox] {display:none;} /* to hide the checkbox itself */
+            .product-control-group input[type=checkbox] + label:before {font-family: FontAwesome;}
+
+            .product-control-group input[type=checkbox] + label:before {content: "\f096";} /* unchecked icon */
+            .product-control-group input[type=checkbox] + label:before {letter-spacing: 10px;} /* space between checkbox and label */
+
+            .product-control-group input[type=checkbox]:checked + label:before {content: "\f046";} /* checked icon */
+            .product-control-group input[type=checkbox]:checked + label:before {letter-spacing: 5px;} /* allow space for check mark */
+
         </style>
     </head>
 
@@ -244,13 +266,13 @@
                 </div>
                             
                 <ul id="" class="nav-sidebar-list tc-darkgrey" style="">
-                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
-                    <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>Clients</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-credit-card"></i>Orders</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-inbox"></i>Messages</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-signal"></i>Charts</a></li>
+                    <li style=""><a href="#" style=""><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                    <li><a href="#" style=""><i class="fa fa-list"></i>Accounts</a></li>
+                    <li><a href="#"><i class="fa fa-columns"></i>Products</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>Orders</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
+                    <li><a href="#"><i class="fa fa-signal"></i>Charts</a></li>
                 </ul>
             </aside>
             
@@ -269,7 +291,7 @@
                     <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
+                            <a class="" style="" href="#/companies/create" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
                         </button>
                     </div>
                 </div>
@@ -331,12 +353,12 @@
                 </div>
                 <div id="" class="card-padding-bottom" style="text-align: right;">
                     <!-- cancel changes -->
-                    <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-share-alt"></span> Undo Changes</a>
+                    <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action border-radius-2 l-margin-0 tc-darkgrey" style="">
+                        <a class="" href="#/companies" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
-                    <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-ok"></span> Save Changes</a>
+                    <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action border-radius-2 l-margin-0 tc-brightwhite" style="">
+                        <a class="" href="#/companies" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
                     </button> 
                 </div>
             </section>
@@ -346,7 +368,7 @@
                     <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="" style="" href="#/products/add" class=""><span class="glyphicon glyphicon-plus"></span> Add Products</a>
+                            <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
                         </button>
                     </div>
                 </div>
@@ -356,10 +378,10 @@
                 <!-- product -->
                 <div class="product-control-group">
                     <input id="label-1" class="l-display-none" type="checkbox" checked="">
-                    <label class="" for="label-1">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 1</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">spouse form</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-1">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 1</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">spouse form</h6>   
                         </div>
                     </label>
                 </div>
@@ -367,10 +389,10 @@
                 <!-- product -->
                 <div class="product-control-group" style="">
                     <input id="label-2" class="l-display-none" type="checkbox" checked="">
-                    <label for="label-2" style="">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 2</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">sponsor form</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-2" style="">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey" style="">form 2</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">sponsor form</h6>   
                         </div>
                     </label>
                 </div>
@@ -378,10 +400,10 @@
                 <!-- product -->
                 <div class="product-control-group">
                     <input id="label-3" class="l-display-none" type="checkbox">
-                    <label for="label-3">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 3</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">another form</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-3">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 3</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">another form</h6>   
                         </div>
                     </label>
                 </div>
@@ -389,10 +411,10 @@
                 <!-- product -->
                 <div class="product-control-group">
                     <input id="label-4" class="l-display-none" type="checkbox">
-                    <label for="label-4">
-                        <div class="product-controls tc-darkgrey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 4</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">yet another form</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-4">
+                        <div class="product-controls tc-darkgrey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 4</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">yet another form</h6>   
                         </div>
                     </label>
                 </div>
@@ -402,10 +424,10 @@
                 <!-- product -->
                 <div class="product-control-group">
                     <input id="label-4" class="l-display-none" type="checkbox">
-                    <label for="label-4">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 1</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">description for form 1</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-4">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 1</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">description for form 1</h6>   
                         </div>
                     </label>
                 </div>
@@ -413,21 +435,21 @@
                 <!-- product -->
                 <div class="product-control-group">
                     <input id="label-4" class="l-display-none" type="checkbox">
-                    <label for="label-4">
-                         <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 2</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">description</h6>   
+                    <label class="border-box l-position-relative l-display-block" for="label-4">
+                         <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 2</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">description</h6>   
                         </div>
                     </label>
                 </div>
                 
                 <!-- product -->
                 <div class="product-control-group">
-                    <input id="label-5" class="l-display-none" type="checkbox">
-                    <label for="label-5">
-                        <div class="product-controls tc-darkgrey" style="">
-                            <h2 class="h5 l-margin-bottom-0 l-margin-top-10">form 3</h2>
-                            <h6 class="h6 l-margin-top-0 l-margin-bottom-10 tc-medgrey">another description</h6>   
+                    <input id="label-5" class="l-display-none " type="checkbox">
+                    <label class="border-box l-position-relative l-display-block" for="label-5">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
+                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 3</h2>
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">another description</h6>   
                         </div>
                     </label>
                 </div>
@@ -435,11 +457,11 @@
                 <div id="" class="card-padding-bottom" style="text-align: right;">
                     <!-- cancel changes -->
                     <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-share-alt"></span> Undo Changes</a>
+                        <a class="" href="#/companies" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
                     <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-ok"></span> Save Changes</a>
+                        <a class="" href="#/companies" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
                     </button> 
                 </div>
             </section>
@@ -447,7 +469,7 @@
             <footer id="" class="nav nav-bottombar tc-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
-                        <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
+                        <i class="fa fa-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
                     </a>
                 </div>
             </footer>
