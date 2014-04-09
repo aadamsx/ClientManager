@@ -7,107 +7,217 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="glyphicons.css" /> 
         <style>    
-            footer {height: 150px; background-color: #e0e3eb; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
+            footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
             header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
-            section {position: relative; margin: 0px 0px 10px 10px; border-radius: 2px; width: 940px; left: 250px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
-            aside {position: absolute; margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; background-color: rgba(252,252,253, .95); box-shadow:2px 2px 3px -2px #9196aa; }
+            section {margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
+            aside {margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
             aside.fixed {position: fixed;}
             body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
             body.app {margin-bottom: 0; margin-top: 0;}
- 
-            .pagination {display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 2px;}
-            .pagination>li>a, .pagination>li>span {position: relative; float: left; padding: 6px 12px;line-height: 1.42857143; text-decoration: none; color: #575e6a/*#428bca*/; border: 1px solid #ddd; margin-left: -1px;}
-            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: #2a6496; background-color: #eee; border-color: #ddd;}
-            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 2px;border-top-left-radius: 2px;}
-            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px;border-top-right-radius: 2px;}
+                     
+            .container {width: 1200px;}      
             
-            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; text-decoration: none; color: #575e6a; border-radius: 2px; margin-right: 20px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
-            .nav:active a {opacity: 1.0;}
-            .nav:active ul:active a {opacity: 0.5;}
-            .nav:active ul:active a:active {opacity: 0.9;}
+            .element-left {width: 50%;}
+            .element-right {width: 49%;}
             
+            /* coloring text */
+            .tc-darkgrey, .tc-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
+            .tc-white, .tc-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
+            .tc-brightwhite, .tc-brightwhite a {color: #fff;}
+            .tc-medgrey, .tc-medgrey a {color: #9196aa;}
+            .tc-lightgrey, .tc-lightgrey a {color: #ddd;}
+            .tc-darkblue, .tc-darkblue a {color: #fcfcfd;}
+            .tc-darkgreen {color: rgba(37,140,115, .8);}
+            .tc-medblue {color: rgba(42,131,161, .8);}
+            
+            /* background-coloring */
+            .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
+            .bg-lightergreen{background-color: rgba(113,218,191, .3);}
+            .bg-medgreen {background-color: rgba(42,161,131, .7);}
+            .bg-lightblue {background-color: rgba(47,188,203, .5);}
+            .bg-lightermedblue {background-color: rgba(93,182,212, .5);}
+            .bg-medblue {background-color: rgba(53,164,201, .5);}
+            .bg-silvergrey {background-color: #e0e3eb; }
+            .bg-card {background-color: rgba(252,252,253, .95);}
+            .bg-sidebar {background-color: rgba(252,252,253, .95);}
+            .bg-pillbar {background-color: rgba(252,252,253, .95);}
+            .bg-transparent {background: transparent;}
+            .bg-none {background: none;}
+            .bg-btn-nav {background-color: rgba(145,150,170, .7);} 
+            .bg-btn-save {background-color: rgba(85,172,238, .9); } 
+            .bg-btn-cancel {background-color: rgba(224,227,235, .5);} 
+
+            
+            /* boxshadows */
+            .bs-default {box-shadow: 2px 2px 3px -2px #9196aa;}
+            .bs-none {box-shadow: none;}
+            .bs-underline {box-shadow: 0 -4px #ddd inset;}
+            .bs-btn-nav {box-shadow:1px 1px 0px 0px rgba(252,252,253, .9);}
+            .bs-btn-action {box-shadow: 1px 1px 0px 0px #9196aa;}
+            
+            /* borders */
+            .border-grey {border: 1px solid rgba(252,252,253, .9);/*#9196aa*/;}
+            .border-lightgrey {border: 1px solid #ddd;/*#9196aa*/;}
+            .border-bottom-light-grey {border-bottom: 1px solid #ddd;}
+            .border-darkgrey {border: 1px solid rgba(145,150,170, .5);}
+            .border-radius-2 {border-radius: 2px;}
+            .border-radius-0 {border-radius: 0;}
+            .border-radius-top-2 {border-top-right-radius: 2px; border-top-left-radius: 2px;}
+            .border-box {box-sizing: border-box;}
+            
+            
+            /* control-group */
+            .control-group {margin-bottom: 20px;}
+            .control-label {text-align: right; width: 170px; float: left; padding-top: 15px;}
+            .controls {margin-left: 190px; width: 35%;}
+            .control-group-search {padding-bottom: 25px; padding-top: 0px;}
+            .controls-search {margin-left: 0;}
+            /* control-group-state */
+            .controls input:focus, 
+            .controls textarea:focus {border-color: rgba(82,168,236,0.5)/*rgba(145,150,170, .7)*/; padding: 4px 6px 20px 6px;}
+            
+            .controls input:focus + label, 
+            .controls textarea:focus + label {top: 100%; margin-top: -16px; background-color: rgba(52,114,218, .8)/*rgba(145,150,170, .9)*/; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
+              
+            /* elements */
+            .input, .textarea {padding: 12px 12px 12px 12px; width: 100%; top: 0; left: 0; z-index: 1; outline: 0;} 
+            .label {top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; padding: 7px 6px;}
+            .h3 {font-size: 24.5px; font-weight: 500; margin: 0;}
+            .h4 {font-size: 22px; font-weight: 500; margin: 0;}
+            .h5 {font-size: 13px; font-weight: 500; margin-bottom: 0; text-transform: uppercase; }
+            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
+            a {text-decoration: none;}
+            /* elements-state */
             ul {list-style-type: none; padding: 0;}
             ul:hover a {opacity: 0.6;}
 	        ul a:hover, ul li:hover a {opacity: 1;}
-                                
-            #topbar a {color: #fcfcfd; background: transparent; box-shadow: none;}
-            #topbar li:last-child a {margin: 0;}
-            #topbar ul {margin: 0; text-align: right;} 
-            #nav-menu {position:relative; padding-top: 12px;}
-            #nav-logo {padding-top: 7px; position: absolute;}
-            #nav-logo a {font-size: 24px; font-weight: 600;}
             
-            #bottombar {/*background: rgba(78,205,196, 1); */color: #fff; font-family: 'Ruda', sans-serif; font-size: 13px;}
+    
+            /*#########*/
+            /* modules */
+            /*#########*/
             
-            #pillbar ul {margin: 0;}
-            .pillpar-inner {padding: 20px 25px 20px 25px}
-            #pillbar a:hover {box-shadow: 0 -4px #ddd inset; padding-bottom: 10px;border-radius: 0;}
-            .li-inline li {display: inline;}
-            
-            #container {position: relative; width: 1200px; margin: 0 auto;}
-                
-            .card {}
-            .card-padding {padding: 35px 35px 35px 35px;}
-            .card-header {padding-bottom: 35px;}
-            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
-            .card-search {padding-bottom: 45px; padding-top: 0px;}
-            .card-footer {padding: 45px 15px 15px; margin: 0 -15px 15px;}
-            .ul-margin-bottom-zero ul:last-child {margin-bottom: 0;}
-            .pagination-card-footer {margin-top: 10px; margin-bottom: 10px;}
-            .h3 {font-size: 24.5px; font-weight: 500; color: #575e6a; margin: 0;}
-            .h4 {font-size: 22px; font-weight: 500; color: #575e6a; margin: 0;}
-            .h5 {font-size: 13px; font-weight: 500; color: #9196aa; text-transform: uppercase; margin-bottom: 0;}
-            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0; background-color:gray;}
-            .element-left {width: 50%; display: inline-block; text-align: left;}
-            .element-right {width: 49%; display: inline-block; text-align: right;}
-            
-            .btn {margin: 0; position:relative; background:transparent; border:1px solid #ddd/*#9196aa*/; padding: 12px 12px 12px 12px; font-size:0.9em; box-shadow:1px 1px 0px 0px #9196aa; letter-spacing: .5px; border-radius: 2px;}
+            /* buttons */
+            .btn {padding: 12px; letter-spacing: .5px;}
+            .btn i, .btn span {opacity: 0.5;}
+            /* buttons-state */
             .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-nav {background-color: rgba(224,227,235, .6);} 
-            .btn-nav:hover {background-color: rgba(224,227,235, .2);}
-            .btn-save {background-color: rgba(214,235,234, .6);} 
-            .btn-save:hover {background-color: rgba(214,235,234, .2);}
-            .btn a {text-decoration: none;  color: #575e6a/*#428bca*/; }
-            .btn i, .btn span {opacity: 0.5; color: #575e6a; }
+            .btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
+            .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
+            .btn-cancel:hover {background-color: rgba(224,227,235, .2);}
             
-            form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95)}
-            form textarea {display: block;resize: vertical;}
-            .go-bottom { position: relative; overflow: hidden; }
-            .go-bottom input, .go-bottom textarea { padding: 12px 12px 12px 12px; width: 100%; border: 1px solid #ddd/*grey*/; background: none; position: relative; top: 0; left: 0; z-index: 1; outline: 0; box-sizing: border-box; border-radius: 2px; }   
-            .go-bottom label { top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; position: absolute; color: #999; padding: 7px 6px; border-radius: 2px; }
-            .go-bottom input:focus + label, .go-bottom textarea:focus + label { top: 100%; margin-top: -16px; background: #08c; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase; }
-            .go-bottom input:focus, .go-bottom textarea:focus { border-color: #08c; padding: 4px 6px 20px 6px;}  
-            /*.go-bottom input:focus { border-color: #f06d06; padding: 4px 6px 20px 6px;}  */
-            
+            /* tables */
             .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
             table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
             .table th, .table td {padding: 8px; line-height: 20px; text-align: left; vertical-align: top; border-top: 1px solid #ddd;}
             .table th {font-weight: bold;}
             .table td, .table th, table td, table th {padding-top: 15px; padding-bottom: 15px;}
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
-            .table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {border-top: 0;}
             .table thead th {vertical-align: bottom;}
             table#account_list td {cursor: pointer;}
-            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
             table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
+            /* tables-state */
+            .table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {border-top: 0;}
+            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
             tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
             tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
             
-            .sidebar-header {padding: 0 25px 0 25px;}
-            .sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
-            .sidebar li:hover {background: rgba(0,0,0,0.02); color: #444; border-radius: 2px;}
-            .sidebar i { margin-right: 8px; width: 18px; opacity: 0.5;}
-            .sidebar li {padding: 5px 20px 5px 20px; margin-bottom: 8px;}
-        </style>
+            
+            .nav a {font-weight: 500; font-size: 0.9em; letter-spacing: .5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+            .nav:active a {opacity: 1.0;}
+            .nav:active ul:active a {opacity: 0.5;}
+            .nav:active ul:active a:active {opacity: 0.9;}
+            
+            .nav-sidebar-header {padding: 0 0 0 30px;}
+            .nav-sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
+            .nav-sidebar i {margin-right: 8px; width: 18px; opacity: 0.5;}
+            .nav-sidebar li {padding: 5px 0 5px 35px; margin-bottom: 8px;}
+            /* sidebar-state */
+            .nav-sidebar li:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
+            .nav-sidebar li:hover a {color: rgba(52,114,218, .9);}
+            .nav-sidebar li:hover i {opacity: 1;}
+                           
+            .nav-pillbar li {padding: 5px 20px; }
+            .nav-pillpar-inner {padding: 20px;}
+            /* pillbar-state */
+            .nav-pillbar li:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
+            .nav-pillbar li:hover a {color: rgba(52,114,218, .9);}
+            
+            .nav-topbar li {padding: 5px 20px; }
+            /* topbar-state */
+            .nav-topbar li:hover {background-color: rgba(242,242,242, 0.3); border-radius: 2px;} /* nice blue color */
+            .nav-topbar li:hover a {color: white;}
+            
+            .nav-logo {padding-top: 7px;}
+            .nav-logo a {font-size: 24px; font-weight: 600;}
+            .nav-menu {padding-top: 12px;}
+            
+            .nav-bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
+            
+            /* layouts */
+            .l-position-relative {position: relative;}
+            .l-position-absolute {position: absolute;}
+            .l-position-fixed {position: fixed;}
+            .l-display-block {display: block;}
+            .l-display-inline-block {display: inline-block;}
+            .l-display-none {display: none;}
+            .l-overflow-hidden {overflow: hidden;}
+            .l-display-inline li {display: inline;}
+            .l-margin-0 {margin: 0;}
+            .l-margin-0-auto {margin: 0 auto;}
+            .l-margin-right20 a {margin-right: 20px;}
+            .l-margin-lastchild-0 li:last-child a {margin: 0;}
+            .l-float-left {float: left;}
+            .l-float-left-a a {float: left;}
+            .l-float-right {float: right;}
+            .l-text-right {text-align: right;}
+            .l-text-left {text-align: left;}
+            .l-text-center {text-align: center;}
+            
+            
+            /* pagination */
+            .pagination {padding-left: 0; margin: 20px 0;}
+            /* REVIEW THE FACT THAT YOU CAN"T REMOVE BORDER AND PLACE IT ELSEWHERE */
+            .pagination>a, 
+            .pagination>li>span {border: 1px solid rgba(252,252,253, .9); padding: 6px 12px; line-height: 1.42857143; margin-left: -1px;}
+            /* pagination-state */
+            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: rgba(52,114,218, .9)/*#2a6496*/; background-color: rgba(82,168,236,0.3)/*#eee*/;}
+            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
+            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
 
+            
+            /* cards */
+            .card-padding {padding: 30px 35px 35px 35px;}
+            .card-header {padding: 35px; }
+            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
+            .card-footer {padding: 35px 0 35px 0px;}
+            /* cards-state */
+            /* PLEASE REVIEW THIS LINE BELOW */
+            .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
+            
+            /* product */
+            .product {}
+            .product-category {padding: 5px 0 5px 35px;}
+            .product-control-group {padding: 0 0 0 15px;}
+            .product-controls {margin-left: 50px;}
+            .product-control-group  label {height: 60px; display: block; text-transform: capitalize; font-size: 10px; 
+                letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease; position: relative; padding: 5px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+            .product-control-group label:before {content: ""; width: 19px; height: 19px; border: 1px solid #416282; display: block; position: absolute; border-radius: 100%; 
+                left: 20px; top: 30%; transition: border 0.7s ease; z-index: 9999;}
+            .product-control-group h2 span {display: block; font-size: 12px; text-transform: capitalize; font-weight: normal; color: #bdc3c7;}
+            
+            /* product-state */
+            .product-control-group input:checked ~ label {/*border-bottom: 1px solid #34495E;*/}
+            
+        </style>
     </head>
 
     <body class="app" style="">
-        <div id="container" class="container" style="">
-            <header id="topbar" class="nav" style="">
-                <div id="nav-logo" class=""><a href="#" style="">formspoint</a></div>
-                <div id="nav-menu" class="">
-                    <ul id="topbar-list" class="nav-list topbar-list li-inline" style="">
+        <div id="" class="container l-margin-0-auto">
+            <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
+                <div id="" class="nav-logo l-position-absolute"><a href="#" style="">formspoint</a></div>
+                <div id="" class="nav-menu">
+                    <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
                         <li class=""><a href="#">latest News</a></li>
@@ -118,12 +228,13 @@
                 </div>
             </header>
             
-            <aside id="sidebar" class="nav sidebar natural" style="">
-                <div id="sidebar-header" class="sidebar-header" style="">
+            <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
+                <div id="" class="nav-sidebar-header tc-medgrey" style="">
                     <h5 class="h5">General</h5>
                 </div>
-                <ul id="sidebar-list" class="list sidebar-list " style="">
-                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard "></i>Dashboard</a></li>
+                            
+                <ul id="" class="nav-sidebar-list tc-darkgrey" style="">
+                    <li style=""><a href="#" style=""><i class="glyphicon glyphicon-dashboard"></i>Dashboard</a></li>
                     <li><a href="#" style=""><i class="glyphicon glyphicon-th"></i>Accounts</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-barcode"></i>Products</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-user"></i>Clients</a></li>
@@ -133,110 +244,215 @@
                 </ul>
             </aside>
             
-            <section id="pillbar" class="nav" style="">
-                <div class="border-outline">
-                <div id="" class="pillpar-inner" style="">
-                    <ul id="pillbar-list" class="nav-list pillbar-list li-inline" style="">
+            <section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
+                <div id="" class="nav-pillpar-inner" style="">
+                    <ul id="" class="l-display-inline l-margin-0" style="">
                         <li style=""><a href="#" style="">Accounts</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Activities</a></li>
                     </ul>
                 </div>
-                </div>
             </section>
             
-            <section id="" class="card" style="">
-                <div id="" class="card-padding main-inner" style="">
-                    
-                    <div id="" class="card-header">
-                        <div class="element-left"><h3 class="h3">Company Profile</h3></div>
-                        <div class="element-right">
-                            <button class="btn btn-nav"><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>
-                        </div>
+            <section id="" class="card bg-card bs-default l-position-relative" style="">
+               <div id="" class="card-header tc-brightwhite bg-lightblue border-radius-top-2">
+                    <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
+                    <div class="element-right l-display-inline-block l-text-right">
+                        <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="" style="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a>
+                        </button>
                     </div>
-                    
-                    <hr class="hr">
-                    
-                    <form accept-charset="UTF-8" id="" class="" method="post">
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company name</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_company_name" class="" style="" type="text" required><label for="client_company_name">Acme Widgets Inc.</label>
-                                </div>
+                </div>
+                
+                <div id="" class="card-padding main-inner tc-darkgrey" style="">
+                    <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Company name</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_company_name " class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Website</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_website" class="" style="" type="text" required><label for="client_website">http://example.com</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Website</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_website" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Phone</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_phone" class="" style="" type="text" required><label for="client_phone">+1 123 123 1234</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Phone</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_phone" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Address</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address1" class="" style="" type="text" required><label for="client_address1">123 Main St.</label>
-                                </div>
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address2" class="" style="" type="text" required><label for="client_address2">City, State Zip</label>
-                                </div>
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <input id="client_address3" class="" style="" type="text" required><label for="client_address3">Country</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Address</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address1" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
+                            </div>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address2" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
+                            </div>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <input id="client_address3" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
                             </div>
                         </div>
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <label id="" class="control-label" for="" style="text-align: right; width: 170px; float: left; padding-top: 15px;">Company description</label>
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <div id="" class="go-bottom" style="width: 45%">
-                                    <textarea id="client_description" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea><label for="client_description">Acme Widgets Inc. info</label>
-                                </div>
+                        <div id="" class="control-group" style="">
+                            <label id="" class="control-label" for="" style="">Company description</label>
+                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
+                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
                             </div>
                         </div>
 
-                        <div id="" class="control-group" style="margin-bottom: 20px;">
-                            <div id="" class="controls" style="display: box-inline; margin-left: 190px; width: 75%;">
-                                <button class="btn btn-save" style=""><a class="" href="#/companies" class=""><span class="glyphicon glyphicon-save"></span> Save Changes</a></button>
+                        
+                        <div id="" class="control-group tc-brightwhite" style="margin-bottom: 20px;">
+                            <div id="" class="controls" style="">
+                                <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0" style="">
+                                    <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
+                                </button>
                             </div>
                         </div>                        
                     </form>
                 </div>
             </section>
-            <section id="" class="card" style="">
-                <div id="" class="card-padding" style="">
-                    <div id="" class="card-header" style="">
-                        <div class="element-left" style=""><h3 class="h3">Product Profile</h3></div>
-                        <div class="element-right" style="">
-                            <!--<button class="btn btn-nav" style=""><a class="" href="#/companies/create" class=""><span class="glyphicon glyphicon-arrow-left"></span> Back to Accounts</a></button>-->
-                        </div>
+            
+            <section id="" class="card bg-card bs-default l-position-relative" style="">
+                <div id="" class="card-header tc-brightwhite bg-medgreen border-radius-top-2" style="">
+                    <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
+                    <div class="element-right l-display-inline-block l-text-right">
+                        <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="" style="" href="#/products/add" class=""><span class="glyphicon glyphicon-plus"></span> Add Products</a>
+                        </button>
                     </div>
-                    
-                    <hr class="hr">
-
+                </div>
+                
+                <!-- category -->
+                <h1 class="product-category bg-lightergreen tc-darkgreen l-margin-0">Package Name</h1>
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-1" class="l-display-none" type="checkbox" checked="">
+                    <label class="" for="label-1">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2 class="">Eat My Breakfast
+                                <span>oatmeal, fruits &amp; morning tea</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group" style="">
+                    <input id="label-2" class="l-display-none" type="checkbox" checked="">
+                    <label for="label-2" style="">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2 style="">e-mail processing 
+                                <span>art &amp; code, personal</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-3" class="l-display-none" type="checkbox">
+                    <label for="label-3">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2>Meditation
+                                <span>out of my mind</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-4" class="l-display-none" type="checkbox">
+                    <label for="label-4">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2>Code, Code, Code
+                                <span>hit f12 &amp; let's get wasted</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-5" class="l-display-none" type="checkbox">
+                    <label for="label-5">
+                        <div class="product-controls tc-darkgrey " style="">
+                            <h2>Watch Screencast
+                                <span>Ruby on Rails, yeah!</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- category -->
+                <h1 class="product-category bg-lightermedblue tc-medblue l-margin-0">Package Name</h1>
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-4" class="l-display-none" type="checkbox">
+                    <label for="label-4">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2>Code, Code, Code
+                                <span>hit f12 &amp; let's get wasted</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-4" class="l-display-none" type="checkbox">
+                    <label for="label-4">
+                        <div class="product-controls tc-darkgrey border-bottom-light-grey" style="">
+                            <h2>Code, Code, Code
+                                <span>hit f12 &amp; let's get wasted</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- product -->
+                <div class="product-control-group">
+                    <input id="label-5" class="l-display-none" type="checkbox">
+                    <label for="label-5">
+                        <div class="product-controls tc-darkgrey " style="">
+                            <h2>Watch Screencast
+                                <span>Ruby on Rails, yeah!</span>
+                            </h2>   
+                        </div>
+                    </label>
+                </div>
+                
+                <div id="" class="card-padding" style="text-align: right;">
+                    <!-- cancel changes -->
+                    <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-share-alt"></span> Revert Changes</a>
+                    </button> 
+                    <!-- save changes -->
+                    <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                        <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-ok"></span> Save Changes</a>
+                    </button> 
                 </div>
             </section>
             
-            <footer id="bottombar" class="bottombar" style="">
-                <div class="text-center" style="text-align: center;padding-top: 6px; ">2014 - formspoint inc.
+            <footer id="" class="nav nav-bottombar tc-white bg-silvergrey" style="">
+                <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="glyphicon glyphicon-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
                     </a>
                 </div>
             </footer>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
             $stick = $('aside');
             $foot = $('footer');
