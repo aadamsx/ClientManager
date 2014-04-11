@@ -5,243 +5,8 @@
         <title>Management Portal - Prototype 1.0</title>
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link rel="stylesheet" href="glyphicons.css" /> -->
         <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
-        <style>    
-            footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
-            header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
-            section {margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
-            aside {margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
-            aside.fixed {position: fixed;}
-            body {background: url(/assets/img/bg-header.png) top left repeat-x #eceef3; font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;}
-            body.app {margin-bottom: 0; margin-top: 0;}
-                     
-            .container {width: 1200px;}      
-            
-            .element-left {width: 50%;}
-            .element-right {width: 49%;}
-            
-            /* coloring text */
-            .tc-darkgrey, .tc-darkgrey a {color: rgba(87,94,106, 1);/*#575e6a*/}
-            .tc-white, .tc-white a {color: rgba(252,252,253, .9)/*#fcfcfd;*/}
-            .tc-brightwhite, .tc-brightwhite a {color: #fff;}
-            .tc-medgrey, .tc-medgrey a {color: #9196aa;}
-            .tc-lightgrey, .tc-lightgrey a {color: #ddd;}
-            .tc-darkblue, .tc-darkblue a {color: #fcfcfd;}
-            .tc-darkgreen {color: rgba(37,140,115, .8);}
-            .tc-medblue {color: rgba(42,131,161, .8);}
-            
-            /* background-coloring */
-            .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
-            .bg-lightergreen{background-color: rgba(113,218,191, .3);}
-            .bg-medgreen {background-color: rgba(42,161,131, .7);}
-            .bg-lightblue {background-color: rgba(47,188,203, .5);}
-            .bg-lightermedblue {background-color: rgba(93,182,212, .5);}
-            .bg-medblue {background-color: rgba(53,164,201, .5);}
-            .bg-silvergrey {background-color: #e0e3eb; }
-            .bg-card {background-color: rgba(252,252,253, .95);}
-            .bg-sidebar {background-color: rgba(252,252,253, .95);}
-            .bg-pillbar {background-color: rgba(252,252,253, .95);}
-            .bg-transparent {background: transparent;}
-            .bg-none {background: none;}
-            .bg-btn-nav {background-color: rgba(145,150,170, .7);} 
-            .bg-btn-save {background-color: rgba(85,172,238, .9); } 
-            .bg-btn-cancel {background-color: rgba(224,227,235, .5);} 
-
-            
-            /* boxshadows */
-            .bs-default {box-shadow: 2px 2px 3px -2px #9196aa;}
-            .bs-none {box-shadow: none;}
-            .bs-underline {box-shadow: 0 -4px #ddd inset;}
-            .bs-btn-nav {box-shadow:1px 1px 0px 0px rgba(252,252,253, .9);}
-            .bs-btn-action {box-shadow: 1px 1px 0px 0px #9196aa;}
-            
-            /* borders */
-            .border-grey {border: 1px solid rgba(252,252,253, .9);/*#9196aa*/;}
-            .border-lightgrey {border: 1px solid #ddd;/*#9196aa*/;}
-            .border-bottom-light-grey {border-bottom: 1px solid #ddd;}
-            .border-darkgrey {border: 1px solid rgba(145,150,170, .5);}
-            .border-radius-2 {border-radius: 2px;}
-            .border-radius-0 {border-radius: 0;}
-            .border-radius-top-2 {border-top-right-radius: 2px; border-top-left-radius: 2px;}
-            .border-box {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
-            
-            
-            /* control-group */
-            .control-group {margin-bottom: 20px;}
-            .control-label {text-align: right; width: 170px; float: left; padding-top: 15px;}
-            .controls {margin-left: 190px; width: 35%;}
-            .control-group-search {padding-bottom: 25px; padding-top: 0px;}
-            .controls-search {margin-left: 0;}
-            /* control-group-state */
-            .controls input:focus, 
-            .controls textarea:focus {border-color: rgba(82,168,236,0.5)/*rgba(145,150,170, .7)*/; padding: 4px 6px 20px 6px;}
-            
-            .controls input:focus + label, 
-            .controls textarea:focus + label {top: 100%; margin-top: -16px; background-color: rgba(52,114,218, .8)/*rgba(145,150,170, .9)*/; color: white; font-size: 70%; padding: 1px 6px; z-index: 2; text-transform: uppercase;}
-              
-            /* elements */
-            .input, .textarea {padding: 12px 12px 12px 12px; width: 100%; top: 0; left: 0; z-index: 1; outline: 0;} 
-            .label {top: 0; bottom: 0; left: 0; width: 100%; transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s; padding: 7px 6px;}
-            .h2 {font-size: 28px; font-weight: 600; margin: 0; text-transform: capitalize;}
-            .h3 {font-size: 24.5px; font-weight: 500; margin: 0; text-transform: capitalize;}
-            .h4 {font-size: 22px; font-weight: 500; margin: 0; text-transform: capitalize;}
-            .h4-small {font-size: 20px; font-weight: 500; margin: 0; text-transform: capitalize;}
-            .h5-large {font-size: 18px; font-weight: 500; margin-bottom: 0;text-transform: capitalize;}
-            .h5 {font-size: 13px; font-weight: 500; text-transform: capitalize;}
-            .h6 {font-size: 10px; font-weight: 500; text-transform: capitalize;}
-            .h7 {font-size: 8px; font-weight: 500; margin-bottom: 0; text-transform: uppercase;}
-            .hr {margin-bottom: 30px; margin-top: 0; height:1px; border-width:0;}
-            a {font-size: 14px; text-decoration: none;}
-            /* elements-state */
-            ul {list-style-type: none; padding: 0;}
-            ul:hover a {opacity: 0.6;}
-	        ul a:hover, ul li:hover a {opacity: 1;}
-            
-    
-            /*#########*/
-            /* modules */
-            /*#########*/
-            
-            /* buttons */
-            .btn {padding: 12px; letter-spacing: .5px;}
-            .btn i, .btn span {opacity: 0.5;}
-            /* buttons-state */
-            .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-            .btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
-            .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
-            .btn-cancel:hover {background-color: rgba(224,227,235, .2);}
-            
-            /* tables */
-            .table thead, table thead {background: transparent; border-top: 1px solid #e5ecf4;}
-            table {max-width: 100%; width: 100%; background-color: transparent; border-collapse: collapse;border-spacing: 0;}
-            .table th, .table td {padding: 8px; line-height: 20px; text-align: left; vertical-align: top; border-top: 1px solid #ddd;}
-            .table th {font-weight: bold;}
-            .table td, .table th, table td, table th {padding-top: 15px; padding-bottom: 15px;}
-            table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
-            .table thead th {vertical-align: bottom;}
-            table#account_list td {cursor: pointer;}
-            table td, .table td, .table th, table th {border-top: 1px solid #e5ecf4;}
-            /* tables-state */
-            .table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {border-top: 0;}
-            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #f5f5f5;}
-            tbody:hover > tr td {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.6;}
-            tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity: 1;}
-            
-            
-            .nav a {font-weight: 500; font-size: 14px; letter-spacing: .5px; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
-            .nav:active a {opacity: 1.0;}
-            .nav:active ul:active a {opacity: 0.5;}
-            .nav:active ul:active a:active {opacity: 0.9;}
-            
-            .nav-sidebar-header {padding: 0 0 0 30px;}
-            .nav-sidebar-list {padding: 0 20px 0 20px; line-height: 20px;}
-            .nav-sidebar i {margin-right: 8px; width: 18px; opacity: 0.5;}
-            .nav-sidebar li {padding: 5px 0 5px 35px; margin-bottom: 8px;}
-            /* sidebar-state */
-            .nav-sidebar li:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
-            .nav-sidebar li:hover a {color: rgba(52,114,218, .9);}
-            .nav-sidebar li:hover i {opacity: 1;}
-                           
-            .nav-pillbar li {padding: 5px 20px; }
-            .nav-pillpar-inner {padding: 20px;}
-            /* pillbar-state */
-            .nav-pillbar li:hover {background-color: rgba(82,168,236,0.3); border-radius: 2px;} /* nice blue color */
-            .nav-pillbar li:hover a {color: rgba(52,114,218, .9);}
-            
-            .nav-topbar li {padding: 5px 20px; }
-            /* topbar-state */
-            .nav-topbar li:hover {background-color: rgba(242,242,242, 0.3); border-radius: 2px;} /* nice blue color */
-            .nav-topbar li:hover a {color: white;}
-            
-            .nav-logo {padding-top: 7px;}
-            .nav-logo a {font-size: 24px; font-weight: 600;}
-            .nav-menu {padding-top: 12px;}
-            
-            .nav-bottombar {font-family: 'Ruda', sans-serif; font-size: 13px;}
-            
-            /* layouts */
-            .l-position-relative {position: relative;}
-            .l-position-absolute {position: absolute;}
-            .l-position-fixed {position: fixed;}
-            .l-display-block {display: block;}
-            .l-display-inline-block {display: inline-block;}
-            .l-display-none {display: none;}
-            .l-overflow-hidden {overflow: hidden;}
-            .l-display-inline li {display: inline;}
-            .l-margin-0 {margin: 0;}
-            .l-margin-0-auto {margin: 0 auto;}
-            .l-margin-right20 a {margin-right: 20px;}
-            .l-margin-lastchild-0 li:last-child a {margin: 0;}
-            .l-margin-top-15 {margin-top: 15px;}
-            .l-margin-top-10 {margin-top: 10px;}
-            .l-margin-top-5 {margin-top: 5px;}
-            .l-margin-top-0 {margin-top: 0;}
-            .l-margin-bottom-0 {margin-bottom: 0;}
-            .l-margin-bottom-5 {margin-bottom: 5px;}
-            .l-margin-bottom-10 {margin-bottom: 10px;}
-            .l-margin-bottom-15 {margin-bottom: 15px;}
-            .l-padding-0 {padding: 0;}
-            .l-padding-top-15 {padding-top: 15px;}
-            .l-padding-top-10 {padding-top: 10px;}
-            .l-padding-top-5 {padding-top: 5px;}
-            .l-padding-top-0 {padding-top: 0;}
-            .l-padding-bottom-0 {padding-bottom: 0;}
-            .l-padding-bottom-5 {padding-bottom: 5px;}
-            .l-padding-bottom-10 {padding-bottom: 10px;}
-            .l-padding-bottom-15 {padding-bottom: 15px;}
-            .l-float-left {float: left;}
-            .l-float-left-a a {float: left;}
-            .l-float-right {float: right;}
-            .l-text-right {text-align: right;}
-            .l-text-left {text-align: left;}
-            .l-text-center {text-align: center;}
-            
-            
-            /* pagination */
-            .pagination {padding-left: 0; margin: 20px 0;}
-            /* REVIEW THE FACT THAT YOU CAN"T REMOVE BORDER AND PLACE IT ELSEWHERE */
-            .pagination>a, 
-            .pagination>li>span {border: 1px solid rgba(252,252,253, .9); padding: 6px 12px; line-height: 1.42857143; margin-left: -1px;}
-            /* pagination-state */
-            .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {color: rgba(52,114,218, .9)/*#2a6496*/; background-color: rgba(82,168,236,0.3)/*#eee*/;}
-            .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
-            .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
-
-            
-            /* cards */
-            .card-padding-mid {padding: 30px 35px 10px 35px;}
-            .card-padding-bottom {padding: 30px 35px 35px 35px;}
-            .card-header {padding: 35px; }
-            .card-subheader {padding-bottom: 35px; padding-top: 60px;}
-            .card-footer {padding: 35px 0 35px 0px;}
-            /* cards-state */
-            /* PLEASE REVIEW THIS LINE BELOW */
-            .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
-            
-            /* product */
-            .product {}
-            .product-category {padding: 5px 0 5px 35px;}
-            .product-control-group {padding: 0 0 0 45px;}
-            .product-controls {margin-left: 65px;}
-            /*.product-control-group label:before {content: ""; width: 19px; height: 19px; border: 1px solid #416282; position: absolute; border-radius: 50%; left: 20px; top: 30%; 
-                transition: border 0.7s ease; z-index: 9999;}*/
-            /*#label-1:checked ~ label[for=label-1]:before {font-family: FontAwesome; content: "\f058"; font-size: 22px; padding-bottom: 10px;}*/
-            
-            
-            .product-control-group label {vertical-align: middle; font-size: 24px; letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease;}
-            /*** custom checkboxes ***/
-            
-            .product-control-group input[type=checkbox] {vertical-align: middle; display:none;} /* to hide the checkbox itself */
-            .product-control-group input[type=checkbox] + label:before {font-family: FontAwesome; /*display: inline-block;*/}
-
-            .product-control-group input[type=checkbox] + label:before {color: grey; content: "\f096";} /* unchecked icon */
-            .product-control-group input[type=checkbox] + label:before {letter-spacing: 10px;} /* space between checkbox and label */
-
-            .product-control-group input[type=checkbox]:checked + label:before {content: "\f046";} /* checked icon */
-            .product-control-group input[type=checkbox]:checked + label:before {letter-spacing: 5px;} /* allow space for check mark */
-
-        </style>
+        <link rel="stylesheet" href="main.css" />
     </head>
 
     <body class="app" style="">
@@ -262,7 +27,7 @@
             
             <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
                 <div id="" class="nav-sidebar-header tc-medgrey" style="">
-                    <h5 class="h5 l-margin-bottom-0" style="text-transform: uppercase;">General</h5>
+                    <div class="font-size-13 font-weight-500 text-transform-upper l-margin-bottom-0 l-margin-top-25" style="">General</div>
                 </div>
                             
                 <ul id="" class="nav-sidebar-list tc-darkgrey" style="">
@@ -288,10 +53,10 @@
             
             <section id="" class="card bg-card bs-default l-position-relative" style="">
                <div id="" class="card-header tc-brightwhite bg-lightblue border-radius-top-2">
-                    <div class="element-left l-display-inline-block l-text-left"><h3 class="h3" style="">Company Profile</h3></div>
+                    <div class="element-left l-display-inline-block l-text-left"><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0" style="">Company Profile</div></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="" style="" href="#/companies/create" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
+                            <a class="font-size-14" style="" href="#/companies/create" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
                         </button>
                     </div>
                 </div>
@@ -340,32 +105,24 @@
                                 <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
                                 <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
                             </div>
-                        </div>
-
-                    <!--<div id="" class="control-group tc-brightwhite" style="margin-bottom: 20px;">
-                            <div id="" class="controls" style="">
-                                <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0" style="">
-                                    <a class="" href="#/companies" class="" style=""><span style="" class="glyphicon glyphicon-save"></span> Save Changes</a>
-                                </button>
-                            </div>
-                        </div>-->                        
+                        </div>                      
                     </form>
                 </div>
-                <div id="" class="card-padding-bottom" style="text-align: right;">
+                <div id="" class="card-padding-bottom l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="" href="#/companies" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
+                        <a class="font-size-14" href="#/companies" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
                     <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="" href="#/companies" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
+                        <a class="font-size-14" href="#/companies" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
                     </button> 
                 </div>
             </section>
             
             <section id="" class="card bg-card bs-default l-position-relative" style="">
                 <div id="" class="card-header tc-brightwhite bg-medgreen border-radius-top-2" style="">
-                    <div class="element-left l-display-inline-block l-text-left" style=""><h3 class="h3">Product Profile</h3></div>
+                    <div class="element-left l-display-inline-block l-text-left" style=""><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0">product profile</div></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
                             <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
@@ -373,133 +130,216 @@
                     </div>
                 </div>
                 
-                <!-- category -->
-                <h5 class="h4-small product-category bg-lightergreen tc-darkgreen l-margin-0">fiancé package</h5>
-                
-                <div class="" style="display: table; width: 100%; table-layout: fixed;">
-                    <!-- product -->
-                    <div class="product-control-group" style="display: table-row;">
-                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
-                            <input id="label-1" class="" type="checkbox" checked="">  
-                            <label class="" style="" for="label-1"></label>
+                <div class="package">
+                    <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightergreen tc-darkgreen l-padding-left-35">fiancé package</div>
+
+                    <!-- products -->
+                    <div class="products l-display-table l-table-layout-fixed l-padding-top-10 l-padding-bottom-10" style="">
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-1" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-1"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 1</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">spouse form</div> 
+                            </div>
                         </div>
-                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
-                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 1</h2>
-                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">spouse form</h6> 
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-2" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-2"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 2</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">sponsor form</div> 
+                            </div>
+                        </div>
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-3" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-3"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 3</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">another form</div> 
+                            </div>
+                        </div>
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-4" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-4"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 4</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">yet another form</div> 
+                            </div>
                         </div>
                     </div>
-                    <!-- product -->
-                    <div class="product-control-group" style="display: table-row;">
-                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
-                            <input id="label-1" class="" type="checkbox" checked="">  
-                            <label class="" style="" for="label-1"></label>
+                </div>
+                
+                <div class="package">
+                    <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightermedblue tc-medblue l-padding-left-35">student package</div>
+                    
+                    <div class="products l-display-table l-table-layout-fixed l-padding-top-10 l-padding-bottom-10" style="">
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-5" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-5"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 1</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">form</div> 
+                            </div>
                         </div>
-                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
-                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 2</h2>
-                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">sponsor form</h6> 
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-6" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-6"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 2</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">another form</div> 
+                            </div>
+                        </div>
+                        <!-- product -->
+                        <div class="product-line l-display-table-row" style="">
+                            <div class="product-active l-display-table-cell l-vertical-align-middle l-overflow-hidden tc-darkgrey" style="">
+                                <input id="label-7" class="" type="checkbox" checked="">  
+                                <label class="font-size-24 letter-spacing-1 l-vertical-align-middle" for="label-7"></label>
+                            </div>
+                            <div class="product-desc l-display-table-cell l-overflow-hidden tc-darkgrey border-bottom-light-grey" style="">
+                                <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 3</div>
+                                <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">yet another form</div> 
+                            </div>
                         </div>
                     </div>
-                    <!-- product -->
-                    <div class="product-control-group" style="display: table-row;">
-                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
-                            <input id="label-1" class="" type="checkbox" checked="">  
-                            <label class="" style="" for="label-1"></label>
-                        </div>
-                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
-                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 3</h2>
-                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">another form</h6> 
-                        </div>
-                    </div>
-                    <!-- product -->
-                    <div class="product-control-group" style="display: table-row;">
-                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
-                            <input id="label-1" class="" type="checkbox" checked="">  
-                            <label class="" style="" for="label-1"></label>
-                        </div>
-                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
-                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 4</h2>
-                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">yet another form</h6> 
-                        </div>
-                    </div>
                 </div>
                 
-                <!-- product -->
-                <div class="product-control-group" style="">
-                    <input id="label-2" class="l-display-none" type="checkbox" checked="">
-                    <label class="border-box l-position-relative l-display-block" for="label-2" style="">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey" style="">form 2</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">one more form</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-3" class="l-display-none" type="checkbox">
-                    <label class="border-box l-position-relative l-display-block" for="label-3">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 3</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">another form</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-4" class="l-display-none" type="checkbox">
-                    <label class="border-box l-position-relative l-display-block" for="label-4">
-                        <div class="product-controls tc-darkgrey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 4</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">yet another form</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <!-- category -->
-                <h5 class="h4-small product-category bg-lightermedblue tc-medblue l-margin-0 ">student package</h5>
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-4" class="l-display-none" type="checkbox">
-                    <label class="border-box l-position-relative l-display-block" for="label-4">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 1</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">description for form 1</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-4" class="l-display-none" type="checkbox">
-                    <label class="border-box l-position-relative l-display-block" for="label-4">
-                         <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 2</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">description</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-5" class="l-display-none " type="checkbox">
-                    <label class="border-box l-position-relative l-display-block" for="label-5">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 3</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">another description</h6>   
-                        </div>
-                    </label>
-                </div>
-                
-                <div id="" class="card-padding-bottom" style="text-align: right;">
+                <div id="" class="card-padding-bottom l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="" href="#/companies" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
+                        <a class="font-size-14" href="#/companies" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
                     <button class="btn btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="" href="#/companies" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
+                        <a class="font-size-14" href="#/companies" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
                     </button> 
+                </div>
+            </section>
+            
+            <section id="" class="card bg-card bs-default l-position-relative" style="">
+                <div id="" class="card-header tc-brightwhite bg-lightred border-radius-top-2" style="">
+                    <div class="element-left l-display-inline-block l-text-left" style=""><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0">Messages</div></div>
+                    <div class="element-right l-display-inline-block l-text-right">
+                        <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="font-size-14" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> New Message</a>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="" class="card-padding tc-darkgrey" style="">                  
+                    <div id="" class="control-group control-group-search">
+                        <form accept-charset="UTF-8" id="" class="" method="post">
+                            <div id="" class="controls controls-search l-position-relative l-overflow-hidden" style="width: 35%">
+                                <input id="client_search" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Search</label>
+                            </div>
+                        </form>
+                    </div>
+                        
+                    <table id="" class="table table-hover">
+                        <thead class="table-header">
+                            <tr>
+                                <th colspan="4">Buy/Sell</th>
+                                <th>Fees</th>
+                                <th>Price Per Coin</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr  id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">1,084.49 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell" >2.00 BTC</td>
+                                <td class="table-cell muted">10.89 USD</td>
+                                <td class="table-cell muted">536.80 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb 24, 2014</td>
+                            </tr>
+                            <tr id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">1,315.51 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell">2.00 BTC</td>
+                                <td class="table-cell muted">13.17 USD</td>
+                                <td class="table-cell muted">651.17 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb 13, 2014</td>
+                            </tr>
+                            <tr id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">712.64 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell">1.00 BTC</td>
+                                <td class="table-cell muted">7.20 USD</td>
+                                <td class="table-cell muted">705.44 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb  7, 2014</td>
+                            </tr>
+                            <tr id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">1,315.51 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell">2.00 BTC</td>
+                                <td class="table-cell muted">13.17 USD</td>
+                                <td class="table-cell muted">651.17 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb 13, 2014</td>
+                            </tr>
+                            <tr id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">712.64 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell">1.00 BTC</td>
+                                <td class="table-cell muted">7.20 USD</td>
+                                <td class="table-cell muted">705.44 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb  7, 2014</td>
+                            </tr>
+                            <tr id="" class="table-row">
+                                <td class="table-cell" style="padding-right: 0;">Buy</td>
+                                <td class="table-cell" style="padding-left: 0; text-align: right;">712.64 USD</td>
+                                <td class="table-cell" style="width: 15px; padding-left: 0; padding-right: 0; text-align: center;"><span class="icon-right"></span></td>
+                                <td class="table-cell">1.00 BTC</td>
+                                <td class="table-cell muted">7.20 USD</td>
+                                <td class="table-cell muted">705.44 USD</td>
+                                <td class="table-cell"><span class="table-data label label-success">Completed</span></td>
+                                <td class="table-cell">Feb  7, 2014</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    <div id="" class="card-footer l-margin-0" style="">
+                        <ul class="pagination l-float-left-a tc-darkgrey" style="">
+                          <li class="disabled" style=""><a style="" href="#">«</a></li>
+                          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                          <li class=""><a class="" href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">»</a></li>
+                       </ul>
+                    </div>
                 </div>
             </section>
             
