@@ -222,20 +222,20 @@
             /* product */
             .product {}
             .product-category {padding: 5px 0 5px 35px;}
-            .product-control-group {padding: 0 0 0 15px;}
+            .product-control-group {padding: 0 0 0 45px;}
             .product-controls {margin-left: 65px;}
             /*.product-control-group label:before {content: ""; width: 19px; height: 19px; border: 1px solid #416282; position: absolute; border-radius: 50%; left: 20px; top: 30%; 
                 transition: border 0.7s ease; z-index: 9999;}*/
             /*#label-1:checked ~ label[for=label-1]:before {font-family: FontAwesome; content: "\f058"; font-size: 22px; padding-bottom: 10px;}*/
             
             
-            .product-control-group label {font-size: 24px; letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease; }
+            .product-control-group label {vertical-align: middle; font-size: 24px; letter-spacing: 1px; cursor: pointer; transition: all 0.7s ease;}
             /*** custom checkboxes ***/
             
-            .product-control-group input[type=checkbox] {display:none;} /* to hide the checkbox itself */
-            .product-control-group input[type=checkbox] + label:before {font-family: FontAwesome;}
+            .product-control-group input[type=checkbox] {vertical-align: middle; display:none;} /* to hide the checkbox itself */
+            .product-control-group input[type=checkbox] + label:before {font-family: FontAwesome; /*display: inline-block;*/}
 
-            .product-control-group input[type=checkbox] + label:before {content: "\f096";} /* unchecked icon */
+            .product-control-group input[type=checkbox] + label:before {color: grey; content: "\f096";} /* unchecked icon */
             .product-control-group input[type=checkbox] + label:before {letter-spacing: 10px;} /* space between checkbox and label */
 
             .product-control-group input[type=checkbox]:checked + label:before {content: "\f046";} /* checked icon */
@@ -375,15 +375,52 @@
                 
                 <!-- category -->
                 <h5 class="h4-small product-category bg-lightergreen tc-darkgreen l-margin-0">fiancé package</h5>
-                <!-- product -->
-                <div class="product-control-group">
-                    <input id="label-1" class="l-display-none" type="checkbox" checked="">
-                    <label class="border-box l-position-relative l-display-block" for="label-1">
-                        <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
-                            <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey">form 1</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">spouse form</h6>   
+                
+                <div class="" style="display: table; width: 100%; table-layout: fixed;">
+                    <!-- product -->
+                    <div class="product-control-group" style="display: table-row;">
+                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
+                            <input id="label-1" class="" type="checkbox" checked="">  
+                            <label class="" style="" for="label-1"></label>
                         </div>
-                    </label>
+                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
+                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 1</h2>
+                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">spouse form</h6> 
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="product-control-group" style="display: table-row;">
+                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
+                            <input id="label-1" class="" type="checkbox" checked="">  
+                            <label class="" style="" for="label-1"></label>
+                        </div>
+                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
+                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 2</h2>
+                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">sponsor form</h6> 
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="product-control-group" style="display: table-row;">
+                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
+                            <input id="label-1" class="" type="checkbox" checked="">  
+                            <label class="" style="" for="label-1"></label>
+                        </div>
+                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
+                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 3</h2>
+                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">another form</h6> 
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="product-control-group" style="display: table-row;">
+                        <div class="tc-darkgrey" style="display: table-cell; padding-left: 5%; padding-top: 2%; overflow: hidden;">
+                            <input id="label-1" class="" type="checkbox" checked="">  
+                            <label class="" style="" for="label-1"></label>
+                        </div>
+                        <div class="tc-darkgrey border-bottom-light-grey" style="display: table-cell; width: 85%; overflow: hidden;">
+                            <h2 class="h5 tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 4</h2>
+                            <h6 class="h6tc-medgrey l-margin-top-5 l-margin-bottom-10">yet another form</h6> 
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- product -->
@@ -392,7 +429,7 @@
                     <label class="border-box l-position-relative l-display-block" for="label-2" style="">
                         <div class="product-controls tc-darkgrey border-bottom-light-grey l-padding-top-5" style="">
                             <h2 class="h5 l-margin-top-10 l-margin-bottom-5 tc-darkgrey" style="">form 2</h2>
-                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">sponsor form</h6>   
+                            <h6 class="h6 l-margin-top-5 l-margin-bottom-10 tc-medgrey">one more form</h6>   
                         </div>
                     </label>
                 </div>
