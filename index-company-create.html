@@ -12,8 +12,8 @@
     <body class="app" style="">
         <div id="" class="container l-margin-0-auto">
             <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
-                <div id="" class="nav-logo l-position-absolute"><a href="#" style="">formspoint</a></div>
-                <div id="" class="nav-menu">
+                <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
+                <div id="" class="nav-menu l-padding-top-15">
                     <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
                         <li class=""><a href="#">Resources</a></li>
                         <li class=""><a href="#">About</a></li>
@@ -51,8 +51,9 @@
                 </div>
             </section>
             
+            <!-- COMPANY PROFILE -->
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-               <div id="" class="card-header tc-brightwhite bg-lightblue border-radius-top-2">
+               <div id="" class="card-header l-padding-35 tc-brightwhite bg-lightblue border-radius-top-2">
                     <div class="element-left l-display-inline-block l-text-left"><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0" style="">Company Profile</div></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
@@ -61,51 +62,57 @@
                     </div>
                 </div>
                 
-                <div id="" class="card-padding-mid main-inner tc-darkgrey" style="">
+                <div id="" class="card-padding-mid tc-darkgrey l-overflow-hidden" style="">
                     <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
-                        <div id="" class="control-group" style="">
-                            <label id="" class="control-label" for="" style="">Company name</label>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_company_name " class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                        <div id="" class="grid-width-fluid-3-5 l-float-left" style="">
+                            <div id="" class="controls l-margin-bottom-20" style="">
+                                <label id="" class="grid-width-fluid-1-3 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                                </div>
                             </div>
+                            <div id="" class="controls l-margin-bottom-20" style="">
+                                <label id="" class="grid-width-fluid-1-3 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
+                                </div>
+                            </div>
+                            <div id="" class="controls l-margin-bottom-20" style="">
+                                <label id="" class="grid-width-fluid-1-3 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
+                                </div>
+                            </div>
+                            <div id="" class="controls l-margin-bottom-20" style="">
+                                <label id="" class="grid-width-fluid-1-3 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
+                                </div>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
+                                </div>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
+                                </div>
+                            </div>
+                            <div id="" class="controls l-margin-bottom-20" style="">
+                                <label id="" class="grid-width-fluid-1-3 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                <div id="" class="grid-width-fluid-3-5 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
+                                </div>
+                            </div> 
                         </div>
-                        <div id="" class="control-group" style="">
-                            <label id="" class="control-label" for="" style="">Website</label>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_website" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
-                            </div>
+                        
+                        <div id="" class="grid-width-medium-1-4 l-float-left l-margin-left-45 ">
+                            <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
                         </div>
-                        <div id="" class="control-group" style="">
-                            <label id="" class="control-label" for="" style="">Phone</label>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_phone" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
-                            </div>
-                        </div>
-                        <div id="" class="control-group" style="">
-                            <label id="" class="control-label" for="" style="">Address</label>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address1" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
-                            </div>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address2" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
-                            </div>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <input id="client_address3" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
-                            </div>
-                        </div>
-                        <div id="" class="control-group" style="">
-                            <label id="" class="control-label" for="" style="">Company description</label>
-                            <div id="" class="controls l-position-relative l-overflow-hidden" style="">
-                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
-                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
-                            </div>
-                        </div>                      
                     </form>
                 </div>
                 <div id="" class="card-padding-bottom l-text-right" style="">
@@ -120,8 +127,9 @@
                 </div>
             </section>
             
+            <!-- PRODUCTS -->
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-                <div id="" class="card-header tc-brightwhite bg-medgreen border-radius-top-2" style="">
+                <div id="" class="l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
                     <div class="element-left l-display-inline-block l-text-left" style=""><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0">product profile</div></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
@@ -234,8 +242,9 @@
                 </div>
             </section>
             
+            <!-- MESSAGES -->
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-                <div id="" class="card-header tc-brightwhite bg-lightred border-radius-top-2" style="">
+                <div id="" class="l-padding-35 tc-brightwhite bg-lightred border-radius-top-2" style="">
                     <div class="element-left l-display-inline-block l-text-left" style=""><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0">Messages</div></div>
                     <div class="element-right l-display-inline-block l-text-right">
                         <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
@@ -247,8 +256,8 @@
                 <div id="" class="card-padding tc-darkgrey" style="">                  
                     <div id="" class="control-group control-group-search">
                         <form accept-charset="UTF-8" id="" class="" method="post">
-                            <div id="" class="controls controls-search l-position-relative l-overflow-hidden" style="width: 35%">
-                                <input id="client_search" class="input border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                            <div id="" class="controls l-margin-left-0 l-position-relative l-overflow-hidden" style="width: 35%">
+                                <input id="client_search" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
                                 <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Search</label>
                             </div>
                         </form>
