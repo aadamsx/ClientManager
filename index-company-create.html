@@ -7,10 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="main.css" />
+        <!--<link rel="stylesheet" href="bootstrap-3.1.1-grid-system.css" />-->
     </head>
 
     <body class="app" style="">
-        <div id="" class="container l-margin-0-auto">
+        <div id="" class="grid-width-1200 l-margin-0-auto">
             <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
                 <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
                 <div id="" class="nav-menu l-padding-top-15">
@@ -53,11 +54,14 @@
             
             <!-- COMPANY PROFILE -->
             <section id="" class="card bg-card bs-default l-position-relative" style="">
-               <div id="" class="card-header l-padding-35 tc-brightwhite bg-lightblue border-radius-top-2">
-                    <div class="element-left l-display-inline-block l-text-left"><div class="font-size-26 font-weight-500 text-transform-caps l-margin-0" style="">Company Profile</div></div>
-                    <div class="element-right l-display-inline-block l-text-right">
-                        <button class="btn btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="font-size-14" style="" href="#/companies/create" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
+                
+                <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-lightblue border-radius-top-2">
+                    <div class="col-lg-6 l-float-left" style="">
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Company Profile</div>
+                    </div>
+                    <div class="col-lg-6 l-float-left l-text-right" style="">
+                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="font-size-14" style="" href="#" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
                         </button>
                     </div>
                 </div>
@@ -110,11 +114,12 @@
                             </div> 
                         </div>
                         
-                        <div id="" class="grid-width-medium-1-4 l-float-left l-margin-left-45 ">
+                        <div id="" class="grid-width-fluid-1-4 l-float-left l-margin-left-45 ">
                             <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
                         </div>
                     </form>
                 </div>
+                
                 <div id="" class="card-padding-bottom l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn btn-cancel bg-btn-cancel border-darkgrey bs-btn-action border-radius-2 l-margin-0 tc-darkgrey" style="">
@@ -137,10 +142,22 @@
                         </button>
                     </div>
                 </div>
-                
+                                
                 <div class="package">
                     <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightergreen tc-darkgreen l-padding-left-35">fiancé package</div>
-
+                    
+                    <!-- overflow hidden to contain the children -->
+                    <div class="grid-width-fluid-1-1 l-overflow-hidden" style="border: 1px solid #000000">
+                        <div class="grid-width-fluid-1-12 font-awsome unchecked-icon checked-icon l-float-left l-padding-left-40 l-padding-top-15" style="">
+                            <input id="label-1" class="l-display-none" type="checkbox" checked="">  
+                            <label class="font-size-24 letter-spacing-1" for="label-1"></label>
+                        </div>
+                        <div class="l-float-left" style="background-color: green">
+                            <div class="font-size-14 font-weight-500 text-transform-caps tc-darkgrey l-margin-top-10 l-margin-bottom-5">form 1</div>
+                            <div class="font-size-10 font-weight-500 text-transform-caps  tc-medgrey l-margin-top-5 l-margin-bottom-10">spouse form</div>
+                        </div>
+                    </div>
+                    
                     <!-- products -->
                     <div class="products l-display-table l-table-layout-fixed l-padding-top-10 l-padding-bottom-10" style="">
                         <!-- product -->
