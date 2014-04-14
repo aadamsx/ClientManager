@@ -55,7 +55,7 @@
             <!-- COMPANY PROFILE -->
             <section id="" class="bg-card bs-default l-position-relative" style="">
                 
-                <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-lightblue border-radius-top-2">
+                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightblue border-radius-top-2">
                     <div class="col-lg-6 l-float-left" style="">
                         <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Company Profile</div>
                     </div>
@@ -122,6 +122,15 @@
                         <div id="" class="col-lg-4 l-float-left">
                             <div class="thumbnail">
                                 <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
+                                <div class="caption">
+                                    <h3>Company logo</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>
+                                        <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                            <a class="font-size-14" href="#" class="" style=""><i class="fa fa-upload"></i> Update Logo</a>
+                                        </button> 
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -130,11 +139,11 @@
                 <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="font-size-14" href="#/companies" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
+                        <a class="font-size-14" href="#" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
                     <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="font-size-14" href="#/companies" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
+                        <a class="font-size-14" href="#" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
                     </button> 
                 </div>
             </section>
@@ -253,7 +262,7 @@
                     </div>
                 </div>
                 
-                <div id="" class="card-padding-bottom l-text-right" style="">
+                <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
                         <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
@@ -267,8 +276,8 @@
             
             <!-- MESSAGES -->
             <section id="" class="bg-card bs-default l-position-relative" style="">
-                
-                <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-lightred border-radius-top-2" style="">
+                <!-- header -->
+                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightred border-radius-top-2" style="">
                     <div class="col-lg-6 l-float-left" style="">
                         <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">Messages</div>
                     </div>
@@ -278,9 +287,10 @@
                         </button>
                     </div>
                 </div>
-                
-                <div id="" class="card-padding tc-darkgrey" style="">                  
-                    <div id="" class="control-group control-group-search">
+                <!-- padding -->
+                <div id="" class="l-padding-30-35-35-35 tc-darkgrey" style=""> 
+                    <!-- search bar -->
+                    <div id="" class="control-group l-padding-top-bottom-0-25">
                         <form accept-charset="UTF-8" id="" class="" method="post">
                             <div id="" class="controls l-margin-left-0 l-position-relative l-overflow-hidden" style="width: 35%">
                                 <input id="client_search" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
@@ -289,6 +299,7 @@
                         </form>
                     </div>
                         
+                    <!-- client/account/company - specific - messages -->
                     <table id="" class="table table-hover">
                         <thead class="table-header">
                             <tr>
@@ -363,8 +374,8 @@
                         </tbody>
                     </table>
                     
-                    
-                    <div id="" class="card-footer l-margin-0" style="">
+                    <!-- pagination -->
+                    <div id="" class="l-padding-35-0-35-0 l-margin-0" style="">
                         <ul class="pagination l-float-left-a tc-darkgrey" style="">
                           <li class="disabled" style=""><a style="" href="#">«</a></li>
                           <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>

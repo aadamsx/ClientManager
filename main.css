@@ -56,7 +56,6 @@ body.app {margin-bottom: 0; margin-top: 0;}
 
 /* control-group */
 
-.control-group-search {padding-bottom: 25px; padding-top: 0px;}
 
 /* control-group-state */
 .controls input:focus, 
@@ -340,6 +339,7 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .l-padding-top-bottom-10 {padding-top: 10px; padding-bottom: 10px;}
 .l-padding-top-bottom-15 {padding-top: 15px; padding-bottom: 15px;}
 .l-padding-top-bottom-60-35 {padding-top: 35px; padding-bottom: 35px;}
+.l-padding-top-bottom-0-25 {padding-top: 0px; padding-bottom: 25px; }
 .l-float-left {float: left;}
 .l-float-left-a a {float: left;}
 .l-float-right {float: right;}
