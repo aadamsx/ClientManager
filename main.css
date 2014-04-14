@@ -268,6 +268,11 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .l-margin-bottom-25 {margin-bottom: 25px;}
 .l-margin-right-0 {margin-right: 0;}
 .l-margin-right-5 {margin-right: 5px;}
+.l-margin-right-10 {margin-right: 10px;}
+.l-margin-right-15 {margin-right: 15px;}
+.l-margin-right-20 {margin-right: 20px;}
+.l-margin-right-25 {margin-right: 25px;}
+.l-margin-right-30 {margin-right: 30px;}
 .l-margin-left-0 {margin-left: 0;}
 .l-margin-left-5 {margin-left: 5px;}
 .l-margin-left-10 {margin-left: 10px;}
@@ -288,6 +293,10 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .l-padding-25 {padding: 25px;}
 .l-padding-30 {padding: 30px;}
 .l-padding-35 {padding: 35px;}
+.l-padding-30-35-10-35 {padding: 30px 35px 10px 35px;}
+.l-padding-30-35-35-35 {padding: 30px 35px 35px 35px;}
+.l-padding-25-35-35-35 {padding: 25px 35px 35px 35px;}
+.l-padding-35-0-35-0 {padding: 35px 0 35px 0px;}
 .l-padding-top-15 {padding-top: 15px;}
 .l-padding-top-10 {padding-top: 10px;}
 .l-padding-top-5 {padding-top: 5px;}
@@ -318,6 +327,7 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .l-padding-right-35 {padding-right: 35px;}
 .l-padding-right-40 {padding-right: 40px;}
 .l-padding-right-45 {padding-right: 45px;}
+.l-padding-right-50 {padding-right: 50px;}
 .l-padding-left-right-neg-15 {padding-left: -15px; padding-right: -15px;}
 .l-padding-left-right-neg-10 {padding-left: -10px; padding-right: -10px;}
 .l-padding-left-right-neg-5 {padding-left: -5px; padding-right: -5px;}
@@ -329,6 +339,7 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .l-padding-top-bottom-5 {padding-top: 5px; padding-bottom: 5px;}
 .l-padding-top-bottom-10 {padding-top: 10px; padding-bottom: 10px;}
 .l-padding-top-bottom-15 {padding-top: 15px; padding-bottom: 15px;}
+.l-padding-top-bottom-60-35 {padding-top: 35px; padding-bottom: 35px;}
 .l-float-left {float: left;}
 .l-float-left-a a {float: left;}
 .l-float-right {float: right;}
@@ -350,7 +361,6 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0; border-bottom-left-radius: 2px; border-top-left-radius: 2px;}
 .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
 
-
 /* cards */
 .card-padding {padding: 30px 35px 35px 35px;}
 /* change this naming to: .l-padding-card-min */
@@ -362,34 +372,16 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 /* PLEASE REVIEW THIS LINE BELOW */
 .card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
 
-
 /* package and products */
-.package {}
-.package-header {}
-.products {width: 100%;}
-.product-line {padding: 5px 0 5px 35px;}
-.products:hover > div {opacity: 0.7;}
-.products .product-line:hover {background-color: rgba(82,168,236,0.1); opacity: 1;}
-.product-active {padding-left: 4%;}
-.product-desc {width: 90%;}
-.product-line label {cursor: pointer; /*transition: all 0.7s ease;*/}
-/*** custom checkboxes ***/
-.product-line input[type=checkbox] {display:none;} /* to hide the checkbox itself */
-.product-line input[type=checkbox] + label:before {font-family: FontAwesome; /*display: inline-block;*/}
-.product-line input[type=checkbox] + label:before {color: grey; content: "\f096"; } /* unchecked icon */
-.product-line input[type=checkbox] + label:before {/*letter-spacing: 10px;*/} /* space between checkbox and label */
-.product-line input[type=checkbox]:checked + label:before {content: "\f046";} /* checked icon */
-.product-line input[type=checkbox]:checked + label:before {/*letter-spacing: 5px;*/} /* allow space for check mark */
-
+.product, .product label {cursor: pointer;}
+.package .product:hover {background-color: rgba(82,168,236,0.1); opacity: 1.0;}
+.package:hover > div {opacity: 0.7;}
 .font-awsome input[type=checkbox] + label:before {font-family: FontAwesome;}
 .unchecked-icon input[type=checkbox] + label:before {content: "\f096"; } 
 .checked-icon input[type=checkbox]:checked + label:before {content: "\f046";}
 
-
-
-
-
-
-
-
 .img-thumbnail {width: 140px; height: 140px;}
+
+
+
+.thumbnail {}
