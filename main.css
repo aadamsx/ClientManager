@@ -362,15 +362,8 @@ tbody:hover > tr:hover td {text-shadow: none;color: #2d2d2d;filter: progid:DXIma
 .pagination>li:last-child>a, .pagination>li:last-child>span {border-bottom-right-radius: 2px; border-top-right-radius: 2px;}
 
 /* cards */
-.card-padding {padding: 30px 35px 35px 35px;}
-/* change this naming to: .l-padding-card-min */
-.card-padding-mid {padding: 30px 35px 10px 35px;}
-.card-padding-bottom {padding: 25px 35px 35px 35px;}
-.card-subheader {padding-bottom: 35px; padding-top: 60px;}
-.card-footer {padding: 35px 0 35px 0px;}
-/* cards-state */
 /* PLEASE REVIEW THIS LINE BELOW */
-.card input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
+.form input:valid, .card textarea:valid {background-color: rgba(252,252,253, .95);}
 
 /* package and products */
 .product, .product label {cursor: pointer;}
