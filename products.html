@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Management Portal - Prototype 1.0</title>
+        <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="main.css" />
+        <!--<link rel="stylesheet" href="bootstrap-3.1.1-grid-system.css" />-->
+    </head>
+
+    <body class="app" style="">
+        <div id="" class="grid-width-1200 l-margin-0-auto">
+            <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
+                <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
+                <div id="" class="nav-menu l-padding-top-15">
+                    <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
+                        <li class=""><a href="#">Resources</a></li>
+                        <li class=""><a href="#">About</a></li>
+                        <li class=""><a href="#">latest News</a></li>
+                        <li class=""><a href="#">kitten Pelts</a></li>
+                        <li class=""><a href="#">kitten Dioramas</a></li>
+                        <li class=""><a href="#">Aaron Adams</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
+                <div id="" class="l-padding-0-0-0-30 tc-medgrey" style="">
+                    <div class="font-size-13 font-weight-500 text-transform-upper l-margin-bottom-0 l-margin-top-25" style="">General</div>
+                </div>
+
+                <ul id="" class="l-padding-0-20-0-20 l-line-height-20 tc-darkgrey" style="">
+                    <li style=""><a href="#" style=""><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                    <li><a href="#" style=""><i class="fa fa-list"></i>Accounts</a></li>
+                    <li><a href="#"><i class="fa fa-columns"></i>Products</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>Orders</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
+                    <li><a href="#"><i class="fa fa-signal"></i>Charts</a></li>
+                </ul>
+            </aside>
+
+            <section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
+                <div id="" class="l-padding-20" style="">
+                    <ul id="" class="l-display-inline l-margin-0" style="">
+                        <li style=""><a href="#" style="">Accounts</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Activities</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PRODUCTS -->
+            <section id="" class="bg-card bs-default l-position-relative" style="">
+
+                <!-- header -->
+                <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
+                    <div class="col-lg-6 l-float-left" style="">
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">product profile</div>
+                    </div>
+                    <div class="col-lg-6 l-float-left l-text-right" style="">
+                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- fiance bundle -->
+                <div class="font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightergreen tc-darkgreen l-padding-left-35">fiancé bundle</div>
+                <div class="l-padding-30-35-35-35 tc-darkgrey">
+                    <table id="" class="table table-hover">
+                        <thead class="table-header">
+                            <tr>
+                                <th>Active</th>
+                                <th>Product</th>
+                                <th>#</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td class="font-awesome unchecked-icon checked-icon">
+                                    <input id="label-5" class="l-display-none" type="checkbox" checked="">
+                                    <label class="font-size-24 letter-spacing-1" for="label-5" style="color: grey;" ></label>
+                                </td>
+                                <td class="">form 1</td>
+                                <td class="">123</td>
+                                <td class="">spouse form</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- student bundle -->
+                <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightermedblue tc-medblue l-padding-left-35">student bundle</div>
+                <div class="l-padding-30-35-35-35 tc-darkgrey">
+                    <table  id="" class="table table-hover">
+                        <thead class="table-header">
+                            <tr>
+                                <th>Active</th>
+                                <th>Product</th>
+                                <th>#</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td class="font-awesome unchecked-icon checked-icon">
+                                    <input id="label-5" class="l-display-none" type="checkbox" checked="">
+                                    <label class="font-size-24 letter-spacing-1" for="label-5" style="color: grey;" ></label>
+                                </td>
+                                <td class="">form 1</td>
+                                <td class="">123</td>
+                                <td class="">spouse form</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- footer with undo/save changes -->
+                <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
+                    <!-- cancel changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
+                    </button>
+                    <!-- save changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
+                    </button>
+                </div>
+            </section>
+
+                        <!-- PRODUCTS -->
+            <section id="" class="bg-card bs-default l-position-relative" style="">
+
+                <!-- header -->
+                <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
+                    <div class="col-lg-6 l-float-left" style="">
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">product profile</div>
+                    </div>
+                    <div class="col-lg-6 l-float-left l-text-right" style="">
+                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                            <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
+                        </button>
+                    </div>
+                </div>
+               <div id="" class="form l-padding-30-35-10-35 tc-darkgrey l-overflow-hidden" style="">
+                    <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
+                        <!-- company profile -->
+                        <div id="" class="col-lg-8 l-float-left" style="">
+                            <!-- row -->
+                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
+                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                                </div>
+                            </div>
+
+
+                            <!-- row -->
+                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
+                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
+                                </div>
+                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
+                                </div>
+                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
+                                </div>
+                            </div>
+                            <!-- row -->
+                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                    <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <!-- footer with undo/save changes -->
+                <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
+                    <!-- cancel changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
+                    </button>
+                    <!-- save changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
+                    </button>
+                </div>
+            </section>
+
+
+
+            <footer id="" class="nav nav-bottombar tc-white bg-silvergrey" style="">
+                <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
+                    <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
+                        <i class="fa fa-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            $stick = $('aside');
+            $foot = $('footer');
+            margin = 18;
+            offtop = $stick.offset().top - margin;
+            offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
+
+            $(window).scroll(function () {
+                scrtop = $(window).scrollTop();
+              if (scrtop > offtop && $stick.hasClass('natural')) {
+                $stick.removeClass('natural').addClass('fixed').css('top', margin);
+              }
+              if (offtop > scrtop && $stick.hasClass('fixed')) {
+                $stick.removeClass('fixed').addClass('natural').css('top', 'auto');
+              }
+              if (scrtop > offbtm && $stick.hasClass('fixed')) {
+                $stick.removeClass('fixed').addClass('bottom').css('top', offbtm+margin);
+              }
+              if (offbtm > scrtop && $stick.hasClass('bottom')) {
+                $stick.removeClass('bottom').addClass('fixed').css('top', margin);
+              }
+            });
+        </script>
+        <script>
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+
+        </script>
+    </body>
+
+
+</html>
+
+
