@@ -94,6 +94,8 @@ ul a:hover, ul li:hover a {opacity: 1;}
 .font-weight-600 {font-weight: 600;}
 .font-weight-500 {font-weight: 500;}
 .font-weight-bold {font-weight: bold;}
+.font-weight-normal {font-weight: normal}
+.font-weight-lighter {font-weight: lighter}
 .text-transform-caps {text-transform: capitalize;} 
 .text-transform-upper {text-transform: uppercase;}
 .letter-spacing-1 {letter-spacing: 1px;}
