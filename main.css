@@ -54,6 +54,9 @@ body.app {margin-bottom: 0; margin-top: 0;}
 .border-radius-2 {border-radius: 2px;}
 .border-radius-0 {border-radius: 0;}
 .border-radius-top-2 {border-top-right-radius: 2px; border-top-left-radius: 2px;}
+.border-radius-top-right {border-top-right-radius: 2px;}
+.border-radius-bottom-right {border-bottom-right-radius: 2px;}
+.border-radius-top-bottom-right {border-top-right-radius: 2px; border-bottom-right-radius: 2px;}
 .border-box {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
 .border-lightblue {border: 1px solid rgba(204,218,255, 1);}
 .border-collapse {border-collapse: collapse;}
@@ -188,7 +191,6 @@ ul a:hover, ul li:hover a {opacity: 1;}
 
 /* tables */
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: rgba(82,168,236,0.1);}
-.table-col-
 tbody:hover > tr td {opacity: 0.6;}
 tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 
@@ -371,3 +373,17 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 /* img and thumbnails */
 .img-thumbnail {width: 140px; height: 140px;}
 .thumbnail {}
+
+/* side navigation */
+.arrows {position:absolute; top: 15px; right: -60px; width: 60px; overflow: hidden;}
+.arrows .top, .arrows .bottom {position:relative; right: 60px; width:60px; height:60px; cursor:pointer; -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s, background-color .2s;}
+.arrows .top {background: #83b3be 50%;}
+.arrows .top:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6cf"; top: 15px; left: 15px;}
+.arrows .top:hover {background-color:#6ba4b1 }
+.arrows .bottom {background:#e2b78d;}
+.arrows .bottom:hover {background-color:#dba571}
+.arrows .bottom:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6ce"; top: 15px; left: 15px;}
+.company-profile:hover .arrows .top, .company-profile:hover .arrows .bottom {right: 0}
+.products:hover .arrows .top, .products:hover .arrows .bottom {right: 0}
+.messages:hover .arrows .top, .messages:hover .arrows .bottom {right: 0}
+
