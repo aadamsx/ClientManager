@@ -366,9 +366,9 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 /*.unchecked-icon input[type=checkbox] + label:before {content: "\f096"; }
 .checked-icon input[type=checkbox]:checked + label:before {content: "\f046";}*/
 .font-iconmoon input[type=checkbox] + label:before {font-family: icomoon}
-.unchecked-icon input[type=checkbox] + label:before {content: "\e63e"; }
-.checked-icon input[type=checkbox]:checked + label:before {content: "\e63d";}
-.partial-checked-icon input[type=checkbox]:indeterminate + label:before {content: "\e63f";}
+.unchecked-icon input[type=checkbox] + label:before {content: "\e855"; }
+.checked-icon input[type=checkbox]:checked + label:before {content: "\e854";}
+.partial-checked-icon input[type=checkbox]:indeterminate + label:before {content: "\e856";}
 
 /* img and thumbnails */
 .img-thumbnail {width: 140px; height: 140px;}
