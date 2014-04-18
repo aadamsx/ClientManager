@@ -232,149 +232,102 @@
                             <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
                         </button>
                     </div>
-                </div>    
+                </div>  
+                
 
-                <ul class="">
-                    <li class="">
-                        <input type="checkbox" name="tall" id="tall">
-                        <label class="font-size-20 font-weight-500 text-transform-caps bg-lightergreen tc-darkgreen l-padding-left-35" for="tall">tall Things</label>
 
-                        <ul class="">
-                             <li>
-                                 <input type="checkbox" name="tall-1" id="tall-1">
-                                 <label for="tall-1">Buildings</label>
-                             </li>
-                             <li>
-                                 <input type="checkbox" name="tall-2" id="tall-2">
-                                 <label for="tall-2">Giants</label>
 
-                                 <ul>
-                                     <li>
-                                         <input type="checkbox" name="tall-2-1" id="tall-2-1">
-                                         <label for="tall-2-1">Andre</label>
-                                     </li>
-                                     <li>
-                                         <input type="checkbox" name="tall-2-2" id="tall-2-2">
-                                         <label for="tall-2-2">Paul Bunyan</label>
-                                     </li>
-                                 </ul>
-                             </li>
-                             <li>
-                                 <input type="checkbox" name="tall-3" id="tall-3">
-                                 <label for="tall-3">Two sandwiches</label>
-                             </li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <input type="checkbox" name="short" id="short">
-                        <label for="short">Short Things</label>
-
-                        <ul>
-                             <li>
-                                 <input type="checkbox" name="short-1" id="short-1">
-                                 <label for="short-1">Smurfs</label>
-                             </li>
-                             <li>
-                                 <input type="checkbox" name="short-2" id="short-2">
-                                 <label for="short-2">Mushrooms</label>
-                             </li>
-                             <li>
-                                 <input type="checkbox" name="short-3" id="short-3">
-                                 <label for="short-3">One Sandwich</label>
-                             </li>
-                        </ul>
-                    </li>
-                </ul>
 
                 <!-- fiance bundle -->
-                <div class="font-size-20 font-weight-500 text-transform-caps bg-lightergreen tc-darkgreen l-padding-left-35">fiancé bundle</div>
-                <div class="l-padding-25 tc-darkgrey">
-                    <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse" style="width: 100%">
-                        <thead class="l-line-height-20 ">
-                            <th style="width: 15%;">
-                                <div class="font-iconmoon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
-                                    <input id="label-0" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-0" style="" ></label>
-                                </div>
-                            </th>
-                            <th style="width: 32%;">Product Name</th>
-                            <th style="width: 15%;">#</th>
-                            <th style="width: 45%;">Description</th>
-                        </thead>
-                        <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
-                            <tr class="l-line-height-20 border-top-lightestgrey">
-                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey l-overflow-hidden" style="width: 5%;">
-                                    <input id="label-1" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-1" style="" ></label>
-                                </td>
-                                <td class="" style="">I-130</td>
-                                <td class="" style="">123</td>
-                                <td class="" style="">Sunt pariatur sed appellat ea labore incididunt si.</td>
-                            </tr>
-                            <tr class="l-line-height-20 border-top-lightestgrey ">
-                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey">
-                                    <input id="label-2" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-2" style="" ></label>
-                                </td>
-                                <td class="">I-129</td>
-                                <td class="">124</td>
-                                <td class="">Singulis lorem commodo, veniam aliquip ubi illustriora.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            
+                <form action="#" onsubmit="return false">
+                    <div class="font-size-20 font-weight-500 text-transform-caps bg-lightergreen tc-darkgreen l-padding-left-35">fiancé bundle</div>
+                    <div class="l-padding-25 tc-darkgrey">
+                        <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse" style="width: 100%">
+                            <thead class="l-line-height-20 ">
+                                <th style="width: 15%;">
+                                    <div class="font-iconmoon partial-checked-icon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
+                                        <input id="bundle_id_1_0" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleChecked(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_0" style="" ></label>
+                                    </div>
+                                </th>
+                                <th style="width: 32%;">Product Name</th>
+                                <th style="width: 15%;">#</th>
+                                <th style="width: 45%;">Description</th>
+                            </thead>
+                            <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
+                                <tr class="l-line-height-20 border-top-lightestgrey">
+                                    <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey l-overflow-hidden" style="width: 5%;">
+                                        <input id="bundle_id_1_1" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleIndeterminateBundle1(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_1" style="" ></label>
+                                    </td>
+                                    <td class="" style="">I-130</td>
+                                    <td class="" style="">123</td>
+                                    <td class="" style="">Sunt pariatur sed appellat ea labore incididunt si.</td>
+                                </tr>
+                                <tr class="l-line-height-20 border-top-lightestgrey ">
+                                    <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey">
+                                        <input id="bundle_id_1_2" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleIndeterminateBundle1(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_2" style="" ></label>
+                                    </td>
+                                    <td class="">I-129</td>
+                                    <td class="">124</td>
+                                    <td class="">Singulis lorem commodo, veniam aliquip ubi illustriora.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <!-- student bundle -->
-                <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightermedblue tc-medblue l-padding-left-35">student bundle</div>
-                <div class="l-padding-25 tc-darkgrey">
-                    <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse">
-                        <thead class="l-line-height-20 ">
-                            <th style="width: 15%;">
-                                <div class="font-iconmoon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
-                                    <input id="label-0" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-0" style="" ></label>
-                                </div>
-                            </th>
-                            <th style="width: 32%;">Product Name</th>
-                            <th style="width: 15%;">#</th>
-                            <th style="width: 45%;">Description</th>
-                        </thead>
-                        <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
-                            <tr class="l-line-height-20 border-top-lightestgrey">
-                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey" style="">
-                                    <input id="label-1" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-1" style="c" ></label>
-                                </td>
-                                <td class="">I-160</td>
-                                <td class="">123</td>
-                                <td class="">student primary form </td>
-                            </tr>
-                            <tr class="l-line-height-20 border-top-lightestgrey ">
-                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey" >
-                                    <input id="label-2" class="l-display-none" type="checkbox" checked="">
-                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="label-2" style="" ></label>
-                                </td>
-                                <td class="">I-165</td>
-                                <td class="">124</td>
-                                <td class="" style="">parent sponsor form</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <!-- footer with undo/save changes -->
-                <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
-                    <!-- cancel changes -->
-                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
-                    </button> 
-                    <!-- save changes -->
-                    <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
-                    </button> 
-                </div>
+
+                    <!-- student bundle -->
+                    <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightermedblue tc-medblue l-padding-left-35">student bundle</div>
+                    <div class="l-padding-25 tc-darkgrey">
+                        <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse" style="width: 100%">
+                            <thead class="l-line-height-20 ">
+                                <th style="width: 15%;">
+                                    <div class="font-iconmoon partial-checked-icon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
+                                        <input id="bundle_id_2_0" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleChecked(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_0" style="" ></label>
+                                    </div>
+                                </th>
+                                <th style="width: 32%;">Product Name</th>
+                                <th style="width: 15%;">#</th>
+                                <th style="width: 45%;">Description</th>
+                            </thead>
+                            <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
+                                <tr class="l-line-height-20 border-top-lightestgrey">
+                                    <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey l-overflow-hidden" style="width: 5%;">
+                                        <input id="bundle_id_2_1" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleIndeterminateBundle2(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_1" style="" ></label>
+                                    </td>
+                                    <td class="" style="">I-160</td>
+                                    <td class="" style="">223</td>
+                                    <td class="" style="">Sunt pariatur sed appellat ea labore incididunt si.</td>
+                                </tr>
+                                <tr class="l-line-height-20 border-top-lightestgrey ">
+                                    <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey">
+                                        <input id="bundle_id_2_2" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleIndeterminateBundle2(this)" checked="">
+                                        <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_2" style="" ></label>
+                                    </td>
+                                    <td class="">I-165</td>
+                                    <td class="">224</td>
+                                    <td class="">Singulis lorem commodo, veniam aliquip ubi illustriora.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- footer with undo/save changes -->
+                    <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
+                        <!-- cancel changes -->
+                        <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                            <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
+                        </button> 
+                        <!-- save changes -->
+                        <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                            <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
+                        </button> 
+                    </div>
+                </form>
             </section>
             
             <!-- MESSAGES -->
@@ -631,85 +584,86 @@
             $foot = $('footer');
             margin = 18;
             offtop = $stick.offset().top - margin;
-            offbtm = $foot.offset().top - ( margin*2 + $stick.height() );
+            offbtm = $foot.offset().top - (margin * 2 + $stick.height());
 
             $(window).scroll(function () {
                 scrtop = $(window).scrollTop();
-              if (scrtop > offtop && $stick.hasClass('natural')) {
-                $stick.removeClass('natural').addClass('fixed').css('top', margin);
-              }
-              if (offtop > scrtop && $stick.hasClass('fixed')) {
-                $stick.removeClass('fixed').addClass('natural').css('top', 'auto');
-              }
-              if (scrtop > offbtm && $stick.hasClass('fixed')) {
-                $stick.removeClass('fixed').addClass('bottom').css('top', offbtm+margin);
-              }
-              if (offbtm > scrtop && $stick.hasClass('bottom')) {
-                $stick.removeClass('bottom').addClass('fixed').css('top', margin);
-              }
+                if (scrtop > offtop && $stick.hasClass('natural')) {
+                    $stick.removeClass('natural').addClass('fixed').css('top', margin);
+                }
+                if (offtop > scrtop && $stick.hasClass('fixed')) {
+                    $stick.removeClass('fixed').addClass('natural').css('top', 'auto');
+                }
+                if (scrtop > offbtm && $stick.hasClass('fixed')) {
+                    $stick.removeClass('fixed').addClass('bottom').css('top', offbtm + margin);
+                }
+                if (offbtm > scrtop && $stick.hasClass('bottom')) {
+                    $stick.removeClass('bottom').addClass('fixed').css('top', margin);
+                }
             });
         </script>
         <script>
-			jQuery(document).ready(function() {
-				var offset = 220;
-				var duration = 500;
-				jQuery(window).scroll(function() {
-					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.back-to-top').fadeIn(duration);
-					} else {
-						jQuery('.back-to-top').fadeOut(duration);
-					}
-				});
-				
-				jQuery('.back-to-top').click(function(event) {
-					event.preventDefault();
-					jQuery('html, body').animate({scrollTop: 0}, duration);
-					return false;
-				})
+			jQuery(document).ready(function () {
+			    var offset = 220;
+			    var duration = 500;
+			    jQuery(window).scroll(function () {
+			        if (jQuery(this).scrollTop() > offset) {
+			            jQuery('.back-to-top').fadeIn(duration);
+			        } else {
+			            jQuery('.back-to-top').fadeOut(duration);
+			        }
+			    });
+
+			    jQuery('.back-to-top').click(function (event) {
+			        event.preventDefault();
+			        jQuery('html, body').animate({
+			            scrollTop: 0
+			        }, duration);
+			        return false;
+			    })
 			});
-		
         </script>
         <script>
-            $(function() {
-              // Apparently click is better chan change? Cuz IE?
-              $('input[type="checkbox"]').change(function(e) {
-              var checked = $(this).prop("checked"),
-                  container = $(this).parent(),
-                  siblings = container.siblings();
+            $(function () {
+                // Apparently click is better chan change? Cuz IE?
+                $('input[type="checkbox"]').change(function (e) {
+                    var checked = $(this).prop("checked"),
+                        container = $(this).parent(),
+                        siblings = container.siblings();
 
-              container.find('input[type="checkbox"]').prop({
-                  indeterminate: false,
-                  checked: checked
-              });
+                    container.find('input[type="checkbox"]').prop({
+                        indeterminate: false,
+                        checked: checked
+                    });
 
-              function checkSiblings(el) {
-                  var parent = el.parent().parent(),
-                      all = true;
+                    function checkSiblings(el) {
+                        var parent = el.parent().parent(),
+                            all = true;
 
-                  el.siblings().each(function() {
-                      return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
-                  });
+                        el.siblings().each(function () {
+                            return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+                        });
 
-                  if (all && checked) {
-                      parent.children('input[type="checkbox"]').prop({
-                          indeterminate: false,
-                          checked: checked
-                      });
-                      checkSiblings(parent);
-                  } else if (all && !checked) {
-                      parent.children('input[type="checkbox"]').prop("checked", checked);
-                      parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
-                      checkSiblings(parent);
-                  } else {
-                      el.parents("li").children('input[type="checkbox"]').prop({
-                          indeterminate: true,
-                          checked: false
-                      });
-                  }
-                }
+                        if (all && checked) {
+                            parent.children('input[type="checkbox"]').prop({
+                                indeterminate: false,
+                                checked: checked
+                            });
+                            checkSiblings(parent);
+                        } else if (all && !checked) {
+                            parent.children('input[type="checkbox"]').prop("checked", checked);
+                            parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+                            checkSiblings(parent);
+                        } else {
+                            el.parents("li").children('input[type="checkbox"]').prop({
+                                indeterminate: true,
+                                checked: false
+                            });
+                        }
+                    }
 
-                checkSiblings(container);
-              });
+                    checkSiblings(container);
+                });
             });
         </script>
         <script>
@@ -780,6 +734,83 @@
                     }
                 })
             });
+        </script>
+        <script>
+            function toggleChecked(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bChecked = oElement[0].checked;
+                    for (i = 1; i < oElement.length; i++)
+                        oElement[i].checked = bChecked;
+                }
+            }
+
+            function toggleController(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1)
+                        bChecked = false;
+                    oElement[0].checked = bChecked;
+                }
+            }
+
+            function toggleIndeterminateBundle1(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bIndeterminate = false;
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1) {
+                        if (nChecked)
+                            bIndeterminate = true;
+                        else {
+                            bIndeterminate = false;
+                            bChecked = false;
+                        }
+                    } else {
+                        bIndeterminate = false;
+                    }
+                    oElement[0].checked = bChecked;
+                    oElement[0].indeterminate = bIndeterminate;
+                    document.getElementById('bundle_id_1_0').indeterminate = bIndeterminate;
+                }
+            }
+            function toggleIndeterminateBundle2(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bIndeterminate = false;
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1) {
+                        if (nChecked)
+                            bIndeterminate = true;
+                        else {
+                            bIndeterminate = false;
+                            bChecked = false;
+                        }
+                    } else {
+                        bIndeterminate = false;
+                    }
+                    oElement[0].checked = bChecked;
+                    oElement[0].indeterminate = bIndeterminate;
+                    document.getElementById('bundle_id_1_0').indeterminate = bIndeterminate;
+                }
+            }
         </script>
     </body>
 

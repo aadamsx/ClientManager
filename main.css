@@ -375,14 +375,14 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 .thumbnail {}
 
 /* side navigation */
-.arrows {position:absolute; top: 15px; right: -60px; width: 60px; overflow: hidden;}
-.arrows .top, .arrows .bottom {position:relative; right: 60px; width:60px; height:60px; cursor:pointer; -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s, background-color .2s;}
-.arrows .top {background: #83b3be 50%;}
-.arrows .top:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6cf"; top: 15px; left: 15px;}
-.arrows .top:hover {background-color:#6ba4b1 }
-.arrows .bottom {background:#e2b78d;}
-.arrows .bottom:hover {background-color:#dba571}
-.arrows .bottom:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6ce"; top: 15px; left: 15px;}
+.arrows {position:absolute; top: 15px; right: -50px; width: 50px; overflow: hidden;}
+.arrows .top, .arrows .bottom {position:relative; right: 50px; width:50px; height:60px; cursor:pointer; -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s, background-color .2s;}
+.arrows .top {background: rgba(53,201,164, .9);}
+.arrows .top:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6cf"; top: 14px; left: 10px;}
+.arrows .top:hover {background-color: rgba(53,201,164, .7);}
+.arrows .bottom {background: rgba(246,130,117, .9);}
+.arrows .bottom:hover {background-color: rgba(246,130,117, .7);}
+.arrows .bottom:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6ce"; top: 18px; left: 10px;}
 .company-profile:hover .arrows .top, .company-profile:hover .arrows .bottom {right: 0}
 .products:hover .arrows .top, .products:hover .arrows .bottom {right: 0}
 .messages:hover .arrows .top, .messages:hover .arrows .bottom {right: 0}
