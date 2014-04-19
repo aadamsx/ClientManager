@@ -18,8 +18,8 @@
                 <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
                 <div id="" class="nav-menu l-padding-top-15">
                     <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
-                        <li class=""><a href="#">Resources</a></li>
-                        <li class=""><a href="#">About</a></li>
+                        <li class="" style=""><a href="#">Resources</a></li>
+                        <li class="" style=""><a href="#">About</a></li>
                         <li class=""><a href="#">latest News</a></li>
                         <li class=""><a href="#">kitten Pelts</a></li>
                         <li class=""><a href="#">kitten Dioramas</a></li>
@@ -44,7 +44,7 @@
                 </ul>
             </aside>
             
-            <section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
+            <!--<section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
                 <div id="" class="l-padding-20" style="">
                     <ul id="" class="l-display-inline l-margin-0" style="">
                         <li style=""><a href="#" style="">Accounts</a></li>
@@ -52,7 +52,7 @@
                         <li><a href="#">Activities</a></li>
                     </ul>
                 </div>
-            </section>
+            </section>-->
             
             <!-- COMPANY PROFILE -->
             <section id="" class="company-profile bg-card bs-default l-position-relative" style="">
@@ -60,100 +60,134 @@
                 <div class="arrows">
                   <div class="bottom border-radius-top-bottom-right" data-to="products"></div>
                 </div>
+                
                 <!-- header -->
-                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightblue border-radius-top-2">
+                <div id="" class="l-padding-35 l-overflow-hidden bg-lightblue border-radius-top-2">
                     <div class="col-lg-6 l-float-left" style="">
-                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Company Profile</div>
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5 tc-darkgrey" style="">Settings</div>
                     </div>
-                    <div class="col-lg-6 l-float-left l-text-right" style="">
-                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="font-size-14" style="" href="#" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
+                    <div class="col-lg-6 l-float-left l-text-right tc-brightwhite " style="">
+                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
+                            <a class="font-size-14" style="" href="#" class=""><i class="icon-arrow" style=""></i> Back to Companies</a>
                         </button>
                     </div>
                 </div>
+
+                <!-- tabs -->
+                    <div class="tabs" style="">
+                       <div class="tab" style="">
+                           <input type="radio" id="tab-4" name="tab-group-2" checked="" style="display: none;">
+                           <label for="tab-4" style="">Profile</label>
+                           <!-- content -->
+                           <div class="content bg-only-card" style="overflow: hidden; ">
+                                <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
+                                    <!-- company profile -->
+                                    <div id="" class="col-lg-8 l-float-left" style="">
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                                            </div>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
+                                            </div>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
+                                            </div>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
+                                            </div>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
+                                            </div>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
+                                            </div>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                            <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                                <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
+                                            </div>
+                                        </div> 
+                                    </div>
+
+                                    <!-- company logo -->
+                                    <div id="" class="col-lg-4 l-float-left">
+                                        <div class="thumbnail">
+                                            <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
+                                            <div class="caption">
+                                                <h3>Company logo</h3>
+                                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                <p>
+                                                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                                        <a class="font-size-14" href="#" class="" style=""><i class="icon-dropbox"></i> Choose from Dropbox</a>
+                                                    </button> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                           </div> 
+                       </div>
+
+                       <div class="tab">
+                           <input type="radio" id="tab-5" name="tab-group-2" style="display: none;">
+                           <label for="tab-5" style="">Preferences</label>
+
+                           <div class="content bg-only-card"  style="overflow: hidden; ">
+                               <p>Stuff for Tab Two</p>
+
+                               <img src="http://placekitten.com/200/100">
+                           </div> 
+                       </div>
+
+                        <div class="tab">
+                           <input type="radio" id="tab-6" name="tab-group-2" style="display: none; ">
+                           <label for="tab-6" style="">Tab Three</label>
+
+                           <div class="content bg-only-card" style="overflow: hidden;">
+                              You made it this far?!
+                           </div> 
+                       </div>
+                    </div>
+  
                 
                 <!-- main content padding -->
-                <div id="" class="form l-padding-30-35-10-35 tc-darkgrey l-overflow-hidden" style="">
-                    <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
-                        <!-- company profile -->
-                        <div id="" class="col-lg-8 l-float-left" style="">
-                            <!-- row -->
-                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
-                                </div>
-                            </div>
-                            <!-- row -->
-                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
-                                </div>
-                            </div>
-                            <!-- row -->
-                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
-                                </div>
-                            </div>
-                            <!-- row -->
-                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
-                                </div>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
-                                </div>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
-                                </div>
-                            </div>
-                            <!-- row -->
-                            <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
-                                <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
-                                    <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
-                                    <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
-                                </div>
-                            </div> 
-                        </div>
-                        
-                        <!-- company logo -->
-                        <div id="" class="col-lg-4 l-float-left">
-                            <div class="thumbnail">
-                                <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
-                                <div class="caption">
-                                    <h3>Company logo</h3>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p>
-                                        <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                                            <a class="font-size-14" href="#" class="" style=""><i class="icon-dropbox"></i> Choose from Dropbox</a>
-                                        </button> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <!--<div id="" class="form l-padding-30-35-10-35 tc-darkgrey l-overflow-hidden" style="">
+                    
+                </div>-->
                 
                 <!-- footer with undo/save changes -->
                 <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
                     <!-- cancel changes -->
                     <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                        <a class="font-size-14" href="#" class="" style=""><i class="fa fa-reply"></i> Undo Changes</a>
+                        <a class="font-size-14" href="#" class="" style=""><i class="icon-back"></i> Undo Changes</a>
                     </button> 
                     <!-- save changes -->
                     <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                        <a class="font-size-14" href="#" class="" style=""><i class="fa fa-check"></i> Save Changes</a>
+                        <a class="font-size-14" href="#" class="" style=""><i class="icon-checkmark3"></i> Save Changes</a>
                     </button> 
                 </div>
             </section>

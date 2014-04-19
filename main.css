@@ -22,17 +22,18 @@ body.app {margin-bottom: 0; margin-top: 0;}
 .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
 .bg-lightergreen{background-color: rgba(113,218,191, .3);}
 .bg-medgreen {background-color: rgba(42,161,131, .7);}
-.bg-lightblue {background-color: rgba(47,188,203, .7);}
+.bg-lightblue {background-color: rgba(85,172,238, .1) /*rgba(47,188,203, .1)*/;}
 .bg-lightermedblue {background-color: rgba(93,182,212, .5);}
 .bg-medblue {background-color: rgba(53,164,201, .5);}
 .bg-lightred {background-color: rgba(246,130,117, .8);}
 .bg-silvergrey {background-color: #e0e3eb; }
 .bg-card {background-color: rgba(252,252,253, .95);}
+.bg-only-card {background: rgba(252,252,253, 1);}
 .bg-sidebar {background-color: rgba(252,252,253, .95);}
 .bg-pillbar {background-color: rgba(252,252,253, .95);}
 .bg-transparent {background: transparent;}
 .bg-none {background: none;}
-.bg-btn-nav {background-color: rgba(145,150,170, .7);} 
+.bg-btn-nav {background: rgba(53,201,164, .7);/*background-color: rgba(145,150,170, .7);*/} 
 .bg-btn-save {background-color: rgba(85,172,238, .9); } 
 .bg-btn-cancel {background-color: rgba(224,227,235, .5);} 
 
@@ -184,7 +185,7 @@ ul a:hover, ul li:hover a {opacity: 1;}
 /* buttons */
 .btn i, .btn span {opacity: 0.5;}
 .btn:hover {left:1px; top:1px; box-shadow:none; background:transparent; transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out;}
-.btn-nav:hover {background-color: rgba(145,150,170, .5)/*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
+.btn-nav:hover {background: rgba(53,201,164, .5);/*background-color: rgba(145,150,170, .5)*//*rgba(53,201,164, .5)*/;/*rgba(224,227,235, .2);*/}
 .btn-save:hover {background-color: rgba(85,172,238, .6);/*rgba(214,235,234, .2);*/}
 .btn-cancel:hover {background-color: rgba(224,227,235, .2);}
 
@@ -355,13 +356,14 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 /* cards */
 /* PLEASE REVIEW THIS LINE BELOW */
 .form input:valid, .form textarea:valid {background-color: rgba(252,252,253, .95);}
+form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);}
 
 /* package and products */
 /*.product, .product label {cursor: pointer;}
 .package .product:hover {background-color: rgba(82,168,236,0.1); opacity: 1.0;}
 .package:hover > div {opacity: 0.7;}*/
 
-/* font awesome plus checkboxes */
+/* font awesome and icomoon + checkboxes */
 .font-awesome input[type=checkbox] + label:before {font-family: FontAwesome;}
 /*.unchecked-icon input[type=checkbox] + label:before {content: "\f096"; }
 .checked-icon input[type=checkbox]:checked + label:before {content: "\f046";}*/
@@ -370,18 +372,32 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 .checked-icon input[type=checkbox]:checked + label:before {content: "\e854";}
 .partial-checked-icon input[type=checkbox]:indeterminate + label:before {content: "\e856";}
 
+
+/* tabs */
+.tabs {position: relative; min-height: 550px; /* This part sucks */ /*clear: both;*/ /*overflow: hidden*/}
+.tab {float: left; padding: 10px 0px 10px 0px;}
+.tab > label {padding: 10px 50px 10px 50px; margin-top: 10px; cursor: pointer; background-color: rgba(85,172,238, .1);}
+/*.tab > label {position: relative; margin-left: -1px; left: 1px; cursor: pointer;}*/
+.tab [type=radio] {display: none;}
+/*.content {position: absolute; padding: 20px; border-top: 2px solid rgba(85,172,238, .1);}*/
+.content {position: absolute; top: 28px; left: 0; right: 0; bottom: 0; padding: 20px 20px 0px 20px; margin: 10px 0px 0px 0px; /*border-top: 2px solid rgba(85,172,238, .1);*/}
+.tab [type=radio]:checked ~ label {z-index: 2; background-color: rgba(85,172,238, .0);}
+.tab [type=radio]:checked ~ label ~ .content {z-index: 1;}
+
+
 /* img and thumbnails */
 .img-thumbnail {width: 140px; height: 140px;}
 .thumbnail {}
 
-/* side navigation */
+
+/* card side navigation */
 .arrows {position:absolute; top: 15px; right: -50px; width: 50px; overflow: hidden;}
 .arrows .top, .arrows .bottom {position:relative; right: 50px; width:50px; height:60px; cursor:pointer; -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s, background-color .2s;}
-.arrows .top {background: rgba(53,201,164, .9);}
+.arrows .top {background: rgba(53,201,164, .5);}
 .arrows .top:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6cf"; top: 14px; left: 10px;}
-.arrows .top:hover {background-color: rgba(53,201,164, .7);}
-.arrows .bottom {background: rgba(246,130,117, .9);}
-.arrows .bottom:hover {background-color: rgba(246,130,117, .7);}
+.arrows .top:hover {background-color: rgba(53,201,164, .3);}
+.arrows .bottom {background: rgba(246,130,117, .5);}
+.arrows .bottom:hover {background-color: rgba(246,130,117, .3);}
 .arrows .bottom:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6ce"; top: 18px; left: 10px;}
 .company-profile:hover .arrows .top, .company-profile:hover .arrows .bottom {right: 0}
 .products:hover .arrows .top, .products:hover .arrows .bottom {right: 0}
