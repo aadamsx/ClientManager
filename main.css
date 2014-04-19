@@ -1,5 +1,5 @@
 footer {height: 150px; border-radius: 0px; margin-top: 10px; margin-bottom: 0; padding-bottom: 0;}
-header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 22px; padding-bottom: 22px;}
+header {height: 42px; padding-left: 20px; padding-right: 20px; padding-top: 26px; padding-bottom: 26px;}
 section {margin: 0px 0px 20px 10px; border-radius: 2px; width: 940px; left: 250px;}
 aside {margin-right: 10px; width: 250px; border-radius: 2px; height: 330px; }
 aside.fixed {position: fixed;}
@@ -265,6 +265,7 @@ tbody:hover > tr:hover td {color: #2d2d2d; opacity: 1;}
 .l-margin-top-bottom-5 {margin-top: 5px; margin-bottom: 5px;}
 .l-padding-0 {padding: 0;}
 .l-padding-5 {padding: 5px;}
+.l-padding-0-5-5-5 {padding: 0 5px 5px 5px;}
 .l-padding-10, .l-padding-10 td, .l-padding-10 th {padding: 10px;}
 .l-padding-12 {padding: 12px;}
 .l-padding-15 {padding: 15px;}
@@ -381,7 +382,7 @@ form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);
 /*.tab > label {position: relative; margin-left: -1px; left: 1px; cursor: pointer;}*/
 .tab [type=radio] {display: none;}
 /*.content {position: absolute; padding: 20px; border-top: 2px solid rgba(85,172,238, .1);}*/
-.content {position: absolute; top: 28px; left: 0; right: 0; bottom: 0; padding: 30px 20px 0px 20px; margin:8px 0px 0px 0px; /*border-top: 2px solid rgba(85,172,238, .1);*/ }
+.content {position: absolute; top: 28px; left: 0; right: 0; bottom: 0; padding: 35px 20px 0px 20px; margin:8px 0px 0px 0px; /*border-top: 2px solid rgba(85,172,238, .1);*/ }
 .tab [type=radio]:checked ~ label {z-index: 2; background-color: rgba(252,252,253, 1); border-top-right-radius: 2px; border-top-left-radius: 2px; color: rgba(87,94,106, 1);}
 .tab [type=radio]:checked ~ label ~ .content {z-index: 1;}
 .tab > label:hover {color: rgba(52,114,218, .9);  background-color: rgba(85,172,238, .1); border-top-right-radius: 2px; border-top-left-radius: 2px;}
