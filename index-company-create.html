@@ -14,6 +14,7 @@
 
     <body class="app" style="">
         <div id="" class="grid-width-1200 l-margin-0-auto">
+            <!-- TOP BAR NAV -->
             <header id="" class="nav nav-topbar bg-transparent tc-white" style="">
                 <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
                 <div id="" class="nav-menu l-padding-top-15">
@@ -28,6 +29,7 @@
                 </div>
             </header>
             
+            <!-- SIDE BAR NAV -->
             <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
                 <div id="" class="l-padding-0-0-0-30 tc-medgrey" style="">
                     <div class="font-size-13 font-weight-500 text-transform-upper l-margin-bottom-0 l-margin-top-25" style="">General</div>
@@ -45,21 +47,25 @@
                 </ul>
             </aside>
             
-            <!--<section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
+            <!-- PILL BAR NAV -->
+            <section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
                 <div id="" class="l-padding-20" style="">
-                    <ul id="" class="l-display-inline l-margin-0" style="">
-                        <li style=""><a href="#" style="">Accounts</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Activities</a></li>
+                    <ul id="" class="pill-bar l-display-inline l-margin-0" style="">
+                        <li style=""><a href="#settings" style="">Settings</a></li>
+                        <li><a href="#account">Account</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#communications">Communications</a></li>
                     </ul>
                 </div>
-            </section>-->
+            </section>
             
-            <!-- COMPANY PROFILE -->
-            <section id="" class="company-profile bg-card bs-default l-position-relative" style="">
+            <!-- SETTINGS -->
+            <section id="settings" class="settings bg-card bs-default l-position-relative" style="">
                 <!-- navigation -->
                 <div class="arrows">
-                  <div class="bottom border-radius-top-bottom-right" data-to="products"></div>
+                    <div class="bottom border-radius-top-bottom-right">
+                        <a href="#account"><i class="icon-arrow-down5"></i></a>
+                    </div>
                 </div>
                 
                 <!-- header -->
@@ -75,8 +81,153 @@
                 </div>
 
                 <!-- tabs -->
-                <div class="tabs " style="">
-                   <div class="tab" style="">
+                <div class="tabs" style="">
+                    <!-- PROFILE -->
+                   <div class="tab tab-company" style="">
+                       <input type="radio" id="tab-4" name="tab-group-2" checked="" style="display: none;">
+                       <label class="tc-darkgrey" for="tab-4" style="">Profile</label>
+                       <!-- content -->
+                       <div class="content bg-only-card" style="overflow: hidden;">
+                            <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
+                                <!-- company profile -->
+                                <div id="" class="col-lg-8 l-float-left" style="">
+                                    <!-- row -->
+                                    <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                        <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_company_name">Acme Widgets Inc.</label>
+                                        </div>
+                                    </div>
+                                    <!-- row -->
+                                    <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                        <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_website">http://example.com</label>
+                                        </div>
+                                    </div>
+                                    <!-- row -->
+                                    <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                        <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_phone">+1 123 123 1234</label>
+                                        </div>
+                                    </div>
+                                    <!-- row -->
+                                    <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                        <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address1">123 Main St.</label>
+                                        </div>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address2">City, State Zip</label>
+                                        </div>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_address3">Country</label>
+                                        </div>
+                                    </div>
+                                    <!-- row -->
+                                    <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                        <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                        <div id="" class="col-lg-8 l-margin-controls l-position-relative l-overflow-hidden" style="">
+                                            <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                            <label class="label l-position-absolute border-radius-2 tc-medgrey border-box" for="client_description">Acme Widgets Inc. info</label>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <!-- company logo -->
+                                <div id="" class="col-lg-4 l-float-left">
+                                    <div class="thumbnail">
+                                        <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
+                                        <div class="caption">
+                                            <h3>Company logo</h3>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <p>
+                                                <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                                    <a class="font-size-14" href="#" class="" style=""><i class="icon-dropbox"></i> Choose from Dropbox</a>
+                                                </button> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                       </div> 
+                   </div>
+
+                   <div class="tab tab-company">
+                       <input type="radio" id="tab-5" name="tab-group-2" style="display: none;">
+                       <label class="tc-darkgrey" for="tab-5" style="">Preferences</label>
+
+                       <div class="content bg-only-card"  style="overflow: hidden; ">
+                           <p>Stuff for Tab Two</p>
+
+                           <img src="http://placekitten.com/200/100">
+                       </div> 
+                   </div>
+
+                    <div class="tab tab-company">
+                       <input type="radio" id="tab-6" name="tab-group-2" style="display: none; ">
+                       <label class="tc-darkgrey" for="tab-6" style="">Tab Three</label>
+
+                       <div class="content bg-only-card" style="overflow: hidden;">
+                          You made it this far?!
+                       </div> 
+                   </div>
+                </div>
+  
+                
+                <!-- main content padding -->
+                <!--<div id="" class="form l-padding-30-35-10-35 tc-darkgrey l-overflow-hidden" style="">
+                    
+                </div>-->
+                
+                <!-- footer with undo/save changes -->
+                <div id="" class="l-padding-20 l-text-right" style="">
+                    <!-- cancel changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i class="icon-back"></i> Undo Changes</a>
+                    </button> 
+                    <!-- save changes -->
+                    <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                        <a class="font-size-14" href="#" class="" style=""><i class="icon-checkmark3"></i> Save Changes</a>
+                    </button> 
+                </div>
+            </section>
+            
+            <!-- ACCOUNT -->
+            <section id="account" class="account bg-card bs-default l-position-relative" style="">
+                <!-- navigation -->
+                <div class="arrows">
+                    <div class="top border-radius-top-right">
+                        <a href="#settings"><i class="icon-arrow-up42"></i></a>
+                    </div>
+                    <div class="bottom border-radius-bottom-right">
+                        <a href="#products"><i class="icon-arrow-down5"></i></a>
+                    </div>
+                </div>
+                
+                <!-- header -->
+                <div id="" class="l-padding-20-20-10-20 l-overflow-hidden bg-lightblue border-radius-top-2">
+                    <div class="col-lg-6 l-float-left" style="">
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-0-5-5-5 tc-darkgrey" style="">Account</div>
+                    </div>
+                    <div class="col-lg-6 l-float-left l-text-right tc-brightwhite l-padding-" style="">
+                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
+                            <a class="font-size-14" style="" href="#" class=""><i class="icon-arrow" style=""></i> Back to Companies</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- tabs -->
+                <div class="tabs" style="">
+                    <!-- PROFILE -->
+                   <div class="tab tab-account" style="">
                        <input type="radio" id="tab-4" name="tab-group-2" checked="" style="display: none;">
                        <label class="tc-darkgrey" for="tab-4" style="">Profile</label>
                        <!-- content -->
@@ -153,7 +304,7 @@
                        </div> 
                    </div>
 
-                   <div class="tab">
+                   <div class="tab tab-account">
                        <input type="radio" id="tab-5" name="tab-group-2" style="display: none;">
                        <label class="tc-darkgrey" for="tab-5" style="">Preferences</label>
 
@@ -164,12 +315,12 @@
                        </div> 
                    </div>
 
-                    <div class="tab">
+                    <div class="tab tab-account">
                        <input type="radio" id="tab-6" name="tab-group-2" style="display: none; ">
                        <label class="tc-darkgrey" for="tab-6" style="">Tab Three</label>
 
                        <div class="content bg-only-card" style="overflow: hidden;">
-                          You made it this far?!
+                          hey
                        </div> 
                    </div>
                 </div>
@@ -192,71 +343,23 @@
                     </button> 
                 </div>
             </section>
-            
-            <!-- ACCOUNT -->
-            <section id="" class="company-profile bg-card bs-default l-position-relative" style="">
-                <!-- navigation -->
-                <div class="arrows">
-                  <div class="bottom border-radius-top-bottom-right" data-to="products"></div>
-                </div>
-                <!-- header -->
-                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightblue border-radius-top-2">
-                    <div class="col-lg-6 l-float-left" style="">
-                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Account</div>
-                    </div>
-                    <div class="col-lg-6 l-float-left l-text-right" style="">
-                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="font-size-14" style="" href="#" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            
             <!-- SECURITY -->
-            <section id="" class="company-profile bg-card bs-default l-position-relative" style="">
-                <!-- navigation -->
-                <div class="arrows">
-                  <div class="bottom border-radius-top-bottom-right" data-to="products"></div>
-                </div>
-                <!-- header -->
-                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightblue border-radius-top-2">
-                    <div class="col-lg-6 l-float-left" style="">
-                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Account</div>
-                    </div>
-                    <div class="col-lg-6 l-float-left l-text-right" style="">
-                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="font-size-14" style="" href="#" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
-                        </button>
-                    </div>
-                </div>
-            </section>
             
             <!-- DROPBOX -->
-            <section id="" class="company-profile bg-card bs-default l-position-relative" style="">
+
+
+            <!-- PRODUCTS -->
+            <section id="products" class="products bg-card bs-default l-position-relative" style="">
                 <!-- navigation -->
                 <div class="arrows">
-                  <div class="bottom border-radius-top-bottom-right" data-to="products"></div>
-                </div>
-                <!-- header -->
-                <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightblue border-radius-top-2">
-                    <div class="col-lg-6 l-float-left" style="">
-                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5" style="">Dropbox</div>
+                    <div class="top border-radius-top-right">
+                        <a href="#account"><i class="icon-arrow-up42"></i></a>
                     </div>
-                    <div class="col-lg-6 l-float-left l-text-right" style="">
-                        <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
-                            <a class="font-size-14" style="" href="#" class=""><i class="fa fa-level-up" style=""></i> Back to Accounts</a>
-                        </button>
+                    <div class="bottom border-radius-bottom-right">
+                        <a href="#communications"><i class="icon-arrow-down5"></i></a>
                     </div>
                 </div>
-            </section>
-            
-            <!-- PRODUCTS -->
-            <section id="" class="products bg-card bs-default l-position-relative" style="">
-                <!-- navigation -->
-                <div class="arrows" style="">
-                  <div class="top border-radius-top-right" data-to="company-profile"></div>
-                  <div class="bottom border-radius-bottom-right" data-to="messages"></div>
-                </div>
+                
                 <!-- header -->
                 <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
                     <div class="col-lg-6 l-float-left" style="">
@@ -365,16 +468,19 @@
                 </form>
             </section>
             
-            <!-- MESSAGES -->
-            <section id="" class="messages bg-card bs-default l-position-relative" style="">
+            <!-- COMMUNICATIONS-->
+            <section id="communications" class="messages bg-card bs-default l-position-relative" style="">
                 <!-- navigation -->
-                <div class="arrows l-position-absoute l-overflow-hidden l-top-15 l-right-neg-60 l-width-60">
-                  <div class="top border-radius-top-bottom-right" data-to="products"></div>
+                <div class="arrows">
+                    <div class="top border-radius-top-bottom-right">
+                        <a href="#products"><i class="icon-arrow-up42"></i></a>
+                    </div>
                 </div>
+                
                 <!-- header -->
                 <div id="" class="l-padding-35 l-overflow-hidden tc-brightwhite bg-lightred border-radius-top-2" style="">
                     <div class="col-lg-6 l-float-left" style="">
-                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">Messages</div>
+                        <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">Communications</div>
                     </div>
                     <div class="col-lg-6 l-float-left l-text-right">
                         <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
@@ -613,8 +719,9 @@
                 </div>
             </footer>
         </div>
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>
+        <script> /*Side bar scrolling navigation*/
             $stick = $('aside');
             $foot = $('footer');
             margin = 18;
@@ -637,7 +744,7 @@
                 }
             });
         </script>
-        <script>
+        <script> /*Round trip footer to top navigation*/
 			jQuery(document).ready(function () {
 			    var offset = 220;
 			    var duration = 500;
@@ -658,119 +765,8 @@
 			    })
 			});
         </script>
-        <script>
-            $(function () {
-                // Apparently click is better chan change? Cuz IE?
-                $('input[type="checkbox"]').change(function (e) {
-                    var checked = $(this).prop("checked"),
-                        container = $(this).parent(),
-                        siblings = container.siblings();
-
-                    container.find('input[type="checkbox"]').prop({
-                        indeterminate: false,
-                        checked: checked
-                    });
-
-                    function checkSiblings(el) {
-                        var parent = el.parent().parent(),
-                            all = true;
-
-                        el.siblings().each(function () {
-                            return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
-                        });
-
-                        if (all && checked) {
-                            parent.children('input[type="checkbox"]').prop({
-                                indeterminate: false,
-                                checked: checked
-                            });
-                            checkSiblings(parent);
-                        } else if (all && !checked) {
-                            parent.children('input[type="checkbox"]').prop("checked", checked);
-                            parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
-                            checkSiblings(parent);
-                        } else {
-                            el.parents("li").children('input[type="checkbox"]').prop({
-                                indeterminate: true,
-                                checked: false
-                            });
-                        }
-                    }
-
-                    checkSiblings(container);
-                });
-            });
-        </script>
-        <script>
-            $(document).ready(function () {
-                var h = window.location.hash.replace("#", "");
-                if (h && $("." + h).length) {
-                    var k = $("." + h).offset().top - 40;
-                    window.Zepto ? window.scrollTo(0, k) : $(window).scrollTop($("." + h).offset().top - 40)
-                }
-                $(".skin dt").click(function () {
-                    $(this).siblings().removeClass("selected").end().prev("dd").andSelf().addClass("selected")
-                });
-                $(".arrows .top, .arrows .bottom, .features .self, .skins-info .self, .usage .self").click(function (b) {
-                    var a = $(this).data("to"),
-                        d = $("." + a).offset().top;
-                    b.preventDefault();
-                    window.location.hash = a;
-                    window.Zepto ? window.scrollTo(0, d - 40) : $("html, body").stop().animate({
-                        scrollTop: d - 40
-                    }, 600)
-                });
-                $(".colors li").click(function () {
-                    var b = $(this);
-                    if (!b.hasClass("active")) {
-                        b.siblings().removeClass("active");
-                        var a = b.closest(".skin"),
-                            d = b.attr("class") ? "-" + b.attr("class") : "",
-                            c = a.data("icheckbox"),
-                            g = a.data("iradio"),
-                            e = "icheckbox_minimal",
-                            f = "iradio_minimal";
-                        a.hasClass("skin-square") && (e = "icheckbox_square", f = "iradio_square", void 0 == c && (c = "icheckbox_square-green", g = "iradio_square-green"));
-                        a.hasClass("skin-flat") && (e = "icheckbox_flat", f = "iradio_flat", void 0 == c && (c = "icheckbox_flat-red", g = "iradio_flat-red"));
-                        a.hasClass("skin-line") && (e = "icheckbox_line", f = "iradio_line", void 0 == c && (c = "icheckbox_line-blue", g = "iradio_line-blue"));
-                        void 0 == c && (c = e, g = f);
-                        a.find("input, .skin-states .state").each(function () {
-                            var a = $(this).hasClass("state") ? $(this) : $(this).parent(),
-                                b = a.attr("class").replace(c, e + d).replace(g, f + d);
-                            a.attr("class", b)
-                        });
-                        a.data("icheckbox", e + d);
-                        a.data("iradio", f + d);
-                        b.addClass("active")
-                    }
-                });
-                $(".demo-methods dt .self").click(function () {
-                    var b = $(this);
-                    switch (b.attr("class").replace("self ", "")) {
-                    case "do-check":
-                        $("#input-1, #input-3").iCheck("check");
-                        break;
-                    case "do-uncheck":
-                        $("#input-1, #input-3").iCheck("uncheck");
-                        break;
-                    case "do-disable":
-                        $("#input-2, #input-4").iCheck("disable");
-                        break;
-                    case "do-enable":
-                        $("#input-2, #input-4").iCheck("enable");
-                        break;
-                    case "do-destroy":
-                        $(".demo-list input").iCheck("destroy");
-                        break;
-                    default:
-                        var a = b.hasClass("active") ? "show code" : "hide code";
-                        b.toggleClass("active").text(a);
-                        window.Zepto ? $(this).closest("dt").next().toggle() : $(this).closest("dt").next().slideToggle(200)
-                    }
-                })
-            });
-        </script>
-        <script>
+        <script> 
+            /*Products and Checkboxes*/
             function toggleChecked(oElement) {
                 oForm = oElement.form;
                 oElement = oForm.elements[oElement.name];
@@ -846,6 +842,23 @@
                     document.getElementById('bundle_id_1_0').indeterminate = bIndeterminate;
                 }
             }
+        </script>
+        <script> /*smooth scrolling for anchors*/
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top - 40
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
         </script>
     </body>
 
