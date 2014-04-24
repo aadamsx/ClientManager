@@ -402,7 +402,8 @@ form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);
 
 /* card side navigation */
 .arrows {position:absolute; top: 15px; right: -50px; width: 50px; overflow: hidden;}
-.arrows .top, .arrows .bottom {position:relative; right: 50px; width:50px; height:60px; cursor:pointer; -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s, background-color .2s;}
+.arrows .top, .arrows .bottom {position: relative; right: 50px; width: 40px; height: 50px; cursor: pointer; background-color .2s;
+    -webkit-transition: all .3s, background-color .2s; -moz-transition: all .3s, background-color .2s; -ms-transition: all .3s, background-color .2s; -o-transition: all .3s, background-color .2s; transition: all .3s,}
 .arrows .top {background: rgba(53,201,164, .5);}
 
 .arrows .top:hover {background-color: rgba(53,201,164, .3);}
@@ -411,8 +412,8 @@ form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);
 
 /*.arrows .top:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6cf"; top: 14px; left: 10px;}*/
 /*.arrows .bottom:before {position: absolute; font-family: icomoon; font-size: 28px; color: white; content: "\e6ce"; top: 18px; left: 10px;}*/
-.arrows .top i {position: absolute; font-size: 28px; color: white; top: 14px; left: 10px;}
-.arrows .bottom i {position: absolute; font-size: 28px; color: white; top: 18px; left: 10px;}
+.arrows .top i {position: absolute; font-size: 36px; color: white; top: 6px; left: 1px;}
+.arrows .bottom i {position: absolute; font-size: 36px; color: white; top: 8px; left: 1px;}
 
 .settings:hover .arrows .top, .settings:hover .arrows .bottom {right: 0}
 .account:hover .arrows .top, .account:hover .arrows .bottom {right: 0}

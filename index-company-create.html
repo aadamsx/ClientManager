@@ -713,14 +713,100 @@
             
             <footer id="" class="nav nav-bottombar tc-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
-                    <a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
+                    <!--<a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
                         <i class="fa fa-chevron-up" style="padding-left: 2px; padding-top: 4px; color: #fff"></i>
-                    </a>
+                    </a>-->
                 </div>
             </footer>
+            
+            <!-- navigation to top -->
+            <p id="back-top">
+                <a href="#top"><i class="icon-arrow-up42"></i></a>
+            </p>
         </div>
-        
+        <style>
+        /*
+        Back to top button 
+        */
+        #back-top {
+            position: fixed;
+            /*bottom: 30px;*/
+           /* margin-left: -150px;*/
+            right: 2px;
+            bottom: 2px;
+            border-width: 0;
+            z-index: 99;
+            opacity: .4;
+            
+        }
+        #back-top a {
+            width: 30px;
+            display: block;
+            text-align: center;
+            font: 20px/100% Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            
+            color: #bbb;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+            
+        }
+        #back-top a:hover {
+            color: #000;
+        }
+        /* arrow icon (span tag) */
+        #back-top i {
+            width: 32px;
+            height: 33px;
+            display: block;
+            margin-top: 15px;
+            /*margin-top: 7px;*/
+            /*background: #ddd url(up-arrow.png) no-repeat center center;*/
+            background-color: #ddd;
+            /* rounded corners */
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        #back-top a:hover span {
+            background-color: #777;
+        }
+        </style>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+        </script>
         <script> /*Side bar scrolling navigation*/
             $stick = $('aside');
             $foot = $('footer');
@@ -744,7 +830,7 @@
                 }
             });
         </script>
-        <script> /*Round trip footer to top navigation*/
+<!--        <script> //Round trip footer to top navigation
 			jQuery(document).ready(function () {
 			    var offset = 220;
 			    var duration = 500;
@@ -764,7 +850,7 @@
 			        return false;
 			    })
 			});
-        </script>
+        </script>-->
         <script> 
             /*Products and Checkboxes*/
             function toggleChecked(oElement) {
