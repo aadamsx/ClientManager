@@ -20,44 +20,24 @@
                 <div id="" class="nav-menu l-padding-top-15">
                     <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
                         <li class="" style=""><a href="#">Resources</a></li>
-                        <li class="" style=""><a href="#">About</a></li>
-                        <li class=""><a href="#">latest News</a></li>
-                        <li class=""><a href="#">kitten Pelts</a></li>
-                        <li class=""><a href="#">kitten Dioramas</a></li>
-                        <li class=""><a href="#">Aaron Adams</a></li>
+                        <li class="" style=""><a href="#">Companies</a></li>
+                        <li class=""><a href="#">Products</a></li>
+                        <li class=""><a href="#">Employees</a></li>
+                        <li class=""><a href="#">Dropbox</a></li>
+                        <li class=""><a href="#">Log-in</a></li>
                     </ul>
                 </div>
             </header>
             
-            <!-- SIDE BAR NAV -->
-            <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
-                <div id="" class="l-padding-0-0-0-30 tc-medgrey" style="">
-                    <div class="font-size-13 font-weight-500 text-transform-upper l-margin-bottom-0 l-margin-top-25" style="">General</div>
-                </div>
-                            
-                <ul id="" class="l-padding-0-20-0-20 l-line-height-20 tc-darkgrey" style="">
-                    <li style=""><a href="#" style=""><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                    <li><a href="#" style=""><i class="fa fa-list"></i>Companies</a></li>
-                    <li><a href="#"><i class="fa fa-columns"></i>Products</a></li>
-                    <li><a href="#"><i class="fa fa-users"></i>Employees</a></li>
-                    <li><a href="#"><i class="icon-dropbox"></i> Dropbox</a></li>
-                    <!--<li><a href="#"><i class="fa fa-credit-card"></i>Orders</a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-signal"></i>Charts</a></li>-->
+            <div id="" class="sidebar" style="position: fixed; left: 0px; z-index: 500; ">
+                <ul id="" class="" style="margin: 0; ">
+                    <li><a href="#settings"><i class=""></i>Settings</a></li>
+                    <li><a href="#account" style=""><i class=""></i>Account</a></li>
+                    <li><a href="#products"><i class=""></i>Products</a></li>
+                    <li><a href="#communications"><i class=""></i>Messages</a></li>
+                    <li><a href="#communications"><i class=""></i>Dropbox</a></li>
                 </ul>
-            </aside>
-            
-            <!-- PILL BAR NAV -->
-            <section id="" class="nav nav-pillbar bg-pillbar bs-default l-position-relative tc-darkgrey" style="">
-                <div id="" class="l-padding-20" style="">
-                    <ul id="" class="pill-bar l-display-inline l-margin-0" style="">
-                        <li style=""><a href="#settings" style="">Settings</a></li>
-                        <li><a href="#account">Account</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#communications">Communications</a></li>
-                    </ul>
-                </div>
-            </section>
+            </div>
             
             <!-- SETTINGS -->
             <section id="settings" class="settings bg-card bs-default l-position-relative" style="">
@@ -81,11 +61,11 @@
                 </div>
 
                 <!-- tabs -->
-                <div class="tabs" style="">
+                <div class="tabs-company" style="">
                     <!-- PROFILE -->
                    <div class="tab tab-company" style="">
-                       <input type="radio" id="tab-4" name="tab-group-2" checked="" style="display: none;">
-                       <label class="tc-darkgrey" for="tab-4" style="">Profile</label>
+                       <input type="radio" id="tab-1" name="tab-group-2" checked="" style="display: none;">
+                       <label class="tc-darkgrey" for="tab-1" style="">Profile</label>
                        <!-- content -->
                        <div class="content bg-only-card" style="overflow: hidden;">
                             <form accept-charset="UTF-8" id="" class="l-display-block bg-card" method="post">
@@ -161,8 +141,8 @@
                    </div>
 
                    <div class="tab tab-company">
-                       <input type="radio" id="tab-5" name="tab-group-2" style="display: none;">
-                       <label class="tc-darkgrey" for="tab-5" style="">Preferences</label>
+                       <input type="radio" id="tab-2" name="tab-group-2" style="display: none;">
+                       <label class="tc-darkgrey" for="tab-2" style="">Preferences</label>
 
                        <div class="content bg-only-card"  style="overflow: hidden; ">
                            <p>Stuff for Tab Two</p>
@@ -172,8 +152,8 @@
                    </div>
 
                     <div class="tab tab-company">
-                       <input type="radio" id="tab-6" name="tab-group-2" style="display: none; ">
-                       <label class="tc-darkgrey" for="tab-6" style="">Tab Three</label>
+                       <input type="radio" id="tab-3" name="tab-group-2" style="display: none; ">
+                       <label class="tc-darkgrey" for="tab-3" style="">Tab Three</label>
 
                        <div class="content bg-only-card" style="overflow: hidden;">
                           You made it this far?!
@@ -225,7 +205,7 @@
                 </div>
 
                 <!-- tabs -->
-                <div class="tabs" style="">
+                <div class="tabs-account" style="">
                     <!-- PROFILE -->
                    <div class="tab tab-account" style="">
                        <input type="radio" id="tab-4" name="tab-group-2" checked="" style="display: none;">
@@ -732,8 +712,8 @@
             position: fixed;
             /*bottom: 30px;*/
            /* margin-left: -150px;*/
-            right: 2px;
-            bottom: 2px;
+            left: 0px;
+            bottom: 250px;
             border-width: 0;
             z-index: 99;
             opacity: .4;
@@ -782,7 +762,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
-
             // hide #back-top first
             $("#back-top").hide();
 
@@ -804,53 +783,9 @@
                     return false;
                 });
             });
-
         });
         </script>
-        <script> /*Side bar scrolling navigation*/
-            $stick = $('aside');
-            $foot = $('footer');
-            margin = 18;
-            offtop = $stick.offset().top - margin;
-            offbtm = $foot.offset().top - (margin * 2 + $stick.height());
 
-            $(window).scroll(function () {
-                scrtop = $(window).scrollTop();
-                if (scrtop > offtop && $stick.hasClass('natural')) {
-                    $stick.removeClass('natural').addClass('fixed').css('top', margin);
-                }
-                if (offtop > scrtop && $stick.hasClass('fixed')) {
-                    $stick.removeClass('fixed').addClass('natural').css('top', 'auto');
-                }
-                if (scrtop > offbtm && $stick.hasClass('fixed')) {
-                    $stick.removeClass('fixed').addClass('bottom').css('top', offbtm + margin);
-                }
-                if (offbtm > scrtop && $stick.hasClass('bottom')) {
-                    $stick.removeClass('bottom').addClass('fixed').css('top', margin);
-                }
-            });
-        </script>
-<!--        <script> //Round trip footer to top navigation
-			jQuery(document).ready(function () {
-			    var offset = 220;
-			    var duration = 500;
-			    jQuery(window).scroll(function () {
-			        if (jQuery(this).scrollTop() > offset) {
-			            jQuery('.back-to-top').fadeIn(duration);
-			        } else {
-			            jQuery('.back-to-top').fadeOut(duration);
-			        }
-			    });
-
-			    jQuery('.back-to-top').click(function (event) {
-			        event.preventDefault();
-			        jQuery('html, body').animate({
-			            scrollTop: 0
-			        }, duration);
-			        return false;
-			    })
-			});
-        </script>-->
         <script> 
             /*Products and Checkboxes*/
             function toggleChecked(oElement) {
