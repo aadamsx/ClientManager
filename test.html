@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          background: #333;
+          color: #EEE;
+          padding: 1em;
+        }
+
+        label {
+          cursor: pointer;
+        }
+
+        .tabs > .tab {
+          background: #666;
+          display: none;
+          padding: 1em;
+        }
+        .tabs > input:nth-of-type(1):checked ~ .tab:nth-of-type(1) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(1):checked ~ .tabs-nav > ul > li:nth-of-type(1) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(1):checked ~ .tabs-nav > ul > li:nth-of-type(1) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(2):checked ~ .tabs-nav > ul > li:nth-of-type(2) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(2):checked ~ .tabs-nav > ul > li:nth-of-type(2) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(3):checked ~ .tabs-nav > ul > li:nth-of-type(3) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(3):checked ~ .tabs-nav > ul > li:nth-of-type(3) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(4):checked ~ .tab:nth-of-type(4) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(4):checked ~ .tabs-nav > ul > li:nth-of-type(4) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(4):checked ~ .tabs-nav > ul > li:nth-of-type(4) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(5):checked ~ .tab:nth-of-type(5) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(5):checked ~ .tabs-nav > ul > li:nth-of-type(5) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(5):checked ~ .tabs-nav > ul > li:nth-of-type(5) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(6):checked ~ .tab:nth-of-type(6) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(6):checked ~ .tabs-nav > ul > li:nth-of-type(6) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(6):checked ~ .tabs-nav > ul > li:nth-of-type(6) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(7):checked ~ .tab:nth-of-type(7) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(7):checked ~ .tabs-nav > ul > li:nth-of-type(7) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(7):checked ~ .tabs-nav > ul > li:nth-of-type(7) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(8):checked ~ .tab:nth-of-type(8) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(8):checked ~ .tabs-nav > ul > li:nth-of-type(8) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(8):checked ~ .tabs-nav > ul > li:nth-of-type(8) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs > input:nth-of-type(9):checked ~ .tab:nth-of-type(9) {
+          display: block;
+        }
+        .tabs > input:nth-of-type(9):checked ~ .tabs-nav > ul > li:nth-of-type(9) > label {
+          background: #666;
+        }
+        @media only screen and (max-width: 39.999em) {
+          .tabs > input:nth-of-type(9):checked ~ .tabs-nav > ul > li:nth-of-type(9) > label {
+            background: transparent;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            text-indent: .5em;
+            top: 0;
+          }
+        }
+        .tabs .tabs-nav {
+          position: relative;
+        }
+        .tabs .tabs-nav > input ~ ul {
+          background: #776;
+          height: 0;
+          overflow: hidden;
+        }
+        .tabs .tabs-nav > input:checked ~ ul {
+          background: #886;
+          height: auto;
+          overflow: auto;
+        }
+        .tabs .tabs-nav > label {
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 2em;
+          left: 0;
+          line-height: 2em;
+          padding: 0 .5em;
+          position: absolute;
+          right: 0;
+          text-align: right;
+          top: 0;
+          z-index: 1;
+        }
+        .tabs .tabs-nav > ul {
+          display: block;
+          list-style: none;
+          margin: 0;
+          padding: 2em 0 0 0;
+          position: relative;
+        }
+        .tabs .tabs-nav > ul > li {
+          display: inline;
+        }
+        .tabs .tabs-nav > ul > li > label {
+          display: block;
+          height: 2em;
+          line-height: 2em;
+        }
+        @media only screen and (min-width: 40em) {
+          .tabs .tabs-nav > input ~ ul, .tabs .tabs-nav > input:checked ~ ul {
+            background: transparent;
+            height: auto;
+            overflow: auto;
+          }
+          .tabs .tabs-nav > label {
+            display: none;
+          }
+          .tabs .tabs-nav > ul {
+            padding: 0;
+          }
+          .tabs .tabs-nav > ul > li > label {
+            display: inline-block;
+            padding: 1em;
+          }
+        }
+
+    </style>
+    <script  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        (function($) {
+        $(function() {
+        // set active radio to address bar
+        $(document).on('click', '.tabs .tabs-nav label', function() {
+          var hash = '#' + $(this).attr('for');
+          window.history.replaceState('', '', hash);
+        });
+        // select active radio based on hash
+        $(document.location.hash).prop('checked', true);
+        });
+        })(window.Zepto || window.jQuery);//@ sourceURL=pen.js
+    </script>
+</head>
+<body>
+    <div class="tabs">
+        <input id="tab-1" name="tabset-1" type="radio" hidden />
+        <input id="tab-2" name="tabset-1" type="radio" hidden />
+        <input id="tab-3" name="tabset-1" type="radio" hidden checked />
+        <input id="tab-4" name="tabset-1" type="radio" hidden />
+        <nav class="tabs-nav" role="navigation">
+        <input id="tabsnav-1" type="checkbox" hidden />
+        <label for="tabsnav-1">☰</label>
+        <ul>
+          <li><label for="tab-1">Important tab</label></li>
+          <li><label for="tab-2">Second tab</label></li>
+          <li><label for="tab-3">Default tab</label></li>
+          <li><label for="tab-4">Least interest tab</label></li>
+        </ul>
+        </nav>
+        <div class="tab">
+        <h2>Important tab</h2>
+        <p>Hellou.</p>
+        </div>
+        <div class="tab">
+        <h2>Second tab</h2>
+        <p>Hellou.</p>
+        </div>
+        <div class="tab">
+        <h2>Default tab</h2>
+        <p>Idea clone of <a href="http://css-tricks.com/transformer-tabs/">Transformer Tabs</a>. Difference: far less JavaScript, more HTML, more generated CSS.</p>
+        <p>The pro with this is more lightweight result: less JS is always better for the poorest of the poor devices.</p>
+        <p>The cons are extra HTML and CSS trickery that might be hard to deal with for some. And you can only copy url from the address bar, because there are no links. For that reason I'm not sure how accessible this solution is. IE9+ only.</p>
+        <hr />
+        <h3>How it works</h3>
+        <p>This is selected because radio above has :checked.</p>
+        </div>
+        <div class="tab">
+        <h2>Least interest tab</h2>
+        <p>Hellou.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -23,7 +23,7 @@ body.app {margin-bottom: 0; margin-top: 0; }
 .bg-lightgreen {background-color: rgba(53,201,164, .5)/*#35c9a4;*/}
 .bg-lightergreen{background-color: rgba(113,218,191, .3);}
 .bg-medgreen {background-color: rgba(42,161,131, .7);}
-.bg-lightblue {background-color: rgba(114,168,209, .2) /*rgba(85,172,238, .1)*/ /*rgba(47,188,203, .1)*/;}
+.bg-lightblue { background-color: rgba(114,168,209, .2) /*rgba(85,172,238, .1)*/ /*rgba(47,188,203, .1)*/;}
 .bg-lightermedblue {background-color: rgba(93,182,212, .5);}
 .bg-medblue {background-color: rgba(53,164,201, .5);}
 .bg-lightred {background-color: rgba(246,130,117, .8);}
@@ -416,7 +416,7 @@ form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);
 
 
 .sidebar a {display: block; width: 110px; height: 60px;
-    background-color: rgba(108,123,137, .9);
+    background-color: rgba(108,123,137, .9) /*#6c7b89*/;
     text-align: center; margin-bottom: 2px; line-height: 60px;
  /*   font-size: 14px; font-family: Futura, 'Trebuchet MS', Arial, sans-serif;*/
     text-decoration: none; color: rgb(255, 255, 255); border-top-right-radius: 2px; border-bottom-right-radius: 2px;
