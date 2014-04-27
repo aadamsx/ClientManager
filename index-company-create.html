@@ -29,6 +29,7 @@
                 </div>
             </header>
             
+            <!-- RIGHT SIDE BAR NAV -->
             <div id="" class="sidebar" style="position: fixed; left: 0px; z-index: 500; ">
                 <ul id="" class="" style="margin: 0; ">
                     <li><a href="#settings"><i class=""></i>Settings</a></li>
@@ -38,6 +39,32 @@
                     <li><a href="#communications"><i class=""></i>Dropbox</a></li>
                 </ul>
             </div>
+            
+            <!-- LEFT SIDE BAR NAV -->
+            <!--<div id="" class="fixed-sidebar" style="position: fixed; left: 1500px; right: auto;">
+                <ul id="" class="" style="margin: 0; ">
+                    <li><a href="#settings"><i class=""></i>Settings</a></li>
+                    <li><a href="#account" style=""><i class=""></i>Account</a></li>
+                    <li><a href="#products"><i class=""></i>Products</a></li>
+                    <li><a href="#communications"><i class=""></i>Messages</a></li>
+                    <li><a href="#communications"><i class=""></i>Dropbox</a></li>
+                </ul>
+            </div>--> 
+                 
+            <!-- SIDE BAR NAV -->
+<!--            <aside id="" class="nav nav-sidebar natural bg-sidebar bs-default l-position-absolute" style="">
+                <div id="" class="l-padding-0-0-0-30 tc-medgrey" style="">
+                    <div class="font-size-13 font-weight-500 text-transform-upper l-margin-bottom-0 l-margin-top-25" style="">General</div>
+                </div>
+
+                <ul id="" class="l-padding-0-20-0-20 l-line-height-20 tc-darkgrey" style="">
+                    <li style=""><a href="#" style=""><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                    <li><a href="#" style=""><i class="fa fa-list"></i>Companies</a></li>
+                    <li><a href="#"><i class="fa fa-columns"></i>Products</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i>Employees</a></li>
+                    <li><a href="#"><i class="icon-dropbox"></i> Dropbox</a></li>
+                </ul>
+            </aside>-->
             
             <!-- SETTINGS -->
             <section id="settings" class="settings bg-card bs-default l-position-relative" style="">
@@ -59,6 +86,9 @@
                         </button>
                     </div>
                 </div>
+                
+                
+
 
                 <!-- tabs -->
                 <div class="tabs-company" style="">
@@ -326,7 +356,6 @@
             <!-- SECURITY -->
             
             <!-- DROPBOX -->
-
 
             <!-- PRODUCTS -->
             <section id="products" class="products bg-card bs-default l-position-relative" style="">
@@ -691,6 +720,7 @@
                 </div>
             </section>
             
+            <!-- FOOTER -->
             <footer id="" class="nav nav-bottombar tc-white bg-silvergrey" style="">
                 <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
                     <!--<a href="#" class="back-to-top" style="margin-right: 1%; float: right; background: rgba(255,255,255,.5); width: 25px; height: 25px; border-radius: 50%; -webkit-border-radius: 50%;">
@@ -704,61 +734,6 @@
                 <a href="#top"><i class="icon-arrow-up42"></i></a>
             </p>
         </div>
-        <style>
-        /*
-        Back to top button 
-        */
-        #back-top {
-            position: fixed;
-            /*bottom: 30px;*/
-           /* margin-left: -150px;*/
-            left: 0px;
-            bottom: 250px;
-            border-width: 0;
-            z-index: 99;
-            opacity: .4;
-            
-        }
-        #back-top a {
-            width: 30px;
-            display: block;
-            text-align: center;
-            font: 20px/100% Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
-            text-decoration: none;
-            
-            color: #bbb;
-            /* background color transition */
-            -webkit-transition: 1s;
-            -moz-transition: 1s;
-            transition: 1s;
-            
-        }
-        #back-top a:hover {
-            color: #000;
-        }
-        /* arrow icon (span tag) */
-        #back-top i {
-            width: 32px;
-            height: 33px;
-            display: block;
-            margin-top: 15px;
-            /*margin-top: 7px;*/
-            /*background: #ddd url(up-arrow.png) no-repeat center center;*/
-            background-color: #ddd;
-            /* rounded corners */
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 2px;
-            /* background color transition */
-            -webkit-transition: 1s;
-            -moz-transition: 1s;
-            transition: 1s;
-        }
-        #back-top a:hover span {
-            background-color: #777;
-        }
-        </style>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
@@ -785,7 +760,6 @@
             });
         });
         </script>
-
         <script> 
             /*Products and Checkboxes*/
             function toggleChecked(oElement) {
@@ -880,6 +854,19 @@
                 }
               });
             });
+        </script>
+        <script>
+            (function($) {
+              $(function() {
+                // set active radio to address bar
+                $(document).on('click', '.tabs .tabs-nav label', function() {
+                  var hash = '#' + $(this).attr('for');
+                  window.history.replaceState('', '', hash);
+                });
+                // select active radio based on hash
+                $(document.location.hash).prop('checked', true);
+              });
+            })(window.Zepto || window.jQuery);
         </script>
     </body>
 
