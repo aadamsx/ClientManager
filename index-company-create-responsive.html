@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Management Portal - Prototype 1.0</title>
+        <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="icomoon/style.css" />
+        <link rel="stylesheet" href="entypeo/style.css" />
+        <link rel="stylesheet" href="main.css" />
+        <!--<link rel="stylesheet" href="bootstrap-3.1.1-grid-system.css" />-->
+    </head>
+
+    <body class="app" style="">
+        <div data-ng-hide="isSpecificPage()" class="">
+            <!-- LEFT SIDE BAR NAV -->
+            <!-- NOTE: position: absolute; is an option -->
+            <div data-ng-include=" 'views/nav.html' "  id="" class="sidebar" style="position: fixed; left: 0px; z-index: 500; top: 75px;">
+                <ul id="" class="" style="margin: 0; ">
+                    <li><a href="#settings"><i class=""></i>Settings</a></li>
+                    <li><a href="#account" style=""><i class=""></i>Account</a></li>
+                    <li><a href="#products"><i class=""></i>Products</a></li>
+                    <li><a href="#communications"><i class=""></i>Messages</a></li>
+                    <li><a href="#communications"><i class=""></i>Dropbox</a></li>
+                </ul>
+            </div>
+            <!-- TOP BAR NAV -->
+            <header data-ng-include=" 'views/header.html' " id="" class="nav nav-topbar bg-transparent tc-white" style="">
+                <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
+                <div id="" class="nav-menu l-padding-top-15">
+                    <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
+                        <li class="" style=""><a href="#">Resources</a></li>
+                        <li class="" style=""><a href="#">Companies</a></li>
+                        <li class=""><a href="#">Products</a></li>
+                        <li class=""><a href="#">Employees</a></li>
+                        <li class=""><a href="#">Dropbox</a></li>
+                        <li class=""><a href="#">Log-in</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div id="content" class="content">
+            <div class="grid-container" style="">
+                    <div class="grid-50 table-grid-100">
+                        <!-- SETTINGS -->
+                        <!-- do I need a settings class here -->
+                        <section id="settings" class="panel settings bg-card bs-default" style="">
+                            <!-- navigation -->
+                            <!--<div class="arrows">
+                                <div class="bottom border-radius-top-bottom-right">
+                                    <a href="#account"><i class="icon-arrow-down5"></i></a>
+                                </div>
+                            </div>-->
+
+                            <!-- header -->
+                            <div id="" class="panel-heading l-padding-20-20-10-20 l-overflow-hidden bg-lightblue border-radius-top-2">
+                                <div class="col-lg-6 l-float-left" style="">
+                                    <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-0-5-5-5 tc-darkgrey" style="">Settings</div>
+                                </div>
+                                <div class="col-lg-6 l-float-left l-text-right tc-brightwhite l-padding-" style="">
+                                    <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
+                                        <a class="font-size-14" style="" href="#" class=""><i class="icon-arrow" style=""></i> Back to Companies</a>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body bg-only-card l-overflow-hidden" style="">
+                                <form accept-charset="UTF-8" id="" class="bg-card" method="post">
+                                    <!-- company profile -->
+                                    <div id="" class="l-float-left l-position-relative" style="">
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
+                                            <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
+                                            <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
+                                            <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
+                                            <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                            <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        </div>
+                                        <!-- row -->
+                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
+                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                            <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                        </div> 
+                                    </div>
+
+                                    <!-- company logo -->
+                                    <div id="" class="l-float-left l-position-relative">
+                                        <div class="thumbnail">
+                                            <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
+                                            <div class="caption">
+                                                <h3>Company logo</h3>
+                                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                <p>
+                                                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                                        <a class="font-size-14" href="#" class="" style=""><i class="icon-dropbox"></i> Choose from Dropbox</a>
+                                                    </button> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> 
+
+
+
+                            <!-- footer with undo/save changes -->
+                            <div id="" class="panel-footing l-padding-20 l-text-right" style="">
+                                <!-- cancel changes -->
+                                <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                    <a class="font-size-14" href="#" class="" style=""><i class="icon-back"></i> Undo Changes</a>
+                                </button> 
+                                <!-- save changes -->
+                                <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                                    <a class="font-size-14" href="#" class="" style=""><i class="icon-checkmark3"></i> Save Changes</a>
+                                </button> 
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- PRODUCTS -->
+                        <section id="products" class="panel products bg-card bs-default" style="">
+                            <!-- navigation -->
+                            <div class="arrows">
+                                <div class="top border-radius-top-right">
+                                    <a href="#account"><i class="icon-arrow-up42"></i></a>
+                                </div>
+                                <div class="bottom border-radius-bottom-right">
+                                    <a href="#communications"><i class="icon-arrow-down5"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- header -->
+                            <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
+                                <div class="col-lg-6 l-float-left" style="">
+                                    <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-5">product profile</div>
+                                </div>
+                                <div class="col-lg-6 l-float-left l-text-right" style="">
+                                    <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-grey bs-btn-nav l-position-relative border-radius-2 l-margin-0">
+                                        <a class="" style="" href="#/products/add" class=""><i class="fa fa-plus" style=""></i> Add Products</a>
+                                    </button>
+                                </div>
+                            </div>  
+
+                            <!-- fiance bundle -->
+                            <form action="#" onsubmit="return false">
+                                <div class="font-size-20 font-weight-500 text-transform-caps bg-lightergreen tc-darkgreen l-padding-left-35">fiancé bundle</div>
+                                <div class="l-padding-25 tc-darkgrey">
+                                    <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse" style="width: 100%">
+                                        <thead class="l-line-height-20 ">
+                                            <th style="width: 15%;">
+                                                <div class="font-iconmoon partial-checked-icon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
+                                                    <input id="bundle_id_1_0" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleChecked(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_0" style="" ></label>
+                                                </div>
+                                            </th>
+                                            <th style="width: 32%;">Product Name</th>
+                                            <th style="width: 15%;">#</th>
+                                            <th style="width: 45%;">Description</th>
+                                        </thead>
+                                        <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
+                                            <tr class="l-line-height-20 border-top-lightestgrey">
+                                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey l-overflow-hidden" style="width: 5%;">
+                                                    <input id="bundle_id_1_1" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleIndeterminateBundle1(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_1" style="" ></label>
+                                                </td>
+                                                <td class="" style="">I-130</td>
+                                                <td class="" style="">123</td>
+                                                <td class="" style="">Sunt pariatur sed appellat ea labore incididunt si.</td>
+                                            </tr>
+                                            <tr class="l-line-height-20 border-top-lightestgrey ">
+                                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey">
+                                                    <input id="bundle_id_1_2" class="l-display-none" name="bundle_id_1" type="checkbox" onclick="toggleIndeterminateBundle1(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_1_2" style="" ></label>
+                                                </td>
+                                                <td class="">I-129</td>
+                                                <td class="">124</td>
+                                                <td class="">Singulis lorem commodo, veniam aliquip ubi illustriora.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <!-- student bundle -->
+                                <div class="package-header font-size-20 font-weight-500 text-transform-caps l-margin-0 bg-lightermedblue tc-medblue l-padding-left-35">student bundle</div>
+                                <div class="l-padding-25 tc-darkgrey">
+                                    <table id="" class="l-table-layout-fixed bg-transparent col-lg-12 table-hover l-text-left l-padding-10 border-collapse" style="width: 100%">
+                                        <thead class="l-line-height-20 ">
+                                            <th style="width: 15%;">
+                                                <div class="font-iconmoon partial-checked-icon unchecked-icon checked-icon tc-medgrey font-weight-normal" style="">
+                                                    <input id="bundle_id_2_0" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleChecked(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_0" style="" ></label>
+                                                </div>
+                                            </th>
+                                            <th style="width: 32%;">Product Name</th>
+                                            <th style="width: 15%;">#</th>
+                                            <th style="width: 45%;">Description</th>
+                                        </thead>
+                                        <tbody class="table-body l-vertical-align-top cursor-pointer text-transform-caps">
+                                            <tr class="l-line-height-20 border-top-lightestgrey">
+                                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey l-overflow-hidden" style="width: 5%;">
+                                                    <input id="bundle_id_2_1" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleIndeterminateBundle2(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_1" style="" ></label>
+                                                </td>
+                                                <td class="" style="">I-160</td>
+                                                <td class="" style="">223</td>
+                                                <td class="" style="">Sunt pariatur sed appellat ea labore incididunt si.</td>
+                                            </tr>
+                                            <tr class="l-line-height-20 border-top-lightestgrey ">
+                                                <td class="font-iconmoon unchecked-icon checked-icon tc-medgrey">
+                                                    <input id="bundle_id_2_2" class="l-display-none" name="bundle_id_2" type="checkbox" onclick="toggleIndeterminateBundle2(this)" checked="">
+                                                    <label class="font-size-16 letter-spacing-1 cursor-pointer" for="bundle_id_2_2" style="" ></label>
+                                                </td>
+                                                <td class="">I-165</td>
+                                                <td class="">224</td>
+                                                <td class="">Singulis lorem commodo, veniam aliquip ubi illustriora.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- footer with undo/save changes -->
+                                <div id="" class="l-padding-25-35-35-35 l-text-right" style="">
+                                    <!-- cancel changes -->
+                                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-reply"></i> Undo Changes</a>
+                                    </button> 
+                                    <!-- save changes -->
+                                    <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                                        <a class="font-size-14" href="#" class="" style=""><i style="" class="fa fa-check"></i> Save Changes</a>
+                                    </button> 
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+
+                <!-- FOOTER -->
+                <!--<footer id="" class="panel nav nav-bottombar tc-white bg-silvergrey" style="">
+                    <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
+                    </div>
+                </footer>-->
+
+                <!-- navigation to top -->
+                <p id="back-top">
+                    <a href="#top"><i class="icon-arrow-up42"></i></a>
+                </p>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+        });
+        </script>
+        <script> 
+            /*Products and Checkboxes*/
+            function toggleChecked(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bChecked = oElement[0].checked;
+                    for (i = 1; i < oElement.length; i++)
+                        oElement[i].checked = bChecked;
+                }
+            }
+
+            function toggleController(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1)
+                        bChecked = false;
+                    oElement[0].checked = bChecked;
+                }
+            }
+
+            function toggleIndeterminateBundle1(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bIndeterminate = false;
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1) {
+                        if (nChecked)
+                            bIndeterminate = true;
+                        else {
+                            bIndeterminate = false;
+                            bChecked = false;
+                        }
+                    } else {
+                        bIndeterminate = false;
+                    }
+                    oElement[0].checked = bChecked;
+                    oElement[0].indeterminate = bIndeterminate;
+                    document.getElementById('bundle_id_1_0').indeterminate = bIndeterminate;
+                }
+            }
+            function toggleIndeterminateBundle2(oElement) {
+                oForm = oElement.form;
+                oElement = oForm.elements[oElement.name];
+                if (oElement.length) {
+                    bIndeterminate = false;
+                    bChecked = true;
+                    nChecked = 0;
+                    for (i = 1; i < oElement.length; i++)
+                        if (oElement[i].checked)
+                            nChecked++;
+                    if (nChecked < oElement.length - 1) {
+                        if (nChecked)
+                            bIndeterminate = true;
+                        else {
+                            bIndeterminate = false;
+                            bChecked = false;
+                        }
+                    } else {
+                        bIndeterminate = false;
+                    }
+                    oElement[0].checked = bChecked;
+                    oElement[0].indeterminate = bIndeterminate;
+                    document.getElementById('bundle_id_1_0').indeterminate = bIndeterminate;
+                }
+            }
+        </script>
+        <script> /*smooth scrolling for anchors*/
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top - 40
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+    </body>
+
+
+</html>
+
+
