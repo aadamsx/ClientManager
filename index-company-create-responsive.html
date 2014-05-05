@@ -7,103 +7,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="icomoon/style.css" />
-        <link rel="stylesheet" href="entypeo/style.css" />
         <link rel="stylesheet" href="main.css" />
-        <!--<link rel="stylesheet" href="bootstrap-3.1.1-grid-system.css" />-->
     </head>
 
     <body class="app" style="">
         <div data-ng-hide="isSpecificPage()" class="">
             <!-- LEFT SIDE BAR NAV -->
             <!-- NOTE: position: absolute; is an option -->
-            <div data-ng-include=" 'views/nav.html' "  id="" class="sidebar" style="position: fixed; left: 0px; z-index: 500; top: 75px;">
+            <div data-ng-include=" 'views/nav.html' "  id="" class="sidebar" style="position: fixed; left: 0px; z-index: 500; top: 65px;">
                 <ul id="" class="" style="margin: 0; ">
-                    <li><a href="#settings"><i class=""></i>Settings</a></li>
-                    <li><a href="#account" style=""><i class=""></i>Account</a></li>
-                    <li><a href="#products"><i class=""></i>Products</a></li>
+                    <li><a href="#settings"><i class=""></i>Companies</a></li>
+                    <li><a href="#account" style=""><i class=""></i>Products</a></li>
+                    <li><a href="#products"><i class=""></i>Employees</a></li>
                     <li><a href="#communications"><i class=""></i>Messages</a></li>
                     <li><a href="#communications"><i class=""></i>Dropbox</a></li>
                 </ul>
             </div>
-            <!-- TOP BAR NAV -->
-            <header data-ng-include=" 'views/header.html' " id="" class="nav nav-topbar bg-transparent tc-white" style="">
-                <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
-                <div id="" class="nav-menu l-padding-top-15">
-                    <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
-                        <li class="" style=""><a href="#">Resources</a></li>
-                        <li class="" style=""><a href="#">Companies</a></li>
-                        <li class=""><a href="#">Products</a></li>
-                        <li class=""><a href="#">Employees</a></li>
-                        <li class=""><a href="#">Dropbox</a></li>
-                        <li class=""><a href="#">Log-in</a></li>
-                    </ul>
-                </div>
-            </header>
+
         </div>
         <div id="content" class="content">
             <div class="grid-container" style="">
-                    <div class="grid-50 table-grid-100">
+                    <!-- TOP BAR NAV -->
+                    <header data-ng-include=" 'views/header.html' " id="" class="grid-100 nav nav-topbar bg-transparent tc-white" style="">
+                        <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
+                        <div id="" class="nav-menu l-padding-top-15">
+                            <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
+                                <li class="" style=""><a href="#">Resources</a></li>
+                                <li class="" style=""><a href="#">Dashboard</a></li>
+                                <li class=""><a href="#">Products</a></li>
+                                <li class=""><a href="#">Log-in</a></li>
+                            </ul>
+                        </div>
+                    </header>
+                
+                    <div class="grid-50 table-grid-100 ">
                         <!-- SETTINGS -->
-                        <section id="settings" class="content-block detail-card bg-card bs-default" style="">
+                        <section id="settings" class="content-block detail-card bg-card bs-default l-margin-bottom-20" style="">
 
                             <!-- header -->
-                            <div id="" class="content-heading-container l-padding-15-15-5-15 l-overflow-hidden bg-lightblue border-radius-top-2">
+                            <div id="" class="content-heading-container l-padding-10-15-5-15 l-overflow-hidden " style="background-color: rgba(184,191,199, 1);">
                                 <div class="heading-col col-50 l-float-left " style="">
-                                    <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-0-5-5-5 tc-darkgrey" style="">Settings</div>
+                                    <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-0-5-5-5 tc-brightwhite" style="">Settings</div>
                                 </div>
-                                <div class="heading-col col-50 l-float-left l-text-right tc-brightwhite l-padding-" style="">
-                                    <button class="btn l-padding-12 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
+                                <!--<div class="heading-col col-50 l-float-left l-text-right tc-brightwhite" style="">
+                                    <button class="btn l-padding-10 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
                                         <a class="font-size-14" style="" href="#" class=""><i class="icon-arrow" style=""></i> Back to Companies</a>
                                     </button>
-                                </div>
+                                </div>-->
                             </div>
 
-
-                            <div class="bg-only-card l-overflow-hidden" style="">
+                            <div class="content-body-container bg-only-card l-overflow-hidden l-padding-top-10" style="">
                                 <form accept-charset="UTF-8" id="" class="bg-card" method="post">
-                                    <!-- company profile -->
-                                    <div id="" class="l-float-left l-position-relative" style="">
+                                   <!-- company profile -->
+                                    <div id="" class="grid-60" style="">
                                         <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company name</label>
-                                            <input id="client_company_name " class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        <div id="" class="controls l-margin-bottom-15" style="">
+                                            <label id="" class="l-padding-top-15" for="client_company_name" style="">Company name</label>
+                                            <input id="client_company_name" class="form-control border-lightgrey border-radius-2" style="" type="text" required placeholder="Acme Widgets Inc.">
                                         </div>
                                         <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Website</label>
-                                            <input id="client_website" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        <div id="" class="controls l-margin-bottom-15" style="">
+                                            <label id="" class="l-padding-top-15" for="client_website" style="">Website</label>
+                                            <input id="client_website" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
                                         </div>
                                         <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Phone</label>
-                                            <input id="client_phone" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        <div id="" class="controls l-margin-bottom-15 " style="">
+                                            <label id="" class="l-padding-top-15" for="client_phone" style="">Phone</label>
+                                            <input id="client_phone" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
                                         </div>
                                         <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Address</label>
-                                            <input id="client_address1" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                            <input id="client_address2" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
-                                            <input id="client_address3" class="input l-padding-12 border-lightgrey l-position-relative bg-none border-radius-2 border-box" style="" type="text" required>
+                                        <div id="" class="controls l-margin-bottom-20 " style="">
+                                            <label id="" class="l-padding-top-15" for="" style="">Address</label>
+                                            <input id="client_address1" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                            <input id="client_address2" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                            <input id="client_address3" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
                                         </div>
                                         <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 l-padding-right-50" style="">
-                                            <label id="" class="col-lg-4 l-text-right l-float-left l-padding-top-15" for="" style="">Company description</label>
+                                        <div id="" class="controls l-margin-bottom-20 " style="">
+                                            <label id="" class="l-padding-top-15" for="" style="">Company description</label>
                                             <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
                                         </div> 
                                     </div>
 
                                     <!-- company logo -->
-                                    <div id="" class="l-float-left l-position-relative">
-                                        <div class="thumbnail">
-                                            <img class="img-thumbnail border-radius-2" alt="140x140" src="assets/img/150x150.gif">
+                                    <div id="" class="grid-40" style="">
+                                        <div class="thumbnail l-padding-bottom-5">
+                                            <label id="" class="" for="" style="">Logo</label>
+                                            <img class="img-thumbnail border-radius-2 l-margin-bottom-15 l-margin-top-2" src="assets/img/150x150.gif" style="display: block; max-width: 150px; ">
                                             <div class="caption">
-                                                <h3>Company logo</h3>
-                                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                                <p>
-                                                    <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                                                        <a class="font-size-14" href="#" class="" style=""><i class="icon-dropbox"></i> Choose from Dropbox</a>
-                                                    </button> 
-                                                </p>
+                                                <p class="l-margin-bottom-5" style="">Select image file to upload from Dropbox.</p>
+                                                <button class="btn l-padding-10 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                                    <a class="font-size-14" href="#" class="" style=""><!--<i class="icon-dropbox"></i>--> Select Image</a>
+                                                </button> 
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -113,18 +109,19 @@
 
 
                             <!-- footer with undo/save changes -->
-                            <div id="" class="panel-footing l-padding-20 l-text-right" style="">
+                            <div id="" class="panel-footing l-padding-15 l-text-right" style="">
                                 <!-- cancel changes -->
-                                <button class="btn l-padding-12 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                <!--<button class="btn l-padding-10 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
                                     <a class="font-size-14" href="#" class="" style=""><i class="icon-back"></i> Undo Changes</a>
-                                </button> 
+                                </button>--> 
                                 <!-- save changes -->
-                                <button class="btn l-padding-12 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
-                                    <a class="font-size-14" href="#" class="" style=""><i class="icon-checkmark3"></i> Save Changes</a>
+                                <button class="btn l-padding-10 letter-spacing-5 btn-save bg-btn-save border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-brightwhite" style="">
+                                    <a class="font-size-14" href="#" class="" style=""><!--<i class="icon-checkmark3"></i>--> Save Changes</a>
                                 </button> 
                             </div>
                         </section>
                     </div>
+                
                     <div class="col-md-6">
                         <!-- PRODUCTS -->
                         <section id="products" class="panel products bg-card bs-default" style="">
