@@ -7,7 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="icomoon/style.css" />
+        
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="assets/tabs/css/bootstrap.css" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/tabs/js/bootstrap.js"></script>
     </head>
 
     <body class="app" style="">
@@ -65,58 +69,33 @@
                                     </button>
                                 </div>-->
                             </div>
-
-                            <div class="content-body-container bg-only-card l-overflow-hidden l-padding-top-10" style="">
-                                <form accept-charset="UTF-8" id="" class="bg-card" method="post">
-                                   <!-- company profile -->
-                                    <div id="" class="grid-60" style="">
-                                        <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-15" style="">
-                                            <label id="" class="l-padding-top-15" for="client_company_name" style="">Company name</label>
-                                            <input id="client_company_name" class="form-control border-lightgrey border-radius-2" style="" type="text" required placeholder="Acme Widgets Inc.">
-                                        </div>
-                                        <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-15" style="">
-                                            <label id="" class="l-padding-top-15" for="client_website" style="">Website</label>
-                                            <input id="client_website" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
-                                        </div>
-                                        <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-15 " style="">
-                                            <label id="" class="l-padding-top-15" for="client_phone" style="">Phone</label>
-                                            <input id="client_phone" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
-                                        </div>
-                                        <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 " style="">
-                                            <label id="" class="l-padding-top-15" for="" style="">Address</label>
-                                            <input id="client_address1" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
-                                            <input id="client_address2" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
-                                            <input id="client_address3" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
-                                        </div>
-                                        <!-- row -->
-                                        <div id="" class="controls l-margin-bottom-20 " style="">
-                                            <label id="" class="l-padding-top-15" for="" style="">Company description</label>
-                                            <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
-                                        </div> 
+                            
+ 
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                                <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+                                <li class=""><a href="#messages" data-toggle="tab">Messages</a></li>
+                            </ul>
+                            
+                            <div id='settings_tabs' class="tab-content">
+                                <div id="home" class="tab-pane active">
+                                    <div class="content-tabs">
+                                        stuff for home
                                     </div>
-
-                                    <!-- company logo -->
-                                    <div id="" class="grid-40" style="">
-                                        <div class="thumbnail l-padding-bottom-5">
-                                            <label id="" class="" for="" style="">Logo</label>
-                                            <img class="img-thumbnail border-radius-2 l-margin-bottom-15 l-margin-top-2" src="assets/img/150x150.gif" style="display: block; max-width: 150px; ">
-                                            <div class="caption">
-                                                <p class="l-margin-bottom-5" style="">Select image file to upload from Dropbox.</p>
-                                                <button class="btn l-padding-10 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
-                                                    <a class="font-size-14" href="#" class="" style=""><!--<i class="icon-dropbox"></i>--> Select Image</a>
-                                                </button> 
-                                                
-                                            </div>
-                                        </div>
+                                </div>
+                                <div id="profile" class="tab-pane">
+                                    <div class="content-tabs">
+                                        stuff for profile
                                     </div>
-                                </form>
-                            </div> 
-
-
+                                </div>
+                                <div id="messages" class="tab-pane">
+                                    <div class="content-tabs">
+                                        stuff for messages
+                                    </div>
+                                </div>
+                            </div>
+    
+                            
 
                             <!-- footer with undo/save changes -->
                             <div id="" class="panel-footing l-padding-15 l-text-right" style="">
@@ -262,31 +241,30 @@
                 </p>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
-        $(document).ready(function(){
-            // hide #back-top first
-            $("#back-top").hide();
+            $(document).ready(function(){
+                // hide #back-top first
+                $("#back-top").hide();
 
-            // fade in #back-top
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('#back-top').fadeIn();
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                });
+                // fade in #back-top
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-top').fadeIn();
+                        } else {
+                            $('#back-top').fadeOut();
+                        }
+                    });
 
-                // scroll body to 0px on click
-                $('#back-top a').click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
+                    // scroll body to 0px on click
+                    $('#back-top a').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
                 });
             });
-        });
         </script>
         <script> 
             /*Products and Checkboxes*/
@@ -367,7 +345,7 @@
             }
         </script>
         <script> /*smooth scrolling for anchors*/
-            $(function() {
+            /*$(function() {
               $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
@@ -381,22 +359,9 @@
                   }
                 }
               });
-            });
+            });*/
         </script>
-        <!--<script  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-        <script>
-            (function($) {
-            $(function() {
-            // set active radio to address bar
-            $(document).on('click', '.tabs .tabs-nav label', function() {
-              var hash = '#' + $(this).attr('for');
-              window.history.replaceState('', '', hash);
-            });
-            // select active radio based on hash
-            $(document.location.hash).prop('checked', true);
-            });
-            })(window.Zepto || window.jQuery);//@ sourceURL=pen.js
-        </script>
+
     </body>
 
 

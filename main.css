@@ -1,11 +1,11 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+/*html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -332,10 +332,10 @@ a {
     text-decoration: none;
 }
 
-ul {
+/*ul {
     list-style-type: none;
     padding: 0;
-}
+}*/
 
 ul:hover a {
     opacity: 0.6;
@@ -1422,19 +1422,7 @@ form input:valid, form textarea:valid {background-color: rgba(252,252,253, .95);
 
 
 /* tabs */
-.tabs-account {position: relative; min-height: 550px; /* This part sucks */ /*clear: both;*/ /*overflow: hidden*/ background-color: rgba(85,172,238, .1);}
-.tabs-company {position: relative; min-height: 550px; /* This part sucks */ /*clear: both;*/ /*overflow: hidden*/ background-color: rgba(114,168,209, .2);}
-.tab {float: left; padding: 10px 0px 10px 0px; }
 
-.tab [type=radio] {display: none;}
-
-
-
-.tab-account [type=radio]:checked ~ label ~ .content {z-index: 1;}
-
-
-
-.tab-company [type=radio]:checked ~ label ~ .content {z-index: 1;}
 
 /* img and thumbnails */
 .img-thumbnail {width: 100%; height: 150px;}
@@ -3306,6 +3294,21 @@ Responsive stuff
 
 
 #content {
+    min-height: 1000px;
+    padding: 0 0 0 0;
+    position: relative;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    /*new values*/
+    width: auto;
+    
+    /*old values*/
+    /*width: 100%;*/
+}
+.content {
     min-height: 1000px;
     padding: 0 0 0 0;
     position: relative;
