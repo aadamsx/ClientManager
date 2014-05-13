@@ -2,16 +2,19 @@
 <html lang="en" ng-app="clientModule">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Management Portal - Prototype 1.0</title>
         <meta name="formspoint" content="formspoint inc (www.formspoint.com)" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="icomoon/style.css" />
         
+        <link rel="stylesheet" href="responsive-style-reference2.css" />
         <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="assets/tabs/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/tabs/css/bootstrap-tabs.css" />
+        
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/tabs/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/tabs/js/bootstrap-tabs.js"></script>
     </head>
 
     <body class="app" style="">
@@ -40,62 +43,158 @@
             </div>
         </div>
         <div id="content" class="content">
+            
             <div class="grid-container" style="">
-                    <!-- TOP BAR NAV -->
-                    <header data-ng-include=" 'views/header.html' " id="" class="grid-100 nav nav-topbar bg-transparent tc-white" style="z-index: 1;">
-                        <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
-                        <div id="" class="nav-menu l-padding-top-15">
-                            <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
-                                <li class="" style=""><a href="#">Resources</a></li>
-                                <li class="" style=""><a href="#">Dashboard</a></li>
-                                <li class=""><a href="#">Products</a></li>
-                                <li class=""><a href="#">Log-in</a></li>
-                            </ul>
-                        </div>
-                    </header>
                 
-                    <div class="grid-50 table-grid-100 ">
-                        <!-- SETTINGS -->
+                <!-- TOP NAV BAR -->
+                <header data-ng-include=" 'views/header.html' " id="" class="grid-100 topbar bg-transparent tc-white" style="z-index: 1;">
+                    <div id="" class="nav-logo font-size-24 l-position-absolute l-padding-top-10">formspoint</div>
+                    <div id="" class="nav-menu l-padding-top-15">
+                        <ul id="topbar-list" class="l-display-inline l-margin-0 l-margin-lastchild-0 l-text-right" style="">
+                            <li class="" style=""><a href="#">Resources</a></li>
+                            <li class="" style=""><a href="#">Dashboard</a></li>
+                            <li class=""><a href="#">Products</a></li>
+                            <li class=""><a href="#">Log-in</a></li>
+                        </ul>
+                    </div>
+                </header>
+                
+                <!-- RIGHT SIDE NAV BAR --> 
+                <div class="grid-20 push-80">
+                    
+                    <!-- Regular Nav -->
+                    <div class="form-element" id="form-element-nav-list-select"><span>Account Settings</span><select id="nav-list-select" class="uniform-processed" style="opacity: 0;">
+                        <option value="/account">Account Settings</option>
+                        <option value="/account/subscription">Membership</option>
+                        <option value="/account/billing">Billing History</option>
+                        <option value="/account/group">Group Members</option>
+                        <option value="/account/notifications">Email Notifications</option>
+                        <option value="/account/referrals">Referrals</option>
+                        <option value="/account/privacy">Privacy Settings</option>
+                    </select></div>
+
+                    <div class="content-filter nav-swap">
+                        <ul class="nav-list">
+                            <li><a href="/account">Account Settings</a></li>
+                            <li><a href="/account/subscription" class="selected">Membership</a></li>
+                            <li><a href="/account/billing">Billing History</a></li>
+                            <li><a href="/account/group">Group Members</a></li>
+                            <li><a href="/account/notifications">Email Notifications</a></li>
+                            <li><a href="/account/referrals">Referrals</a></li>
+                            <li><a href="/account/privacy">Privacy Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- MAIN CONTENT -->
+                <div class="grid-80 grid-parent pull-20">
+
+                    <!-- SETTINGS -->
+                    <div class="grid-50 tablet-grid-100 mobile-grid-100">
+
                         <section id="settings" class="content-block detail-card bg-card bs-default l-margin-bottom-20" style="">
 
                             <!-- header -->
-                            <div id="" class="content-heading-container l-padding-10-15-5-10 l-overflow-hidden border-bottom-light-grey" style="">
+                            <div id="" class="content-heading-container l-padding-10-15-5-10 l-overflow-hidden " style="">
                                 <div class="heading-col col-50 l-float-left " style="">
                                     <div class="font-size-26 font-weight-500 text-transform-caps l-margin-0 l-padding-0-5-5-5 tc-darkgrey" style="">Settings</div>
                                 </div>
-                                <!--<div class="heading-col col-50 l-float-left l-text-right tc-brightwhite" style="">
-                                    <button class="btn l-padding-10 letter-spacing-5 btn-nav bg-btn-nav border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0">
-                                        <a class="font-size-14" style="" href="#" class=""><i class="icon-arrow" style=""></i> Back to Companies</a>
-                                    </button>
-                                </div>-->
                             </div>
-                            
- 
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                                <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
-                                <li class=""><a href="#messages" data-toggle="tab">Messages</a></li>
-                            </ul>
-                            
-                            <div id='settings_tabs' class="tab-content">
-                                <div id="home" class="tab-pane active">
-                                    <div class="content-tabs">
-                                        stuff for home
+
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#one" data-toggle="tab">One</a></li>
+                                    <li><a href="#two" data-toggle="tab">Two</a></li>
+                                    <li><a href="#twee" data-toggle="tab">Twee</a></li>
+                                </ul>
+
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="one">
+                                        <div id="content-body" class="tab-context">
+                                            <div class="content-body-container bg-only-card l-overflow-hidden l-padding-top-10" style="">
+
+                                                <div class="container-fluid">
+                                                <!-- COMPANY SETTINGS: LEFT COLUMN-->
+                                                <form accept-charset="UTF-8" id="" class="form-horizontal bg-card" role="form" method="post">
+
+                                                    <div id="" class="grid-60" style="">
+
+                                                        <!-- row -->
+                                                        <div class="row">
+                                                            <div id="" class="form-group" style="">
+                                                                <label id="" class="col-sm-2 col-md-2 control-label" for="client_company_name" style="">Company name</label>
+                                                                <div class="col-sm-10 col-md-10">
+                                                                    <input id="client_company_name" class="form-control border-lightgrey border-radius-2" style="" type="text" required placeholder="Acme Widgets Inc.">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- row -->
+                                                        <div class="row">
+                                                            <div id="" class="form-group" style="">
+                                                                <label id="" class="col-sm-2 col-md-2 control-label" for="client_website" style="">Website</label>
+                                                                <div class="col-sm-10 col-md-10">
+                                                                    <input id="client_website" class="form-control border-lightgrey border-radius-2" style="" type="text" required required placeholder="www.acmewidgets.com"> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- row -->
+                                                        <!--<div class="row">
+                                                            <div id="" class="form-group l-margin-bottom-15 " style="">
+                                                                <label id="" class="control-label col-sm-2" for="client_phone" style="">Phone</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="client_phone" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                        <!-- row -->
+                                                        <!--<div class="row">
+                                                            <div id="" class="form-group l-margin-bottom-20 " style="">
+                                                                <label id="" class="control-label col-sm-2" for="" style="">Address</label>
+                                                                <div class="col-sm-10">
+                                                                    <input id="client_address1" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                                                    <input id="client_address2" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                                                    <input id="client_address3" class="form-control border-lightgrey border-radius-2" style="" type="text" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                        <!-- row -->
+                                                        <!--<div id="" class="form-group l-margin-bottom-20 " style="">
+                                                            <label id="" class="l-padding-top-15 col-sm-2" for="" style="">Company description</label>
+                                                            <div class="col-sm-10">
+                                                                <textarea id="client_description" class="textarea border-lightgrey l-position-relative bg-none border-radius-2 border-box" name="description" required style="margin-top: 2px; margin-bottom: 2px; height: 109px;"></textarea>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+
+                                                    <!-- company logo -->
+                                                    <div id="" class="grid-40" style="">
+                                                        <div class="thumbnail l-padding-bottom-5">
+                                                            <label id="" class="control-label" for="" style="">Logo</label>
+                                                            <img class="img-thumbnail border-radius-2 l-margin-bottom-15 l-margin-top-2" src="assets/img/150x150.gif" style="display: block; max-width: 150px; ">
+                                                            <div class="caption">
+                                                                <p class="l-margin-bottom-5" style="">Select image file to upload from Dropbox.</p>
+                                                                <button class="btn l-padding-10 letter-spacing-5 btn-cancel bg-btn-cancel border-darkgrey bs-btn-action l-position-relative border-radius-2 l-margin-0 tc-darkgrey" style="">
+                                                                    <a class="font-size-14" href="#" class="" style=""><!--<i class="icon-dropbox"></i>--> Select Image</a>
+                                                                </button> 
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                </div>    
+
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="profile" class="tab-pane">
-                                    <div class="content-tabs">
-                                        stuff for profile
-                                    </div>
-                                </div>
-                                <div id="messages" class="tab-pane">
-                                    <div class="content-tabs">
-                                        stuff for messages
-                                    </div>
+                                    <div class="tab-pane" id="two">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                                    Aliquam in felis sit amet augue.</div>
+                                    <div class="tab-pane" id="twee">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                                    Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
                                 </div>
                             </div>
-    
-                            
+
 
                             <!-- footer with undo/save changes -->
                             <div id="" class="panel-footing l-padding-15 l-text-right" style="">
@@ -110,20 +209,10 @@
                             </div>
                         </section>
                     </div>
-                
-                    <div class="col-md-6">
-                        <!-- PRODUCTS -->
-                        <section id="products" class="panel products bg-card bs-default" style="">
-                            <!-- navigation -->
-                            <div class="arrows">
-                                <div class="top border-radius-top-right">
-                                    <a href="#account"><i class="icon-arrow-up42"></i></a>
-                                </div>
-                                <div class="bottom border-radius-bottom-right">
-                                    <a href="#communications"><i class="icon-arrow-down5"></i></a>
-                                </div>
-                            </div>
 
+                    <!-- PRODUCTS -->
+                    <div class="grid-50 tablet-grid-100 mobile-grid-100">
+                        <section id="products" class="panel products bg-card bs-default" style="">
                             <!-- header -->
                             <div id="" class="l-overflow-hidden l-padding-35 tc-brightwhite bg-medgreen border-radius-top-2" style="">
                                 <div class="col-lg-6 l-float-left" style="">
@@ -227,8 +316,9 @@
                                 </div>
                             </form>
                         </section>
-                    </div>
-
+    </div>
+                </div>
+                
                 <!-- FOOTER -->
                 <!--<footer id="" class="panel nav nav-bottombar tc-white bg-silvergrey" style="">
                     <div class="text-center" style="text-align: center; padding-top: 6px;">2014 - formspoint inc.
@@ -239,8 +329,8 @@
                 <p id="back-top">
                     <a href="#top"><i class="icon-arrow-up42"></i></a>
                 </p>
-            </div>
         </div>
+    </div>
         <script>
             $(document).ready(function(){
                 // hide #back-top first
